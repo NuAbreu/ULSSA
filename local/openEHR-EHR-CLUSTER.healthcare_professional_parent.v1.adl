@@ -1,0 +1,232 @@
+archetype (adl_version=1.4; uid=37c3ffa8-aec4-3379-98c7-76b257cb225f)
+	openEHR-EHR-CLUSTER.healthcare_professional_parent.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2014-07-11">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics">
+		["email"] = <"ian@freshehr.com">
+	>
+	lifecycle_state = <"AuthorDraft">
+	details = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record details of a healthcare professional.">
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"9e95e4b61ffa70d70f669dbf46565ab9">
+		["build_uid"] = <"95c0976d-098f-3927-bc65-6f4e64388cb1">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Healthcare professional (PARENT)
+		items cardinality matches {1..*; unordered} matches {
+			allow_archetype CLUSTER[at0001] occurrences matches {0..1} matches {    -- Nome do Professional
+				include
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0002] occurrences matches {0..*} matches {    -- Identificação Professional
+				value matches {
+					DV_IDENTIFIER matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {    -- Provider Organisation
+				include
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0004] occurrences matches {0..*} matches {    -- Contacto
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Estado
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0006,    -- Proposta
+							at0007,    -- Ativa
+							at0008,    -- Suspensa
+							at0009,    -- Inativa
+							at0010]    -- Registada por erro
+						}
+					}
+				}
+				name matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Data de início válida
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Data de fim válida
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Função
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0015] occurrences matches {0..*} matches {    -- Papel
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Healthcare professional (PARENT)">
+					description = <"Details of a healthcare professional.">
+				>
+				["at0001"] = <
+					text = <"Nome do Professional">
+					description = <"The healthcare worker's professional name.">
+				>
+				["at0002"] = <
+					text = <"Identificação Professional">
+					description = <"The healthcare worker's profesional identifier.">
+				>
+				["at0003"] = <
+					text = <"Provider Organisation">
+					description = <"The healthcare worker's provider organisation.">
+				>
+				["at0004"] = <
+					text = <"Contacto">
+					description = <"Contact details for the heathcare worker.">
+				>
+				["at0005"] = <
+					text = <"Estado">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Proposta">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Ativa">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Suspensa">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Inativa">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Registada por erro">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Data de início válida">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Data de fim válida">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Função">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Papel">
+					description = <"*">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"Profissional de saúde (PARENT)">
+					description = <"Detalhes de um profissional de saúde.">
+				>
+				["at0001"] = <
+					text = <"Nome do Profissional">
+					description = <"O nome profissional, do profissional de saúde.">
+				>
+				["at0002"] = <
+					text = <"Identificação Profissional">
+					description = <"A identificação do profissional de saúde.">
+				>
+				["at0003"] = <
+					text = <"Instituição de saúde">
+					description = <"A instituição prestadora de cuidados de saúde.">
+				>
+				["at0004"] = <
+					text = <"Contacto">
+					description = <"Detalhes do contacto para o profissional de saúde.">
+				>
+				["at0005"] = <
+					text = <"Estado">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Proposta">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Ativa">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Suspensa">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Inativa">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Registada por erro">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Data de início válida">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Data de fim válida">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Função">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"*Papel (en)">
+					description = <"*">
+				>
+			>
+		>
+	>
