@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "35.0.0",
+      "sem_ver" : "36.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "397e14e902df76aeb6b0aabb8111bedf",
+      "MD5-CAM-1.0.1" : "7bc994dad0152be9fedc7dbd64d19d91",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -1889,15 +1889,6 @@
                       "nodeId" : "at0011.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_ARCHETYPE_ROOT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at0005.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ],
-                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-exam-palpation-cervix-001.v0",
-                      "referenceType" : "archetypeOverlay"
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -9672,29 +9663,120 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      }, {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "protocol",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0007",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0012.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-dados_adicionais_para_o_trabalho_de_parto-001.v0",
-              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "POINT_EVENT",
+              "nodeId" : "at0002.2",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0004.2",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0006.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "local_terms"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "local_terms" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "local_terms",
+                                "code" : "Prematura",
+                                "value" : "Prematura"
+                              }, {
+                                "terminologyId" : "local_terms",
+                                "code" : "Precoce",
+                                "value" : "Precoce"
+                              }, {
+                                "terminologyId" : "local_terms",
+                                "code" : "Artificial",
+                                "value" : "Artificial"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0011.2",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0005.2",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-exam-004.v2",
+                      "referenceType" : "archetypeOverlay"
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0009",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0008.2",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0013.2",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -9712,6 +9794,12 @@
             "code" : "at0000.1",
             "text" : "*Physical Examination Findings(en) (5)",
             "description" : "*Findings observed during the physical examination of a subject.(en)"
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*Any event(en) (2)",
+            "description" : "*Unspecified point in time which may be explicitly defined in a template or at run-time.(en)"
           }
         },
         "sl" : {
@@ -9720,6 +9808,12 @@
             "code" : "at0000.1",
             "text" : "Ugotovitve pregleda",
             "description" : "Za dokumentiranje ugotovitev/znakov fizikalnega pregleda subjekta"
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Dogodek (2)",
+            "description" : "Privzeta, nespecificirana točka v času ali intervalni dogodek, ki je lahko eksplicitno definiran v predlogi ali ob izvajanju."
           }
         },
         "es-ar" : {
@@ -9728,6 +9822,12 @@
             "code" : "at0000.1",
             "text" : "Hallazgos del Examen Fisico (5)",
             "description" : "Hallazgos observados durante el examen fisico de una persona"
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*Any event(en) (2)",
+            "description" : "*Unspecified point in time which may be explicitly defined in a template or at run-time.(en)"
           }
         },
         "en" : {
@@ -9743,6 +9843,19 @@
             "text" : "Rotura da bolsa de águas",
             "description" : "Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings.",
             "comment" : "Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'."
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.2",
+            "text" : "Rotura da Bolsa de águas",
+            "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Rotura da bolsa de águas",
+            "description" : "Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings.",
+            "comment" : "Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'."
           }
         },
         "nb" : {
@@ -9751,6 +9864,12 @@
             "code" : "at0000.1",
             "text" : "Funn ved fysisk undersøkelse (5)",
             "description" : "Funn ved fysisk undersøkelse av en helsetjenestemottaker."
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Uspesifisert hendelse (2)",
+            "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i en template eller i en applikasjon."
           }
         },
         "es" : {
@@ -9759,6 +9878,12 @@
             "code" : "at0000.1",
             "text" : "Hallazgos de la examinación física (5)",
             "description" : "Hallazgos observados durante la examinación física del paciente"
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*Any event(en) (2)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
           }
         },
         "pt-br" : {
@@ -9767,6 +9892,12 @@
             "code" : "at0000.1",
             "text" : "Achados de exame físico (5)",
             "description" : "Resultados observados durante o exame físico de um sujeito de atenção."
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Qualquer evento (2)",
+            "description" : "Padrão, ponto indeterminado no tempo ou intervalo de evento que pode ser definido explicitamente em um modelo ou em tempo de execução."
           }
         },
         "zh-cn" : {
@@ -9775,6 +9906,12 @@
             "code" : "at0000.1",
             "text" : "体格检查发现 (5)",
             "description" : "对于特定主体对象进行体格检查过程中所获得的发现。"
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "任何事件 (2)",
+            "description" : "默认值，未加具体说明的，而可以在特定模板中或在运行时加以明确定义的时刻（时间点）型或时段（时间段、时间区间）型事件。"
           }
         },
         "pt-pt" : {
@@ -9784,50 +9921,18 @@
             "text" : "Achados do exame físico",
             "description" : "*Findings observed during the physical examination of a subject of care. (en)"
           },
-          "at0002" : {
+          "at0012" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Extension (en)",
+            "description" : "*Additional information required to capture local content or to align with other reference models/formalisms. (en)",
+            "comment" : "*e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          },
+          "at0002.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
-            "text" : "*Any event (en)",
-            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)"
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "*Description (en)",
-            "description" : "*Narrative description of the overall findings observed during a physical examination of a patient. (en)",
-            "comment" : "*May be used to record a narrative summary of the complete clinical examination or key aspects of clinical examination findings, which will be supported by structured data. Details of specific structured findings can be included using CLUSTER archetypes in the 'Examination Detail' slot. This data element may be used to capture legacy data that is not available in a structured format. (en)"
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "*Examination detail (en)",
-            "description" : "*Structured details of the physical examination. (en)",
-            "comment" : "*Detailed clinical findings will be recorded as CLUSTER archetypes which can be nested within this SLOT to represent the fractal nature of clinical examination and allow for variation in clinician's requirements for examination documentation. For example: CLUSTER.palpation_of_uterus, CLUSTER.palpation_of_cervix and CLUSTER.palpation_of_fetus can be nested in this slot or within each other to represent the specific requirements of clinicians working in the obstetric domains - content, priorities and level of detail will differ depending on clinical context, professional background and specialty. (en)"
-          },
-          "at0006" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "*Interpretation (en)",
-            "description" : "*Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings. (en)",
-            "comment" : "*Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'. (en)"
-          },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "*Confounding factors (en)",
-            "description" : "*Description of any incidental factors that may have contributed to the physical examination findings. (en)"
-          },
-          "at0011" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011",
-            "text" : "*Comment (en)",
-            "description" : "*Additional narrative about the overall physical examination findings not captured in other fields. (en)"
-          },
-          "at0013" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0013",
-            "text" : "*Position (en)",
-            "description" : "*The body position of the subject during the examination. (en)"
+            "text" : "Any event (2)",
+            "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
           }
         },
         "de" : {
@@ -9836,6 +9941,12 @@
             "code" : "at0000",
             "text" : "Ergebnisse der körperlichen Untersuchung (5)",
             "description" : "Während der körperlichen Untersuchung eines Patienten beobachtete Befunde."
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Jedes Ereignis (2)",
+            "description" : "Ein Standardwert, ein spezifizierter Zeitpunkt oder ein Intervallereignis, welches explizit in einem Template oder während der Laufzeit definiert werden kann."
           }
         },
         "sv" : {
@@ -9844,6 +9955,12 @@
             "code" : "at0000",
             "text" : "Fysiska undersökningsfynd (5)",
             "description" : "Observerade fynd under en fysisk undersökning av mottagaren av hälso- och sjukvård."
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Ospecificerad händelse (2)",
+            "description" : "Standard, ospecificerad händelse eller intervallhändelse som kan definieras uttryckligen i en mall eller vid körning."
           }
         },
         "ca" : {
@@ -9852,6 +9969,12 @@
             "code" : "at0000",
             "text" : "Troballes de l'exploració física (5)",
             "description" : "Troballes observades durant l'examen físic del pacient."
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Qualsevol esdeveniment (2)",
+            "description" : "Esdeveniment predeterminat, en un interval de temps o moment no específic, que es pot definir de forma expressa en una plantilla o en temps d'execució."
           }
         }
       },
@@ -10023,658 +10146,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "b8b71881-d982-423b-855f-3ec93fbd69ff",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "6609C7E296FB56567BE8311DA2367156"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.exam-palpation-cervix.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-exam-palpation-cervix-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1.1.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0001.0.1.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "defaultValue" : {
-                "defining_code" : {
-                  "code_string" : "at0.0.1",
-                  "@type" : "CODE_PHRASE"
-                },
-                "@type" : "DV_CODED_TEXT"
-              },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "at0.0.1" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0012.0.0.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0002.0.0.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_BOOLEAN",
-                  "rmTypeName" : "BOOLEAN",
-                  "occurrences" : "1..1",
-                  "constraint" : [ true ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0003.0.0.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.0.2.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.0.0.1" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.0.8.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.0.0.3" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.0.12.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.0.13.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.0.14.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.0.15.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.0.0.2" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.0.21.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "property",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "openehr"
-                  },
-                  "constraint" : [ "122" ]
-                } ]
-              } ],
-              "attributeTuples" : [ {
-                "@type" : "C_ATTRIBUTE_TUPLE",
-                "members" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "units",
-                  "children" : [ ]
-                }, {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "magnitude",
-                  "children" : [ ]
-                }, {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "precision",
-                  "children" : [ ]
-                } ],
-                "tuples" : [ {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
-                    "@type" : "C_STRING",
-                    "rmTypeName" : "STRING",
-                    "constraint" : [ "cm" ]
-                  }, {
-                    "@type" : "C_REAL",
-                    "rmTypeName" : "REAL",
-                    "constraint" : [ {
-                      "lower" : 0.0,
-                      "upper" : 10.0,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
-                    } ]
-                  }, {
-                    "@type" : "C_INTEGER",
-                    "rmTypeName" : "INTEGER",
-                    "constraint" : [ {
-                      "lower" : 1,
-                      "upper" : 1,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
-                    } ]
-                  } ]
-                }, {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
-                    "@type" : "C_STRING",
-                    "rmTypeName" : "STRING",
-                    "constraint" : [ "mm" ]
-                  }, {
-                    "@type" : "C_REAL",
-                    "rmTypeName" : "REAL",
-                    "constraint" : [ {
-                      "lower" : 0.0,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
-                    } ]
-                  }, {
-                    "@type" : "C_INTEGER",
-                    "rmTypeName" : "INTEGER",
-                    "constraint" : [ {
-                      "lower" : 0,
-                      "upper" : 0,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
-                    } ]
-                  } ]
-                } ]
-              } ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.0.22.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.0.0.5" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.0.25.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.0.0.4" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.0.29.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "property",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "openehr"
-                  },
-                  "constraint" : [ "122" ]
-                } ]
-              } ],
-              "attributeTuples" : [ {
-                "@type" : "C_ATTRIBUTE_TUPLE",
-                "members" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "units",
-                  "children" : [ ]
-                }, {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "magnitude",
-                  "children" : [ ]
-                }, {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "precision",
-                  "children" : [ ]
-                } ],
-                "tuples" : [ {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
-                    "@type" : "C_STRING",
-                    "rmTypeName" : "STRING",
-                    "constraint" : [ "cm" ]
-                  }, {
-                    "@type" : "C_REAL",
-                    "rmTypeName" : "REAL",
-                    "constraint" : [ {
-                      "lower" : 0.0,
-                      "upper" : 10.0,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
-                    } ]
-                  }, {
-                    "@type" : "C_INTEGER",
-                    "rmTypeName" : "INTEGER",
-                    "constraint" : [ {
-                      "lower" : 0,
-                      "upper" : 0,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
-                    } ]
-                  } ]
-                } ]
-              } ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.0.30.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0006.0.0.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0007.0.0.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000.1.1",
-      "termDefinitions" : {
-        "en" : {
-          "ac0.0.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.0.0.1",
-            "description" : ""
-          },
-          "ac0.0.0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.0.0.2",
-            "description" : ""
-          },
-          "ac0.0.0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.0.0.3",
-            "description" : ""
-          },
-          "ac0.0.0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.0.0.4",
-            "description" : ""
-          },
-          "ac0.0.0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.0.0.5",
-            "description" : ""
-          }
-        },
-        "nb" : {
-          "ac0.0.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.0.0.1",
-            "description" : ""
-          },
-          "ac0.0.0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.0.0.2",
-            "description" : ""
-          },
-          "ac0.0.0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.0.0.3",
-            "description" : ""
-          },
-          "ac0.0.0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.0.0.4",
-            "description" : ""
-          },
-          "ac0.0.0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.0.0.5",
-            "description" : ""
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : {
-        "ac0.0.0.1" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.0.0.1",
-          "members" : [ "at0.0.3", "at0.0.4", "at0.0.5", "at0.0.6", "at0.0.7" ]
-        },
-        "ac0.0.0.2" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.0.0.2",
-          "members" : [ "at0.0.17", "at0.0.18", "at0.0.19", "at0.0.20" ]
-        },
-        "ac0.0.0.3" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.0.0.3",
-          "members" : [ "at0.0.9", "at0.0.10", "at0.0.11" ]
-        },
-        "ac0.0.0.4" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.0.0.4",
-          "members" : [ "at0.0.26", "at0.0.27" ]
-        },
-        "ac0.0.0.5" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.0.0.5",
-          "members" : [ "at0.0.23", "at0.0.24" ]
-        }
-      }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "dd808879-bde0-41dc-996c-6ca3139f5cd7",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Silje Ljosland Bakke",
-        "organisation" : "Nasjonal IKT HF"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "cc7a10d3-c054-47a8-91d3-2a934b4e0b58",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "3eec802fc9dda4fa9dab93d2ddb51a5b"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.dados_adicionais_para_o_trabalho_de_parto.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-dados_adicionais_para_o_trabalho_de_parto-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "pt-pt" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "ed469fa0-bd16-3b14-ba99-90b26c03a9df",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "pt-pt"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "d46d8bf6-a0a4-497e-8c82-cfd2c4c3c888",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -10686,7 +10157,33 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3eec802fc9dda4fa9dab93d2ddb51a5b"
       },
-      "details" : { }
+      "details" : {
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.dados_adicionais_para_o_trabalho_de_parto.v0",
     "differential" : true,
@@ -11085,7 +10582,33 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3eec802fc9dda4fa9dab93d2ddb51a5b"
       },
-      "details" : { }
+      "details" : {
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.dados_adicionais_para_o_trabalho_de_parto.v0",
     "differential" : true,
@@ -11528,51 +11051,6 @@
             "code" : "at0000.1",
             "text" : "Achados do exame físico (2)",
             "description" : "*Findings observed during the physical examination of a subject of care. (en)"
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "*Any event (en)",
-            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)"
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "*Description (en)",
-            "description" : "*Narrative description of the overall findings observed during a physical examination of a patient. (en)",
-            "comment" : "*May be used to record a narrative summary of the complete clinical examination or key aspects of clinical examination findings, which will be supported by structured data. Details of specific structured findings can be included using CLUSTER archetypes in the 'Examination Detail' slot. This data element may be used to capture legacy data that is not available in a structured format. (en)"
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "*Examination detail (en)",
-            "description" : "*Structured details of the physical examination. (en)",
-            "comment" : "*Detailed clinical findings will be recorded as CLUSTER archetypes which can be nested within this SLOT to represent the fractal nature of clinical examination and allow for variation in clinician's requirements for examination documentation. For example: CLUSTER.palpation_of_uterus, CLUSTER.palpation_of_cervix and CLUSTER.palpation_of_fetus can be nested in this slot or within each other to represent the specific requirements of clinicians working in the obstetric domains - content, priorities and level of detail will differ depending on clinical context, professional background and specialty. (en)"
-          },
-          "at0006" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "*Interpretation (en)",
-            "description" : "*Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings. (en)",
-            "comment" : "*Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'. (en)"
-          },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "*Confounding factors (en)",
-            "description" : "*Description of any incidental factors that may have contributed to the physical examination findings. (en)"
-          },
-          "at0011" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011",
-            "text" : "*Comment (en)",
-            "description" : "*Additional narrative about the overall physical examination findings not captured in other fields. (en)"
-          },
-          "at0013" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0013",
-            "text" : "*Position (en)",
-            "description" : "*The body position of the subject during the examination. (en)"
           }
         },
         "de" : { },
@@ -11742,6 +11220,343 @@
         "name" : "Julio de Sosa",
         "organisation" : "Servei Català de la Salut",
         "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "572bf84d-d558-46c1-8c87-d7e43c8e32fb",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "D431E7E5B4C4ACEE31E2289C853A4DED",
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "*To record the findings observed during the physical examination of a body system or anatomical structure. (en)",
+          "keywords" : [ ],
+          "use" : "*Use to record the observed findings during the physical examination of a body system or anatomical structure.\r\n\r\nThis archetype has been specifically designed to be used in the 'Examination detail' SLOT within the OBSERVATION.exam or the \"Procedure detail\" SLOT within the ACTION.procedure archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. Specialisations of this archetype can be used to record examination findings for identified body systems or anatomical structures. If there is no appropriate specialisation available, use this archetype and identify the system or structure being examined using the 'System or structure examined' data element and the location on the body using the 'Body site' data element or the 'Structured body site' SLOT.\r\n\r\nInterpretation of the findings, for example 'No abnormality detected' or 'Moderate inflammation present', can be recorded using the 'Clinical interpretation' data element.\r\n\r\nUse to provide a framework in which CLUSTER archetypes can be nested in the 'Examination findings' SLOT to record additional structured physical examination findings.\r\n\r\nThe CLUSTER.exclusion_exam archetype can be nested within the 'Examination not done' SLOT to optionally record explicit details about the examination not being performed.\r\n\r\nUse to incorporate the narrative descriptions of clinical findings within existing or legacy clinical systems into an archetyped format, using the 'Clinical Description' data element. (en)",
+          "misuse" : "*Not to be used for recording the clinical history - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom_sign.\r\n\r\nNot to be used for recording the results of an imaging examination - use the CLUSTER.imaging_exam family of archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "*To record the findings observed during the physical examination of a body system or anatomical structure. (en)",
+          "keywords" : [ "fynd, undersökningsfynd, fysisk undersökning, u.a., utan anmärkning" ],
+          "use" : "*Use to record the observed findings during the physical examination of a body system or anatomical structure.\r\n\r\nThis archetype has been specifically designed to be used in the 'Examination detail' SLOT within the OBSERVATION.exam or the \"Procedure detail\" SLOT within the ACTION.procedure archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. Specialisations of this archetype can be used to record examination findings for identified body systems or anatomical structures. If there is no appropriate specialisation available, use this archetype and identify the system or structure being examined using the 'System or structure examined' data element and the location on the body using the 'Body site' data element or the 'Structured body site' SLOT.\r\n\r\nInterpretation of the findings, for example 'No abnormality detected' or 'Moderate inflammation present', can be recorded using the 'Clinical interpretation' data element.\r\n\r\nUse to provide a framework in which CLUSTER archetypes can be nested in the 'Examination findings' SLOT to record additional structured physical examination findings.\r\n\r\nThe CLUSTER.exclusion_exam archetype can be nested within the 'Examination not done' SLOT to optionally record explicit details about the examination not being performed.\r\n\r\nUse to incorporate the narrative descriptions of clinical findings within existing or legacy clinical systems into an archetyped format, using the 'Clinical Description' data element. (en)",
+          "misuse" : "*Not to be used for recording the clinical history - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom_sign.\r\n\r\nNot to be used for recording the results of an imaging examination - use the CLUSTER.imaging_exam family of archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere observerte funn ved fysisk undersøkelse av et organsystem eller anatomisk struktur.",
+          "keywords" : [ ],
+          "use" : "Bruk for å registrere observerte funn ved fysisk undersøkelse av et organsystem eller anatomisk struktur. \r\n\r\nDenne arketypen har vært designet spesifikt for å kunne brukes i SLOT'et \"Undersøkelsesdetaljer\" i arketypen OBSERVATION.exam (Funn ved fysisk undersøkelse) eller SLOT'et \"Prosedyredetaljer\" i arketypen ACTION.procedure (Prosedyre), men kan også bli brukt i andre ENTRY- eller CLUSTER-arketyper der det er klinisk passende. Spesialiseringer av denne arketypen for bestemte organsystem eller anatomiske strukturer kan brukes for å registrere undersøkelsesfunn for disse. Dersom det ikke finnes noen passende spesialisering, bruk denne arketypen, og registrer organstrukturen eller den anatomiske strukturen i elementet \"Undersøkt organsystem eller struktur\" og lokalisering på kroppen i SLOT'et \"Anatomisk lokalisasjon\" eller \"Strukturert anatomisk lokalisasjon\".\r\n\r\nTolkning av funn kan bli registrert i dataelementet \"Fortolkning\", for eksempel \"Uten anmerkning\" eller \"Moderat inflammasjon\".\r\n\r\nKan også brukes som et rammeverk der man kan nøste CLUSTER-arketyper i SLOT'et \"Spesifikke funn\" for å registrere ytterligere strukturerte undersøkelsesfunn.\r\n\r\nArketypen CLUSTER.exclusion_exam (Eksklusjon av en undersøkelse) kan nøstes inn i SLOT'et \"Undersøkelse ikke utført\" for å registrere begrunnelse eller detaljer om hvorfor undersøkelsen ikke ble utført.\r\n\r\nBrukes for å legge til fritekstlige beskrivelser av undersøkelsesfunn fra eksisterende eller historiske journalsystemer til arketypeformat ved å benytte dataelementet \"Klinisk beskrivelse\".",
+          "misuse" : "Skal ikke brukes til å ta opp anamnese - bruk da spesifikke OBSERVATION og CLUSTER arketyper. For eksempel OBSERVATION.story og CLUSTER.symptom_sign.\r\n\r\nSkal ikke brukes for å registrere funn ved bildeundersøkelse - bruk arketype innen gruppen av CLUSTER.imaging_exam (Bildeundersøkelse) for dette.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "*To record the findings observed during the physical examination of a body system or anatomical structure. (en)",
+          "keywords" : [ ],
+          "use" : "*Use to record the observed findings during the physical examination of a body system or anatomical structure.\r\n\r\nThis archetype has been specifically designed to be used in the 'Examination detail' SLOT within the OBSERVATION.exam or the \"Procedure detail\" SLOT within the ACTION.procedure archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. Specialisations of this archetype can be used to record examination findings for identified body systems or anatomical structures. If there is no appropriate specialisation available, use this archetype and identify the system or structure being examined using the 'System or structure examined' data element and the location on the body using the 'Body site' data element or the 'Structured body site' SLOT.\r\n\r\nInterpretation of the findings, for example 'No abnormality detected' or 'Moderate inflammation present', can be recorded using the 'Clinical interpretation' data element.\r\n\r\nUse to provide a framework in which CLUSTER archetypes can be nested in the 'Examination findings' SLOT to record additional structured physical examination findings.\r\n\r\nThe CLUSTER.exclusion_exam archetype can be nested within the 'Examination not done' SLOT to optionally record explicit details about the examination not being performed.\r\n\r\nUse to incorporate the narrative descriptions of clinical findings within existing or legacy clinical systems into an archetyped format, using the 'Clinical Description' data element. (en)",
+          "misuse" : "*Not to be used for recording the clinical history - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom_sign.\r\n\r\nNot to be used for recording the results of an imaging examination - use the CLUSTER.imaging_exam family of archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the findings observed during the physical examination of a body system or anatomical structure.",
+          "keywords" : [ ],
+          "use" : "Use to record the observed findings during the physical examination of a body system or anatomical structure.\r\n\r\nThis archetype has been specifically designed to be used in the 'Examination detail' SLOT within the OBSERVATION.exam or the \"Procedure detail\" SLOT within the ACTION.procedure archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. Specialisations of this archetype can be used to record examination findings for identified body systems or anatomical structures. If there is no appropriate specialisation available, use this archetype and identify the system or structure being examined using the 'System or structure examined' data element and the location on the body using the 'Body site' data element or the 'Structured body site' SLOT.\r\n\r\nInterpretation of the findings, for example 'No abnormality detected' or 'Moderate inflammation present', can be recorded using the 'Clinical interpretation' data element.\r\n\r\nUse to provide a framework in which CLUSTER archetypes can be nested in the 'Examination findings' SLOT to record additional structured physical examination findings.\r\n\r\nThe CLUSTER.exclusion_exam archetype can be nested within the 'Examination not done' SLOT to optionally record explicit details about the examination not being performed.\r\n\r\nUse to incorporate the narrative descriptions of clinical findings within existing or legacy clinical systems into an archetyped format, using the 'Clinical Description' data element.",
+          "misuse" : "Not to be used for recording the clinical history - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom_sign.\r\n\r\nNot to be used for recording the results of an imaging examination - use the CLUSTER.imaging_exam family of archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.exam.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-exam-004.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "code_string" : "70847004",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Amniotic sac",
+                "@type" : "DV_CODED_TEXT"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0012.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "Re",
+                    "value" : "Rota (espontânea)"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "Rt",
+                    "value" : "Rota (ao toque)"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "Ra",
+                    "value" : "Rota (amniotomia)"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "I",
+                    "value" : "Íntegra"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0006.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "263862003",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Rotura",
+                "@type" : "DV_CODED_TEXT"
+              },
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED",
+                    "code" : "263862003",
+                    "value" : "Rotura"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Rotura da bolsa de águas",
+            "description" : "Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.",
+            "comment" : "For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible."
+          }
+        },
+        "nb" : { },
+        "pt-br" : { },
+        "de" : { },
+        "sv" : { }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0000.1" : "term:SNOMED-CT::5880005"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "4f914639-0324-4cd8-a0a1-5c6316fe3b66",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Nina Schewe",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "schewe.nina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Erik Sundvall",
+        "organisation" : "Region Östergötland + Linköping University",
+        "email" : "erik.sundvall@regionostergotland.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke, Vebjørn Arntzen",
+        "organisation" : "Nasjonal IKT HF, Oslo University Hospital",
+        "email" : "varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Adriana Kitajima",
+        "organisation" : "Hospital Alemão Oswaldo Cruz - HAOC",
+        "email" : "adrianakitajima@gmail.com"
       },
       "otherDetails" : { }
     } ]
