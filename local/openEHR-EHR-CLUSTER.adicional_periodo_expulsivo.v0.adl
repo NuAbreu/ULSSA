@@ -1,0 +1,45 @@
+archetype (adl_version=1.4; uid=f823dce8-632d-45d7-922b-b881613a1c55)
+	openEHR-EHR-CLUSTER.adicional_periodo_expulsivo.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2024-05-21">
+		["name"] = <"GTPCE">
+		["organisation"] = <"CHUPorto">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"59a969cadf98ba27f80aa9ecc0f06f73">
+		["build_uid"] = <"961838f9-85ab-3ad4-8963-e9a78d7338d1">
+	>
+
+definition
+	CLUSTER[at0000] matches {*}    -- Adicional periodo expulsivo
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Adicional periodo expulsivo">
+					description = <"Adicional periodo expulsivo">
+				>
+			>
+		>
+	>
