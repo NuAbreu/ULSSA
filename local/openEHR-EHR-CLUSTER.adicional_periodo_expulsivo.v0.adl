@@ -25,12 +25,35 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"59a969cadf98ba27f80aa9ecc0f06f73">
+		["MD5-CAM-1.0.1"] = <"bfddf2d40ab69314b959187a17f7fa80">
 		["build_uid"] = <"961838f9-85ab-3ad4-8963-e9a78d7338d1">
 	>
 
 definition
-	CLUSTER[at0000] matches {*}    -- Adicional periodo expulsivo
+	CLUSTER[at0000] matches {    -- Adicional periodo expulsivo
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Início do período expulsivo
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Descida fetal
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Colaboração materna
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Avaliação fetal
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+		}
+	}
 
 ontology
 	term_definitions = <
@@ -39,6 +62,22 @@ ontology
 				["at0000"] = <
 					text = <"Adicional periodo expulsivo">
 					description = <"Adicional periodo expulsivo">
+				>
+				["at0001"] = <
+					text = <"Início do período expulsivo">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Descida fetal">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Colaboração materna">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Avaliação fetal">
+					description = <"">
 				>
 			>
 		>
