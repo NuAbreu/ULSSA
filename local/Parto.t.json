@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "32.0.0",
+      "sem_ver" : "33.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "052510eb310f5751ce886c24a0b14cba",
+      "MD5-CAM-1.0.1" : "60710bd63facf92a0b54b87a6a846ea0",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -10843,6 +10843,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "Re",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Rota (espontânea)",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
