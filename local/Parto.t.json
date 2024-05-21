@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "30.0.0",
+      "sem_ver" : "31.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e744fd5b511976ebf7666506fb093edd",
+      "MD5-CAM-1.0.1" : "c75f313e11a2c6ee62019a71c80f0d73",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -9482,84 +9482,6 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "POINT_EVENT",
-              "nodeId" : "at0002.2",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "data",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ITEM_TREE",
-                  "nodeId" : "at0003",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0004.2",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0006.2",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0011.2",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_ARCHETYPE_ROOT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at0005.2",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ],
-                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-exam-003.v2",
-                      "referenceType" : "archetypeOverlay"
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "state",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ITEM_TREE",
-                  "nodeId" : "at0009",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0008.2",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0013.2",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -9577,12 +9499,6 @@
             "code" : "at0000.1",
             "text" : "*Physical Examination Findings(en) (5)",
             "description" : "*Findings observed during the physical examination of a subject.(en)"
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "*Any event(en) (2)",
-            "description" : "*Unspecified point in time which may be explicitly defined in a template or at run-time.(en)"
           }
         },
         "sl" : {
@@ -9591,12 +9507,6 @@
             "code" : "at0000.1",
             "text" : "Ugotovitve pregleda",
             "description" : "Za dokumentiranje ugotovitev/znakov fizikalnega pregleda subjekta"
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Dogodek (2)",
-            "description" : "Privzeta, nespecificirana točka v času ali intervalni dogodek, ki je lahko eksplicitno definiran v predlogi ali ob izvajanju."
           }
         },
         "es-ar" : {
@@ -9605,12 +9515,6 @@
             "code" : "at0000.1",
             "text" : "Hallazgos del Examen Fisico (5)",
             "description" : "Hallazgos observados durante el examen fisico de una persona"
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "*Any event(en) (2)",
-            "description" : "*Unspecified point in time which may be explicitly defined in a template or at run-time.(en)"
           }
         },
         "en" : {
@@ -9619,12 +9523,6 @@
             "code" : "at0000.1",
             "text" : "Bolsa de águas",
             "description" : "Findings observed during the physical examination of a subject of care."
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.2",
-            "text" : "Any event (2)",
-            "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
           }
         },
         "nb" : {
@@ -9633,12 +9531,6 @@
             "code" : "at0000.1",
             "text" : "Funn ved fysisk undersøkelse (5)",
             "description" : "Funn ved fysisk undersøkelse av en helsetjenestemottaker."
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Uspesifisert hendelse (2)",
-            "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i en template eller i en applikasjon."
           }
         },
         "es" : {
@@ -9647,12 +9539,6 @@
             "code" : "at0000.1",
             "text" : "Hallazgos de la examinación física (5)",
             "description" : "Hallazgos observados durante la examinación física del paciente"
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "*Any event(en) (2)",
-            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
           }
         },
         "pt-br" : {
@@ -9661,12 +9547,6 @@
             "code" : "at0000.1",
             "text" : "Achados de exame físico (5)",
             "description" : "Resultados observados durante o exame físico de um sujeito de atenção."
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Qualquer evento (2)",
-            "description" : "Padrão, ponto indeterminado no tempo ou intervalo de evento que pode ser definido explicitamente em um modelo ou em tempo de execução."
           }
         },
         "zh-cn" : {
@@ -9675,12 +9555,6 @@
             "code" : "at0000.1",
             "text" : "体格检查发现 (5)",
             "description" : "对于特定主体对象进行体格检查过程中所获得的发现。"
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "任何事件 (2)",
-            "description" : "默认值，未加具体说明的，而可以在特定模板中或在运行时加以明确定义的时刻（时间点）型或时段（时间段、时间区间）型事件。"
           }
         },
         "pt-pt" : {
@@ -9690,11 +9564,50 @@
             "text" : "Achados do exame físico",
             "description" : "*Findings observed during the physical examination of a subject of care. (en)"
           },
-          "at0002.2" : {
+          "at0002" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Any event (2)",
-            "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
+            "code" : "at0002",
+            "text" : "*Any event (en)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "*Description (en)",
+            "description" : "*Narrative description of the overall findings observed during a physical examination of a patient. (en)",
+            "comment" : "*May be used to record a narrative summary of the complete clinical examination or key aspects of clinical examination findings, which will be supported by structured data. Details of specific structured findings can be included using CLUSTER archetypes in the 'Examination Detail' slot. This data element may be used to capture legacy data that is not available in a structured format. (en)"
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "*Examination detail (en)",
+            "description" : "*Structured details of the physical examination. (en)",
+            "comment" : "*Detailed clinical findings will be recorded as CLUSTER archetypes which can be nested within this SLOT to represent the fractal nature of clinical examination and allow for variation in clinician's requirements for examination documentation. For example: CLUSTER.palpation_of_uterus, CLUSTER.palpation_of_cervix and CLUSTER.palpation_of_fetus can be nested in this slot or within each other to represent the specific requirements of clinicians working in the obstetric domains - content, priorities and level of detail will differ depending on clinical context, professional background and specialty. (en)"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Interpretation (en)",
+            "description" : "*Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings. (en)",
+            "comment" : "*Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'. (en)"
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "*Confounding factors (en)",
+            "description" : "*Description of any incidental factors that may have contributed to the physical examination findings. (en)"
+          },
+          "at0011" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "*Comment (en)",
+            "description" : "*Additional narrative about the overall physical examination findings not captured in other fields. (en)"
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "*Position (en)",
+            "description" : "*The body position of the subject during the examination. (en)"
           }
         },
         "de" : {
@@ -9703,12 +9616,6 @@
             "code" : "at0000",
             "text" : "Ergebnisse der körperlichen Untersuchung (5)",
             "description" : "Während der körperlichen Untersuchung eines Patienten beobachtete Befunde."
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Jedes Ereignis (2)",
-            "description" : "Ein Standardwert, ein spezifizierter Zeitpunkt oder ein Intervallereignis, welches explizit in einem Template oder während der Laufzeit definiert werden kann."
           }
         },
         "sv" : {
@@ -9717,12 +9624,6 @@
             "code" : "at0000",
             "text" : "Fysiska undersökningsfynd (5)",
             "description" : "Observerade fynd under en fysisk undersökning av mottagaren av hälso- och sjukvård."
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Ospecificerad händelse (2)",
-            "description" : "Standard, ospecificerad händelse eller intervallhändelse som kan definieras uttryckligen i en mall eller vid körning."
           }
         },
         "ca" : {
@@ -9731,12 +9632,6 @@
             "code" : "at0000",
             "text" : "Troballes de l'exploració física (5)",
             "description" : "Troballes observades durant l'examen físic del pacient."
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Qualsevol esdeveniment (2)",
-            "description" : "Esdeveniment predeterminat, en un interval de temps o moment no específic, que es pot definir de forma expressa en una plantilla o en temps d'execució."
           }
         }
       },
