@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=d7cf88fd-5324-4005-9f1b-d0f4f8e112ba)
+archetype (adl_version=1.4; uid=d7cf88fd-5324-4005-9f1b-d0f4f8e112ba)
 	openEHR-EHR-INSTRUCTION.service_request.v1
 
 concept
-	[at0000]	-- Service request
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -54,18 +55,27 @@ language
 				["email"] = <"mattijs.kuhlmann@nedap.com, joost.holslag@nedap.com">
 			>
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2009-12-08">
 		["name"] = <"Dr Ian McNicoll">
 		["organisation"] = <"Ocean Informatics, United Kingdom">
 		["email"] = <"ian.mcnicoll@oceaninformatics.com">
-		["date"] = <"2009-12-08">
 	>
+	lifecycle_state = <"in_development">
+	other_contributors = <"Fatima Almeida, Critical SW, Portugal","Tomas Alme, DIPS ASA, Norway","Vebjørn Arntzen, Oslo University Hospital, Norway","Koray Atalag, University of Auckland, New Zealand","Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)","Lars Bitsch-Larsen, Haukeland University hospital, Norway","Anita Bjørnnes, Helse Bergen, Norway","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","Einar Fosse, UNN HF, Norwegian Centre for Integrated Care and Telemedicine, Norway","Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom","Heather Grain, Llewelyn Grain Informatics, Australia","Knut Harboe, Stavanger Universitetssjukehus, Norway","Sam Heard, Ocean Informatics, Australia","Ingrid Heitmann, Oslo universitetssykehus HF, Norway","Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway","Anca Heyd, DIPS ASA, Norway","Hilde Hollås, DIPS AS, Norway","Evelyn Hovenga, EJSH Consulting, Australia","Lars Ivar Mehlum, Helse Bergen HF, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Shinji Kobayashi, Kyoto University, Japan","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Hallvard Lærum, Direktoratet for e-helse, Norway","Rose Mari Eikås, Helse Bergen, Norway","Ole Martin Sand, DIPS ASA, Norway","Hildegard McNicoll, freshEHR Clinical Informatics Ltd., United Kingdom","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Bjørn Næss, DIPS ASA, Norway","Andrej Orel, Marand d.o.o., Slovenia","Anne Pauline Anderssen, Helse Nord RHF, Norway","Pablo Pazos, CaboLabs.com Health Informatics, Uruguay","Rune Pedersen, Universitetssykehuset i Nord Norge, Norway","Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil","Line Silsand, Universitetssykehuset i Nord-Norge, Norway","Norwegian Review Summary, Nasjonal IKT HF, Norway","Line Sæle, Nasjonal IKT HF, Norway","Nyree Taylor, Ocean Informatics, Australia","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)","Richard Townley-O'Neill, Australian Digital Health Agency, Australia","Gro-Hilde Ulriksen, Norwegian center for ehealthresearch, Norway">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Allgemeines Konzept, die von einer gesundheitsbezogenen Dienstleistung oder Tätigkeit durch einen Arzt, eine Organisation oder eine Agentur erbracht werden soll.">
+			keywords = <"Anfrage","Bestellung","Dienst","Bereitstellung","Empfehlung","Überweisung">
 			use = <"Zur Erfassung einer Anforderung für eine gesundheitsbezogene Dienstleistung oder Aktivität, die von einem Kliniker, einer Abteilung oder einer Einrichtung erbracht werden soll.
 
 Dieser generische Archetyp wurde als Grundstruktur entwickelt, die als Basis für eine Vielzahl von Anfragen verwendet werden kann:
@@ -87,12 +97,16 @@ Beispiele für die Umsetzung:
 - Nehmen wir an, ein Kliniker ordnet einen Folgetermin in 6 Wochen an. Der \"Name des Dienstes\" ist \"Folgetermin\". Wenn der Arzt in der Benutzeroberfläche \"6 Wochen\" als vorgeschlagenen Zeitpunkt für den Termin eingibt, wird das klinische System das Datum in sechs Wochen im Datenelement \"Leistung fällig\" erfassen.
 
 In vielen Situationen wird es möglich sein, die Schritte, die im Rahmen der Durchführung dieser Anforderung erfolgen, mit dem entsprechenden generischen ACTION.service zu erfassen. Es wird jedoch viele Fälle geben, in denen der erforderliche ACTION-Archetyp sehr spezifisch für den Zweck ist, da die Datenanforderungen für die Aufzeichnung der Erbringung vieler gesundheitsbezogener Leistungen ganz spezielle Datenelemente, Aufzeichnungsmuster oder Schritte des Pfads erfordern. Zum Beispiel: ACTION.screening oder ACTION.health_education.">
-			keywords = <"Anfrage", "Bestellung", "Dienst", "Bereitstellung", "Empfehlung", "Überweisung">
 			misuse = <"Nicht zur Aufzeichnung von Details über die Aktivitäten, die dokumentieren, wie ein Auftrag oder eine Anfrage ausgeführt wurde - verwenden Sie zu diesem Zweck einen ACTION-Archetyp. Zum Beispiel den Archetyp ACTION.service oder einen zweckspezifischeren Archetyp aus der Klasse ACTION für diesen Zweck.">
+		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"*A generic framework for a request for a health-related service or activity to be delivered by a clinician, organisation or agency. (en)">
+			keywords = <"remiss","förfrågan","beställning","tjänst","tillhandahålla","patientremittering">
 			use = <"*Use to record a request for a health-related service or activity to be delivered by a clinician, organisation or agency.
 
 This generic archetype has been designed as a framework that can be used as the basis for a wide range of requests:
@@ -114,12 +128,13 @@ Implementation examples:
 - Consider a clinician ordering a follow-up appointment in 6 weeks. 'Follow-up appointment' will be the 'Service name'. If they enter '6 weeks' as the proposed timing for the appointment in the User Interface, the clinical system will record the date six weeks from today in the 'Service due' data element.
 
 In many situations, it will be possible to record the steps that occur as part of this request being carried out using the corresponding generic ACTION.service. However, there will be many occasions where the required ACTION archetype will be very specific for purpose, as the data requirements for recording provision of many health-related services will need quite unique data elements, recording patterns or pathway steps. For example: ACTION.screening or ACTION.health_education. (en)">
-			keywords = <"remiss", "förfrågan", "beställning", "tjänst", "tillhandahålla", "patientremittering">
 			misuse = <"*Not to be used to record details about the activities that document how an order or request has been carried out - use an ACTION archetype for this purpose. For example ACTION.service archetype or a more purpose-specific archetype from the ACTION class for this purpose. (en)">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"*A generic framework for a request for a health-related service or activity to be delivered by a clinician, organisation or agency. (en)">
+			keywords = <"rekvisisjon","bestilling","foreskriving","tjeneste","tjenesteyter","rekvirere","bestille","anmodning","forespørre","forespørsel","anmode","tilsyn">
+			copyright = <"© openEHR Foundation, Nasjonal IKT HF">
 			use = <"*Use to record a request for a health-related service or activity to be delivered by a clinician, organisation or agency.
 
 This generic archetype has been designed as a framework that can be used as the basis for a wide range of requests:
@@ -141,13 +156,12 @@ Implementation examples:
 - Consider a clinician ordering a follow-up appointment in 6 weeks. 'Follow-up appointment' will be the 'Service name'. If they enter '6 weeks' as the proposed timing for the appointment in the User Interface, the clinical system will record the date six weeks from today in the 'Service due' data element.
 
 In many situations, it will be possible to record the steps that occur as part of this request being carried out using the corresponding generic ACTION.service. However, there will be many occasions where the required ACTION archetype will be very specific for purpose, as the data requirements for recording provision of many health-related services will need quite unique data elements, recording patterns or pathway steps. For example: ACTION.screening or ACTION.health_education. (en)">
-			keywords = <"rekvisisjon", "bestilling", "foreskriving", "tjeneste", "tjenesteyter", "rekvirere", "bestille", "anmodning", "forespørre", "forespørsel", "anmode", "tilsyn">
 			misuse = <"*Not to be used to record details about the activities that document how an order or request has been carried out - use an ACTION archetype for this purpose. For example ACTION.service archetype or a more purpose-specific archetype from the ACTION class for this purpose. (en)">
-			copyright = <"© openEHR Foundation, Nasjonal IKT HF">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			purpose = <"*A generic framework for a request for a health-related service or activity to be delivered by a clinician, organisation or agency. (en)">
+			keywords = <"solicitação","requisição","ordem","pedido","serviço","referência","encaminhamento">
 			use = <"*Use to record a request for a health-related service or activity to be delivered by a clinician, organisation or agency.
 
 This generic archetype has been designed as a framework that can be used as the basis for a wide range of requests:
@@ -169,12 +183,13 @@ Implementation examples:
 - Consider a clinician ordering a follow-up appointment in 6 weeks. 'Follow-up appointment' will be the 'Service name'. If they enter '6 weeks' as the proposed timing for the appointment in the User Interface, the clinical system will record the date six weeks from today in the 'Service due' data element.
 
 In many situations, it will be possible to record the steps that occur as part of this request being carried out using the corresponding generic ACTION.service. However, there will be many occasions where the required ACTION archetype will be very specific for purpose, as the data requirements for recording provision of many health-related services will need quite unique data elements, recording patterns or pathway steps. For example: ACTION.screening or ACTION.health_education. (en)">
-			keywords = <"solicitação", "requisição", "ordem", "pedido", "serviço", "referência", "encaminhamento">
 			misuse = <"*Not to be used to record details about the activities that document how an order or request has been carried out - use an ACTION archetype for this purpose. For example ACTION.service archetype or a more purpose-specific archetype from the ACTION class for this purpose. (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"A generic framework for a request for a health-related service or activity to be delivered by a clinician, organisation or agency.">
+			keywords = <"request","order","service","provide","referral">
+			copyright = <"© openEHR Foundation, Nasjonal IKT HF">
 			use = <"Use to record a request for a health-related service or activity to be delivered by a clinician, organisation or agency.
 
 This generic archetype has been designed as a framework that can be used as the basis for a wide range of requests:
@@ -196,13 +211,12 @@ Implementation examples:
 - Consider a clinician ordering a follow-up appointment in 6 weeks. 'Follow-up appointment' will be the 'Service name'. If they enter '6 weeks' as the proposed timing for the appointment in the User Interface, the clinical system will record the date six weeks from today in the 'Service due' data element.
 
 In many situations, it will be possible to record the steps that occur as part of this request being carried out using the corresponding generic ACTION.service. However, there will be many occasions where the required ACTION archetype will be very specific for purpose, as the data requirements for recording provision of many health-related services will need quite unique data elements, recording patterns or pathway steps. For example: ACTION.screening or ACTION.health_education.">
-			keywords = <"request", "order", "service", "provide", "referral">
 			misuse = <"Not to be used to record details about the activities that document how an order or request has been carried out - use an ACTION archetype for this purpose. For example ACTION.service archetype or a more purpose-specific archetype from the ACTION class for this purpose.">
-			copyright = <"© openEHR Foundation, Nasjonal IKT HF">
 		>
 		["it"] = <
 			language = <[ISO_639-1::it]>
 			purpose = <"*A generic framework for a request for a health-related service or activity to be delivered by a clinician, organisation or agency. (en)">
+			keywords = <"richiesta, ordine, servizio, fornire, indirizzamento", ...>
 			use = <"*Use to record a request for a health-related service or activity to be delivered by a clinician, organisation or agency.
 
 This generic archetype has been designed as a framework that can be used as the basis for a wide range of requests:
@@ -224,12 +238,12 @@ Implementation examples:
 - Consider a clinician ordering a follow-up appointment in 6 weeks. 'Follow-up appointment' will be the 'Service name'. If they enter '6 weeks' as the proposed timing for the appointment in the User Interface, the clinical system will record the date six weeks from today in the 'Service due' data element.
 
 In many situations, it will be possible to record the steps that occur as part of this request being carried out using the corresponding generic ACTION.service. However, there will be many occasions where the required ACTION archetype will be very specific for purpose, as the data requirements for recording provision of many health-related services will need quite unique data elements, recording patterns or pathway steps. For example: ACTION.screening or ACTION.health_education. (en)">
-			keywords = <"richiesta, ordine, servizio, fornire, indirizzamento", ...>
 			misuse = <"*Not to be used to record details about the activities that document how an order or request has been carried out - use an ACTION archetype for this purpose. For example ACTION.service archetype or a more purpose-specific archetype from the ACTION class for this purpose. (en)">
 		>
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
 			purpose = <"*A generic framework for a request for a health-related service or activity to be delivered by a clinician, organisation or agency. (en)">
+			keywords = <"verzoek","opdracht","dienst","voorschrift","verwijzing">
 			use = <"*Use to record a request for a health-related service or activity to be delivered by a clinician, organisation or agency.
 
 This generic archetype has been designed as a framework that can be used as the basis for a wide range of requests:
@@ -251,12 +265,9 @@ Implementation examples:
 - Consider a clinician ordering a follow-up appointment in 6 weeks. 'Follow-up appointment' will be the 'Service name'. If they enter '6 weeks' as the proposed timing for the appointment in the User Interface, the clinical system will record the date six weeks from today in the 'Service due' data element.
 
 In many situations, it will be possible to record the steps that occur as part of this request being carried out using the corresponding generic ACTION.service. However, there will be many occasions where the required ACTION archetype will be very specific for purpose, as the data requirements for recording provision of many health-related services will need quite unique data elements, recording patterns or pathway steps. For example: ACTION.screening or ACTION.health_education. (en)">
-			keywords = <"verzoek", "opdracht", "dienst", "voorschrift", "verwijzing">
 			misuse = <"*Not to be used to record details about the activities that document how an order or request has been carried out - use an ACTION archetype for this purpose. For example ACTION.service archetype or a more purpose-specific archetype from the ACTION class for this purpose. (en)">
 		>
 	>
-	lifecycle_state = <"in_development">
-	other_contributors = <"Fatima Almeida, Critical SW, Portugal", "Tomas Alme, DIPS ASA, Norway", "Vebjørn Arntzen, Oslo University Hospital, Norway", "Koray Atalag, University of Auckland, New Zealand", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "Lars Bitsch-Larsen, Haukeland University hospital, Norway", "Anita Bjørnnes, Helse Bergen, Norway", "Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway", "Einar Fosse, UNN HF, Norwegian Centre for Integrated Care and Telemedicine, Norway", "Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom", "Heather Grain, Llewelyn Grain Informatics, Australia", "Knut Harboe, Stavanger Universitetssjukehus, Norway", "Sam Heard, Ocean Informatics, Australia", "Ingrid Heitmann, Oslo universitetssykehus HF, Norway", "Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway", "Anca Heyd, DIPS ASA, Norway", "Hilde Hollås, DIPS AS, Norway", "Evelyn Hovenga, EJSH Consulting, Australia", "Lars Ivar Mehlum, Helse Bergen HF, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Shinji Kobayashi, Kyoto University, Japan", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Hallvard Lærum, Direktoratet for e-helse, Norway", "Rose Mari Eikås, Helse Bergen, Norway", "Ole Martin Sand, DIPS ASA, Norway", "Hildegard McNicoll, freshEHR Clinical Informatics Ltd., United Kingdom", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Bjørn Næss, DIPS ASA, Norway", "Andrej Orel, Marand d.o.o., Slovenia", "Anne Pauline Anderssen, Helse Nord RHF, Norway", "Pablo Pazos, CaboLabs.com Health Informatics, Uruguay", "Rune Pedersen, Universitetssykehuset i Nord Norge, Norway", "Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil", "Line Silsand, Universitetssykehuset i Nord-Norge, Norway", "Norwegian Review Summary, Nasjonal IKT HF, Norway", "Line Sæle, Nasjonal IKT HF, Norway", "Nyree Taylor, Ocean Informatics, Australia", "John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)", "Richard Townley-O'Neill, Australian Digital Health Agency, Australia", "Gro-Hilde Ulriksen, Norwegian center for ehealthresearch, Norway">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -264,7 +275,7 @@ In many situations, it will be possible to record the steps that occur as part o
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"552568349490A2FA815607DD29B53F55">
+		["MD5-CAM-1.0.1"] = <"0a8cf0aa5f8884ff39d6f31ee4f87803">
 		["build_uid"] = <"424d508f-afca-44c2-97fc-b45116d9bef4">
 		["revision"] = <"1.1.3-alpha">
 	>
@@ -437,7 +448,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
@@ -1570,6 +1580,172 @@ ontology
 				>
 				["at0152"] = <
 					text = <"Klinische indicatie">
+					description = <"*The symptom, sign or diagnosis that necessitates the requested service. (en)">
+					comment = <"*Coding of the 'Clinical indication' with an external terminology is recommended, if available.  This data element allows multiple occurrences to enable the user to record a multiple responses, if required. (en)">
+				>
+				["at0153"] = <
+					text = <"*Order detail (en)">
+					description = <"*Additional details and instructions about how the services are to be delivered. (en)">
+					comment = <"*Coding of the 'Order detail' with an external terminology is desirable, if available. This data element allows multiple occurrences to enable the user to record a multiple responses, if required. (en)">
+				>
+				["at0154"] = <
+					text = <"*Clinical context (en)">
+					description = <"*Narrative information about the individual and their situation, providing relevant context for the request. (en)">
+				>
+				["at0155"] = <
+					text = <"*Urgent contact (en)">
+					description = <"*Details about the designated contact person or organisation and preferred mode of contact for urgent or emergency notifications related to this request. (en)">
+					comment = <"*For example: if the outcome of the request requires an urgent or emergency response by the requester. (en)">
+				>
+				["at0156"] = <
+					text = <"*Billing guidance (en)">
+					description = <"*A recommendation from the requester to the receiver about the method of payment for the service. (en)">
+					comment = <"*For example: 'Private'; 'Government insurance scheme'; or 'Private insurance'.  (en)">
+				>
+				["at0157"] = <
+					text = <"*Responsible payer (en)">
+					description = <"*Details about the individual or organisation who will assume responsibility for payment of the service. (en)">
+					comment = <"*This data element will only be used if a known payer has been identified. For example: an individual, such as a parent on behalf of a child; or an organisation such as a workplace or government insurance scheme. (en)">
+				>
+				["at0158"] = <
+					text = <"*Eligibility guidance (en)">
+					description = <"*Advice from the requester to the receiver about the individual's eligibility for the requested service. (en)">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Service request (en)">
+					description = <"*Request for a health-related service or activity to be delivered by a clinician, organisation or agency. (en)">
+				>
+				["at0001"] = <
+					text = <"*Current Activity (en)">
+					description = <"*Current Activity. (en)">
+				>
+				["at0008"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0009"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0010"] = <
+					text = <"*Requester order identifier (en)">
+					description = <"*The local identifier assigned by the requesting clinical system. (en)">
+					comment = <"*Usually equivalent to the HL7 Placer Order Identifier. (en)">
+				>
+				["at0011"] = <
+					text = <"*Receiver order identifier (en)">
+					description = <"*The local identifier assigned to the request by the clinician or organisation receiving the request for service. (en)">
+					comment = <"*Usually equivalent to the HL7 Filler Order Identifier. (en)">
+				>
+				["at0040"] = <
+					text = <"*Service due (en)">
+					description = <"*The date/time or description about timing for provision of the requested service/s. (en)">
+					comment = <"*This data element allows for recording of the timing for the service/s, either as a date and time, an interval of date and time, or a text descriptor. In practice, clinicians will often think in terms of ordering services as relative or approximate timing, for example: 'next available', or  in '3 months'. As clinical systems need more exact parameters to operate on, this '3 months' will usually be converted to an exact date 3 months from the date of recording and stored using this data element. If complex timing or sequences of timings are required, use the CLUSTER.service_direction archetype within the 'Complex timing' SLOT and this data element becomes redundant. (en)">
+				>
+				["at0062"] = <
+					text = <"*Reason for request (en)">
+					description = <"*The specific problem needing attention or the clinical question that requires investigation. (en)">
+					comment = <"*Coding of the 'Reason for request' with an external terminology is desirable, if available. This data element allows multiple occurrences to enable the user to record a multiple responses, if required. (en)">
+				>
+				["at0064"] = <
+					text = <"*Reason description (en)">
+					description = <"*Narrative description about the issue or clinical query that needs resolution. (en)">
+				>
+				["at0065"] = <
+					text = <"*Intent (en)">
+					description = <"*Description of the intended outcome of the request. (en)">
+					comment = <"*Coding of the 'Intent' with an external terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record a multiple responses, if required. (en)">
+				>
+				["at0068"] = <
+					text = <"*Urgency (en)">
+					description = <"*Urgency of the request for service. (en)">
+					comment = <"*Specific definitions of emergency and urgent will vary between clinical contexts, clinical systems and the nature of the request itself, so have not been defined in this archetype. More precise timing requirements should be specified using the 'Service due' data element or the CLUSTER.service_direction archetype within the 'Complex timing' SLOT. (en)">
+				>
+				["at0076"] = <
+					text = <"*Supplementary information (en)">
+					description = <"*Supplementary information will be following request. (en)">
+					comment = <"*Record as TRUE if additional information has been identified and will be forwarded when available. For example: pending test results. (en)">
+				>
+				["at0078"] = <
+					text = <"*Information description (en)">
+					description = <"*Description of the supplementary information. (en)">
+				>
+				["at0112"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0116"] = <
+					text = <"*Patient requirements (en)">
+					description = <"*Language, transport or other personal requirements to support the patient's attendance or participation in provision of the service. (en)">
+				>
+				["at0121"] = <
+					text = <"*Service name (en)">
+					description = <"*The name of the service/s requested. (en)">
+					comment = <"*Coding of the 'Service name' with an external terminology is strongly recommended, if available. This data element allows multiple occurrences to enable the user to record a multiple services as part of a single request, if required. (en)">
+				>
+				["at0127"] = <
+					text = <"*Request status (en)">
+					description = <"*The status of the request for service as indicated by the requester. (en)">
+					comment = <"*Status is used to denote whether this is the initial request, or a follow-up request to change or provide supplementary information. Coding with a terminology is preferred, where possible. (en)">
+				>
+				["at0128"] = <
+					text = <"*Distribution list (en)">
+					description = <"*Details of additional clinicians, organisations or agencies who require copies of any communication. (en)">
+				>
+				["at0132"] = <
+					text = <"*Specific details (en)">
+					description = <"*Additional detail about the service requested. (en)">
+				>
+				["at0135"] = <
+					text = <"*Description (en)">
+					description = <"*Narrative description about the service requested. (en)">
+					comment = <"*This data point should be used to describe the named service in more detail, including how it should be delivered, patient concerns and issues that might be encountered in delivering the service. (en)">
+				>
+				["at0136"] = <
+					text = <"*Emergency (en)">
+					description = <"*The request requires immediate attention. (en)">
+				>
+				["at0137"] = <
+					text = <"*Urgent (en)">
+					description = <"*The request requires prioritised attention. (en)">
+				>
+				["at0138"] = <
+					text = <"*Routine (en)">
+					description = <"*The request does not require prioritised scheduling. (en)">
+				>
+				["at0141"] = <
+					text = <"*Requester (en)">
+					description = <"*Details about the clinician or organisation requesting the service. (en)">
+				>
+				["at0142"] = <
+					text = <"*Receiver (en)">
+					description = <"*Details about the clinician or organisation receiving the request for service. (en)">
+				>
+				["at0148"] = <
+					text = <"*Service type (en)">
+					description = <"*Category of service requested. (en)">
+					comment = <"*Coding of the 'Service type' with an external terminology is desirable, if available. If the 'Service name' was coded, it is possible for this data point to be derived from the code. (en)">
+				>
+				["at0149"] = <
+					text = <"*Supporting information (en)">
+					description = <"*Digital document, image, video or diagram supplied as additional information to support or inform the request. (en)">
+				>
+				["at0150"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the service request not captured in other fields. (en)">
+				>
+				["at0151"] = <
+					text = <"*Complex timing (en)">
+					description = <"*Details about a complex service request requiring a sequence of timings. (en)">
+					comment = <"*For example: 'hourly vital signs observations for 4 hours, then 4 hourly for 20 hours' or 'every third Wednesday for 3 visits' or 'Day 14-16 of the menstrual cycle'. If complex timing or sequences of timings are required using the CLUSTER.service_direction archetype in this SLOT, the 'Service due' data element becomes redundant. (en)">
+				>
+				["at0152"] = <
+					text = <"*Clinical indication (en)">
 					description = <"*The symptom, sign or diagnosis that necessitates the requested service. (en)">
 					comment = <"*Coding of the 'Clinical indication' with an external terminology is recommended, if available.  This data element allows multiple occurrences to enable the user to record a multiple responses, if required. (en)">
 				>
