@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "1ee1f3f9a8ddb40ed9ffc78dd85de498",
+      "MD5-CAM-1.0.1" : "0ecb1c89df3ad0f53b49f84de05e6a5d",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -380,7 +380,85 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "174032a2558bedc57f66dd6478db8921"
       },
-      "details" : { }
+      "details" : {
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å støtte registreringen av en oversikt eller oppsummering av en bekreftet graviditet og utfall, inkludert svangerskapsperioden, fødselen og den umiddelbare postpartum perioden.",
+          "keywords" : [ "graviditet", "svangerskap", "foster", "spedbarn", "neonatal", "forløsning", "befruktning", "termin", "termindato", "forventet", "fødsel", "baby", "babyer" ],
+          "use" : "*Use to record an overview or summary record of an identified pregnancy and outcome, including the antenatal period, labor, birth and the immediate postnatal period. \r\n\r\nDuring an active pregnancy, this archetype supports the evolution of a persistent pregnancy-related health summary record, with information gradually accumulated or updated, throughout the duration of the pregnancy, labour, birth and the immediate postnatal period. As the data is committed to the persistent health record, the date of the update is also recorded in the 'Last Updated' data element in Protocol, to ensure that if this pregnancy summary is taken out of context of the health record for other purposes, such as data exchange, the date of the latest update is kept with the clinical data.\r\n\r\nAfter birth, this summary record can be used to share essential information with other healthcare providers about the pregnancy, labour, birth and immediate postnatal period. \r\n\r\nEach completed pregnancy summary saved to the health record can be re-used to populate the Past Pregnancy History details in subsequent pregnancy records.\r\n\r\nIn situations where completed pregnancy summaries are not available for each previous pregnancy, this archetype can also be used to record a relevant subset of information that can be used to populate the Past Pregnancy History details with new or active pregnancy records. (en)",
+          "misuse" : "Brukes ikke for å dokumentere event-based informasjon i løpet av graviditeten, fødsel og den umiddelbare postpartum perioden. Disse vil bli dokumentert ved bruk av OBSERVATION arketyper, for eksempel informasjon som er relatert til historikk og undersøkelser ved svangerskapskontroller og under fødselen.\r\n\r\nBrukes ikke for å dokumentere sammenfattet informasjon om kvinnens obstetriske historie - bruk EVALUATION.obstetric_summary.\r\n\r\nBrukes ikke for å dokumentere detaljert informasjon om kvinnens menstruasjonssyklus - bruk OBSERVATION.menstrual_cycle.\r\n\r\nBrukes ikke for å dokumentere detaljert informasjon om spedbarns måltider/mating - en seperat arketype vil bli brukt til dette formålet.\r\n\r\nBrukes ikke for å dokumentere en generell sammenfattet menstruasjonshistorikk eller menstruasjonsdagbok - seperate arketyper vil bli brukt til dette formålet.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "*To support the recording of an overview or summary record of an identified pregnancy and outcome, including the antenatal period, labor, birth and the immediate postnatal period. (en)",
+          "keywords" : [ "gravidez", "feto", "feto", "infantil", "neonato", "parto", "concepção", "aguardado", "data", "esperado", "trabalho de parto", "parto", "nascimento", "bebê", "bebês", "data provável do parto", "data prevista do nascimento" ],
+          "use" : "*Use to record an overview or summary record of an identified pregnancy and outcome, including the antenatal period, labor, birth and the immediate postnatal period. \r\n\r\nDuring an active pregnancy, this archetype supports the evolution of a persistent pregnancy-related health summary record, with information gradually accumulated or updated, throughout the duration of the pregnancy, labour, birth and the immediate postnatal period. As the data is committed to the persistent health record, the date of the update is also recorded in the 'Last Updated' data element in Protocol, to ensure that if this pregnancy summary is taken out of context of the health record for other purposes, such as data exchange, the date of the latest update is kept with the clinical data.\r\n\r\nAfter birth, this summary record can be used to share essential information with other healthcare providers about the pregnancy, labour, birth and immediate postnatal period. \r\n\r\nEach completed pregnancy summary saved to the health record can be re-used to populate the Past Pregnancy History details in subsequent pregnancy records.\r\n\r\nIn situations where completed pregnancy summaries are not available for each previous pregnancy, this archetype can also be used to record a relevant subset of information that can be used to populate the Past Pregnancy History details with new or active pregnancy records. (en)",
+          "misuse" : "Não deve ser utilizado para gravar informação baseada em eventos durante a gravidez, parto, nascimento e período pós-natal imediato. Estes serão gravados utilizando arquétipos de OBSERVAÇÃO - por exemplo, a informação relacionada com a história e exame durante consultas pré-natais ou durante o parto.\r\n\r\nNão deve ser usado para gravar resumo de informações sobre a história obstétrica de uma mulher - usar EVALUATION.obstetric_summary.\r\n\r\nNão deve ser usado para gravar informações detalhadas sobre o ciclo menstrual de uma mulher - usar OBSERVATION.menstrual_cycle.\r\n\r\nNão deve ser usado para registrar informações detalhadas sobre a alimentação infantil - um arquétipo separado deverá ser utilizado.\r\n\r\nNão deve ser usado para registrar um resumo ou um diário da história menstrual (geral ou diária) - um arquétipo separado deverá ser utilizado.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To support the recording of an overview or summary record of an identified pregnancy including the antenatal period, labor, birth and the immediate postnatal period.",
+          "keywords" : [ "pregnancy", "fetus", "foetus", "infant", "neonate", "delivery", "conception", "due", "date", "expected", "labor", "labour", "birth", "baby", "babies", "EDD", "EDB" ],
+          "use" : "Use to record an overview or summary record of an identified pregnancy including the antenatal period, labor, birth and the immediate postnatal period. \r\n\r\nThis information in this archetype should ideally be only entered once, however there are some situations where it is useful to duplicate data elements. For example, within the context of a pregnancy summary it is helpful to include Apgar Score totals, however the entire detail of the Apgar Score is captured using a purpose built Apgar archetype. In this situation applications can ensure that there is not duplicate data entry required on behalf of the user but that these data elements within the summary are directly derived from the actual Apgar Score data.\r\n\r\nDuring an active pregnancy, this archetype supports the evolution of a persistent pregnancy-related health summary record, with information gradually accumulated or updated, throughout the duration of the pregnancy, labor, birth and the immediate postnatal period. As the data is committed to the persistent health record, the date of the update is also recorded in the 'Last Updated' data element in Protocol, to ensure that if this pregnancy summary is taken out of context of the health record for other purposes, such as data exchange, the date of latest update is kept with the clinical data.\r\n\r\nAfter birth, this summary record can be used as the basis for sharing key information with other healthcare providers about the pregnancy, labor, birth and immediate postnatal period. \r\n\r\nEach completed pregnancy summary saved to the health record can be re-used to populate the Past Pregnancy History details in subsequent pregnancy records.\r\n\r\nIn situations where completed pregnancy summaries are not available for each previous pregnancy, this archetype can also be used to record a relevant subset of information that can be used to populate the Past Pregnancy History details with new or active pregnancy records.",
+          "misuse" : "Not to be used to record event-based information during the pregnancy, labor, birth and immediate postnatal period. These will be recorded using OBSERVATION archetypes - for example, the information related to history & examination during antenatal visits or during labour.\r\n\r\nNot to be used to record summary information about a woman's Obstetric history - use EVALUATION.obstetric_summary.\r\n\r\nNot to be used to record detailed information about a woman's Menstrual Cycle - use OBSERVATION.menstrual_cycle.\r\n\r\nNot to be used to record detailed information about infant feeding - a separate archetype will be used.\r\n\r\nNot to be used to record a general menstrual history summary or diary - separate archetypes will be used.",
+          "copyright" : "© openEHR Foundation, National E-Health Transition Authority",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-co" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-co"
+          },
+          "purpose" : "*To support the recording of an overview or summary record of an identified pregnancy and outcome, including the antenatal period, labor, birth and the immediate postnatal period. (en)",
+          "keywords" : [ "Embarazo", "Feto", "Infantil", "Recién nacido", "Entrega", "Concepción", "Trabajo de parto", "Labor de parto", "Nacimiento", "Bebé", "Neonato", "Fecha probable de parto", "Fecha Última Mestruación", "Fecha de Nacimiento" ],
+          "use" : "*Use to record an overview or summary record of an identified pregnancy and outcome, including the antenatal period, labor, birth and the immediate postnatal period. \r\n\r\nDuring an active pregnancy, this archetype supports the evolution of a persistent pregnancy-related health summary record, with information gradually accumulated or updated, throughout the duration of the pregnancy, labour, birth and the immediate postnatal period. As the data is committed to the persistent health record, the date of the update is also recorded in the 'Last Updated' data element in Protocol, to ensure that if this pregnancy summary is taken out of context of the health record for other purposes, such as data exchange, the date of the latest update is kept with the clinical data.\r\n\r\nAfter birth, this summary record can be used to share essential information with other healthcare providers about the pregnancy, labour, birth and immediate postnatal period. \r\n\r\nEach completed pregnancy summary saved to the health record can be re-used to populate the Past Pregnancy History details in subsequent pregnancy records.\r\n\r\nIn situations where completed pregnancy summaries are not available for each previous pregnancy, this archetype can also be used to record a relevant subset of information that can be used to populate the Past Pregnancy History details with new or active pregnancy records. (en)",
+          "misuse" : "No debe utilizarse para registrar información de eventos durante el embarazo, trabajo de parto y el período postnatal inmediato. Estos se registraran utilizando arquetipos de observación - por ejemplo, la información relacionada con la historia y examen durante las visitas prenatales o controles durante el parto.\r\n\r\nNo debe utilizarse para registrar la información de resumen sobre la historia obstétrica de la mujer - utilizar EVALUATION.obstetric_summary.\r\n\r\nNo debe utilizarse para registrar la información detallada sobre el ciclo menstrual de una mujer - OBSERVATION.menstrual_cycle uso.\r\n\r\nNo debe utilizarse para registrar información detallada acerca de la alimentación infantil - se utiliza un arquetipo diferente.\r\n\r\nNo debe utilizarse para registrar un resumen general de la historia menstrual o un diario - se utilizarán arquetipos distintos.\r\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.pregnancy_summary.v0",
     "differential" : true,
@@ -500,7 +578,7 @@
                       "patternedConstraint" : "PWD",
                       "constraint" : [ {
                         "lower" : "P0D",
-                        "upper" : "P52W",
+                        "upper" : "P44W",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
                         "lowerUnbounded" : false,
@@ -517,16 +595,7 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0174.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -667,10 +736,27 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "local"
+                        "value" : "local_terms"
                       },
-                      "constraint" : [ "ac0.3" ],
-                      "selectedTerminologies" : [ ]
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "L1",
+                        "value" : "Laceração 1º grau"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "L2",
+                        "value" : "Laceração 2º grau"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "L3/4",
+                        "value" : "Laceração 3º/4º grau"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "LC",
+                        "value" : "Laceração do Colo"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -769,12 +855,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.3",
-            "description" : ""
           }
         },
         "pt-br" : {
@@ -788,12 +868,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
-            "description" : ""
-          },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
             "description" : ""
           }
         },
@@ -809,12 +883,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
           }
         },
         "nb" : {
@@ -828,12 +896,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
-            "description" : ""
-          },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
             "description" : ""
           }
         },
@@ -869,12 +931,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
           }
         }
       },
@@ -895,6 +951,36 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
           "members" : [ "at0153", "at0154", "at0155", "at0156" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0153", "at0154", "at0155", "at0156" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "ac0.4" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "ac0.4" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "ac0.4" ]
         }
       }
     },
