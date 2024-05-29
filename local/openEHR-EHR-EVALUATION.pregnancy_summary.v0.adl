@@ -168,7 +168,7 @@ Queensland Government, Department of Health. Pregnancy Health Record. SW071 - v1
 		["original_namespace"] = <"openEHR Foundation">
 		["original_publisher"] = <"org.openehr">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"174032a2558bedc57f66dd6478db8921">
+		["MD5-CAM-1.0.1"] = <"7885eb7b9426d0973eb3f9402d7acb4e">
 		["build_uid"] = <"4845f1f1-614b-4ed4-b692-a454c7b33cb9">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -2049,11 +2049,11 @@ ontology
 					description = <"*It is not known which side the baby's back was positioned by onset of labour. (en)">
 				>
 				["at0153"] = <
-					text = <"*First degree vaginal tear (en)">
+					text = <"Laceração 1º grau">
 					description = <"*Involve just the skin of the vaginal opening and perineum. (en)">
 				>
 				["at0154"] = <
-					text = <"*Second degree vaginal tear (en)">
+					text = <"Laceração 2º grau">
 					description = <"*Involve the skin and muscle of the perineum and might extend deep into the vagina. (en)">
 				>
 				["at0155"] = <
@@ -2088,7 +2088,7 @@ ontology
 					comment = <"*For example: findings from examination of the placenta. (en)">
 				>
 				["at0163"] = <
-					text = <"*Infant outcome (en)">
+					text = <"Resultado do recém-nascido">
 					description = <"*Outcome of the pregnancy for the identified infant or foetus. (en)">
 					comment = <"*This data element is only used to record the outcome of a pregnancy for a single infant or foetus. For example: 'Live birth'; or 'Stillbirth'. Coding of the 'Infant outcome' with an external terminology is recommended.  If it is necessary to record outcome information for the pregnancy as a whole use the 'Early pregnancy outcome' data element instead. This data element is redundant if 'Early pregnancy outcome' has been recorded. (en)">
 				>
