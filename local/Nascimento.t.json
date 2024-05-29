@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "19.0.0",
+      "sem_ver" : "20.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b4d7847a15b5d17812d14faff833bf56",
+      "MD5-CAM-1.0.1" : "00ebcf339a9401ecac0033edcb4f51e7",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -845,7 +845,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0065",
+              "nodeId" : "at0065.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
@@ -1049,6 +1049,13 @@
             "text" : "Data/hora da complicação",
             "description" : "Data de início da complicação, identificada por um profissional de saúde.",
             "comment" : "*If only a partial date is available, this is acceptable. (en)"
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Complicações do parto",
+            "description" : "Detalhes sobre complicações da gravidez ou complicações no nascimento que afectam a mãe.",
+            "comment" : "*Maternal complications recorded within this maternal 'Pregnancy summary' archetype may be used to populate EVALUATION.problem_diagnosis or ACTION.procedure archetypes as part of a maternal Problem list, or similar. Alternatively these complications may be derived from relevant entries previously documented in the maternal health record using EVALUATION.problem_diagnosis or ACTION.procedure archetypes. (en)"
           }
         }
       },
