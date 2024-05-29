@@ -45,7 +45,7 @@ This archetype has been designed to be nested:
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e75777d0da44ddee3100ff237dadbc6e">
+		["MD5-CAM-1.0.1"] = <"b64076953ec88fe54be7d052d4c8bc51">
 		["build_uid"] = <"2ebb9b84-bbf3-4eb3-add2-b927f029496d">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -234,7 +234,7 @@ ontology
 					comment = <"*For example: vaginal; forceps rotation; or Caesarean Section. (en)">
 				>
 				["at0006"] = <
-					text = <"*Unassisted (en)">
+					text = <"Eutócico">
 					description = <"*Normal, non-instrumental vaginal delivery. (en)">
 				>
 				["at0007"] = <
@@ -242,12 +242,12 @@ ontology
 					description = <"*Vaginal delivery assisted by maneuvers in the delivery of the remainder of the body, arms, and head. (en)">
 				>
 				["at0008"] = <
-					text = <"*Total breech extraction (en)">
-					description = <"*Vaginal delivery, by which the fetal feet are grasped, and the entire fetus is extracted. (en)">
+					text = <"Grande extração de pelve">
+					description = <"">
 				>
 				["at0009"] = <
-					text = <"*Vacuum extraction (en)">
-					description = <"*Vaginal delivery assisted by the use of vacuum extraction. (en)">
+					text = <"Ventosa">
+					description = <"">
 				>
 				["at0010"] = <
 					text = <"*Vacuum extraction with rotation (en)">
@@ -262,8 +262,8 @@ ontology
 					description = <"*Vaginal delivery assisted by the use of low forceps. (en)">
 				>
 				["at0013"] = <
-					text = <"*High forceps (en)">
-					description = <"*Vaginal delivery assisted by the use of high forceps. (en)">
+					text = <"Fórceps">
+					description = <"">
 				>
 				["at0014"] = <
 					text = <"*High forceps with rotation (en)">
