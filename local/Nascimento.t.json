@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0ecb1c89df3ad0f53b49f84de05e6a5d",
+      "MD5-CAM-1.0.1" : "4e507fc4804facd487f2d7e6b90e39df",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -378,7 +378,8 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "174032a2558bedc57f66dd6478db8921"
+        "PARENT:MD5-CAM-1.0.1" : "174032a2558bedc57f66dd6478db8921",
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
         "pt-pt" : {
@@ -831,6 +832,62 @@
               "occurrences" : "0..0",
               "nodeId" : "at0175.1",
               "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0065",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0066.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "SNOMED"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SNOMED" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SNOMED",
+                            "code" : "89700002",
+                            "value" : "Distocia de ombros"
+                          }, {
+                            "terminologyId" : "SNOMED",
+                            "code" : "15504009",
+                            "value" : "Rotura uterina"
+                          }, {
+                            "terminologyId" : "SNOMED",
+                            "code" : "270500004",
+                            "value" : "Prolapso do cordão"
+                          }, {
+                            "terminologyId" : "SNOMED",
+                            "code" : "74964007",
+                            "value" : "Outras"
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
