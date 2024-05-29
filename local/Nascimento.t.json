@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "12.0.0",
+      "sem_ver" : "13.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "47d02f63597ebc9eff193563f26186d8",
+      "MD5-CAM-1.0.1" : "dc7b5e4995cade6a3ad9d7f3a5ee3cba",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -5672,6 +5672,66 @@
           } ],
           "attributeTuples" : [ ]
         } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "description",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "defaultValue" : {
+                    "defining_code" : {
+                      "terminology_id" : {
+                        "value" : "local_terms",
+                        "@type" : "TERMINOLOGY_ID"
+                      },
+                      "code_string" : "89666000",
+                      "@type" : "CODE_PHRASE"
+                    },
+                    "value" : "Reanimação cardiopulmonar",
+                    "@type" : "DV_CODED_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "89666000",
+                        "value" : "Reanimação cardiopulmonar"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
       } ],
       "attributeTuples" : [ ]
     },
@@ -5688,6 +5748,12 @@
         "es" : { },
         "de" : { },
         "pt-pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Reanimação",
+            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+          },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
