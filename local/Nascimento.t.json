@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "43.0.0",
+      "sem_ver" : "44.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6faa0c4d74ec3c74ce105826fd35771b",
+      "MD5-CAM-1.0.1" : "110817f405b31a81577cc3bc6d5e8d24",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -29729,6 +29729,13 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0006.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
@@ -30288,44 +30295,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0.0.3.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "local_terms"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "Normal",
-                    "value" : "Normal"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "Anormal",
-                    "value" : "Anormal"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0.0.2.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -30348,11 +30317,11 @@
                   "selectedTerminologies" : [ "local_terms" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
-                    "code" : "Completa",
+                    "code" : "249170006",
                     "value" : "Completa"
                   }, {
                     "terminologyId" : "local_terms",
-                    "code" : "Incompleta",
+                    "code" : "268479002",
                     "value" : "Incompleta"
                   } ]
                 } ]
@@ -30360,6 +30329,50 @@
               "attributeTuples" : [ ]
             } ]
           } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0.0.3.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "289279004",
+                    "value" : "Normal"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "289280001",
+                    "value" : "Anormal"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0.0.4.1",
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -30386,6 +30399,18 @@
             "code" : "at0007.0.0.1",
             "text" : "Observações",
             "description" : "*Additional narrative about the physical examination findings, not captured in other fields. (en)"
+          },
+          "at0000.1.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1.1.1",
+            "text" : "Placenta",
+            "description" : "*Findings observed during the physical examination of a placenta. (en)"
+          },
+          "at0.0.4.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.0.4.1",
+            "text" : "Dequitadura às",
+            "description" : ""
           }
         }
       },
