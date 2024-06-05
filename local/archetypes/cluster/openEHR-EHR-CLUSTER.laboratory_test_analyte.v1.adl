@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=f86cd61b-0e0e-4a18-8c07-9c4e537bb4e4)
+archetype (adl_version=1.4; uid=f86cd61b-0e0e-4a18-8c07-9c4e537bb4e4)
 	openEHR-EHR-CLUSTER.laboratory_test_analyte.v1
 
 concept
-	[at0000]	-- Laboratory analyte result
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -64,18 +65,27 @@ language
 				["email"] = <"juliodesosa@catsalut.cat">
 			>
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2015-07-20">
 		["name"] = <"Ian McNicoll">
 		["organisation"] = <"freshEHR Clinical Informatics, UK">
 		["email"] = <"ian@freshehr.com">
-		["date"] = <"2015-07-20">
 	>
+	lifecycle_state = <"published">
+	other_contributors = <"Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","Heidi Aursand, Oslo universitetssykehus, Norway","Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)","SB Bhattacharyya, Sudisa Consultancy Services, India","Fatemeh Chalabianloo, Helse Bergen, Norway","Anca Heyd, DIPS ASA, Norway","Evelyn Hovenga, EJSH Consulting, Australia","Nasjonal IKT, Norway","Silje Kaada, Helse-Bergen, Avdeling for immunologi og transfusjonsmedisin, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway","Liv Laugen, Oslo universitetssykehus, Norway","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Ole Martin Sand, DIPS ASA, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Paul Miller, SCIMP NHS Scotland, United Kingdom","Andrej Orel, Marand d.o.o., Slovenia","Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil","Norwegian Review Summary, Nasjonal IKT HF, Norway","Line Sæle, Nasjonal IKT HF, Norway","Nyree Taylor, Ocean Informatics, Australia","John Tore Valand, Helse Bergen, Norway (openEHR Editor)","Wouter Zanen, Eurotranplant, Netherlands","Lin Zhang, Taikang Insurance Group, China">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Dient der Darstellung von einzelnen Ergebniswerten für Labor-Analyten, die in der klinischen Diagnostikanalyse wie medizinische Biochemie, Hämatologie, Immunologie und Transfusionsmedizin zu finden ist.">
+			keywords = <"Labor","Pathologie","Analyt","Bestandteil","Ergebnis">
 			use = <"Dient zur Erfassung von einzelnen Ergebniswerten für Labor-Analyten, die in der klinischen Diagnostik verbreitet sind, wie z. B. biochemische, hämatologische, immunologische und transfusionsmedizinische Tests. Diese können auch in anatomisch-pathologischen Berichten als \"zusätzliche Untersuchungen\" vorkommen.
  
 Eine oder mehrere Instanzen dieses Archetyps können im SLOT \"Testergebnis\" des Archetyps OBSERVATION.laboratory_test_result verschachtelt werden.
@@ -84,15 +94,19 @@ Unter Umständen kann dieser Archetyp in einem CLUSTER.laboratory_test_panel Arc
 
 Dieser Archetyp kann im Rahmen einer komplexerem Labor/Pathologie-Befundung, z.B. in anatomisch-pathologischen Befunden verwendet werden, in denen oft quantitative Resultate, wie Durchfluss-Zytometrie-Analysen neben den üblichen makroskopischen und mikroskopischen Ergebnissen dokumentiert werden.
 ">
-			keywords = <"Labor", "Pathologie", "Analyt", "Bestandteil", "Ergebnis">
 			misuse = <"Nicht zur Darstellung von makroskopischen / mikroskopischen Befunde in der anatomischen Pathologie zu verwenden, außer für zusätzliche Tests wie durchflußzytometrischen Studien.
 
 Nicht zur Darstellung von Ergebnissen für Mikrobiologische Befunde verwenden.">
+		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"Registrering av ett enskilt laboratorieanalysresultat som vanligtvis förekommer i undersökningar inom exempelvis klinisk kemi, kliniska mikrobiologi, klinisk genetik, immunologi och transfusionsmedicin.
 ">
+			keywords = <"laboratorium","labb","patologi","analyt","analys","resultat","analysresultat","svar","komponent">
 			use = <"Används för registrering av ett enskilt laboratorieresultat inom områden såsom medicinsk biokemi, hematologi, immunologi och transfusionsmedicin. Arketypen kan även användas för kompletterande undersökningar.
 
 En eller flera instanser av denna arketyp kan nästlas i den SLOT för \"Undersökningsresultat\" som finns i arketypen OBSERVATION.laboratory_test_result. 
@@ -100,7 +114,6 @@ En eller flera instanser av denna arketyp kan nästlas i den SLOT för \"Unders�
 I vissa sammanhang kan denna arketyp användas i arketypen CLUSTER.laboratory_test_panel tillsammans med andra analyser som vanligtvis utförs eller rapporteras tillsammans som en del av en analysgrupp, -paket eller -panel.
 
 Denna arketyp kan även användas i mer komplexa laboratorie- och patologirapporter där kvantitativa svar såsom flödescytometri rapporteras tillsammans med konventionella makroskopiska och mikroskopiska undersökningar.">
-			keywords = <"laboratorium", "labb", "patologi", "analyt", "analys", "resultat", "analysresultat", "svar", "komponent">
 			misuse = <"Ska inte användas för att registrera makroskopiska eller mikroskopiska patologifynd, förutom för ytterligare undersökningar såsom flödescytometri. Ska heller inte användas för att registrera resultat från mikrobiologiska odlingar. I dessa fall krävs specialiserade arketyper för att fånga informationen på rätt sätt. 
 
 Ska heller inte användas för patientbunden diagnostik såsom radiologiska och fysiologiska undersökningar.">
@@ -108,6 +121,8 @@ Ska heller inte användas för patientbunden diagnostik såsom radiologiska och 
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere ett enkelt laboratorieresultat innenfor områder som medisinsk biokjemi, hematologi, immunologi og transfusjonsmedisin.">
+			keywords = <"laboratorie","analytt","analyse","svar","resultat">
+			copyright = <"© openEHR Foundation">
 			use = <"For å registrere ett enkelt laboratorieresultat innenfor områder som medisinsk biokjemi, hematologi, immunologi og transfusjonsmedisin. Arketypen kan også brukes til tilleggsundersøkelser innenfor patologi.
 
 En eller flere instanser av denne arketypen kan nøstes i SLOTet \"Undersøkelsesresultat\" i arketypen OBSERVATION.laboratory_test_result.
@@ -115,22 +130,20 @@ En eller flere instanser av denne arketypen kan nøstes i SLOTet \"Undersøkelse
 I noen sammenhenger kan denne arketypen brukes i arketypen CLUSTER.laboratory_test_panel, sammen med andre analytter som vanligvis utføres sammen som del av en analysegruppe.
 
 Denne arketypen kan brukes innenfor mer komplekse laboratorie/patologirapporter der kvantitative svar som for eksempel flowcytometri rapporteres sammen med konvensjonelle makroskopiske og mikroskopiske undersøkelser.">
-			keywords = <"laboratorie", "analytt", "analyse", "svar", "resultat">
 			misuse = <"Skal ikke brukes til å registrere funn ved patologiundersøkelser, annet enn for tilleggsundersøkelser som flowcytometri.
 
 Skal ikke brukes til å registrere mikrobiologiske dyrkningssvar.">
-			copyright = <"© openEHR Foundation">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			purpose = <"Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia.
 ">
+			keywords = <"laboratório","patologia","analito","componente","resultado">
 			use = <"Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia. Normalmente usados conjuntamente com o arquétipo parental OBSERVATION.laboratory_test_result e em algumas circunstâncias será carregado dentro de um arquétipo CLUSTER.laboratory_test_panel, junto com outros analitos que são normalmente testados e/ou reportados como parte de uma bateria, painel e perfil, embora não seja necessário e.e múltiplos analitos podem ser carregados diretamente dentro do OBSERVATION.laboratory_test.
 
 O atributo do nome do elemento \"Resultado do analito\" é normalmente substituído em uma especialização, template ou em tempo de execução para carregar o nome do analito específico, p.e., \"hemoglobina\", frequentemente codificado com uma terminologia de referência como LOINC, SNOMED CT ou NPU.
 
 Este arquétipo pode ser usado dentro do contexto de relatórios laboratoriais/de patologia mais complexos como em relatórios de histopatologia/anatomia onde resultados quantitativos como de estudos de citometria de fluxo e testes genéticos são frequentemente reportados junto com relatórios macroscópicos e microscópicos convencionais.">
-			keywords = <"laboratório", "patologia", "analito", "componente", "resultado">
 			misuse = <"*Not to be used to record anatomical pathology macroscopic/microscopic findings, other than for additional testing such as cytometric flow studies.
 
 Not to be used to record results for microbiological culture findings. (en)">
@@ -138,6 +151,8 @@ Not to be used to record results for microbiological culture findings. (en)">
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record a single value laboratory analyte result, commonly found in clinical pathology testing such as medical biochemistry, haematology, immunology and transfusion medicine.">
+			keywords = <"laboratory","pathology","analyte","constituent","result">
+			copyright = <"© openEHR Foundation">
 			use = <"Use to record a single value laboratory analyte result, commonly found in clinical pathology testing such as medical biochemistry, haematology, immunology and transfusion medicine. They may also be found in anatomical pathology reports as 'ancillary tests'.
 
 One or more instances of this archetype may be nested within the 'Test result' SLOT in the OBSERVATION.laboratory_test_result. 
@@ -145,39 +160,14 @@ One or more instances of this archetype may be nested within the 'Test result' S
 In some circumstances this archetype may be carried within a CLUSTER.laboratory_test_panel archetype, together with other analytes which are normally tested and/or reported as part of a battery, panel or profile. 
 
 This archetype may be used within the setting of more complex laboratory/pathology reporting such as anatomical pathology reports where quantitative results such as cytometric flow studies are often reported alongside conventional macroscopic and microscopic reporting.">
-			keywords = <"laboratory", "pathology", "analyte", "constituent", "result">
 			misuse = <"Not to be used to record anatomical pathology macroscopic/microscopic findings, other than for additional testing such as cytometric flow studies.
 
 Not to be used to record results for microbiological culture findings.">
-			copyright = <"© openEHR Foundation">
-		>
-		["nl"] = <
-			language = <[ISO_639-1::nl]>
-			purpose = <"Voor het vastleggen van een enkele laboratorium analyt uitslag, gebruikelijk in klinische chemische onderzoeken zoals medische biochemie, hematologie, immunologie en transfusiegeneeskunde.">
-			use = <"Gebruik voor het vastleggen van een enkele laboratorium analyt uitslag, gebruikelijk in de klinsiche chemie zoals biochemie, haematologie, immunologie and tranfusiegeneeskunde. Kan ook gebruikt worden voor aanvullend onderzoek binnen een anatomisch pathologisch onderzoek.">
-			keywords = <"laboratorium", "klinische chemie", "analyt", "bepaling", "uitslag">
-			misuse = <"*Not to be used to record anatomical pathology macroscopic/microscopic findings, other than for additional testing such as cytometric flow studies.
-
-Not to be used to record results for microbiological culture findings. (en)">
-		>
-		["es"] = <
-			language = <[ISO_639-1::es]>
-			purpose = <"Registrar el resultado de un analito de laboratorio de valor único, normalmente en pruebas de patología clínica como bioquímica médica, hematología, inmunología y medicina transfusional.">
-			use = <"Se utiliza para registrar el resultado de un analito de laboratorio de valor único, normalmente en pruebas de patología clínica como bioquímica médica, hematología, inmunología y medicina transfusional. También puede encontrarse en informes de anatomía patológica como 'pruebas auxiliares'.
-
-Una o más instancias de este arquetipo pueden estar anidadas dentro del SLOT 'Resultado de la prueba', dentro de OBSERVATION.laboratory_test_result.
-
-En algunas circunstancias, este arquetipo puede incluirse dentro de un arquetipo CLUSTER.laboratory_test_panel, junto con otros analitos que normalmente se analizan y/o informan como parte de una serie, panel o perfil.
-
-Este arquetipo se puede utilizar para informes de laboratorio/patología más complejos, como informes de anatomía patológica, donde los resultados cuantitativos, como los estudios de citometría de flujo, a menudo se informan junto con los informes macroscópicos y microscópicos convencionales.">
-			keywords = <"laboratorio", "patología", "analito", "componente", "resultado">
-			misuse = <"No debe utilizarse para registrar hallazgos macroscópicos/microscópicos de anatomía patológica, excepto para pruebas adicionales como estudios de citometría de flujo.
-
-No debe utilizarse para registrar resultados de cultivos microbiológicos.">
 		>
 		["ca"] = <
 			language = <[ISO_639-1::ca]>
 			purpose = <"Registrar un resultat de laboratori d'un analit de valor únic, normalment de proves de patologia clínica, com ara bioquímica mèdica, hematologia, immunologia i medicina transfusional.">
+			keywords = <"laboratori","patologia","analit","component","resultat">
 			use = <"S'utilitza per registrar un resultat de laboratori d'un analit de valor únic, normalment de proves de patologia clínica, com ara bioquímica mèdica, hematologia, immunologia i medicina transfusional. També es pot trobar en informes d'anatomia patològica com a 'proves auxiliars'.
 
 Una o més instàncies d'aquest arquetip poden estar niades dins del SLOT 'Resultat de la prova', dins OBSERVATION.laboratory_test_result.
@@ -185,14 +175,35 @@ Una o més instàncies d'aquest arquetip poden estar niades dins del SLOT 'Resul
 En algunes circumstàncies, aquest arquetip pot incloure's dins d'un arquetip CLUSTER.laboratory_test_panel, juntament amb altres analits que normalment s'analitzen i/o informen com a part d'una sèrie, panell o perfil.
 
 Aquest arquetip es pot utilitzar per a informes de laboratori/patologia més complexos, com ara informes d'anatomia patològica, on els resultats quantitatius, com els estudis de citometria de flux, sovint s'informen juntament amb els informes macroscòpics i microscòpics convencionals.">
-			keywords = <"laboratori", "patologia", "analit", "component", "resultat">
 			misuse = <"No s'ha d'utilitzar per registrar troballes macroscòpiques/microscòpiques d'anatomia patològica, excepte per a proves addicionals com a estudis de citometria de flux.
 
 No s'ha de fer servir per registrar resultats de cultius microbiològics.">
 		>
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Registrar el resultado de un analito de laboratorio de valor único, normalmente en pruebas de patología clínica como bioquímica médica, hematología, inmunología y medicina transfusional.">
+			keywords = <"laboratorio","patología","analito","componente","resultado">
+			use = <"Se utiliza para registrar el resultado de un analito de laboratorio de valor único, normalmente en pruebas de patología clínica como bioquímica médica, hematología, inmunología y medicina transfusional. También puede encontrarse en informes de anatomía patológica como 'pruebas auxiliares'.
+
+Una o más instancias de este arquetipo pueden estar anidadas dentro del SLOT 'Resultado de la prueba', dentro de OBSERVATION.laboratory_test_result.
+
+En algunas circunstancias, este arquetipo puede incluirse dentro de un arquetipo CLUSTER.laboratory_test_panel, junto con otros analitos que normalmente se analizan y/o informan como parte de una serie, panel o perfil.
+
+Este arquetipo se puede utilizar para informes de laboratorio/patología más complejos, como informes de anatomía patológica, donde los resultados cuantitativos, como los estudios de citometría de flujo, a menudo se informan junto con los informes macroscópicos y microscópicos convencionales.">
+			misuse = <"No debe utilizarse para registrar hallazgos macroscópicos/microscópicos de anatomía patológica, excepto para pruebas adicionales como estudios de citometría de flujo.
+
+No debe utilizarse para registrar resultados de cultivos microbiológicos.">
+		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			purpose = <"Voor het vastleggen van een enkele laboratorium analyt uitslag, gebruikelijk in klinische chemische onderzoeken zoals medische biochemie, hematologie, immunologie en transfusiegeneeskunde.">
+			keywords = <"laboratorium","klinische chemie","analyt","bepaling","uitslag">
+			use = <"Gebruik voor het vastleggen van een enkele laboratorium analyt uitslag, gebruikelijk in de klinsiche chemie zoals biochemie, haematologie, immunologie and tranfusiegeneeskunde. Kan ook gebruikt worden voor aanvullend onderzoek binnen een anatomisch pathologisch onderzoek.">
+			misuse = <"*Not to be used to record anatomical pathology macroscopic/microscopic findings, other than for additional testing such as cytometric flow studies.
+
+Not to be used to record results for microbiological culture findings. (en)">
+		>
 	>
-	lifecycle_state = <"published">
-	other_contributors = <"Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)", "Heidi Aursand, Oslo universitetssykehus, Norway", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "SB Bhattacharyya, Sudisa Consultancy Services, India", "Fatemeh Chalabianloo, Helse Bergen, Norway", "Anca Heyd, DIPS ASA, Norway", "Evelyn Hovenga, EJSH Consulting, Australia", "Nasjonal IKT, Norway", "Silje Kaada, Helse-Bergen, Avdeling for immunologi og transfusjonsmedisin, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway", "Liv Laugen, Oslo universitetssykehus, Norway", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Ole Martin Sand, DIPS ASA, Norway", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Paul Miller, SCIMP NHS Scotland, United Kingdom", "Andrej Orel, Marand d.o.o., Slovenia", "Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil", "Norwegian Review Summary, Nasjonal IKT HF, Norway", "Line Sæle, Nasjonal IKT HF, Norway", "Nyree Taylor, Ocean Informatics, Australia", "John Tore Valand, Helse Bergen, Norway (openEHR Editor)", "Wouter Zanen, Eurotranplant, Netherlands", "Lin Zhang, Taikang Insurance Group, China">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -206,7 +217,7 @@ HL7 FHIR Resource - Observation V1.8.0 FHIR STU3 [Internet]. Health Level Seven 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2C3F38DD3585D55E2EE0A3210BAF13D4">
+		["MD5-CAM-1.0.1"] = <"65213af2bcbd8a654f65fd1541a28ed6">
 		["build_uid"] = <"bcb96bdf-9e91-4454-97cd-25444223b7af">
 		["revision"] = <"1.1.7">
 	>
@@ -277,8 +288,6 @@ definition
 			}
 		}
 	}
-
-
 
 ontology
 	term_definitions = <
@@ -1158,6 +1167,104 @@ Aquest element permet múltiples ocurrències per admetre casos dús en què cal
 					text = <"Mètode de prova">
 					description = <"Descripció sobre el mètode utilitzat per fer la prova únicament amb aquest analit.">
 					comment = <"Si el mètode de prova s'aplica a un panell complet, el mètode de prova es pot registrar usant l'element de dades 'Mètode de prova' dins OBSERVATION.laboratory_test_result">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Laboratory analyte result (en)">
+					description = <"*The result of a laboratory test for a single analyte value. (en)">
+				>
+				["at0001"] = <
+					text = <"*Analyte result (en)">
+					description = <"*The value of the analyte result. (en)">
+					comment = <"*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details. (en)">
+				>
+				["at0003"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the analyte result, not captured in other fields. (en)">
+				>
+				["at0004"] = <
+					text = <"*Reference range guidance (en)">
+					description = <"*Additional advice on the applicability of the reference range to this result or may carry text or coded textual guidance as to whether the result is within the normal range. (en)">
+					comment = <"*For example, 'within normal limits for age and sex'. (en)">
+				>
+				["at0005"] = <
+					text = <"*Result status (en)">
+					description = <"*The status of the analyte result value. (en)">
+					comment = <"*The values have been specifically chosen to match those in the HL7 FHIR Diagnostic report, historically derived from HL7v2 practice. Other local codes/terms can be used via the Text 'choice'.
+
+This element allows multiple occurrences to support use cases where more than one type of status need to be implemented. (en)">
+				>
+				["at0006"] = <
+					text = <"*Result status time (en)">
+					description = <"*The date and time that the analyte result was issued for the recorded ‘Result status’. (en)">
+				>
+				["at0014"] = <
+					text = <"*Analyte result detail (en)">
+					description = <"*Further detail regarding an individual result. (en)">
+				>
+				["at0015"] = <
+					text = <"*Registered (en)">
+					description = <"*The existence of the test is registered in the Laboratory Information System, but there is nothing yet available. (en)">
+				>
+				["at0016"] = <
+					text = <"*Partial (en)">
+					description = <"*This is a partial (e.g. initial, interim or preliminary) Test Result: data in the Test Result may be incomplete or unverified. (en)">
+				>
+				["at0017"] = <
+					text = <"*Preliminary (en)">
+					description = <"*Verified early results are available, but not all results are final. This is a sub-category of 'Partial'. (en)">
+				>
+				["at0018"] = <
+					text = <"*Final (en)">
+					description = <"*The Test result is complete and verified by an authorised person. (en)">
+				>
+				["at0019"] = <
+					text = <"*Corrected (en)">
+					description = <"*The result has been modified subsequent to being Final, and is complete and verified by an authorised person. This is a sub-category of 'Amended'. (en)">
+				>
+				["at0020"] = <
+					text = <"*Amended (en)">
+					description = <"*The result has been modified subsequent to being Final, and is complete and verified by an authorised person, and result data has been changed. (en)">
+				>
+				["at0021"] = <
+					text = <"*Appended (en)">
+					description = <"*Subsequent to being final, the report has been modified by adding new content. The existing content is unchanged. This is a sub-category of 'Amended'. (en)">
+				>
+				["at0022"] = <
+					text = <"*Entered in error (en)">
+					description = <"*The Test Result has been withdrawn following previous Final release. (en)">
+				>
+				["at0023"] = <
+					text = <"*Cancelled (en)">
+					description = <"*The result is unavailable because the test was not started or not completed (also sometimes called 'aborted'). (en)">
+				>
+				["at0024"] = <
+					text = <"*Analyte name (en)">
+					description = <"*The name of the analyte result. (en)">
+					comment = <"*The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies. (en)">
+				>
+				["at0025"] = <
+					text = <"*Validation time (en)">
+					description = <"*The date and time that the analyte result was validated in the laboratory by a healthcare practitioner. (en)">
+					comment = <"*In many jurisdictions the 'Result status' is assumed to include medical validation i.e. a 'final' result will be assumed to be medically validated, but in others this will be recorded and reported separately using this data element. (en)">
+				>
+				["at0026"] = <
+					text = <"*Specimen (en)">
+					description = <"*Identification of the specimen used for the analyte result. (en)">
+					comment = <"*In some situations, a single Laboratory test result archetype will contain multiple Specimen archetypes and multiple Analyte result archetypes. In these situations, this 'Specimen' data element is needed to be able to connect the results with the correct specimens. (en)">
+				>
+				["at0027"] = <
+					text = <"*Analyte result sequence (en)">
+					description = <"*The intended position of this analyte result within the overall sequence of analyte results. (en)">
+					comment = <"*For example: '1' '2', '3'. Where multiple analyte results are reported, the 'Analyte result sequence' makes the order in which they were reported explicit. (en)">
+				>
+				["at0028"] = <
+					text = <"*Test method (en)">
+					description = <"*Description about the method used to perform the test on this analyte only. (en)">
+					comment = <"*If the test method applies to an entire panel, the test method can be captured using the 'Test method' data element within the OBSERVATION.laboratory_test_result (en)">
 				>
 			>
 		>
