@@ -156,7 +156,7 @@ Use to incorporate the narrative descriptions of clinical findings within existi
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5b1e3b91775577a1102b25a178511f82">
+		["MD5-CAM-1.0.1"] = <"c0814cdf63623730f76acf617d60a7a0">
 		["build_uid"] = <"d14b58bd-7f1e-4a07-b142-104ef7e217f6">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -225,6 +225,11 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
+			ELEMENT[at0.0.4] occurrences matches {0..1} matches {    -- Delivery of placenta
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
 		}
 	}
 
@@ -249,6 +254,10 @@ ontology
 					text = <"Appearance">
 					description = <"">
 				>
+				["at0000"] = <
+					text = <"Examination findings">
+					description = <"Findings observed during the physical examination of a body system or anatomical structure.">
+				>
 				["at0000.1"] = <
 					text = <"Examination of a placenta">
 					description = <"Findings observed during the physical examination of a placenta.">
@@ -261,10 +270,6 @@ ontology
 				["at0.1"] = <
 					text = <"Placenta">
 					description = <"">
-				>
-				["at0000"] = <
-					text = <"Examination findings">
-					description = <"Findings observed during the physical examination of a body system or anatomical structure.">
 				>
 				["at0001"] = <
 					text = <"System or structure examined">
@@ -306,6 +311,10 @@ ontology
 					description = <"Identification of the area of the body under examination.">
 					comment = <"If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant.">
 				>
+				["at0.0.4"] = <
+					text = <"Delivery of placenta">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -326,6 +335,10 @@ ontology
 					text = <"*DV_TEXT (en)">
 					description = <"">
 				>
+				["at0000"] = <
+					text = <"Undersøkelsesfunn">
+					description = <"Funn ved fysisk undersøkelse av et organsystem eller anatomisk struktur.">
+				>
 				["at0.1"] = <
 					text = <"Placenta">
 					description = <"">
@@ -338,10 +351,6 @@ ontology
 					text = <"Undersøkt organsystem eller struktur">
 					description = <"Identifisering av det undersøkte organsystemet eller den anatomiske strukturen.">
 					comment = <"Det anbefales å kode organsystem eller den anatomiske strukturen med en terminologi dersom mulig.">
-				>
-				["at0000"] = <
-					text = <"Undersøkelsesfunn">
-					description = <"Funn ved fysisk undersøkelse av et organsystem eller anatomisk struktur.">
 				>
 				["at0001"] = <
 					text = <"Undersøkt organsystem eller struktur">
@@ -383,6 +392,10 @@ ontology
 					description = <"Identifisering av et enkelt fysisk sted enten på eller i menneskekroppen.">
 					comment = <"Dersom den anatomiske lokaliseringen allerede er identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette dataelementet overflødig.">
 				>
+				["at0.0.4"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -403,6 +416,10 @@ ontology
 					text = <"*DV_TEXT (en)">
 					description = <"">
 				>
+				["at0000"] = <
+					text = <"Resultados do exame">
+					description = <"Constatações observadas durante o exame físico de um sistema corporal ou estrutura anatômica.">
+				>
 				["at0000.1"] = <
 					text = <"*Examination of a placenta (en)">
 					description = <"*Findings observed during the physical examination of a placenta. (en)">
@@ -415,10 +432,6 @@ ontology
 				["at0.1"] = <
 					text = <"*Placenta (en)">
 					description = <"">
-				>
-				["at0000"] = <
-					text = <"Resultados do exame">
-					description = <"Constatações observadas durante o exame físico de um sistema corporal ou estrutura anatômica.">
 				>
 				["at0001"] = <
 					text = <"Sistema ou estrutura examinada">
@@ -460,6 +473,10 @@ ontology
 					description = <"Identificação da área do corpo em exame.">
 					comment = <"Se o local do corpo foi totalmente identificado no elemento de dados 'Sistema ou estrutura examinada', esse elemento de dados se torna redundante.">
 				>
+				["at0.0.4"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -480,6 +497,10 @@ ontology
 					text = <"*DV_TEXT (en)">
 					description = <"">
 				>
+				["at0000"] = <
+					text = <"Untersuchungsergebnisse">
+					description = <"Während der körperlichen Untersuchung eines Körpersystems oder einer anatomischen Struktur beobachtete Befunde.">
+				>
 				["at0000.1"] = <
 					text = <"*Examination of a placenta (en)">
 					description = <"*Findings observed during the physical examination of a placenta. (en)">
@@ -492,10 +513,6 @@ ontology
 				["at0.1"] = <
 					text = <"*Placenta (en)">
 					description = <"">
-				>
-				["at0000"] = <
-					text = <"Untersuchungsergebnisse">
-					description = <"Während der körperlichen Untersuchung eines Körpersystems oder einer anatomischen Struktur beobachtete Befunde.">
 				>
 				["at0001"] = <
 					text = <"Untersuchtes System oder untersuchte Struktur">
@@ -537,6 +554,10 @@ ontology
 					description = <"Identifizierung des Untersuchungsbereichs.">
 					comment = <"Wenn die Körperstelle im Datenelement \"Untersuchtes System oder untersuchte Struktur\" vollständig identifiziert wurde, wird dieses Datenelement überflüssig.">
 				>
+				["at0.0.4"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -557,6 +578,10 @@ ontology
 					text = <"*DV_TEXT (en)">
 					description = <"">
 				>
+				["at0000"] = <
+					text = <"Fynd vid undersökning">
+					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
+				>
 				["at0000.1"] = <
 					text = <"*Examination of a placenta (en)">
 					description = <"*Findings observed during the physical examination of a placenta. (en)">
@@ -569,10 +594,6 @@ ontology
 				["at0.1"] = <
 					text = <"*Placenta (en)">
 					description = <"">
-				>
-				["at0000"] = <
-					text = <"Fynd vid undersökning">
-					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
 				>
 				["at0001"] = <
 					text = <"System eller struktur som undersökts">
@@ -616,6 +637,10 @@ ontology
 					comment = <"Om den anatomiska platsen har identifierats fullt ut i \"System eller struktur som undersökts\" så blir detta element redundant.
 
 ">
+				>
+				["at0.0.4"] = <
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
 				>
 			>
 		>
@@ -666,10 +691,6 @@ ontology
 					description = <"*Identification of the examined body system or anatomical structure. (en)">
 					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
 				>
-				["at0.1"] = <
-					text = <"Placenta">
-					description = <"">
-				>
 				["at0000.1.1"] = <
 					text = <"*Examination of a placenta (en)">
 					description = <"*Findings observed during the physical examination of a placenta. (en)">
@@ -694,6 +715,14 @@ ontology
 					text = <"*Examination findings (en)">
 					description = <"*Findings observed during the physical examination of a body system or anatomical structure. (en)">
 				>
+				["at0.1"] = <
+					text = <"Placenta">
+					description = <"">
+				>
+				["at0.0.4"] = <
+					text = <"Dequitadura">
+					description = <"">
+				>
 			>
 		>
 	>
@@ -701,9 +730,9 @@ ontology
 		["SNOMED-CT"] = <
 			items = <
 				["at0000.1.1"] = <[SNOMED-CT::5880005]>
+				["at0000"] = <[SNOMED-CT::5880005]>
 				["at0000.1"] = <[SNOMED-CT::5880005]>
 				["at0.1"] = <[SNOMED-CT::78067005]>
-				["at0000"] = <[SNOMED-CT::5880005]>
 			>
 		>
 	>
