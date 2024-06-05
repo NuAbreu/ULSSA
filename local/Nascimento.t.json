@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "49.0.0",
+      "sem_ver" : "50.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5927a66fd917dd2bb5cc0495b29223e7",
+      "MD5-CAM-1.0.1" : "a85f22f8bbe83a036a851de759a60dc1",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -315,15 +315,6 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-003.v1",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "OBSERVATION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.31",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-medication_statement-001.v0",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -32082,6 +32073,15 @@
         },
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.6",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-medication_statement-001.v0",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
           "occurrences" : "0..1",
           "nodeId" : "at0.1",
@@ -33610,7 +33610,82 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "c0eb54ad7386c1d18939403c36107caa"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Aufzeichnung einer Aussage über die aktuelle Einnahme eines einzelnen Medikaments durch eine Person zu einem bestimmten Zeitpunkt.",
+          "keywords" : [ "Aussage", "Momentaufnahme" ],
+          "use" : "Zur Aufzeichnung einer Aussage über die aktuelle Einnahme eines einzelnen Medikaments durch eine Person zu einem bestimmten Zeitpunkt.\r\n\r\nIn diesem Zusammenhang beschreibt der Begriff \"Medikamente\" eine breite Palette von Gegenständen, die verschrieben oder \"rezeptfrei\" erworben werden können. Dazu gehören:\r\n- einen einzelnen pharmazeutischen Artikel oder Wirkstoff; \r\n- eine Magistralrezeptur; \r\n- ein Kombinationspräparat; \r\n- ein Nahrungsergänzungsmittel; oder \r\n- ein anderer therapeutischer Artikel, der zur Behandlung oder Vorbeugung von Krankheiten verwendet wird, wie z. B. ein Verband oder eine Wundauflage, die ein antimikrobielles Mittel enthält.\r\n\r\nEs wird davon ausgegangen, dass dieser Archetyp üblicherweise in einem Austauschkontext verwendet wird, z. B. als Teil eines Gesundheitsberichts oder eines Berichts über den Übergang der Versorgung, wobei eine oder mehrere Instanzen dieser Datengruppe verwendet werden können, um eine \"Aktuelle Medikamentenliste\" darzustellen. Zum Beispiel: \r\n- bei der Aufnahme ins Krankenhaus;\r\n- als Teil einer fachärztlichen Überweisung; oder\r\n- als Grundlage für eine Überprüfung der Medikation.\r\n\r\nDie Informationsquelle kann eine Person, ihr Betreuer oder ein Kliniker sein.\r\n\r\nDieser Archetyp wurde so konzipiert, dass er möglichst mit INSTRUCTION.medictation oder ACTION.medication_management übereinstimmt. Er wurde jedoch so eingeschränkt, dass er nur wesentliche Informationen enthält, die für den Austausch oder die Zusammenfassung erforderlich sind, sowie zusätzliche ereignisbasierte Datenelemente wie das Datenelement \"Zuletzt verabreicht\", um einen nahtlosen Übergang der Versorgung zu unterstützen. \r\n\r\nFür jedes Medikament oder jede Kombinationspackung ist eine Instanz dieses Archetyps zu erfassen. Wenn dasselbe Medikament in verschiedenen Dosierungen oder mit unterschiedlicher Häufigkeit verwendet wird, sollte jede einzelne Dosierungs- und Häufigkeitsänderung als separate Instanz erfasst werden.\r\n\r\nDieser Archetyp sollte nur zum Zeitpunkt der Erstellung als aktuell betrachtet werden. \r\n\r\nDieser Archetyp wurde so konzipiert, dass er mit der FHIR-Ressource MedicationStatement übereinstimmt, ist aber absichtlich auf die \"aktuelle Verwendung\" und nicht auf die vergangene oder zukünftige Verwendung beschränkt.\r\n",
+          "misuse" : "Nicht für die Aufzeichnung von zusammenfassenden oder dauerhaften Informationen über die frühere Einnahme eines Medikaments zu verwenden - verwenden Sie zu diesem Zweck EVALUATION.medication_summary.\r\n\r\nNicht zur Aufzeichnung von Details über eine Medikamentenverfügung verwenden - verwenden Sie zu diesem Zweck INSTRUCTION.medication_order.\r\n\r\nNicht zur Aufzeichnung von Details über bestimmte medikamentenbezogene Aktivitäten, wie Verabreichung oder Abgabe, zu verwenden - verwenden Sie zu diesem Zweck ACTION.medication.\r\n\r\nNicht zur Erstellung eines Frameworks zum Aufzeichnen von Antworten auf vordefinierte Screening-Fragen zur Verwendung eines bestimmten Medikaments oder einer Medikamentengruppe geeignet. Verwenden Sie zu diesem Zweck OBSERVATION.medication_screening.\r\n\r\nNicht für die Darstellung einer verabreichten Impfung zu verwenden - verwenden Sie zu diesem Zweck einen geeigneten Archetyp.\r\n\r\nNicht zu verwenden, um Informationen über verwendete oder implantierte medizinische Geräte zu erfassen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en beskrivelse av den nåværende bruken av et enkelt legemiddel for et individ på et spesifisert tidspunkt.",
+          "keywords" : [ "utsagn", "snapshot" ],
+          "use" : "Brukes for å registrere en beskrivelse av den nåværende bruken av et enkelt legemiddel for et individ på et spesifisert tidspunkt.\r\n\r\nI denne av denne arketypen brukes en bred definisjon av \"legemiddel\", og omhandler både legemidler på og uten resept. Dette inkluderer:\r\n- et enkelt farmasøytisk produkt eller middel;\r\n- en tilberedning;\r\n- et kombinasjonsprodukt;\r\n- et ernæringsprodukt; eller\r\n- et annet terapeutisk produkt brukt til å behandle eller forebygge sykdom, for eksempel en bandasje med et antimikrobielt middel.\r\n\r\nDenne arketypen vil vanligvis bli brukt ved utveksling av informasjon, for eksempel som en del av en helseoppsummering eller en oppsummering ved overflytting mellom helseinstitusjoner. I slike tilfeller kan en eller flere instanser av denne arketypen brukes til å representere en \"Nåværende medikamentliste\". For eksempel:\r\n- ved innleggelse på sykehus,\r\n- som en del av en spesialisthenvisning,\r\n- som grunnlag for en medikamentgjennomgang.\r\n\r\nKilden til informasjon kan være en person, deres omsorgsperson eller en kliniker.\r\n\r\nDenne arketypen er utformet for å kunne samsvare med INSTRUCTION.medication_order (Legemiddelordinering) eller ACTION.medication (Legemiddelhåndtering) ved behov. Imidlertid er arketypen begrenset til å kun representere essensiell informasjon som er nødvendig for utveksling eller oppsummeringsformål, i tillegg til hendelsesbaserte dataelementer som \"Sist administrert\". Dette er gjort for å støtte en sømløs omsorgsovergang.\r\n\r\nRegistrer én forekomst av denne arketypen per legemiddel eller kombinasjonspakke. Brukes samme legemiddel i ulike doser eller dosefrekvenser, skal hver unike doserings- og frekvensvariasjon registreres som en separat forekomst.\r\n\r\nDenne arketypen bør bare betraktes som oppdatert på registreringstidspunktet.\r\n\r\nDenne arketypen er utformet for å samsvare med FHIR MedicationStatement-ressursen, men er bevisst begrenset til \"nåværende bruk\", og ikke for tidligere eller fremtidig bruk av et legemiddel.",
+          "misuse" : "Brukes ikke for å registrere et sammendrag om all bruk av et spesifisert legemiddel over et individs livstid, bruk arketypen EVALUATION.medication_summary (Legemiddelsammendrag) til dette formålet.\r\n\r\nBrukes ikke for å dokumentere forordningen av et legemiddel - bruk arketypen INSTRUCTION.medication_order (Legemiddelordinering) til dette formålet.\r\n\r\nBrukes ikke for å dokumentere administreringen av et legemiddel - bruk arketypen ACTION.medication (Legemiddelhåndtering) til dette formålet.\r\n\r\nBrukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruken av et hvilket som helst legemiddel eller gruppe av legemidler. Bruk OBSERVATION.medication_screening (Kartleggingsspørsmål om legemidler) til dette formålet.\r\n\r\nBrukes ikke for å dokumentere en vaksine som er administrert - bruk en egnet arketype til dette formålet.\r\n\r\nBrukes ikke for å registrere infomrasjon om medisinsk utstyr som er brukt eller implantert. Bruk en egnet arketype til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record an assertion about the current use of a single medication by an individual at a specified point in time.",
+          "keywords" : [ "statement", "snapshot" ],
+          "use" : "Use to record an assertion about the current use of a single medication by an individual at a specified point in time.\r\n\r\nIn this medication statement context, ‘medication’ describes a wide range of items that may be prescribed or obtained 'over the counter'. This includes:\r\n- a single pharmaceutical item or agent; \r\n- an extemporaneous preparation; \r\n- a combination therapy product; \r\n- a nutritional product; or \r\n- another therapeutic item used to treat or prevent disease, such as a bandage or dressing containing an antimicrobial agent.\r\n\r\nIt is anticipated that this archetype will commonly be used within an exchange context, for example as part of a health summary or transition of care summary, where one or more instances of this data group may be used to represent a ‘Current medication list’. For example: \r\n- on admission to hospital;\r\n- as part of a specialist referral; or\r\n- as the basis for a medication review.\r\n\r\nThe source of information may be an individual, their carer or a clinician.\r\n\r\nThis archetype has been designed to align with INSTRUCTION.medictation or ACTION.medication_management, where possible. However, it has been constrained to represent only essential information necessary for exchange or summary purposes, plus the addition of event-based data elements such as the ‘Last administered’ data element to support a seamless transition of care. \r\n\r\nRecord one instance of this archetype per medication or combination pack. If the same medication is being used in different dose amounts or varying dose frequencies, each unique dosage and frequency variation should be recorded as a separate instance.\r\n\r\nThis archetype should only be considered up-to-date at the time of authoring. \r\n\r\nThis archetype has been designed to align with the FHIR MedicationStatement resource but is intentionally constrained to 'current use', rather than past or future use.",
+          "misuse" : "Not to be used to record summary or persistent information about past use of a medication - use EVALUATION.medication_summary for this purpose.\r\n\r\nNot to be used to record details about a medication order - use INSTRUCTION.medication_order for this purpose.\r\n\r\nNot to be used to record details about specific medication related activities, such as administration or dispensing - use ACTION.medication for this purpose.\r\n\r\nNot to be used to create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping of medications - use OBSERVATION.medication_screening for this purpose.\r\n\r\nNot to be used to represent a vaccination that has been administered - use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record information about medical devices that are used or implanted.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "*To record an assertion about the current use of a single medication by an individual at a specified point in time. (en)",
+          "keywords" : [ "*statement (en)", "*snapshot (en)" ],
+          "use" : "*Use to record an assertion about the current use of a single medication by an individual at a specified point in time.\r\n\r\nIn this medication statement context, ‘medication’ describes a wide range of items that may be prescribed or obtained 'over the counter'. This includes:\r\n- a single pharmaceutical item or agent; \r\n- an extemporaneous preparation; \r\n- a combination therapy product; \r\n- a nutritional product; or \r\n- another therapeutic item used to treat or prevent disease, such as a bandage or dressing containing an antimicrobial agent.\r\n\r\nIt is anticipated that this archetype will commonly be used within an exchange context, for example as part of a health summary or transition of care summary, where one or more instances of this data group may be used to represent a ‘Current medication list’.  For example: \r\n- on admission to hospital;\r\n- as part of a specialist referral; or\r\n- as the basis for a medication review.\r\n\r\nThe source of information may be an individual, their carer or a clinician.\r\n\r\nThis archetype has been designed to align with INSTRUCTION.medictation or ACTION.medication_management, where possible. However, it has been constrained to represent only essential information necessary for exchange or summary purposes, plus the addition of event-based data elements such as the ‘Last administered’ data element to support a seamless transition of care. \r\n\r\nRecord one instance of this archetype per medication or combination pack. If the same medication is being used in different dose amounts or varying dose frequencies, each unique dosage and frequency variation should be recorded as a separate instance.\r\n\r\nThis archetype should only be considered up-to-date at the time of authoring. \r\n\r\nThis archetype has been designed to align with the FHIR MedicationStatement resource but is intentionally constrained to 'current use', rather than past or future use. (en)",
+          "misuse" : "*Not to be used to record summary or persistent information about past use of a medication - use EVALUATION.medication_summary for this purpose.\r\n\r\nNot to be used to record details about a medication order - use INSTRUCTION.medication_order for this purpose.\r\n\r\nNot to be used to record details about specific medication related activities, such as administration or dispensing - use ACTION.medication for this purpose.\r\n\r\nNot to be used to create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping of medications - use OBSERVATION.medication_screening for this purpose.\r\n\r\nNot to be used to represent a vaccination that has been administered - use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record information about medical devices that are used or implanted. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.medication_statement.v0",
     "differential" : true,
@@ -33622,7 +33697,132 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "OBSERVATION",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0006.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0047.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0030.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0032.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0023.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0026.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_DATE_TIME",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0037.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_DATE_TIME",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "at0038" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0029.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -33632,7 +33832,22 @@
         "en" : { },
         "de" : { },
         "nl" : { },
-        "nb" : { }
+        "nb" : { },
+        "pt-pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Medicação",
+            "description" : "*An assertion about the current use of a single medication by an individual. (en)"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Terapêutica efetuada",
+            "description" : "*Name of the medication. (en)",
+            "comment" : "*It is strongly recommended that the 'Medication name' be coded with a terminology capable of triggering decision support, where possible. Free text entry should only be used if there is no appropriate terminology available or for customised extemporaneous preparations. The extent of coding may vary from the simple generic or product name of the medication item through to structured details about the actual medication pack to be used. Free text entry should only be used if there is no appropriate terminology available. For example: 'Plaquenil'; 'Ibrutinib 420 mg tablet'; 'Rectinol ointment, 50 g, tube'; or 'Hydrofibre dressing with silver'.\r\n (en)"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -33692,6 +33907,16 @@
         "email" : "joost.holslag@nedap.com"
       },
       "accreditation" : "MD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-pt"
+      },
+      "author" : { },
       "otherDetails" : { }
     } ]
   } ],
