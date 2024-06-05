@@ -1,0 +1,106 @@
+archetype (adl_version=1.4; uid=5b016b6f-5a12-49ea-86fd-54bcfaa40ed6)
+	openEHR-EHR-OBSERVATION.cronologia_do_parto.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::pt-pt]>
+
+description
+	original_author = <
+		["date"] = <"2023-11-20">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"3d3c05cddc5535d90ac18b8e43f6e62a">
+		["build_uid"] = <"4e237ccb-0895-3a3f-9776-2359dc514b30">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Cronologia do parto
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Dilatação
+										value matches {
+											DV_DURATION matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Expulsão
+										value matches {
+											DV_DURATION matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Dequitadura
+										value matches {
+											DV_DURATION matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Total
+										value matches {
+											DV_DURATION matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"Cronologia do parto">
+					description = <"Cronologia do parto">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Dilatação">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Expulsão">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Dequitadura">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Total">
+					description = <"">
+				>
+			>
+		>
+	>
