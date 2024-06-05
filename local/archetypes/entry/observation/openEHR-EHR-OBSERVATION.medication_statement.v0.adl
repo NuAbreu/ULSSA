@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=3c3cd4d6-8573-4376-b843-e9c0ab6ab74e)
+archetype (adl_version=1.4; uid=3c3cd4d6-8573-4376-b843-e9c0ab6ab74e)
 	openEHR-EHR-OBSERVATION.medication_statement.v0
 
 concept
-	[at0000]	-- Medication use statement
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -31,18 +32,26 @@ language
 			>
 			accreditation = <"MD">
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2020-08-26">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Atomica Informatics">
 		["email"] = <"heather.leslie@atomicainformatics.com">
-		["date"] = <"2020-08-26">
 	>
+	lifecycle_state = <"in_development">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Zur Aufzeichnung einer Aussage über die aktuelle Einnahme eines einzelnen Medikaments durch eine Person zu einem bestimmten Zeitpunkt.">
+			keywords = <"Aussage","Momentaufnahme">
 			use = <"Zur Aufzeichnung einer Aussage über die aktuelle Einnahme eines einzelnen Medikaments durch eine Person zu einem bestimmten Zeitpunkt.
 
 In diesem Zusammenhang beschreibt der Begriff \"Medikamente\" eine breite Palette von Gegenständen, die verschrieben oder \"rezeptfrei\" erworben werden können. Dazu gehören:
@@ -67,7 +76,6 @@ Dieser Archetyp sollte nur zum Zeitpunkt der Erstellung als aktuell betrachtet w
 
 Dieser Archetyp wurde so konzipiert, dass er mit der FHIR-Ressource MedicationStatement übereinstimmt, ist aber absichtlich auf die \"aktuelle Verwendung\" und nicht auf die vergangene oder zukünftige Verwendung beschränkt.
 ">
-			keywords = <"Aussage", "Momentaufnahme">
 			misuse = <"Nicht für die Aufzeichnung von zusammenfassenden oder dauerhaften Informationen über die frühere Einnahme eines Medikaments zu verwenden - verwenden Sie zu diesem Zweck EVALUATION.medication_summary.
 
 Nicht zur Aufzeichnung von Details über eine Medikamentenverfügung verwenden - verwenden Sie zu diesem Zweck INSTRUCTION.medication_order.
@@ -80,9 +88,14 @@ Nicht für die Darstellung einer verabreichten Impfung zu verwenden - verwenden 
 
 Nicht zu verwenden, um Informationen über verwendete oder implantierte medizinische Geräte zu erfassen.">
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere en beskrivelse av den nåværende bruken av et enkelt legemiddel for et individ på et spesifisert tidspunkt.">
+			keywords = <"utsagn","snapshot">
 			use = <"Brukes for å registrere en beskrivelse av den nåværende bruken av et enkelt legemiddel for et individ på et spesifisert tidspunkt.
 
 I denne av denne arketypen brukes en bred definisjon av \"legemiddel\", og omhandler både legemidler på og uten resept. Dette inkluderer:
@@ -106,7 +119,6 @@ Registrer én forekomst av denne arketypen per legemiddel eller kombinasjonspakk
 Denne arketypen bør bare betraktes som oppdatert på registreringstidspunktet.
 
 Denne arketypen er utformet for å samsvare med FHIR MedicationStatement-ressursen, men er bevisst begrenset til \"nåværende bruk\", og ikke for tidligere eller fremtidig bruk av et legemiddel.">
-			keywords = <"utsagn", "snapshot">
 			misuse = <"Brukes ikke for å registrere et sammendrag om all bruk av et spesifisert legemiddel over et individs livstid, bruk arketypen EVALUATION.medication_summary (Legemiddelsammendrag) til dette formålet.
 
 Brukes ikke for å dokumentere forordningen av et legemiddel - bruk arketypen INSTRUCTION.medication_order (Legemiddelordinering) til dette formålet.
@@ -122,6 +134,8 @@ Brukes ikke for å registrere infomrasjon om medisinsk utstyr som er brukt eller
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record an assertion about the current use of a single medication by an individual at a specified point in time.">
+			keywords = <"statement","snapshot">
+			copyright = <"© openEHR Foundation">
 			use = <"Use to record an assertion about the current use of a single medication by an individual at a specified point in time.
 
 In this medication statement context, ‘medication’ describes a wide range of items that may be prescribed or obtained 'over the counter'. This includes:
@@ -145,7 +159,6 @@ Record one instance of this archetype per medication or combination pack. If the
 This archetype should only be considered up-to-date at the time of authoring. 
 
 This archetype has been designed to align with the FHIR MedicationStatement resource but is intentionally constrained to 'current use', rather than past or future use.">
-			keywords = <"statement", "snapshot">
 			misuse = <"Not to be used to record summary or persistent information about past use of a medication - use EVALUATION.medication_summary for this purpose.
 
 Not to be used to record details about a medication order - use INSTRUCTION.medication_order for this purpose.
@@ -157,11 +170,11 @@ Not to be used to create a framework for recording answers to pre-defined screen
 Not to be used to represent a vaccination that has been administered - use an appropriate archetype for this purpose.
 
 Not to be used to record information about medical devices that are used or implanted.">
-			copyright = <"© openEHR Foundation">
 		>
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
 			purpose = <"*To record an assertion about the current use of a single medication by an individual at a specified point in time. (en)">
+			keywords = <"*statement (en)","*snapshot (en)">
 			use = <"*Use to record an assertion about the current use of a single medication by an individual at a specified point in time.
 
 In this medication statement context, ‘medication’ describes a wide range of items that may be prescribed or obtained 'over the counter'. This includes:
@@ -185,7 +198,6 @@ Record one instance of this archetype per medication or combination pack. If the
 This archetype should only be considered up-to-date at the time of authoring. 
 
 This archetype has been designed to align with the FHIR MedicationStatement resource but is intentionally constrained to 'current use', rather than past or future use. (en)">
-			keywords = <"*statement (en)", "*snapshot (en)">
 			misuse = <"*Not to be used to record summary or persistent information about past use of a medication - use EVALUATION.medication_summary for this purpose.
 
 Not to be used to record details about a medication order - use INSTRUCTION.medication_order for this purpose.
@@ -199,8 +211,6 @@ Not to be used to represent a vaccination that has been administered - use an ap
 Not to be used to record information about medical devices that are used or implanted. (en)">
 		>
 	>
-	lifecycle_state = <"in_development">
-	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -208,7 +218,7 @@ Not to be used to record information about medical devices that are used or impl
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"AA0BE8C0835250EE579F834B51A6633C">
+		["MD5-CAM-1.0.1"] = <"c0eb54ad7386c1d18939403c36107caa">
 		["build_uid"] = <"c4e8c89d-fafe-4384-819a-0934b3d4abcb">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -297,7 +307,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
@@ -631,6 +640,89 @@ For eksempel: 'Plaquenil'; 'Ibrutinib 420 mg tablett'; 'Rectinol salve, 50 g, tu
 				["at0048"] = <
 					text = <"Ytterligere detaljer">
 					description = <"Strukturerte detaljer om legemiddelbruken.">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Medication use statement (en)">
+					description = <"*An assertion about the current use of a single medication by an individual. (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Any event (en)">
+					description = <"*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0006"] = <
+					text = <"*Medication name (en)">
+					description = <"*Name of the medication. (en)">
+					comment = <"*It is strongly recommended that the 'Medication name' be coded with a terminology capable of triggering decision support, where possible. Free text entry should only be used if there is no appropriate terminology available or for customised extemporaneous preparations. The extent of coding may vary from the simple generic or product name of the medication item through to structured details about the actual medication pack to be used. Free text entry should only be used if there is no appropriate terminology available. For example: 'Plaquenil'; 'Ibrutinib 420 mg tablet'; 'Rectinol ointment, 50 g, tube'; or 'Hydrofibre dressing with silver'.
+ (en)">
+				>
+				["at0023"] = <
+					text = <"*Clinical indication (en)">
+					description = <"*The clinical symptom, sign or diagnosis that necessitates the use of the medication. (en)">
+					comment = <"*For example: 'Angina' or 'Migraine'. Coding of the clinical indication with a terminology is preferred, where possible. This data element has multiple occurrences to allow recording of more than one clinical indication per medication. (en)">
+				>
+				["at0026"] = <
+					text = <"*Last administered (en)">
+					description = <"*The date and time when the medication was last taken by, or administered to, the individual. (en)">
+					comment = <"*For example: the time warfarin was last taken at home prior to admission to hospital; or when the last dose was administered before a transfer from hospital to aged care. (en)">
+				>
+				["at0029"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the medication statement not captured in other fields. (en)">
+				>
+				["at0030"] = <
+					text = <"*Route of administration (en)">
+					description = <"*The route by which the medication is administrated into the body. (en)">
+					comment = <"*For example: 'oral', 'intravenous', or 'topical'. Coding of the route with a terminology is preferred, where possible. (en)">
+				>
+				["at0032"] = <
+					text = <"*Description (en)">
+					description = <"*Narrative description of the use of the medication. (en)">
+				>
+				["at0037"] = <
+					text = <"*Endpoint (en)">
+					description = <"*The intended absolute end date for the use of the medication or a textual indication that the medication will be used indefinitely. (en)">
+					comment = <"*The DV_DATE_TIME datatype can indicate a precise, absolute date and optional time for the intended end of a limited course of medication - for example, the endpoint of a course of antibiotics the sender has just initiated. The DV_CODED_TEXT option can also be used to record that the medication is intended for indefinite use, for example, potentially lifelong use of an antihypertensive medication. (en)">
+				>
+				["at0038"] = <
+					text = <"*Indefinite (en)">
+					description = <"*There is no proposed end date for this medication. (en)">
+				>
+				["at0045"] = <
+					text = <"*Structured dose and timing (en)">
+					description = <"*Details of structured dose and timing directions. (en)">
+				>
+				["at0046"] = <
+					text = <"*Medication details (en)">
+					description = <"*Structured details about the overall medication including strength, form and constituent substances. (en)">
+				>
+				["at0047"] = <
+					text = <"*Overall directions description (en)">
+					description = <"*Complete narrative description about how the ordered item is to be used. (en)">
+				>
+				["at0048"] = <
+					text = <"*Addtional details (en)">
+					description = <"*Structured details about the medication use. (en)">
 				>
 			>
 		>
