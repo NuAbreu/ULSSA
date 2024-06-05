@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "31.0.0",
+      "sem_ver" : "32.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "350ee303b1b79f1fdd49ea8548147a41",
+      "MD5-CAM-1.0.1" : "62026e873d1722ca0afdcf3f950ed51b",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -935,7 +935,7 @@
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "0..1",
-              "nodeId" : "at0161.3",
+              "nodeId" : "at0161.2",
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-laboratory_test_panel-001.v0",
@@ -18228,14 +18228,6 @@
       "@type" : "RESOURCE_ANNOTATIONS",
       "documentation" : {
         "en" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -18247,17 +18239,17 @@
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note"
           }
         },
         "nb" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -18269,17 +18261,17 @@
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note"
           }
         },
         "pt-br" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
-            "fhir_mapping" : "*Observation.value[x](en)"
-          },
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "*NTE.3(en)",
-            "fhir_mapping" : "*Observation.comments(en)"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "*OBX-11-observation result status(en)",
             "fhir_mapping" : "*status(en)"
@@ -18291,17 +18283,17 @@
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "*OBX-3.1;3.2(en)",
             "fhir_mapping" : "*Observation.code(en)"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
+            "fhir_mapping" : "*Observation.value[x](en)"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "*NTE.3(en)",
+            "fhir_mapping" : "*Observation.comments(en)"
           }
         },
         "de" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -18313,17 +18305,17 @@
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note"
           }
         },
         "nl" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -18335,13 +18327,17 @@
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note"
           }
         },
         "sv" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -18349,17 +18345,13 @@
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "es" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -18371,17 +18363,17 @@
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note"
           }
         },
         "ca" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -18393,6 +18385,14 @@
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note"
           }
         }
       }
@@ -18421,7 +18421,281 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0024.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "local_terms",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "28646-8",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "pH of Arterial cord blood",
+                "@type" : "DV_CODED_TEXT"
+              },
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "28646-8",
+                    "value" : "pH of Arterial cord blood"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "119" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "[pH]" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0004.1",
           "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0028.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "occurrences" : "1..1",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_MULTIMEDIA",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TIME",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DURATION",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_ORDINAL",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_SCALE",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_PROPORTION",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_URI",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_EHR_URI",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_PARSABLE",
+              "occurrences" : "1..1",
+              "defaultValue" : {
+                "@type" : "DV_PARSABLE"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_COUNT>",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_DATE>",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_TIME>",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0025.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -18464,6 +18738,37 @@
           "nodeId" : "at0006.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0026.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_URI",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -18478,6 +18783,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "nb" : {
@@ -18486,6 +18797,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "pt-br" : {
@@ -18494,6 +18811,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "de" : {
@@ -18502,6 +18825,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "nl" : {
@@ -18510,6 +18839,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "sv" : {
@@ -18518,6 +18853,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "es" : {
@@ -18526,6 +18867,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "ca" : {
@@ -18534,6 +18881,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "pt-pt" : {
@@ -18546,9 +18899,28 @@
           "at0024.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
-            "text" : "pH artéria",
+            "text" : "Nome da análise",
             "description" : "*The name of the analyte result. (en)",
             "comment" : "*The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies. (en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "pH artéria",
+            "description" : "*The result of a laboratory test for a single analyte value. (en)"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "pH artéria",
+            "description" : "*The value of the analyte result. (en)",
+            "comment" : "*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details. (en)"
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "pH",
+            "description" : "Acidity",
+            "code" : "[pH]"
           }
         }
       },
@@ -18786,7 +19158,7 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
-          "nodeId" : "at0013.2",
+          "nodeId" : "at0013.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-laboratory_test_analyte-002.v1",
@@ -18795,7 +19167,7 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
-          "nodeId" : "at0013.3",
+          "nodeId" : "at0013.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-laboratory_test_analyte-003.v1",
@@ -18804,19 +19176,10 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
-          "nodeId" : "at0013.4",
+          "nodeId" : "at0013.3",
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-laboratory_test_analyte-004.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
-          "nodeId" : "at0013.5",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen-001.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -19047,10 +19410,6 @@
       "@type" : "RESOURCE_ANNOTATIONS",
       "documentation" : {
         "en" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -19066,13 +19425,13 @@
           "/items[at0003.1]" : {
             "hl7v2_mapping" : "NTE.3",
             "fhir_mapping" : "Observation.note"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "nb" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -19088,13 +19447,13 @@
           "/items[at0003.1]" : {
             "hl7v2_mapping" : "NTE.3",
             "fhir_mapping" : "Observation.note"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "pt-br" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
-            "fhir_mapping" : "*Observation.value[x](en)"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "*OBX-11-observation result status(en)",
             "fhir_mapping" : "*status(en)"
@@ -19110,13 +19469,13 @@
           "/items[at0003.1]" : {
             "hl7v2_mapping" : "*NTE.3(en)",
             "fhir_mapping" : "*Observation.comments(en)"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
+            "fhir_mapping" : "*Observation.value[x](en)"
           }
         },
         "de" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -19132,13 +19491,13 @@
           "/items[at0003.1]" : {
             "hl7v2_mapping" : "NTE.3",
             "fhir_mapping" : "Observation.note"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "nl" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -19154,13 +19513,13 @@
           "/items[at0003.1]" : {
             "hl7v2_mapping" : "NTE.3",
             "fhir_mapping" : "Observation.note"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "sv" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -19168,13 +19527,13 @@
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "es" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -19190,13 +19549,13 @@
           "/items[at0003.1]" : {
             "hl7v2_mapping" : "NTE.3",
             "fhir_mapping" : "Observation.note"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "ca" : {
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
@@ -19212,6 +19571,10 @@
           "/items[at0003.1]" : {
             "hl7v2_mapping" : "NTE.3",
             "fhir_mapping" : "Observation.note"
+          },
+          "/items[at0001.1]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         }
       }
@@ -19240,7 +19603,91 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0024.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "28647-6",
+                    "value" : "pH of Venous cord blood"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "119" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "[pH]" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -19503,6 +19950,12 @@
             "code" : "at0000",
             "text" : "Laboratory analyte result (2)",
             "description" : "The result of a laboratory test for a single analyte value."
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "nb" : {
@@ -19517,6 +19970,12 @@
             "code" : "at0000",
             "text" : "Analyseresultat (2)",
             "description" : "Resultatet av en individuell laboratorieanalyse."
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "pt-br" : {
@@ -19531,6 +19990,12 @@
             "code" : "at0000",
             "text" : "*Laboratory analyte result(en) (2)",
             "description" : "*The result of a laboratory test for a single analyte value.(en)"
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "de" : {
@@ -19545,6 +20010,12 @@
             "code" : "at0000",
             "text" : "Laboranalyt-Ergebnis (2)",
             "description" : "Ergebnis einer Laboranalyse für einen bestimmten Analytwert."
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "nl" : {
@@ -19559,6 +20030,12 @@
             "code" : "at0000",
             "text" : "Laboratorium analyt uitslag (2)",
             "description" : "Het resultaat van een laboratorium test voor een bepaling van een enkele bepaling."
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "sv" : {
@@ -19573,6 +20050,12 @@
             "code" : "at0000",
             "text" : "Analysresultat (2)",
             "description" : "Resultatet för en enskild analys i en laboratorieundersökning."
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "es" : {
@@ -19587,6 +20070,12 @@
             "code" : "at0000",
             "text" : "Resultado de laboratorio del analito (2)",
             "description" : "Resultado de una prueba de laboratorio para un valor de analito único."
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "ca" : {
@@ -19601,6 +20090,12 @@
             "code" : "at0000",
             "text" : "Resultat de laboratori de l'analit (2)",
             "description" : "Resultat d'una prova de laboratori per a un valor d'analit únic."
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (pt-pt)",
+            "description" : "*Acidity (pt-pt)",
+            "code" : "[pH]"
           }
         },
         "pt-pt" : {
@@ -19613,15 +20108,28 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "*Laboratory analyte result (en) (2)",
+            "text" : "pH veia",
             "description" : "*The result of a laboratory test for a single analyte value. (en)"
           },
           "at0024.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
-            "text" : "pH veia",
+            "text" : "Nome da análise",
             "description" : "*The name of the analyte result. (en)",
             "comment" : "*The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies. (en)"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "pH veia",
+            "description" : "*The value of the analyte result. (en)",
+            "comment" : "*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details. (en)"
+          },
+          "[pH]" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "pH",
+            "description" : "Acidity",
+            "code" : "[pH]"
           }
         }
       },
@@ -20157,139 +20665,7 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_IDENTIFIER",
-              "occurrences" : "1..1",
-              "defaultValue" : {
-                "@type" : "DV_IDENTIFIER"
-              },
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_MULTIMEDIA",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_COUNT",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TIME",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DURATION",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_ORDINAL",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_SCALE",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_PROPORTION",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_EHR_URI",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_PARSABLE",
-              "occurrences" : "1..1",
-              "defaultValue" : {
-                "@type" : "DV_PARSABLE"
-              },
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_COUNT>",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_DATE>",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_TIME>",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
               "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -20682,9 +21058,16 @@
           "at0024.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
-            "text" : "Def bases artéria",
+            "text" : "Nome da análise",
             "description" : "*The name of the analyte result. (en)",
             "comment" : "*The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies. (en)"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Def bases artéria",
+            "description" : "*The value of the analyte result. (en)",
+            "comment" : "*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details. (en)"
           }
         }
       },
@@ -21208,109 +21591,7 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_IDENTIFIER",
-              "occurrences" : "1..1",
-              "defaultValue" : {
-                "@type" : "DV_IDENTIFIER"
-              },
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_MULTIMEDIA",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_COUNT",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DURATION",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_SCALE",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_EHR_URI",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_PARSABLE",
-              "occurrences" : "1..1",
-              "defaultValue" : {
-                "@type" : "DV_PARSABLE"
-              },
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_COUNT>",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_DATE>",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_TIME>",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
               "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -21703,9 +21984,16 @@
           "at0024.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
-            "text" : "Def bases veia",
+            "text" : "Nome da análise",
             "description" : "*The name of the analyte result. (en)",
             "comment" : "*The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies. (en)"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Def bases veia",
+            "description" : "*The value of the analyte result. (en)",
+            "comment" : "*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details. (en)"
           }
         }
       },
@@ -21829,672 +22117,6 @@
         "name" : "Julio de Sosa",
         "organisation" : "Servei Català de la Salut",
         "email" : "juliodesosa@catsalut.cat"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "pt-pt"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "9b6b54fd-5550-4faf-a2d8-b0b788275c16",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "18af6e053293b9edacf12e3a4275eade"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung von Details zu einer physischen Probe, die von einer Person zum Zwecke der Untersuchung, Kontrolle oder Analyse entnommen wurde oder sich auf eine Person bezieht.",
-          "keywords" : [ "Probe", "Labor", "Laborprobe", "Entnahme", "Probenahme", "Biopsie", "Gewebe", "Zytologie", "Mikrobiologie", "Pathologie", "Histopathologie", "Histologie", "Laboratorium", "Flüssigkeit", "Abstrich", "Blut", "Exsudat", "Serum", "Plasma", "Urin", "Speichel", "Sekretion", "synovial", "Lymphe", "Kot", "Stuhl", "Exkremente", "Aszites", "Auswurf", "Tupfer", "Muttermilch", "Eiter", "Drainageflüssigkeit", "Knochenmark", "Kultur", "Ausschabung", "Aspirat", "Aderlass", "Test", "zerebrospinale Flüssigkeit", "Pleuraflüssigkeit", "Resektion", "Exzision" ],
-          "use" : "Zur Darstellung von Details zu einer physischen Probe, die von einer Person zum Zwecke der Untersuchung, Kontrolle oder Analyse entnommen wurde oder sich auf eine Person bezieht.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung in den folgenden Anwendungsfällen entwickelt: \r\n- innerhalb von INSTRUCTION.service_request oder einem anderen laborbezogenen INSTRUCTION-Archetyp, um eine zu entnehmende Probe zu beschreiben, oder um eine Probe zu beschreiben, die einer Labordienstleistungsanforderung beigefügt ist;\r\n- innerhalb eines laborbezogenen ACTION-Archetyps zur Beschreibung der Probenentnahme oder einer entnommenen Probe; oder\r\n- innerhalb von OBSERVATION.laboratory_test_result oder anderen OBSERVATION-Archetypen im Laborbericht, um die berichtete Probe zu beschreiben.\r\nDarüber hinaus kann dieser Archetyp auch in andere ENTRY- oder CLUSTER-Archetypen eingebettet werden, wenn dies klinisch angemessen ist. \r\n\r\nDer Detaillierungsgrad dieses Archetyps wird wahrscheinlich den derzeit in den meisten Labors erfassten Levels übersteigen. Es wurde bewusst für eine einfache einzelne Probeentnahme konzipiert, gleichzeitige Entnahme mehrerer Proben mit einer einzigen Anforderung und komplexe Situationen, in denen es erforderlich ist, kleinste Details über die Verarbeitung und Aufteilung einer einzelnen Probe darzustellen.\r\n\r\nDie genaue Semantik mehrerer Elemente dieses Archetyps, kann sich, basierend auf dem vom Container-Archetyp bereitgestellten Kontext, ändern. Beispielsweise ist das Element \"Methode der Probenentnahme\" im Kontext eines INSTRUCTION-Archetyps die angeforderte Entnahmemethode, während das gleiche Element im Kontext eines ACTION-Archetyps im Status \"Abgeschlossen\" die tatsächliche Entnahmemethode ist.\r\n\r\nDieser Archetyp soll mit anderen CLUSTER-Archetypen wie \"Probenbehälter\", \"Probenverarbeitung\" und „Probentransport“ ergänzt werden.\r\n\r\nDieser Archetyp kann zusammen mit dem Archetyp \"Probenbehälter\" auf zwei Arten verwendet werden: \r\n- \"Probenbehälter\" verschachtelt in \"Probe\" (z.B. wenn eine venöse Blutprobe in zwei Röhrchen aufgeteilt wird oder ein ganzer Dickdarm in drei Behälter aufgeteilt wird); oder \r\n- \"Probe\" in \"Probenbehälter\" verschachtelt (z.B. wenn ein Eimer mit Formalin einen Abschnitt des Dickdarms und ein Rektum enthält oder ein Gefäß fünf einzeln markierte Muttermale enthält).\r\n\r\nDer Begriff \"Entnahme\" (EN: collection), das in diesem Archetyp verwendet wird, bezieht sich immer auf die Aktivität, die Probe von einer Person zu erhalten. Er soll nicht den Transport der Probe von der Person zum Testlabor darstellen.",
-          "misuse" : "Nicht zur Erfassung von Informationen über Proben, die sich nicht auf eine bestimmte Person beziehen. Zum Beispiel für routinemäßige Wasserproben aus einem Wasserwerk oder für Stichproben aus Einrichtungen der Lebensmittelproduktion.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "pt-pt" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "pt-pt"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "purpose" : "Att registrera detaljer om ett fysiskt provmaterial som tagits från eller relaterat till en individ för undersökning eller analys.",
-          "keywords" : [ "provmaterial", "laboratoriu", "prov", "provtagning", "samplimg", "biopsi", "vävnad", "kroppsvävnad", "vävnadsprov", "cytologi", "mikobiologi", "patologi", "histopatologi", "histologi", "labb", "vätska", "utstryk", "blod", "exudat", "serum", "plasma", "urin", "saliv", "sekret", "cysta", "lymfa", "avföring", "faeces", "ascites", "hostar upp", "sekret", "kompress", "bröstmjölk", "pus", "var", "dränagevätska", "benmärg", "mikroorganism", "odling", "skrapning", "aspirat", "venesektion", "test", "cerebrospinalvätska", "pleuravätska", "resektion", "excision" ],
-          "use" : "Används för att registrera detaljer om ett fysiskt provmaterial som tagits från eller relaterat till en individ för undersökning eller analys.\r\n\r\nDenna CLUSTER-arketyp är utformad för användning i de tre huvudkontexterna som beskrivs nedan:\r\n- Inom INSTRUCTION.service_request eller annan laboratorierelaterad INSTRUCTION-arketyp för att beskriva ett provmaterial som ska tas eller för att beskriva ett prov som åtföljer en begäran om laboratorietjänst.\r\n- Inom en laboratorierelaterad ACTION-arketyp för att beskriva provtagning eller provtaget material.\r\n- Inom OBSERVATION.laboratory_test_result eller annan laboratorierelaterad OBSERVATION-arketyp för att beskriva det provmaterial som ett laboratorieresultat bygger på.\r\nDessutom kan arketypen också användas inom andra ENTRY- eller CLUSTER-arketyper, där det är kliniskt lämpligt.\r\n\r\nDetaljnivån i denna arketyp överstiger sannolikt det som för närvarande registreras i de flesta laboratorier. Arketypen är avsedd att vara användbar för en enkel provtagning, samtidig provtagning av flera provmaterial utifrån en och samma beställning eller komplexa situationer där minsta detalj om beredning och uppdelning av ett provmaterial måste registreras.\r\n\r\nDe specifika betydelserna för flera element i den här arketypen kommer att ändras beroende på den överordnade arketyp där arketypen för provmaterial är infogad. Till exempel kommer elementet \"Provtagningsmetod\" i samband med en INSTRUCTION-arketyp att vara den erforderliga provtagningsmetoden, medan samma element i sammanhanget av en ACTION-arketyp i det \"färdiga\" tillståndet är den faktiska provtagningsmetod som används.\r\n\r\nDenna arketyp kompletteras av andra CLUSTER-arketyper för begrepp som exempelvis behållare, provberedning, transport och lagring av provmaterial.\r\n\r\nDen här arketypen har utformats för att användas med arketypen ”Specimen Container” på två huvudsakliga sätt:\r\n- ”Specimen Container” nästlad i ”Specimen” (till exempel när ett venöst blodprov är uppdelat mellan två injektionsflaskor eller om en hel tjocktarm är uppdelad i tre hinkar) eller\r\n- \"Specimen\" nästlad i \" Specimen Container\" (till exempel när en hink med formalin innehåller en sektion av tjocktarmen och en rektum).\r\n\r\nOBS! Termen \"provtagning\" i denna arketyp är avsedd att betyda aktiviteten för att samla in provmaterial från en individ. Det är inte avsett att representera transporten från individen till laboratoriet.\r\n",
-          "misuse" : "Ej avsedd att användas för att registrera information om provmaterial som inte är relaterat till en viss individ, såsom exempelvis rutinprover från vattenverk eller slumpmässiga prover från livsmedelsproduktion.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere detaljer om et fysisk prøvemateriale tatt fra eller relatert til et individ, for undersøkelse eller analyse.",
-          "keywords" : [ "laboratorium", "prøve", "prøvetaking", "laboratorieprøve", "prøvemateriale", "prøveeksemplar", "preparat", "prøvesamling", "biopsi", "vevsprøve", "celleprøve", "mikrobiologi", "patologi", "histologi", "lab", "væske", "utstryk", "blod", "sårvæske", "serum", "plasma", "urin", "spytt", "sekret,", "leddvæske", "lymfe", "avføring", "ascites", "ekspektorat", "pensel", "morsmelk", "puss", "drensvæske", "beinmarg", "kultur", "avskrap", "aspirat" ],
-          "use" : "Brukes for å registrere detaljer om et fysisk prøvemateriale tatt fra eller relatert til et individ, for undersøkelse eller analyse.\r\n\r\nDenne CLUSTER-arketypen er laget for å brukes i de tre hovedsammenhengene beskrevet under:\r\n- Innenfor INSTRUCTION.service_request eller en annen laboratorierelatert INSTRUCTION-arketype for å beskrive et prøvemateriale som skal tas, eller for å beskrive prøvematerialet som ligger ved en laboratorierekvisisjon.\r\n- Innenfor en laboratorierelatert ACTION-arketype for å beskrive prøvetaking eller et prøvemateriale som er tatt\r\n- Innenfor OBSERVATION.laboratory_test_result eller en annen laboratorierelatert OBSERVATION-arketype for å beskrive prøvematerialet som ligger til grunn for et laboratorieresultat.\r\nI tillegg kan arketypen også brukes innenfor andre ENTRY- eller CLUSTER-arketyper, der det er klinisk passende.\r\n\r\nDet er sannsynlig at detaljnivået i denne arketypen overgår nåværende dataregistrering i de fleste laboratorier. Den er ment for å være brukbar både for en enkel prøvetaking, samtidig innhenting av flere prøvematerialer med én rekvisisjon, og komplekse situasjoner det det må registreres mye detaljer om preparering og oppdeling av et prøvemateriale.\r\n\r\nDe spesifikke betydningene av flere elementer i denne arketypen vil endre seg ut fra den overordnede arketypen som Prøvemateriale-arketypen settes inn i. For eksempel vil elementet \"Prøvetakingsmetode\" i kontekst av en INSTRUCTION-arketype være den rekvirerte prøvetakingsmetoden, mens det samme elementet i kontekst av en ACTION-arketype i tilstanden \"completed\" være den faktiske prøvetakingsmetoden som ble brukt.\r\n\r\nDenne arketypen kompletteres av andre CLUSTER-arketyper for konsepter som Prøvebeholder, Prøvepreparering, og transport og lagring av prøvemateriale.\r\n\r\nDenne arketypen kan brukes sammen med Prøvebeholder-arketypen på to hovedmåter:\r\n- Ved nøsting av \"Prøvebeholder\" inni \"Prøvemateriale\" (for eksempel når et vakuumglass med venøst blod fordeles på to mindre glass, eller en hel tykktarm deles på tre bøtter)\r\n- Med \"Prøvemateriale\" nøstet inni \"Prøvebeholder\" (for eksempel når en bøtte inneholder en seksjon av en tykktarm og en endetarm, eller et glass inneholder fem individuelt merkede føflekker)\r\n\r\nNB! Uttrykket \"prøvetaking\" er i denne arketypen ment å bety aktiviteten å ta en prøve fra et individ. Det er ikke ment å representere transporten fra individet til laboratoriet.",
-          "misuse" : "Ikke ment å brukes til å registrere informasjon om prøvemateriale som ikke er relaterte til et spesifikt individ, som for eksempel rutineprøver fra vannverk eller stikkprøver fra matvareproduksjon.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "pt-br" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "pt-br"
-          },
-          "purpose" : "Para gravar detalhes de um espécime laboratorial. Será frequentemente usado em diferentes contextos, p.e, dentro de um arquétipo tipo Instruction para descrever os espécimes que devem ser obtidos, ou descrevendo o espécime que acompanha a solicitação laboratorial. Pode ocorre dentro de um arquétipo tipo Action, p.e., descrevendo espécimes retirados como parte de um procedimento cirúrgico. \r\n\r\nSerá finalmente utilizado dentro de um arquétipo de resultado laboratorial para descrever o espécime reportado.",
-          "keywords" : [ "*specimen (en)", "*laboratory (en)", "*sample (en)", "*collection (en)", "*sampling (en)", "*biopsy (en)", "*tissue (en)", "*cytology (en)", "*microbiology (en)", "*pathology (en)", "*histopathology (en)", "*histology (en)", "*lab (en)", "*fluid (en)", "*smear (en)", "*blood (en)", "*exudate (en)", "*serum (en)", "*plasma (en)", "*urine (en)", "*saliva (en)", "*secretion (en)", "*synovial (en)", "*lymph (en)", "*feces (en)", "*faeces (en)", "*fæces (en)", "*ascites (en)", "*expectorate (en)", "*swab (en)", "*breast milk (en)", "*pus (en)", "*drain fluid (en)", "*bone marrow (en)", "*culture (en)", "*scraping (en)", "*aspirate (en)", "*phlebotomy (en)", "*test (en)", "*cerebrospinal fluid (en)", "*pleural fluid (en)", "*resection (en)", "*excision (en)" ],
-          "use" : "Geralmente utilizado dentro de OBSERVATION. laboratory_test.v1 e outros arquétipos tipo Instruction ou Action relacionados.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "ar-sy" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "ar-sy"
-          },
-          "purpose" : "لتسجيل تفاصيل حول عينة بالمعمل. \r\nيستخدم غالبا في سياقات مختلفة, مثلا: في داخل نموذج (تعليمات) ليصف العينة التي ينبغي أخذها, أو يصف العينة المرافقة لطلب معملي. \r\nو قد يحدث ذلك في داخل نموذج (فعل), مثال: وصف العينات التي تم أخذها كجزء من إجراء طبي جراحي. \r\nو سيستخدم أخيرا في داخل نموذج نتيجة اختبار المعمل ليصف العينة التي يتم تقديم عينة حولها.",
-          "keywords" : [ "*specimen (en)", "*laboratory (en)", "*sample (en)", "*collection (en)", "*sampling (en)", "*biopsy (en)", "*tissue (en)", "*cytology (en)", "*microbiology (en)", "*pathology (en)", "*histopathology (en)", "*histology (en)", "*lab (en)", "*fluid (en)", "*smear (en)", "*blood (en)", "*exudate (en)", "*serum (en)", "*plasma (en)", "*urine (en)", "*saliva (en)", "*secretion (en)", "*synovial (en)", "*lymph (en)", "*feces (en)", "*faeces (en)", "*fæces (en)", "*ascites (en)", "*expectorate (en)", "*swab (en)", "*breast milk (en)", "*pus (en)", "*drain fluid (en)", "*bone marrow (en)", "*culture (en)", "*scraping (en)", "*aspirate (en)", "*phlebotomy (en)", "*test (en)", "*cerebrospinal fluid (en)", "*pleural fluid (en)", "*resection (en)", "*excision (en)" ],
-          "use" : "يستخدم عادةً في داخل نموذج (ملاحظة. معمل) و النماذج الأخرى تعليمات و فعل المتعلقة بالمعمل.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record details about a physical sample collected from, or related to, an individual for the purpose of investigation, examination or analysis.",
-          "keywords" : [ "specimen", "laboratory", "sample", "collection", "sampling", "biopsy", "tissue", "cytology", "microbiology", "pathology", "histopathology", "histology", "lab", "fluid", "smear", "blood", "exudate", "serum", "plasma", "urine", "saliva", "secretion", "synovial", "lymph", "feces", "faeces", "fæces", "ascites", "expectorate", "swab", "breast milk", "pus", "drain fluid", "bone marrow", "culture", "scraping", "aspirate", "phlebotomy", "test", "cerebrospinal fluid", "pleural fluid", "resection", "excision" ],
-          "use" : "Use to record details about a physical sample collected from, or related to, an individual for the purpose of investigation, examination or analysis.\r\n\r\nThis archetype has been specifically designed to be used in the following use cases:\r\n- within INSTRUCTION.service_request or another laboratory-related INSTRUCTION archetype to describe a specimen that is to be collected, or to describe a specimen that accompanies a laboratory service request; \r\n- within a laboratory-related ACTION archetype to describe specimen collection or a specimen that has been collected; or\r\n- within OBSERVATION.laboratory_test_result or other laboratory reporting OBSERVATION archetypes to describe the specimen being reported.\r\nIn addition this archetype can also be nested within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nThe level of detail in this archetype is likely to exceed that currently collected in most laboratories. It has deliberately been designed to cater for a simple, single specimen collection; simultaneous collection of multiple specimens with a single request; and complex situations where it is required to record minute detail about the preparation and subdivision of a single specimen.\r\n\r\nThe exact semantics of several elements of this archetype may change based on the context provided by the parent archetype in which it is nested. For example, the 'Collection method' element in the context of an INSTRUCTION archetype is the requested collection method, while the same element in the context of an ACTION archetype in the 'completed' state is the actual collection method.\r\n\r\nOther complementary archetypes will carry the detail about 'Specimen container', 'Specimen preparation', and 'Specimen transport'.\r\n\r\nThis archetype has been designed to be used with the Specimen container archetype in two main ways: \r\n- 'Specimen container' nested within 'Specimen' (for example when a venous blood specimen is divided between two vials, or a whole large intestine is divided into three buckets); or\r\n- 'Specimen' nested within 'Specimen container' (for example when a bucket of formalin contains a section of large intestine and a rectum, or a jar contains five individually marked moles).\r\n\r\nPlease note: The term 'collection' used in this archetype always refers to the activity of obtaining a specimen from an individual. It is not intended to represent the transport of the specimen from the individual to the testing laboratory.",
-          "misuse" : "Not intended to be used for recording information about specimens that are not related to a specific individual. For example routine water samples from a waterworks, or spot samples from food production facilities.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "annotations" : {
-      "@type" : "RESOURCE_ANNOTATIONS",
-      "documentation" : {
-        "ar-sy" : {
-          "/items[at0071]" : {
-            "fhir_mapping" : "*Specimen.collection.collector(en)"
-          },
-          "/items[at0013]" : {
-            "fhir_mapping" : "*Specimen.collection.sourceSite(en)"
-          },
-          "/items[at0001]" : {
-            "fhir_mapping" : "*Specimen.accessionIdentifier(en)"
-          },
-          "/items[at0034]" : {
-            "fhir_mapping" : "*Specimen.receivedTime(en)"
-          },
-          "/items[at0027]" : {
-            "fhir_mappings" : "*Specimen.collection.quantity(en)"
-          },
-          "/items[at0029]" : {
-            "fhir_mapping" : "*Specimen.type(en)"
-          },
-          "/items[at0070.1]" : {
-            "fhir_mapping" : "*Specimen.collection.collector(en)"
-          },
-          "/items[at0007.1]" : {
-            "fhir_mapping" : "*Specimen.collection.method(en)"
-          }
-        },
-        "en" : {
-          "/items[at0071]" : {
-            "fhir_mapping" : "Specimen.collection.collector"
-          },
-          "/items[at0088]" : {
-            "fhir_mapping" : "Specimen.identifier"
-          },
-          "/items[at0013]" : {
-            "fhir_mapping" : "Specimen.collection.sourceSite"
-          },
-          "/items[at0001]" : {
-            "fhir_mapping" : "Specimen.accessionIdentifier"
-          },
-          "/items[at0034]" : {
-            "fhir_mapping" : "Specimen.receivedTime"
-          },
-          "/items[at0027]" : {
-            "fhir_mapping" : "Specimen.collection.quantity"
-          },
-          "/items[at0029]" : {
-            "fhir_mapping" : "Specimen.type"
-          },
-          "/items[at0045.1]" : {
-            "fhir_mapping" : "Specimen.note"
-          },
-          "/items[at0070.1]" : {
-            "fhir_mapping" : "Specimen.collection.collector"
-          },
-          "/items[at0007.1]" : {
-            "fhir_mapping" : "Specimen.collection.method"
-          }
-        },
-        "pt-br" : { },
-        "nb" : { },
-        "de" : {
-          "/items[at0071]" : {
-            "fhir_mapping" : "Specimen.collection.collector"
-          },
-          "/items[at0088]" : {
-            "fhir_mapping" : "Specimen.identifier"
-          },
-          "/items[at0013]" : {
-            "fhir_mapping" : "Specimen.collection.bodySite"
-          },
-          "/items[at0001]" : {
-            "fhir_mapping" : "Specimen.accessionIdentifier"
-          },
-          "/items[at0034]" : {
-            "fhir_mapping" : "Specimen.receivedTime"
-          },
-          "/items[at0027]" : {
-            "fhir_mapping" : "Specimen.collection.quantity"
-          },
-          "/items[at0029]" : {
-            "fhir_mapping" : "Specimen.type"
-          },
-          "/items[at0045.1]" : {
-            "fhir_mapping" : "Specimen.note"
-          },
-          "/items[at0070.1]" : {
-            "fhir_mapping" : "Specimen.collection.collector"
-          },
-          "/items[at0007.1]" : {
-            "fhir_mapping" : "Specimen.collection.method"
-          }
-        },
-        "sv" : {
-          "/items[at0027]" : {
-            "fhir_mapping" : "Specimen.collection.quantity"
-          }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.specimen.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-specimen-001.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0008.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0007.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0079.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0087.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0015.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0005.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0067.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0070.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_IDENTIFIER",
-              "defaultValue" : {
-                "@type" : "DV_IDENTIFIER"
-              },
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0080.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_COUNT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "magnitude",
-                "children" : [ {
-                  "@type" : "C_INTEGER",
-                  "rmTypeName" : "INTEGER",
-                  "occurrences" : "1..1",
-                  "constraint" : [ {
-                    "lower" : 0,
-                    "lowerIncluded" : true,
-                    "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0003.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_IDENTIFIER",
-              "defaultValue" : {
-                "@type" : "DV_IDENTIFIER"
-              },
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0042.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.2" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0041.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0045.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "ar-sy" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        },
-        "en" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        },
-        "pt-br" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        },
-        "nb" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        },
-        "de" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        },
-        "sv" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        },
-        "pt-pt" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : {
-        "ac0.1" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.1",
-          "members" : [ "at0062", "at0063", "at0064" ]
-        },
-        "ac0.2" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.2",
-          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
-        }
-      }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "2135a42f-2b06-49c7-a71b-dd68896fa178",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Sarah Ballout, Antje Wulff, Natalia Strauch",
-        "organisation" : "PLRI for Medical Informatics Medical School Hannover and TU Braunschweig, Medizinische Hochschule Hannover",
-        "email" : "Ballout.Sarah@mh-hannover.de, wulff.antje@mh-hannover.de, Strauch.Natalia@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : {
-        "name" : "Linda Aulin, Erik Sundvall",
-        "organisation" : "Region Stockholm, Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University",
-        "email" : "linda.aulin-lundeqvist@regionstockholm.se, erik.sundvall@regionstockholm.se"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Kristian Berg, Gro-Hilde Ulriksen, Line Silsand, Silje Ljosland Bakke, Liv Laugen",
-        "organisation" : "Universitetssykehuset Nord-Norge, Helse Vest IKT AS, ​Oslo University Hospital, Norway",
-        "email" : "kristian.berg@unn.no, gro-hilde.ulriksen@unn.no, line.silsand@unn.no, silje.ljosland.bakke@helse-vest-ikt.no, liv.laugen@ous-hf.no"
-      },
-      "accreditation" : "*",
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "pt-br"
-      },
-      "author" : {
-        "name" : "Adriana Kitajima, Débora Farage, Fernanda Maia, Laíse Figueiredo, Marivan Abrahão",
-        "organisation" : "Core Consulting",
-        "email" : "contato@coreconsulting.com.br"
-      },
-      "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "ar-sy"
-      },
-      "author" : {
-        "name" : "Mona Saleh"
       },
       "otherDetails" : { }
     }, {
