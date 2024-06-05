@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "44.0.0",
+      "sem_ver" : "45.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "110817f405b31a81577cc3bc6d5e8d24",
+      "MD5-CAM-1.0.1" : "996857805d5d0cfc19a12043986182d3",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -29755,6 +29755,15 @@
                       "attributeTuples" : [ ],
                       "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-exam-placenta-o1-001.v0",
                       "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0005.2",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-exam-002.v2",
+                      "referenceType" : "archetypeOverlay"
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -30484,6 +30493,275 @@
         "name" : "Silje Ljosland Bakke, Vebjørn Arntzen, Kanika Kuwelker, Marit Alice Venheim",
         "organisation" : "Nasjonal IKT HF, Oslo University Hospital, Helse Vest IKT",
         "email" : "varntzen@ous-hf.no, kanika.kuwelker@helse-vest-ikt.no, marit.alice.venheim@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Adriana Kitajima",
+        "organisation" : "Hospital Alemão Oswaldo Cruz - HAOC",
+        "email" : "adrianakitajima@gmail.com"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "5ee10d6a-2a5b-4c88-8ba9-133007e3e49d",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "17cc0a89105a19426cb10ab8f363640d"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.exam.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-exam-002.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "70847004",
+                    "value" : "Membranas amnióticas"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0012.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "249181009",
+                    "value" : "Completa"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "249182002",
+                    "value" : "Incompleta"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0006.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "249181009",
+                    "value" : "Completa"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "249182002",
+                    "value" : "Incompleta"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "pt-br" : { },
+        "de" : { },
+        "sv" : { },
+        "pt-pt" : {
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Clinical description",
+            "description" : "*Narrative description of the overall findings observed during the physical examination. (en)"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Integridade",
+            "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings. (en)",
+            "comment" : "*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)"
+          }
+        }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0000.1" : "term:SNOMED-CT::5880005"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "4f914639-0324-4cd8-a0a1-5c6316fe3b66",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Nina Schewe",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "schewe.nina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-pt"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Erik Sundvall",
+        "organisation" : "Region Östergötland + Linköping University",
+        "email" : "erik.sundvall@regionostergotland.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke, Vebjørn Arntzen",
+        "organisation" : "Nasjonal IKT HF, Oslo University Hospital",
+        "email" : "varntzen@ous-hf.no"
       },
       "otherDetails" : { }
     }, {
