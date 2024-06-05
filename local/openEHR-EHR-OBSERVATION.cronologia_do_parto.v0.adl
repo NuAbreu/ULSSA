@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::pt-pt]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 		["pt-pt"] = <
 			language = <[ISO_639-1::pt-pt]>
 		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -23,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3d3c05cddc5535d90ac18b8e43f6e62a">
+		["MD5-CAM-1.0.1"] = <"8077fbedd8c7ed98b28b4dd6bde036a7">
 		["build_uid"] = <"4e237ccb-0895-3a3f-9776-2359dc514b30">
 	>
 
@@ -99,6 +110,42 @@ ontology
 				>
 				["at0007"] = <
 					text = <"Total">
+					description = <"">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Cronologia do parto (pt-pt)">
+					description = <"*Cronologia do parto (pt-pt)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"*Dilatação (pt-pt)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*Expulsão (pt-pt)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Dequitadura (pt-pt)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Total (pt-pt)">
 					description = <"">
 				>
 			>
