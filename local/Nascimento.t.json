@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "52.0.0",
+      "sem_ver" : "53.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "387c4e1ae436686e66df87b01a256850",
+      "MD5-CAM-1.0.1" : "e4db4f2ba2a8ce90751dac7228305980",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -2295,16 +2295,16 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "0..1",
                           "terminologyId" : {
-                            "value" : "local_terms"
+                            "value" : "SNOMED"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "local_terms" ],
+                          "selectedTerminologies" : [ "SNOMED" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "local_terms",
+                            "terminologyId" : "SNOMED",
                             "code" : "281050002",
                             "value" : "Nado-vivo"
                           }, {
-                            "terminologyId" : "local_terms",
+                            "terminologyId" : "SNOMED",
                             "code" : "237364002",
                             "value" : "Nado-morto"
                           } ]
