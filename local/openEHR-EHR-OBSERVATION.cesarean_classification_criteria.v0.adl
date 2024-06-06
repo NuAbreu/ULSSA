@@ -1,0 +1,427 @@
+archetype (adl_version=1.4; uid=2f476c85-4486-4118-a2d3-60e50a4ab67c)
+	openEHR-EHR-OBSERVATION.cesarean_classification_criteria.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2023-09-21">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"c47996a6af2180d3a02a545997c1bed2">
+		["build_uid"] = <"2fca9fed-d804-3e77-bd22-0757ef5c461a">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Cesarean Classification Criteria
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Classification regarding the urgency of the surgery
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0009,    -- Scheduled caesarean
+													at0010,    -- Urgent caesarean
+													at0011]    -- Emergent caesarean
+												}
+											}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Classification according to the absence or stage of labor
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0012,    -- Cesarean section in the absence of labor
+													at0013,    -- Cesarean section in the first stage of labor
+													at0014]    -- Cesarean section during expulsion period
+												}
+											}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Classification according to the main reason
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0025,    -- Maternal pathology that contraindicates vaginal birth
+													at0026,    -- Fetal anomaly that contraindicates vaginal birth
+													at0027,    -- Pregnancy-related pathology
+													at0028,    -- Previous uterine surgery
+													at0029,    -- Anomalous fetal situation or presentation
+													at0030,    -- Multiple pregnancy
+													at0031,    -- Suspected feto-pelvic incompatibility
+													at0032,    -- Failed attempt to induce labor
+													at0033,    -- Stationary labor
+													at0034]    -- Intrapartum non-reassuring fetal status
+												}
+											}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Classification of Robson
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0015,    -- Group 1 - Nulliparous, single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, spontaneous labor.
+													at0016,    -- Group 2 - Nulliparous, single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, induced labor or cesarean section prior to the onset of spontaneous labour.
+													at0017,    -- Group 3 - Multiparous (excluding previous cesarean section), single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, spontaneous labor.
+													at0018,    -- Group 4 - Multiparous (excluding previous cesarean section), single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, induced labour or cesarean section prior to the onset of spontaneous labour.
+													at0019,    -- Group 5 - Previous cesarean section, single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation.
+													at0020,    -- Group 6 - Nulliparous, single breech pregnancy.
+													at0021,    -- Group 7 - Multiparous, single breech pregnancy (including previous cesarean section).
+													at0022,    -- Group 8 - Multiple gestation (including previous cesarean section).
+													at0023,    -- Group 9 - Single-fetal pregnancy with transverse/oblique lie (including previous cesarean section).
+													at0024]    -- Group 10 - Preterm (less than 37 weeks of gestation), single-fetal pregnancy, cephalic presentation (including previous cesarean section).
+												}
+											}
+										}
+									}
+									ELEMENT[at0035] occurrences matches {0..1} matches {    -- Main reason
+										value matches {
+											DV_CODED_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Cesarean Classification Criteria">
+					description = <"Cesarean Classification Criteria">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Classification regarding the urgency of the surgery">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Classification according to the absence or stage of labor">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Classification according to the main reason">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Classification of Robson">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Scheduled caesarean">
+					description = <"When the reason for the surgery does not require its completion on the same day, i.e., it can be scheduled for a future date.">
+				>
+				["at0010"] = <
+					text = <"Urgent caesarean">
+					description = <"When there is a clinical situation that needs to be resolved in a short period of time, but there is no imminent danger to the health of the fetus and/or the woman giving birth.">
+				>
+				["at0011"] = <
+					text = <"Emergent caesarean">
+					description = <"When there is an imminent danger to the health of the fetus and/or the woman giving birth.">
+				>
+				["at0012"] = <
+					text = <"Cesarean section in the absence of labor">
+					description = <"When the caesarean section is performed before the occurrence of rhythmic uterine contractions with repercussions on the characteristics of the cervix.">
+				>
+				["at0013"] = <
+					text = <"Cesarean section in the first stage of labor">
+					description = <"When the caesarean section is performed after the occurrence of rhythmic uterine contractions with repercussions on the characteristics of the cervix, but before complete cervical dilation.">
+				>
+				["at0014"] = <
+					text = <"Cesarean section during expulsion period">
+					description = <"When the caesarean section is performed after documentation of complete cervical dilation.">
+				>
+				["at0015"] = <
+					text = <"Group 1 - Nulliparous, single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, spontaneous labor.">
+					description = <"Group 1 - Nulliparous, single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, spontaneous labor.">
+				>
+				["at0016"] = <
+					text = <"Group 2 - Nulliparous, single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, induced labor or cesarean section prior to the onset of spontaneous labour.">
+					description = <"Group 2 - Nulliparous, single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, induced labor or cesarean section prior to the onset of spontaneous labour.">
+				>
+				["at0017"] = <
+					text = <"Group 3 - Multiparous (excluding previous cesarean section), single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, spontaneous labor.">
+					description = <"Group 3 - Multiparous (excluding previous cesarean section), single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, spontaneous labor.">
+				>
+				["at0018"] = <
+					text = <"Group 4 - Multiparous (excluding previous cesarean section), single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, induced labour or cesarean section prior to the onset of spontaneous labour.">
+					description = <"Group 4 - Multiparous (excluding previous cesarean section), single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation, induced labour or cesarean section prior to the onset of spontaneous labour.">
+				>
+				["at0019"] = <
+					text = <"Group 5 - Previous cesarean section, single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation.">
+					description = <"Group 5 - Previous cesarean section, single-fetal pregnancy, cephalic presentation, above 37 weeks of gestation.">
+				>
+				["at0020"] = <
+					text = <"Group 6 - Nulliparous, single breech pregnancy.">
+					description = <"Group 6 - Nulliparous, single breech pregnancy.">
+				>
+				["at0021"] = <
+					text = <"Group 7 - Multiparous, single breech pregnancy (including previous cesarean section).">
+					description = <"Group 7 - Multiparous, single breech pregnancy (including previous cesarean section).">
+				>
+				["at0022"] = <
+					text = <"Group 8 - Multiple gestation (including previous cesarean section).">
+					description = <"Group 8 - Multiple gestation (including previous cesarean section).">
+				>
+				["at0023"] = <
+					text = <"Group 9 - Single-fetal pregnancy with transverse/oblique lie (including previous cesarean section).">
+					description = <"Group 9 - Single-fetal pregnancy with transverse/oblique lie (including previous cesarean section).">
+				>
+				["at0024"] = <
+					text = <"Group 10 - Preterm (less than 37 weeks of gestation), single-fetal pregnancy, cephalic presentation (including previous cesarean section).">
+					description = <"Group 10 - Preterm (less than 37 weeks of gestation), single-fetal pregnancy, cephalic presentation (including previous cesarean section).">
+				>
+				["at0025"] = <
+					text = <"Maternal pathology that contraindicates vaginal birth">
+					description = <"Maternal pathology that contraindicates vaginal birth">
+				>
+				["at0026"] = <
+					text = <"Fetal anomaly that contraindicates vaginal birth">
+					description = <"Fetal anomaly that contraindicates vaginal birth">
+				>
+				["at0027"] = <
+					text = <"Pregnancy-related pathology">
+					description = <"Pregnancy-related pathology">
+				>
+				["at0028"] = <
+					text = <"Previous uterine surgery">
+					description = <"Previous uterine surgery">
+				>
+				["at0029"] = <
+					text = <"Anomalous fetal situation or presentation">
+					description = <"Anomalous fetal situation or presentation">
+				>
+				["at0030"] = <
+					text = <"Multiple pregnancy">
+					description = <"Multiple pregnancy">
+				>
+				["at0031"] = <
+					text = <"Suspected feto-pelvic incompatibility">
+					description = <"Suspected feto-pelvic incompatibility">
+				>
+				["at0032"] = <
+					text = <"Failed attempt to induce labor">
+					description = <"Failed attempt to induce labor">
+				>
+				["at0033"] = <
+					text = <"Stationary labor">
+					description = <"Stationary labor">
+				>
+				["at0034"] = <
+					text = <"Intrapartum non-reassuring fetal status">
+					description = <"Intrapartum non-reassuring fetal status">
+				>
+				["at0035"] = <
+					text = <"Main reason">
+					description = <"">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"Critérios de Classificação de Cesariana">
+					description = <"*Cesarean Classification Criteria (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Classificação quanto à urgência da cirurgia">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Classificação quanto à ausência ou fase do trabalho de parto">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Classificação quanto ao motivo principal">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Classificação de Robson">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Cesariana Programada">
+					description = <"Quando o motivo da cirurgia não requer que esta seja realizada no próprio dia, podendo ser agendada para uma data futura.">
+				>
+				["at0010"] = <
+					text = <"Cesariana Urgente">
+					description = <"Quando existe uma situação clínica que carece de resolução num curto intervalo de tempo, mas não existe perigo eminente de saúde para o feto e/ou para a parturiente.">
+				>
+				["at0011"] = <
+					text = <"Cesariana Emergente">
+					description = <"Quando existe perigo eminente de saúde para o feto e/ou para a parturiente.">
+				>
+				["at0012"] = <
+					text = <"Cesariana em ausência de trabalho de parto">
+					description = <"Quando a cesariana é realizada antes da ocorrência de contrações uterinas rítmicas com repercussão nas características do colo do uterino.">
+				>
+				["at0013"] = <
+					text = <"Cesariana no primeiro período do trabalho de parto">
+					description = <"Quando a cesariana é realizada após a ocorrência de contrações uterinas rítmicas com repercussão nas características do colo do uterino, mas antes da dilatação cervical completa.">
+				>
+				["at0014"] = <
+					text = <"Cesariana em período expulsivo">
+					description = <"Quando a cesariana é realizada após a documentação de uma dilatação cervical completa.">
+				>
+				["at0015"] = <
+					text = <"Grupo 1 - Nulípara, gravidez unifetal, apresentação cefálica, sup a 37 semanas, em trabalho de parto espontâneo.">
+					description = <"Grupo 1 - Nulípara, gravidez unifetal, apresentação cefálica, sup a 37 semanas, em trabalho de parto espontâneo.">
+				>
+				["at0016"] = <
+					text = <"Grupo 2 - Nulípara, gravidez unifetal, apresentação cefálica, sup a 37 semanas, trabalho de parto induzido ou cesariana antes do início do trabalho de parto.">
+					description = <"Grupo 2 - Nulípara, gravidez unifetal, apresentação cefálica, sup a 37 semanas, trabalho de parto induzido ou cesariana antes do início do trabalho de parto.">
+				>
+				["at0017"] = <
+					text = <"Grupo 3 - Multípara (excluindo cesariana prévia), gravidez unifetal, apresentação cefálica, sup a 37 semanas, em trabalho de parto espontâneo.">
+					description = <"Grupo 3 - Multípara (excluindo cesariana prévia), gravidez unifetal, apresentação cefálica, sup a 37 semanas, em trabalho de parto espontâneo.">
+				>
+				["at0018"] = <
+					text = <"Grupo 4 - Multípara (excluindo cesariana prévia), gravidez unifetal, apresentação cefálica, sup a 37 semanas, trabalho de parto induzido ou cesariana antes do início do trabalho de parto.">
+					description = <"Grupo 4 - Multípara (excluindo cesariana prévia), gravidez unifetal, apresentação cefálica, sup a 37 semanas, trabalho de parto induzido ou cesariana antes do início do trabalho de parto.">
+				>
+				["at0019"] = <
+					text = <"Grupo 5 - Cesariana prévia, gravidez unifetal, apresentação cefálica, sup a 37 semanas.">
+					description = <"Grupo 5 - Cesariana prévia, gravidez unifetal, apresentação cefálica, sup a 37 semanas.">
+				>
+				["at0020"] = <
+					text = <"Grupo 6 - Nulípara, apresentação pélvica.">
+					description = <"Grupo 6 - Nulípara, apresentação pélvica.">
+				>
+				["at0021"] = <
+					text = <"Grupo 7 - Multípara, apresentação pélvica (incluindo cesariana prévia).">
+					description = <"Grupo 7 - Multípara, apresentação pélvica (incluindo cesariana prévia).">
+				>
+				["at0022"] = <
+					text = <"Grupo 8  - Gestação múltipla (incluindo cesariana prévia).">
+					description = <"Grupo 8  - Gestação múltipla (incluindo cesariana prévia).">
+				>
+				["at0023"] = <
+					text = <"Grupo 9 - Situação transversa/oblíqua (incluindo cesariana prévia).">
+					description = <"Grupo 9 - Situação transversa/oblíqua (incluindo cesariana prévia).">
+				>
+				["at0024"] = <
+					text = <"Grupo 10 - Pré-termo (menos 37 semanas), gestação única, apresentação cefálica (incluindo cesariana prévia).">
+					description = <"Grupo 10 - Pré-termo (menos 37 semanas), gestação única, apresentação cefálica (incluindo cesariana prévia).">
+				>
+				["at0025"] = <
+					text = <"Patologia materna que contraindica parto vaginal">
+					description = <"Patologia materna que contraindica parto vaginal">
+				>
+				["at0026"] = <
+					text = <"Anomalia fetal que contraindica o parto vaginal">
+					description = <"Anomalia fetal que contraindica o parto vaginal">
+				>
+				["at0027"] = <
+					text = <"Patologia própria da gravidez">
+					description = <"Patologia própria da gravidez">
+				>
+				["at0028"] = <
+					text = <"Cirurgia uterina prévia">
+					description = <"Cirurgia uterina prévia">
+				>
+				["at0029"] = <
+					text = <"Situação ou apresentação fetal anómala">
+					description = <"Situação ou apresentação fetal anómala">
+				>
+				["at0030"] = <
+					text = <"Gravidez múltipla">
+					description = <"Gravidez múltipla">
+				>
+				["at0031"] = <
+					text = <"Suspeita de incompatibilidade feto-pélvica">
+					description = <"Suspeita de incompatibilidade feto-pélvica">
+				>
+				["at0032"] = <
+					text = <"Tentativa frustrada de indução do trabalho de parto">
+					description = <"Tentativa frustrada de indução do trabalho de parto">
+				>
+				["at0033"] = <
+					text = <"Trabalho de parto estacionário">
+					description = <"Trabalho de parto estacionário">
+				>
+				["at0034"] = <
+					text = <"Estado fetal não tranquilizador intraparto">
+					description = <"Estado fetal não tranquilizador intraparto">
+				>
+				["at0035"] = <
+					text = <"Motivo Principal">
+					description = <"">
+				>
+			>
+		>
+	>
