@@ -1,0 +1,64 @@
+archetype (adl_version=1.4; uid=b0365dac-8d99-4588-be42-9a2977d511f8)
+	openEHR-EHR-CLUSTER.cesarean_classification_criteria.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2024-06-07">
+		["name"] = <"GTPCE">
+		["organisation"] = <"CHUPorto">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"7eb7783f7f3964a5f7a9cff4fa7ce6bc">
+		["build_uid"] = <"dc2637d3-ee7c-38a3-8e4d-3aa1d81b9a85">
+	>
+
+definition
+	CLUSTER[at0000] matches {*}    -- Cesarean Classification Criteria
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Cesarean Classification Criteria">
+					description = <"Cesarean Classification Criteria">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Cesarean Classification Criteria (en)">
+					description = <"*Cesarean Classification Criteria (en)">
+				>
+			>
+		>
+	>
