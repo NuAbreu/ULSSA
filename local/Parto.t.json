@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "41.2.0",
+      "sem_ver" : "42.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c347ba5fc4168c4d2d667392321e0acf",
+      "MD5-CAM-1.0.1" : "d1efaa6c2b13010326e316a4f4cbd00f",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -851,6 +851,10 @@
                         "terminologyId" : "local_terms",
                         "code" : "73211009",
                         "value" : "Diabetes"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "74964007",
+                        "value" : "Outro"
                       } ]
                     } ]
                   } ],
