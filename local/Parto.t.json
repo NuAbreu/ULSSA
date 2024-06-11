@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "46.0.0",
+      "sem_ver" : "46.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "bac0aea778b14f7c2966618f45f41b0e",
+      "MD5-CAM-1.0.1" : "cd3b077c437a0cf70d09023f09816b47",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -3745,6 +3745,12 @@
             "text" : "cm",
             "description" : "centimeter",
             "code" : "cm"
+          },
+          "at0037.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0037.1",
+            "text" : "Plano",
+            "description" : "*Position of the presenting part relative to the ischial spines. (en)"
           },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
