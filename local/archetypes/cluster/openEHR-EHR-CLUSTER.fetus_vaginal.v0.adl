@@ -43,7 +43,7 @@ This archetype has been specifically designed to be used in the 'Examination fin
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e43fe7448c955b81f8de0de065b49eb2">
+		["MD5-CAM-1.0.1"] = <"f3a2760c309818b23d9533bce7a647d0">
 		["build_uid"] = <"603f92b6-3109-4f3f-afa8-4c495bcd6f93">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -349,7 +349,7 @@ ontology
 					description = <"*Specific findings observed during the vaginal palpation of a single fetus in utero. (en)">
 				>
 				["at0001"] = <
-					text = <"*Presentation (en)">
+					text = <"Apresentação">
 					description = <"*Identification of the presenting part of the fetus, determined by vaginal palpation. (en)">
 				>
 				["at0002"] = <
@@ -381,7 +381,7 @@ ontology
 					description = <"*An arm is the presenting part. (en)">
 				>
 				["at0009"] = <
-					text = <"*Cord presence (en)">
+					text = <"Presença do cordão umbilical">
 					description = <"*Finding about the presence of the umbilical cord in the cervix or vagina. (en)">
 				>
 				["at0010"] = <
@@ -393,19 +393,19 @@ ontology
 					description = <"*The umbilical cord is not present on palpation. (en)">
 				>
 				["at0012"] = <
-					text = <"*Position (en)">
+					text = <"Posição">
 					description = <"*Relationship between the fetal denominator and the maternal pelvis, determined by vaginal palpation. (en)">
 				>
 				["at0013"] = <
-					text = <"*Right Occipito-Transverse (ROT) (en)">
+					text = <"ODT">
 					description = <"*The fetal occiput is pointing towards the right. Also known as Right Occipito-Lateral (ROL). (en)">
 				>
 				["at0014"] = <
-					text = <"*Right Occipito-Anterior (ROA) (en)">
+					text = <"ODA">
 					description = <"*The fetal occiput is pointing anteriorly and towards the right. (en)">
 				>
 				["at0015"] = <
-					text = <"*Right Occipito-Posterior (ROP) (en)">
+					text = <"ODP">
 					description = <"*The fetal occiput is pointing posteriorly and towards the right. (en)">
 				>
 				["at0016"] = <
@@ -413,19 +413,19 @@ ontology
 					description = <"*The fetal occiput is pointing anteriorly, towards the pubic symphysis. (en)">
 				>
 				["at0017"] = <
-					text = <"*Occipito-Posterior (OP) (en)">
+					text = <"OP">
 					description = <"*The fetal occiput is pointing posteriorly, towards the sacrum. (en)">
 				>
 				["at0018"] = <
-					text = <"*Left Occipito-Transverse (LOT) (en)">
+					text = <"OET">
 					description = <"*The fetal occiput is pointing towards the left. Also known as Left Occcipito-Lateral (LOL). (en)">
 				>
 				["at0019"] = <
-					text = <"*Left Occipito-Anterior (LOA) (en)">
+					text = <"OEA">
 					description = <"*The fetal occiput is pointing anteriorly and towards the left. (en)">
 				>
 				["at0020"] = <
-					text = <"*Left Occipito-Posterior (LOP) (en)">
+					text = <"OEP">
 					description = <"*The fetal occiput is pointing posteriorly and towards the left. (en)">
 				>
 				["at0021"] = <
