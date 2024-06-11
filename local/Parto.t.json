@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "46.1.0",
+      "sem_ver" : "47.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "cd3b077c437a0cf70d09023f09816b47",
+      "MD5-CAM-1.0.1" : "6dd49d8a9c5bc950e151922b35b58120",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -2447,6 +2447,51 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0016.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "SNOMED"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "SNOMED" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "SNOMED",
+                                "code" : "289708007",
+                                "value" : "Rítmicas"
+                              }, {
+                                "terminologyId" : "SNOMED",
+                                "code" : "289705005",
+                                "value" : "Irregulares"
+                              }, {
+                                "terminologyId" : "SNOMED",
+                                "code" : "289701001",
+                                "value" : "Ausentes"
+                              }, {
+                                "terminologyId" : "SNOMED",
+                                "code" : "289710009",
+                                "value" : "Taquissistolia"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0011.1",
                       "attributes" : [ {
@@ -2480,7 +2525,8 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "nodeId" : "at0012",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0012.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "items",
@@ -2812,6 +2858,18 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Contrações uterinas",
+            "description" : "*The strength, duration and frequency of uterine contractions. (en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Contrações",
+            "description" : "*The rhythm of the contractions. (en)"
           }
         }
       },
@@ -2827,6 +2885,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
           "members" : [ "at0029", "at0030", "at0031" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0017", "at0018", "at0019", "at0036" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ ]
         }
       }
     },
@@ -3751,6 +3824,12 @@
             "code" : "at0037.1",
             "text" : "Plano",
             "description" : "*Position of the presenting part relative to the ischial spines. (en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Palpação do feto",
+            "description" : "*Specific findings observed during the vaginal palpation of a single fetus in utero. (en)"
           },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
