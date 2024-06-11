@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "43.1.0",
+      "sem_ver" : "43.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8d8f30c1b347ba48897d808c8da7a403",
+      "MD5-CAM-1.0.1" : "61ba7ae33e1530aa0aa56c6f68ff67c0",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -9599,6 +9599,18 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Ingestão de alimentos",
+            "description" : "*The name of the item of food being recorded. (en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ingestão de alimentos",
+            "description" : "*Information about a single food item consumed by an individual. (en)"
           }
         }
       },
