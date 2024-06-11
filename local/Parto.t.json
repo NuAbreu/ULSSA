@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "43.2.0",
+      "sem_ver" : "43.3.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "61ba7ae33e1530aa0aa56c6f68ff67c0",
+      "MD5-CAM-1.0.1" : "eb65e16877332f49d0ba4ad15b1fb5e3",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -2310,7 +2310,14 @@
             "description" : "Generic archetype to contain existing CLUSTER archetypes which need to be represented as standalone data."
           }
         },
-        "pt-pt" : { }
+        "pt-pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Profissional",
+            "description" : "Arquétipo genérico para incluir os arquétipos CLUSTER existentes, que necessitem de ser representados como dados independentes."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6455,7 +6462,14 @@
             "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
           }
         },
-        "pt-pt" : { }
+        "pt-pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Avaliação Fetal",
+            "description" : "*A generic section header which should be renamed in a template to suit a specific clinical context. (en)"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6836,7 +6850,29 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
                           "occurrences" : "1..1",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "local_terms"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "local_terms" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "local_terms",
+                                "code" : "N",
+                                "value" : "Normal"
+                              }, {
+                                "terminologyId" : "local_terms",
+                                "code" : "A",
+                                "value" : "Anormal"
+                              } ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -6885,6 +6921,18 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0041.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041.1",
+            "text" : "RCF",
+            "description" : "*Clinical interpretation of the growth indicator chart. (en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Indicadores de Crescimento Fetal",
+            "description" : "*Details about parameters plotted on a growth chart to allow monitoring of foetal growth over time, relative to a reference population. (en)"
           }
         }
       },
@@ -7715,6 +7763,19 @@
             "text" : "(Synthesized)",
             "code" : "ac0.0.11",
             "description" : ""
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1.1",
+            "text" : "Indicadores de Crescimento Fetal",
+            "description" : "*Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time. (en)"
+          },
+          "at0010.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.0.1",
+            "text" : "RCF",
+            "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the fetal heart rate. (en)",
+            "comment" : "*For example, bradycardia or tachycardia. (en)"
           }
         }
       },
@@ -8344,6 +8405,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Decisão de Cesariana",
+            "description" : "*Request for a health-related service or activity to be delivered by a clinician, organisation or agency. (en)"
           }
         }
       },
@@ -8732,7 +8799,20 @@
         "de" : { },
         "nl" : { },
         "sv" : { },
-        "pt-pt" : { }
+        "pt-pt" : {
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Observações",
+            "description" : "*Narrative description of the story or clinical history for the subject of care. (en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Período Expulsivo",
+            "description" : "*The subjective clinical history of the subject of care as recorded directly by the subject, or reported to a clinician by the subject or a carer. (en)"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11569,7 +11649,14 @@
         "zh" : { },
         "sv" : { },
         "es" : { },
-        "pt-pt" : { }
+        "pt-pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Nome do médico",
+            "description" : "Um ser humano individual."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
