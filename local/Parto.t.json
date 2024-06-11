@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "45.0.0",
+      "sem_ver" : "45.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "48424c47c6af1b995ed59950a1519040",
+      "MD5-CAM-1.0.1" : "330a56be06a5ffb964080e6afb325f2a",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -4099,7 +4099,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Achados do exame físico (2)",
+            "text" : "Bolsa de águas",
             "description" : "*Findings observed during the physical examination of a subject of care. (en)"
           }
         },
@@ -4509,7 +4509,14 @@
         "pt-br" : { },
         "de" : { },
         "sv" : { },
-        "pt-pt" : { }
+        "pt-pt" : {
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Bolsa de águas",
+            "description" : "*Narrative description of the overall findings observed during the physical examination. (en)"
+          }
+        }
       },
       "termBindings" : {
         "SNOMED-CT" : {
