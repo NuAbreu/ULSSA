@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "50.1.0",
+      "sem_ver" : "50.1.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "7960d44467c3ec6a590987bb157c2494",
+      "MD5-CAM-1.0.1" : "6f3254531581f0cfb4561eea75368f61",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -2023,7 +2023,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Contrações",
+            "text" : "Colo do útero",
             "description" : "*Findings observed during the physical examination of a subject of care. (en)"
           }
         },
