@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "43.0.1",
+      "sem_ver" : "43.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f4e8ba2c7b567d4a56742654dd44c5ed",
+      "MD5-CAM-1.0.1" : "8d8f30c1b347ba48897d808c8da7a403",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -10598,7 +10598,7 @@
           "at0002.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.2",
-            "text" : "Rotura da Bolsa de águas",
+            "text" : "Rotura da bolsa de águas em",
             "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
           }
         },
