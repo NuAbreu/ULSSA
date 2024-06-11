@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "41.1.0",
+      "sem_ver" : "41.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "341604ca185bbaee5438dcf4674f4a43",
+      "MD5-CAM-1.0.1" : "c347ba5fc4168c4d2d667392321e0acf",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -763,7 +763,48 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "M",
+                        "value" : "Misoprostol"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "Pg",
+                        "value" : "Prostaglandinas E2 em gel"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "Pp",
+                        "value" : "Prostaglandinas E2 (Propess)"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "O",
+                        "value" : "Ocitocina"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "S",
+                        "value" : "Sulprostona"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "Mm",
+                        "value" : "Método mecânico"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "Ou",
+                        "value" : "Outro"
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -779,7 +820,40 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "90968009",
+                        "value" : "Pós-datismo"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "398254007",
+                        "value" : "Preeclampsia"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "169734005",
+                        "value" : "Rotura de membranas"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "22033007",
+                        "value" : "Restrição de Crescimento Fetal"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "73211009",
+                        "value" : "Diabetes"
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
