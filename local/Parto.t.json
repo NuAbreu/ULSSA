@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "42.0.0",
+      "sem_ver" : "43.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d1efaa6c2b13010326e316a4f4cbd00f",
+      "MD5-CAM-1.0.1" : "28953b30278e5e66eab393ef3826ccc5",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -769,6 +769,7 @@
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
                       "terminologyId" : {
                         "value" : "local_terms"
                       },
@@ -776,27 +777,27 @@
                       "selectedTerminologies" : [ "local_terms" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
-                        "code" : "M",
+                        "code" : "A02BB01",
                         "value" : "Misoprostol"
                       }, {
                         "terminologyId" : "local_terms",
-                        "code" : "Pg",
+                        "code" : "G02AD02",
                         "value" : "Prostaglandinas E2 em gel"
                       }, {
                         "terminologyId" : "local_terms",
-                        "code" : "Pp",
+                        "code" : "G02AD02",
                         "value" : "Prostaglandinas E2 (Propess)"
                       }, {
                         "terminologyId" : "local_terms",
-                        "code" : "O",
+                        "code" : "H01BB02",
                         "value" : "Ocitocina"
                       }, {
                         "terminologyId" : "local_terms",
-                        "code" : "S",
+                        "code" : "G02AD05",
                         "value" : "Sulprostona"
                       }, {
                         "terminologyId" : "local_terms",
-                        "code" : "Mm",
+                        "code" : "408818004",
                         "value" : "Método mecânico"
                       }, {
                         "terminologyId" : "local_terms",
