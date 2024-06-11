@@ -1,33 +1,45 @@
-﻿archetype (adl_version=1.4; uid=2b4d2260-62a1-49c9-bc22-c4742543af1f)
+archetype (adl_version=1.4; uid=2b4d2260-62a1-49c9-bc22-c4742543af1f)
 	openEHR-EHR-OBSERVATION.foetal_growth.v0
 
 concept
-	[at0000]	-- Foetal growth indicators
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
+	>
+
 description
 	original_author = <
+		["date"] = <"2021-03-12">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Atomica Informatics">
 		["email"] = <"heather.leslie@atomicainformatics.com">
-		["date"] = <"2021-03-12">
 	>
+	lifecycle_state = <"in_development">
 	details = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record details about parameters plotted as percentiles on a growth chart for a foetus.">
+			keywords = <"growth","calculation","centile","percentile","z-score","SD","height","weight","head cicrumference">
+			copyright = <"© openEHR Foundation">
 			use = <"Use to record details about parameters plotted as percentiles on a growth chart for a foetus.
 
 Use the URI to explicitly link the original measurement as recorded.">
-			keywords = <"growth", "calculation", "centile", "percentile", "z-score", "SD", "height", "weight", "head cicrumference">
 			misuse = <"Not to be used to record actual measurements. Use appropriate OBSERVATION archetypes for this purpose - for example OBSERVATION.height, OBSERVATION.weight, OBSERVATION.head_circumference, OBSERVATION.body_segment or OBSERVATION.blood_pressure.
 
 Not to be used to record growth indicators for an infant or child. Use OBSERVATION.child_growth for this purpose.">
-			copyright = <"© openEHR Foundation">
 		>
 	>
-	lifecycle_state = <"in_development">
-	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -38,13 +50,13 @@ Kiserud T, Benachi A, Hecher K, Perez RG, Carvalho J, Piaggio G, Platt LD. The W
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"E952A2CEA113460F28DE4B153A787CC9">
+		["MD5-CAM-1.0.1"] = <"12b32ebee05c6299492f2436f4af6257">
 		["build_uid"] = <"fecbc48a-058c-425f-80c6-2cb65fc016f4">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Fetal growth indicators
+	OBSERVATION[at0000] matches {    -- Foetal growth indicators
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -123,7 +135,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
@@ -214,6 +225,96 @@ ontology
 				["at0041"] = <
 					text = <"Clinical interpretation">
 					description = <"Clinical interpretation of the growth indicator chart.">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Foetal growth indicators (en)">
+					description = <"*Details about parameters plotted on a growth chart to allow monitoring of foetal growth over time, relative to a reference population. (en)">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Any event (en)">
+					description = <"*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0010"] = <
+					text = <"*Percentile (en)">
+					description = <"*Percentile calculated using standard normal distribution for the gestational age. (en)">
+				>
+				["at0011"] = <
+					text = <"*Z-score (en)">
+					description = <"*The deviation of a fetal value from the median value for a reference population, divided by the standard deviation of the reference population. (en)">
+					comment = <"*Also known as the Standard deviation score (SD). (en)">
+				>
+				["at0014"] = <
+					text = <"*Growth indicator (en)">
+					description = <"*The name of the growth parameter. (en)">
+				>
+				["at0019"] = <
+					text = <"*Comment (en)">
+					description = <"*A comment about the growth indicator, not captured in other fields. (en)">
+				>
+				["at0020"] = <
+					text = <"*Crown-rump length-for-gestational-age (en)">
+					description = <"*Crown-rump length plotted against gestational age. (en)">
+				>
+				["at0021"] = <
+					text = <"*Biparietal diameter-for-gestational-age (en)">
+					description = <"*Biparietal diameter plotted against gestational age. (en)">
+				>
+				["at0022"] = <
+					text = <"*Femur length-for-gestational-age (en)">
+					description = <"*Femur length plotted against gestational age. (en)">
+				>
+				["at0023"] = <
+					text = <"*Estimated weight-for-gestational-age (en)">
+					description = <"*Estimated weight plotted against gestational age (en)">
+				>
+				["at0024"] = <
+					text = <"*Head circumference-for-gestational-age (en)">
+					description = <"*Head circumference plotted against gestational age. (en)">
+				>
+				["at0025"] = <
+					text = <"*Abdominal circumference-for-gestational age (en)">
+					description = <"*Abdominal circumference plotted against gestational age. (en)">
+				>
+				["at0026"] = <
+					text = <"*Humerus length-for-gestational-age (en)">
+					description = <"*Humerus length plotted against gestational age. (en)">
+				>
+				["at0027"] = <
+					text = <"*Fundal height-for-gestational-age (en)">
+					description = <"*Uterine fundal height plotted against gestational age. (en)">
+				>
+				["at0029"] = <
+					text = <"*Liquor volume-for-gestational-age (en)">
+					description = <"*Liquor volume plotted against gestational age. (en)">
+				>
+				["at0031"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0032"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0035"] = <
+					text = <"*URI to original measurement (en)">
+					description = <"*Link to the original measurement. (en)">
+				>
+				["at0041"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Clinical interpretation of the growth indicator chart. (en)">
 				>
 			>
 		>
