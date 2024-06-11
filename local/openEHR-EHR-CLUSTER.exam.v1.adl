@@ -38,6 +38,11 @@ language
 				["email"] = <"adrianakitajima@gmail.com">
 			>
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 	>
 
 description
@@ -67,6 +72,10 @@ Use to incorporate the narrative descriptions of clinical findings within existi
 			misuse = <"*Not to be used for recording the clinical history - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom_sign.
 
 Not to be used for recording the results of an imaging examination - use the CLUSTER.imaging_exam family of archetypes for this purpose. (en)">
+		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
@@ -150,7 +159,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"630F8A62D774A56FDDD25D3FB072B794">
+		["MD5-CAM-1.0.1"] = <"36f115612ea0d5f3f542055dcf2929b8">
 		["build_uid"] = <"cae78645-fcd6-49be-aa56-df864ad3bd75">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"1.0.10-alpha">
@@ -446,6 +455,54 @@ ontology
 					comment = <"Om den anatomiska platsen har identifierats fullt ut i \"System eller struktur som undersökts\" så blir detta element redundant.
 
 ">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Examination findings (en)">
+					description = <"*Findings observed during the physical examination of a body system or anatomical structure. (en)">
+				>
+				["at0001"] = <
+					text = <"*System or structure examined (en)">
+					description = <"*Identification of the examined body system or anatomical structure. (en)">
+					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
+				>
+				["at0003"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the overall findings observed during the physical examination. (en)">
+				>
+				["at0004"] = <
+					text = <"*Examination findings (en)">
+					description = <"*Structured details about the physical examination findings. (en)">
+				>
+				["at0005"] = <
+					text = <"*Multimedia representation (en)">
+					description = <"*Digital image, video or diagram representing the physical examination findings. (en)">
+				>
+				["at0006"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				>
+				["at0007"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the physical examination findings, not captured in other fields. (en)">
+				>
+				["at0008"] = <
+					text = <"*Examination not done (en)">
+					description = <"*Details to explicitly record that this examination was not performed. (en)">
+				>
+				["at0011"] = <
+					text = <"*Structured body site (en)">
+					description = <"*A structured description of the area of the body under examination. (en)">
+					comment = <"*If the body site has been fully identified in the 'System or structure examined' or the 'Body site' data element, this SLOT becomes redundant. (en)">
+				>
+				["at0012"] = <
+					text = <"*Body site (en)">
+					description = <"*Identification of the area of the body under examination. (en)">
+					comment = <"*If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
 			>
 		>
