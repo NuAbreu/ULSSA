@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -15,6 +22,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -25,7 +36,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bfddf2d40ab69314b959187a17f7fa80">
+		["MD5-CAM-1.0.1"] = <"ff330fb6113223d6602e7949e9af7660">
 		["build_uid"] = <"961838f9-85ab-3ad4-8963-e9a78d7338d1">
 	>
 
@@ -77,6 +88,30 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Avaliação fetal">
+					description = <"">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Adicional periodo expulsivo (en)">
+					description = <"*Adicional periodo expulsivo (en)">
+				>
+				["at0001"] = <
+					text = <"*Início do período expulsivo (en)">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"*Descida fetal (en)">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"*Colaboração materna (en)">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"*Avaliação fetal (en)">
 					description = <"">
 				>
 			>
