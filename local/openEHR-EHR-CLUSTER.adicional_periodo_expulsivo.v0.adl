@@ -36,7 +36,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ff330fb6113223d6602e7949e9af7660">
+		["MD5-CAM-1.0.1"] = <"4d765c047bc954145b37297c7f102ec5">
 		["build_uid"] = <"961838f9-85ab-3ad4-8963-e9a78d7338d1">
 	>
 
@@ -95,23 +95,23 @@ ontology
 		["pt-pt"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Adicional periodo expulsivo (en)">
+					text = <"Adicional periodo expulsivo (en)">
 					description = <"*Adicional periodo expulsivo (en)">
 				>
 				["at0001"] = <
-					text = <"*Início do período expulsivo (en)">
+					text = <"Início do período expulsivo (en)">
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"*Descida fetal (en)">
+					text = <"Descida fetal (en)">
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"*Colaboração materna (en)">
+					text = <"Colaboração materna (en)">
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"*Avaliação fetal (en)">
+					text = <"Avaliação fetal (en)">
 					description = <"">
 				>
 			>
