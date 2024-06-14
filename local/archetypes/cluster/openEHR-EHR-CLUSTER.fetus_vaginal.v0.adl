@@ -43,7 +43,7 @@ This archetype has been specifically designed to be used in the 'Examination fin
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f3a2760c309818b23d9533bce7a647d0">
+		["MD5-CAM-1.0.1"] = <"0e3976f27b44a900ba1fe624822f4d06">
 		["build_uid"] = <"603f92b6-3109-4f3f-afa8-4c495bcd6f93">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -409,11 +409,11 @@ ontology
 					description = <"*The fetal occiput is pointing posteriorly and towards the right. (en)">
 				>
 				["at0016"] = <
-					text = <"*Occipito-Anterior (OA) (en)">
+					text = <"OP">
 					description = <"*The fetal occiput is pointing anteriorly, towards the pubic symphysis. (en)">
 				>
 				["at0017"] = <
-					text = <"OP">
+					text = <"OS">
 					description = <"*The fetal occiput is pointing posteriorly, towards the sacrum. (en)">
 				>
 				["at0018"] = <
