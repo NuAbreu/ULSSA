@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "57.0.0",
+      "sem_ver" : "57.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8bea02328a45a6777aaf2ce0886fcd29",
+      "MD5-CAM-1.0.1" : "279d3d5d3b84f42e5c4aa01e375985a0",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -13278,6 +13278,7 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "local_terms"
                   },
