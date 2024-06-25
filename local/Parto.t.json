@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "57.1.0",
+      "sem_ver" : "57.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "dacf17620578e9807b6adfccbb37b814",
+      "MD5-CAM-1.0.1" : "f103dd5431b81bd5cd51492b2306384b",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -7050,7 +7050,6 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
                       "nodeId" : "at0005.0.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -7280,7 +7279,6 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
                       "nodeId" : "at0.2.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -7298,7 +7296,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.0.6" ],
+                              "constraint" : [ "ac0.0.13" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -7617,12 +7615,6 @@
             "code" : "ac0.0.5",
             "description" : ""
           },
-          "ac0.0.6" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.0.6",
-            "description" : ""
-          },
           "ac0.0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -7646,6 +7638,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.0.11",
+            "description" : ""
+          },
+          "ac0.0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.0.13",
             "description" : ""
           }
         },
@@ -7680,12 +7678,6 @@
             "code" : "ac0.0.5",
             "description" : ""
           },
-          "ac0.0.6" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.0.6",
-            "description" : ""
-          },
           "ac0.0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -7716,6 +7708,18 @@
             "text" : "CTG",
             "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the fetal heart rate. (en)",
             "comment" : "*For example, bradycardia or tachycardia. (en)"
+          },
+          "at0005.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.0.1",
+            "text" : "Frequência",
+            "description" : "*The observed fetal heart rate. (en)"
+          },
+          "ac0.0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.0.13",
+            "description" : ""
           }
         }
       },
@@ -7776,6 +7780,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.0.11",
           "members" : [ "at0026", "at0027" ]
+        },
+        "ac0.0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.0.12",
+          "members" : [ "at0.11", "at0.12", "at0.13", "at0.14" ]
+        },
+        "ac0.0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.0.13",
+          "members" : [ "at0.12", "at0.13", "at0.14" ]
         }
       }
     },
