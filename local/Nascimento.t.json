@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "61.0.0",
+      "sem_ver" : "62.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6745189282a053886d2a6aa7f95db174",
+      "MD5-CAM-1.0.1" : "a4e570920a8a1ab85650e8e87cfdba98",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -25467,6 +25467,13 @@
             "code" : "at0045.1",
             "text" : "Observações",
             "description" : "*Additional narrative about the specimen not captured in other fields. (en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Especimen",
+            "description" : "*A physical sample collected from, or related to, an individual for the purpose of investigation, examination or analysis. (en)",
+            "comment" : "*For example: Tissue or body fluid. (en)"
           }
         }
       },
