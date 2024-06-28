@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -15,6 +22,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -25,12 +36,25 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7aca94fec2b1d9b40ed1f8bec47c10e6">
+		["MD5-CAM-1.0.1"] = <"d153fc893ed96405920eb43eb8604ea4">
 		["build_uid"] = <"77213d7e-4755-3b4c-adee-416a6a32ae57">
 	>
 
 definition
-	CLUSTER[at0000] matches {*}    -- Posicao no parto
+	CLUSTER[at0000] matches {    -- Posicao no parto
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+		}
+	}
 
 ontology
 	term_definitions = <
@@ -39,6 +63,30 @@ ontology
 				["at0000"] = <
 					text = <"Posicao no parto">
 					description = <"Posicao no parto">
+				>
+				["at0001"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"Posição da parturiente no parto">
+					description = <"*Posicao no parto (en)">
+				>
+				["at0001"] = <
+					text = <"Fase do parto">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Posição corporal">
+					description = <"">
 				>
 			>
 		>
