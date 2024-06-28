@@ -50,7 +50,7 @@ Not to be used for recording the heart rate of infants, children or adults.">
 
 Intrapartum care: management and delivery of care to women in labour: http://www.nice.org.uk/nicemedia/live/11837/36275/36275.pdf">
 		["current_contact"] = <"Heather Leslie, Atomica Informatics, Australia">
-		["MD5-CAM-1.0.1"] = <"56d620010feb8976a2601b217b595bb7">
+		["MD5-CAM-1.0.1"] = <"95fc2bd88ca57938fb04603b925934d2">
 		["build_uid"] = <"3120cd50-4b70-4f4e-8ab8-c91910d26bfa">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -293,11 +293,6 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
-				["at0020"] = <
-					text = <"Device">
-					description = <"Details about the device used to detect the fetal heart rate.">
-					comment = <"For example, Pinard's stethoscope or Doppler Ultrasound.">
-				>
 				["at0000.1"] = <
 					text = <"Fetal heart monitoring">
 					description = <"Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time.">
@@ -496,6 +491,11 @@ ontology
 					description = <"Description of incidental factors, not recorded elsewhere, that may be influencing the fetal heart rate measurement.">
 					comment = <"For example, maternal fever or exertion.">
 				>
+				["at0020"] = <
+					text = <"Device">
+					description = <"Details about the device used to detect the fetal heart rate.">
+					comment = <"For example, Pinard's stethoscope or Doppler Ultrasound.">
+				>
 				["at0026"] = <
 					text = <"Present">
 					description = <"The fetal heart beat is detected.">
@@ -525,11 +525,6 @@ ontology
 		>
 		["pt-pt"] = <
 			items = <
-				["at0020"] = <
-					text = <"*Device (en)">
-					description = <"*Details about the device used to detect the fetal heart rate. (en)">
-					comment = <"*For example, Pinard's stethoscope or Doppler Ultrasound. (en)">
-				>
 				["at0000.1"] = <
 					text = <"*Fetal heart monitoring (en)">
 					description = <"*Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time. (en)">
@@ -539,7 +534,7 @@ ontology
 					description = <"*Variability in the fetal heart rate observed during the monitoring interval. (en)">
 				>
 				["at0.2"] = <
-					text = <"*Variability category (en)">
+					text = <"Categoria da variabilidade">
 					description = <"*Variability in the fetal heart rate observed during the monitoring interval. (en)">
 				>
 				["at0.3"] = <
@@ -552,7 +547,7 @@ ontology
 					description = <"*Presence of accelerations observed during the monitoring interval. (en)">
 				>
 				["at0.5"] = <
-					text = <"*Early decelerations (en)">
+					text = <"Desacelerações precoces">
 					description = <"*Frequency of early accelerations observed during the monitoring interval. (en)">
 				>
 				["at0.6"] = <
@@ -564,11 +559,11 @@ ontology
 					description = <"*Frequency of complicated variable decelerations observed during the monitoring interval. (en)">
 				>
 				["at0.8"] = <
-					text = <"*Late decelerations (en)">
+					text = <"Desacelerações tardias">
 					description = <"*Frequency of late decelerations observed during the monitoring interval. (en)">
 				>
 				["at0.9"] = <
-					text = <"*Prolonged decelerations (en)">
+					text = <"Desacelerações prolongadas">
 					description = <"*Duration of a single, prolonged deceleration observed during the monitoring interval. (en)">
 					comment = <"*Can be recorded multiple times during the period of observation - one duration recorded for each discrete deceleration. (en)">
 				>
@@ -578,20 +573,20 @@ ontology
 					comment = <"*For example: video or recording of the CTG. (en)">
 				>
 				["at0.11"] = <
-					text = <"*Absent (en)">
-					description = <"*Heart rate variability is undetectable. (en)">
+					text = <"Ausente">
+					description = <"A variabilidade de frequência cardíaca não é detetada">
 				>
 				["at0.12"] = <
-					text = <"*Minimal (en)">
-					description = <"*Heart rate variability is greater than undetectable, but less than or equal to 5 beats per minute. (en)">
+					text = <"Mínima">
+					description = <"A variabilidade da frequência cardíaca é inferior ou igual a 5 batimentos por minuto">
 				>
 				["at0.13"] = <
-					text = <"*Moderate (en)">
-					description = <"*Heart rate variability is between 6-25 beats per minute. (en)">
+					text = <"Moderada">
+					description = <"A variabilidade da frequência cardíaca situa-se entre 6-25 batimentos por minuto">
 				>
 				["at0.14"] = <
-					text = <"*Marked (en)">
-					description = <"*Heart rate variability is greater than 25 beats per minute. (en)">
+					text = <"Marcada">
+					description = <"A variabilidade da frequência cardíaca é superior a 25 batimentos por minuto">
 				>
 				["at0.15"] = <
 					text = <"*Absent (en)">
@@ -610,16 +605,16 @@ ontology
 					description = <"*Fetal heart rate accelerations are not detected with fetal scalp stimulation. (en)">
 				>
 				["at0.19"] = <
-					text = <"*None (en)">
-					description = <"*No decelerations detected. (en)">
+					text = <"Nenhuma">
+					description = <"Desacelerações não detetáveis">
 				>
 				["at0.20"] = <
-					text = <"*Occasional (en)">
-					description = <"*Occasional decelerations detected but occur in association with less than 50% of uterine contractions. (en)">
+					text = <"Ocasional">
+					description = <"Desacelerações ocasionais detectadas mas ocorrem  em associação em menos de 50% das contrações uterinas">
 				>
 				["at0.21"] = <
-					text = <"*Repetitive (en)">
-					description = <"*Decelerations detected in association with over 50% of uterine contractions. (en)">
+					text = <"Repetitiva">
+					description = <"Desacelerações detectadas  e ocorrem  em associação em mais de 50% das contrações uterinas">
 				>
 				["at0.22"] = <
 					text = <"*None (en)">
@@ -646,16 +641,16 @@ ontology
 					description = <"*Decelerations detected in association with over 50% of uterine contractions. (en)">
 				>
 				["at0.28"] = <
-					text = <"*None (en)">
-					description = <"*No decelerations detected. (en)">
+					text = <"Nenhuma">
+					description = <"Desacelerações não detetáveis">
 				>
 				["at0.29"] = <
-					text = <"*Occasional (en)">
-					description = <"*Occasional decelerations detected but occur in association with less than 50% of uterine contractions. (en)">
+					text = <"Ocasional">
+					description = <"Desacelerações ocasionais detectadas mas ocorrem  em associação em menos de 50% das contrações uterinas">
 				>
 				["at0.30"] = <
-					text = <"*Repetitive (en)">
-					description = <"*Decelerations detected in association with over 50% of uterine contractions. (en)">
+					text = <"Repetitiva">
+					description = <"Desacelerações detectadas  e ocorrem  em associação em mais de 50% das contrações uterinas">
 				>
 				["at0000"] = <
 					text = <"*Fetal heart rate (en)">
@@ -727,6 +722,11 @@ ontology
 					text = <"*Confounding factors (en)">
 					description = <"*Description of incidental factors, not recorded elsewhere, that may be influencing the fetal heart rate measurement. (en)">
 					comment = <"*For example, maternal fever or exertion. (en)">
+				>
+				["at0020"] = <
+					text = <"*Device (en)">
+					description = <"*Details about the device used to detect the fetal heart rate. (en)">
+					comment = <"*For example, Pinard's stethoscope or Doppler Ultrasound. (en)">
 				>
 				["at0026"] = <
 					text = <"*Present (en)">
