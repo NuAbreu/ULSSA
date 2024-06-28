@@ -50,7 +50,7 @@ Not to be used for recording the heart rate of infants, children or adults.">
 
 Intrapartum care: management and delivery of care to women in labour: http://www.nice.org.uk/nicemedia/live/11837/36275/36275.pdf">
 		["current_contact"] = <"Heather Leslie, Atomica Informatics, Australia">
-		["MD5-CAM-1.0.1"] = <"ce3a7e4b70b3a8ca456443f0e58497af">
+		["MD5-CAM-1.0.1"] = <"62cdfbdd5f6c5af36d65fe25bdc78ac2">
 		["build_uid"] = <"3120cd50-4b70-4f4e-8ab8-c91910d26bfa">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -86,7 +86,7 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Rate
+									ELEMENT[at0005.1] occurrences matches {0..1} matches {    -- Rate
 										value matches {
 											C_DV_QUANTITY <
 												
@@ -521,6 +521,10 @@ ontology
 					text = <"Not in labour">
 					description = <"The mother is not in labour as the observation is made.">
 				>
+				["at0005.1"] = <
+					text = <"Rate">
+					description = <"The observed fetal heart rate.">
+				>
 			>
 		>
 		["pt-pt"] = <
@@ -752,6 +756,10 @@ ontology
 				["at0025"] = <
 					text = <"*Not in labour (en)">
 					description = <"*The mother is not in labour as the observation is made. (en)">
+				>
+				["at0005.1"] = <
+					text = <"Frequência">
+					description = <"*The observed fetal heart rate. (en)">
 				>
 			>
 		>
