@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "69.0.0",
+      "sem_ver" : "70.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "83e2b92e429d32b7d5edae3d0fd13ca5",
+      "MD5-CAM-1.0.1" : "431800d7190acc55f52d5f8aa0ffabc1",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -14560,6 +14560,10 @@
                             "terminologyId" : "local_terms",
                             "code" : "22033007",
                             "value" : "Restrição de Crescimento Intra-Uterino (RCIU)"
+                          }, {
+                            "terminologyId" : "local_terms",
+                            "code" : "74964007",
+                            "value" : "Outro"
                           } ]
                         } ]
                       } ],
