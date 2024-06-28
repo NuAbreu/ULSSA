@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "64.0.0",
+      "sem_ver" : "65.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "506010831749849fbe47bc3a1a9f0a4d",
+      "MD5-CAM-1.0.1" : "7fdab7160336028e5d84f6bc30263abd",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -37258,24 +37258,24 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "SNOMED"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "SNOMED" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED",
                         "code" : "237012001",
                         "value" : "Remoção do ombro posterior"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED",
                         "code" : "237009004",
                         "value" : "Manobra de McRoberts"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED",
                         "code" : "237010009",
                         "value" : "Pressão suprapúbica sobre o ombro anterior"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED",
                         "code" : "237011008",
                         "value" : "Manobra de rotação de Woods"
                       } ]
