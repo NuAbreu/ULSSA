@@ -50,7 +50,7 @@ Not to be used for recording the heart rate of infants, children or adults.">
 
 Intrapartum care: management and delivery of care to women in labour: http://www.nice.org.uk/nicemedia/live/11837/36275/36275.pdf">
 		["current_contact"] = <"Heather Leslie, Atomica Informatics, Australia">
-		["MD5-CAM-1.0.1"] = <"95fc2bd88ca57938fb04603b925934d2">
+		["MD5-CAM-1.0.1"] = <"ce3a7e4b70b3a8ca456443f0e58497af">
 		["build_uid"] = <"3120cd50-4b70-4f4e-8ab8-c91910d26bfa">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -564,7 +564,7 @@ ontology
 				>
 				["at0.9"] = <
 					text = <"Desacelerações prolongadas">
-					description = <"*Duration of a single, prolonged deceleration observed during the monitoring interval. (en)">
+					description = <"Duração de uma única desaceleração observada durante o intervalo de monitorização ">
 					comment = <"*Can be recorded multiple times during the period of observation - one duration recorded for each discrete deceleration. (en)">
 				>
 				["at0.10"] = <
