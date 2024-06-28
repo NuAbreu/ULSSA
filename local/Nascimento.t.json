@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "58.0.0",
+      "sem_ver" : "59.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e3ee0cffe4313354c68051391ce6f9da",
+      "MD5-CAM-1.0.1" : "12e9ca3609c9d0d91244cdeaaa18647c",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -36463,7 +36463,29 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED",
+                    "code" : "6893006",
+                    "value" : "Primeiro estadio"
+                  }, {
+                    "terminologyId" : "SNOMED",
+                    "code" : "42857002",
+                    "value" : "Segundo estadio"
+                  } ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
