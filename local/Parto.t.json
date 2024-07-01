@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "60.0.0",
+      "sem_ver" : "61.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "32248082cc7f0c1bf859f7f46872aa31",
+      "MD5-CAM-1.0.1" : "a5c93977b45ae726ff8c04b4fe1f7d8f",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -829,32 +829,32 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "SNOMED"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "SNOMED" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED",
                         "code" : "90968009",
                         "value" : "Pós-datismo"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED",
                         "code" : "398254007",
                         "value" : "Preeclampsia"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED",
                         "code" : "169734005",
                         "value" : "Rotura de membranas"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED",
                         "code" : "22033007",
                         "value" : "Restrição de Crescimento Fetal"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED",
                         "code" : "73211009",
                         "value" : "Diabetes"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED",
                         "code" : "74964007",
                         "value" : "Outro"
                       } ]
@@ -1266,7 +1266,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "112bb390752d96fa684045a2a044af28"
+        "PARENT:MD5-CAM-1.0.1" : "7ee20ded0e65960222dc03b4a6186bdb"
       },
       "details" : {
         "de" : {
@@ -6104,7 +6104,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "112bb390752d96fa684045a2a044af28"
+        "PARENT:MD5-CAM-1.0.1" : "7ee20ded0e65960222dc03b4a6186bdb"
       },
       "details" : {
         "de" : {
@@ -8080,6 +8080,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -8102,6 +8103,18 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
                           "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "defining_code" : {
+                              "terminology_id" : {
+                                "value" : "local_terms",
+                                "@type" : "TERMINOLOGY_ID"
+                              },
+                              "code_string" : "226379006",
+                              "@type" : "CODE_PHRASE"
+                            },
+                            "value" : "Ingestão alimentar",
+                            "@type" : "DV_CODED_TEXT"
+                          },
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
@@ -8116,8 +8129,8 @@
                               "selectedTerminologies" : [ "local_terms" ],
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "local_terms",
-                                "code" : "R",
-                                "value" : "Meal"
+                                "code" : "226379006",
+                                "value" : "Ingestão alimentar"
                               } ]
                             } ]
                           } ],
@@ -8738,6 +8751,12 @@
             "code" : "at0000.1",
             "text" : "Ingestão de alimentos",
             "description" : "*Information about a single food item consumed by an individual. (en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Última ingestão alimentar",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)"
           }
         }
       },
@@ -10411,7 +10430,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4d765c047bc954145b37297c7f102ec5"
+        "PARENT:MD5-CAM-1.0.1" : "3df98db8be5b844a11ff30ca495a71aa"
       },
       "details" : {
         "pt-pt" : {
@@ -11256,7 +11275,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "94fde0f419ff24a2cd35bdbe05f7e323"
+        "PARENT:MD5-CAM-1.0.1" : "1f7f1f3381c37742d26dcd1f718d86d0"
       },
       "details" : {
         "de" : {
@@ -11364,6 +11383,41 @@
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
         "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.0.1.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "defaultValue" : {
+                "defining_code" : {
+                  "code_string" : "at0.0.1",
+                  "@type" : "CODE_PHRASE"
+                },
+                "@type" : "DV_CODED_TEXT"
+              },
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0.0.1" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
