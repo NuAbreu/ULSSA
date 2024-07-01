@@ -45,7 +45,7 @@ This archetype has been designed to be nested:
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b64076953ec88fe54be7d052d4c8bc51">
+		["MD5-CAM-1.0.1"] = <"fff64b0b113fc1f24c4ee63df24058b7">
 		["build_uid"] = <"2ebb9b84-bbf3-4eb3-add2-b927f029496d">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -211,25 +211,25 @@ ontology
 		["pt-pt"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Birth detail (en)">
+					text = <"Detalhes do nascimento">
 					description = <"*A subset of persistent or summary information about the pregnancy and birth of an infant, selected for utility of use within both the maternal and infant health records. (en)">
 				>
 				["at0001"] = <
-					text = <"*Description (en)">
+					text = <"Descrição">
 					description = <"*Narrative description of the newborn, including observed congenital abnormalities. (en)">
 				>
 				["at0003"] = <
-					text = <"*Birth order (en)">
+					text = <"Ordem do nascimento">
 					description = <"*The sequential order of the birth of the infant within a multiple birth pregnancy. (en)">
 					comment = <"*For example: singleton or first of a multiple birth; second; third etc. (en)">
 				>
 				["at0004"] = <
-					text = <"*Gestation (en)">
+					text = <"Gestação">
 					description = <"*The length of the pregnancy at the time of delivery of the infant. (en)">
 					comment = <"*The value for this data element will usually, but not always, be identical to the 'Pregnancy duration' data element within the EVALUATION.pregnancy_summary in the maternal record. It may also be derived using the 'Agreed date' data element within the EVALUATION.estimated_date_delivery archetype in the maternal record. Usually estimated by Naegele's rule or by ultrasound scan. (en)">
 				>
 				["at0005"] = <
-					text = <"*Method of delivery (en)">
+					text = <"Método do parto">
 					description = <"*Method by which the newborn was delivered. (en)">
 					comment = <"*For example: vaginal; forceps rotation; or Caesarean Section. (en)">
 				>
@@ -287,15 +287,15 @@ ontology
 					description = <"*The level of urgency identified at or around the time of delivery. (en)">
 				>
 				["at0020"] = <
-					text = <"*Routine/Elective (en)">
+					text = <"Rotina/Eletivo">
 					description = <"*The delivery, induction or Caesarean Section did not require any unexpected or urgent intervention. (en)">
 				>
 				["at0022"] = <
-					text = <"*Emergency (en)">
+					text = <"Emergente">
 					description = <"*Recognition of a high risk situation required the delivery to be expedited as an emergency. (en)">
 				>
 				["at0021"] = <
-					text = <"*Urgent (en)">
+					text = <"Urgente">
 					description = <"*Recognition of an increasing risk situation required the delivery to be expedited. (en)">
 				>
 			>
