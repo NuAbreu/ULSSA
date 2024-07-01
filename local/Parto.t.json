@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "61.0.0",
+      "sem_ver" : "61.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "a5c93977b45ae726ff8c04b4fe1f7d8f",
+      "MD5-CAM-1.0.1" : "e1ff7c34e5546f94852644acb6370a40",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -4212,7 +4212,37 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "local_terms",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "70847004",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Bolsa de águas",
+                "@type" : "DV_CODED_TEXT"
+              },
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED",
+                    "code" : "70847004",
+                    "value" : "Bolsa de águas"
+                  } ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -11275,7 +11305,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1f7f1f3381c37742d26dcd1f718d86d0"
+        "PARENT:MD5-CAM-1.0.1" : "724ff73133e4338bbfbd1aefd5470570"
       },
       "details" : {
         "de" : {
