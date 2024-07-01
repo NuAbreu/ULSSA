@@ -9,13 +9,6 @@ concept
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
-		["nb"] = <
-			language = <[ISO_639-1::nb]>
-			author = <
-				["name"] = <"Silje Ljosland Bakke">
-				["organisation"] = <"Nasjonal IKT HF">
-			>
-		>
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			author = <
@@ -35,6 +28,13 @@ language
 				["name"] = <"Erik Sundvall">
 				["organisation"] = <"Region Östergötland + Linköping University">
 				["email"] = <"erik.sundvall@regionostergotland.se">
+			>
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"Silje Ljosland Bakke">
+				["organisation"] = <"Nasjonal IKT HF">
 			>
 		>
 		["pt-br"] = <
@@ -163,7 +163,7 @@ Not to be used for recording the clinical history - use specific OBSERVATION and
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"94fde0f419ff24a2cd35bdbe05f7e323">
+		["MD5-CAM-1.0.1"] = <"1f7f1f3381c37742d26dcd1f718d86d0">
 		["build_uid"] = <"dd808879-bde0-41dc-996c-6ca3139f5cd7">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -482,14 +482,6 @@ ontology
 					text = <"Firm">
 					description = <"The cervix feels firm or hard.">
 				>
-				["at0000"] = <
-					text = <"Examination findings">
-					description = <"Findings observed during the physical examination of a body system or anatomical structure.">
-				>
-				["at0000.1"] = <
-					text = <"Palpation findings">
-					description = <"Findings observed by indirect palpation of an anatomical structure.">
-				>
 				["at0000.1.1"] = <
 					text = <"Palpation of the cervix">
 					description = <"Findings observed by palpation of the cervix.">
@@ -499,15 +491,18 @@ ontology
 					description = <"Identification of the examined body system or anatomical structure.">
 					comment = <"Coding of the system or structure examined with a terminology is preferred, where possible.">
 				>
+				["at0000.1"] = <
+					text = <"Palpation findings">
+					description = <"Findings observed by indirect palpation of an anatomical structure.">
+				>
 				["at0002"] = <
 					text = <"No abnormality detected">
 					description = <"Statement that no abnormality was detected (NAD) on physical examination.">
 					comment = <"Record as True if no abnormality was detected on examination. Specific statements about the examination can be included in the 'Clinical Interpretation' data element. If 'No abnormality detected' is selected, then recording of other examination data elements becomes redundant, with the exception of only the 'Clinical interpretation' data element, which may be useful if a normal statement is desired for recording, for example 'Normal examination'.">
 				>
-				["at0006"] = <
-					text = <"Clinical interpretation">
-					description = <"Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.">
-					comment = <"For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible.">
+				["at0000"] = <
+					text = <"Examination findings">
+					description = <"Findings observed during the physical examination of a body system or anatomical structure.">
 				>
 				["at0001"] = <
 					text = <"System or structure examined">
@@ -525,6 +520,11 @@ ontology
 				["at0005"] = <
 					text = <"Multimedia representation">
 					description = <"Digital image, video or diagram representing the physical examination findings.">
+				>
+				["at0006"] = <
+					text = <"Clinical interpretation">
+					description = <"Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.">
+					comment = <"For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible.">
 				>
 				["at0007"] = <
 					text = <"Comment">
@@ -687,11 +687,6 @@ ontology
 					description = <"Utsagn om at ingen avvik var oppdaget ved undersøkelsen (U.a.).">
 					comment = <"*Record as True if no abnormality was detected on examination. Specific statements about the examination can be included in the 'Clinical Interpretation' data element. If 'No abnormality detected' is selected, then recording of other examination data elements becomes redundant, with the exception of only the 'Clinical interpretation' data element, which may be useful if a normal statement is desired for recording, for example 'Normal examination'. (en)">
 				>
-				["at0006"] = <
-					text = <"Fortolkning">
-					description = <"Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den kliniske undersøkelsen.">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
-				>
 				["at0000"] = <
 					text = <"Undersøkelsesfunn">
 					description = <"Funn ved fysisk undersøkelse av et organsystem eller anatomisk struktur.">
@@ -712,6 +707,11 @@ ontology
 				["at0005"] = <
 					text = <"Multimediarepresentasjon">
 					description = <"Digitale bilder, video eller diagram som representerer undersøkelsesfunnene.">
+				>
+				["at0006"] = <
+					text = <"Fortolkning">
+					description = <"Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den kliniske undersøkelsen.">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
 				>
 				["at0007"] = <
 					text = <"Kommentar">
@@ -856,14 +856,6 @@ ontology
 					text = <"Firm">
 					description = <"The cervix feels firm or hard.">
 				>
-				["at0000"] = <
-					text = <"Resultados do exame">
-					description = <"Constatações observadas durante o exame físico de um sistema corporal ou estrutura anatômica.">
-				>
-				["at0000.1"] = <
-					text = <"Resultados do exame">
-					description = <"Constatações observadas durante o exame físico de um sistema corporal ou estrutura anatômica.">
-				>
 				["at0000.1.1"] = <
 					text = <"Resultados do exame">
 					description = <"Constatações observadas durante o exame físico de um sistema corporal ou estrutura anatômica.">
@@ -873,15 +865,18 @@ ontology
 					description = <"Identificação do sistema do corpo examinado ou da estrutura anatômica.">
 					comment = <"A codificação do sistema ou estrutura examinada com uma terminologia é preferível, sempre que possível.">
 				>
+				["at0000.1"] = <
+					text = <"Resultados do exame">
+					description = <"Constatações observadas durante o exame físico de um sistema corporal ou estrutura anatômica.">
+				>
 				["at0002"] = <
 					text = <"No abnormality detected">
 					description = <"Statement that no abnormality was detected (NAD) on physical examination.">
 					comment = <"Record as True if no abnormality was detected on examination. Specific statements about the examination can be included in the 'Clinical Interpretation' data element. If 'No abnormality detected' is selected, then recording of other examination data elements becomes redundant, with the exception of only the 'Clinical interpretation' data element, which may be useful if a normal statement is desired for recording, for example 'Normal examination'.">
 				>
-				["at0006"] = <
-					text = <"Interpretação clínica">
-					description = <"Palavra, frase ou breve descrição que represente o significado clínico e o significado dos resultados do exame físico.">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				["at0000"] = <
+					text = <"Resultados do exame">
+					description = <"Constatações observadas durante o exame físico de um sistema corporal ou estrutura anatômica.">
 				>
 				["at0001"] = <
 					text = <"Sistema ou estrutura examinada">
@@ -899,6 +894,11 @@ ontology
 				["at0005"] = <
 					text = <"Representação multimídia">
 					description = <"Imagem digital, vídeo ou diagrama representando os achados do exame físico.">
+				>
+				["at0006"] = <
+					text = <"Interpretação clínica">
+					description = <"Palavra, frase ou breve descrição que represente o significado clínico e o significado dos resultados do exame físico.">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
 				>
 				["at0007"] = <
 					text = <"Comentário">
@@ -1043,14 +1043,6 @@ ontology
 					text = <"Firm">
 					description = <"The cervix feels firm or hard.">
 				>
-				["at0000"] = <
-					text = <"Untersuchungsergebnisse">
-					description = <"Während der körperlichen Untersuchung eines Körpersystems oder einer anatomischen Struktur beobachtete Befunde.">
-				>
-				["at0000.1"] = <
-					text = <"Untersuchungsergebnisse">
-					description = <"Während der körperlichen Untersuchung eines Körpersystems oder einer anatomischen Struktur beobachtete Befunde.">
-				>
 				["at0000.1.1"] = <
 					text = <"Untersuchungsergebnisse">
 					description = <"Während der körperlichen Untersuchung eines Körpersystems oder einer anatomischen Struktur beobachtete Befunde.">
@@ -1060,15 +1052,18 @@ ontology
 					description = <"Identifizierung des untersuchten Körpersystems oder der anatomischen Struktur.">
 					comment = <"Wenn möglich wird die Kodierung des untersuchten Systems oder der untersuchten Struktur mit einer Terminologie bevorzugt.">
 				>
+				["at0000.1"] = <
+					text = <"Untersuchungsergebnisse">
+					description = <"Während der körperlichen Untersuchung eines Körpersystems oder einer anatomischen Struktur beobachtete Befunde.">
+				>
 				["at0002"] = <
 					text = <"No abnormality detected">
 					description = <"Statement that no abnormality was detected (NAD) on physical examination.">
 					comment = <"Record as True if no abnormality was detected on examination. Specific statements about the examination can be included in the 'Clinical Interpretation' data element. If 'No abnormality detected' is selected, then recording of other examination data elements becomes redundant, with the exception of only the 'Clinical interpretation' data element, which may be useful if a normal statement is desired for recording, for example 'Normal examination'.">
 				>
-				["at0006"] = <
-					text = <"Klinische Interpretation">
-					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				["at0000"] = <
+					text = <"Untersuchungsergebnisse">
+					description = <"Während der körperlichen Untersuchung eines Körpersystems oder einer anatomischen Struktur beobachtete Befunde.">
 				>
 				["at0001"] = <
 					text = <"Untersuchtes System oder untersuchte Struktur">
@@ -1086,6 +1081,11 @@ ontology
 				["at0005"] = <
 					text = <"Multimediale Darstellung">
 					description = <"Digitales Bild, Video oder Diagramm, das die Ergebnisse der körperlichen Untersuchung darstellt.">
+				>
+				["at0006"] = <
+					text = <"Klinische Interpretation">
+					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
 				>
 				["at0007"] = <
 					text = <"Kommentar">
@@ -1230,14 +1230,6 @@ ontology
 					text = <"Firm">
 					description = <"The cervix feels firm or hard.">
 				>
-				["at0000"] = <
-					text = <"Fynd vid undersökning">
-					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
-				>
-				["at0000.1"] = <
-					text = <"Fynd vid undersökning">
-					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
-				>
 				["at0000.1.1"] = <
 					text = <"Fynd vid undersökning">
 					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
@@ -1247,15 +1239,18 @@ ontology
 					description = <"Identifiering av systemet eller strukturen som undersökts.">
 					comment = <"Om möjligt, koda systemet eller strukturen med hjälp av ett terminologisystem.">
 				>
+				["at0000.1"] = <
+					text = <"Fynd vid undersökning">
+					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
+				>
 				["at0002"] = <
 					text = <"No abnormality detected">
 					description = <"Statement that no abnormality was detected (NAD) on physical examination.">
 					comment = <"Record as True if no abnormality was detected on examination. Specific statements about the examination can be included in the 'Clinical Interpretation' data element. If 'No abnormality detected' is selected, then recording of other examination data elements becomes redundant, with the exception of only the 'Clinical interpretation' data element, which may be useful if a normal statement is desired for recording, for example 'Normal examination'.">
 				>
-				["at0006"] = <
-					text = <"Klinisk tolkning">
-					description = <"Ord, fras eller kort beskrivning av fyndens kliniska betydelse.">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				["at0000"] = <
+					text = <"Fynd vid undersökning">
+					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
 				>
 				["at0001"] = <
 					text = <"System eller struktur som undersökts">
@@ -1273,6 +1268,11 @@ ontology
 				["at0005"] = <
 					text = <"Multimedia-representation">
 					description = <"Digital bild, video eller diagram som återger fynd från undersökningen.">
+				>
+				["at0006"] = <
+					text = <"Klinisk tolkning">
+					description = <"Ord, fras eller kort beskrivning av fyndens kliniska betydelse.">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
 				>
 				["at0007"] = <
 					text = <"Kommentar">
@@ -1304,12 +1304,12 @@ ontology
 					description = <"The cervix was palpated.">
 				>
 				["at0.0.10"] = <
-					text = <"Intermediate">
-					description = <"The cervix feels neither firm nor soft.">
+					text = <"Médio">
+					description = <"O colo do útero parece nem firme nem mole">
 				>
 				["at0.0.11"] = <
-					text = <"Soft">
-					description = <"The cervix feels soft or ripe.">
+					text = <"Mole">
+					description = <"O colo do útero parece mole">
 				>
 				["at0.0.12"] = <
 					text = <"Surface description">
@@ -1417,16 +1417,8 @@ ontology
 					description = <"The firmness of the cervix.">
 				>
 				["at0.0.9"] = <
-					text = <"Firm">
-					description = <"The cervix feels firm or hard.">
-				>
-				["at0000"] = <
-					text = <"*Examination findings (en)">
-					description = <"*Findings observed during the physical examination of a body system or anatomical structure. (en)">
-				>
-				["at0000.1"] = <
-					text = <"*Examination findings (en)">
-					description = <"*Findings observed during the physical examination of a body system or anatomical structure. (en)">
+					text = <"Duro">
+					description = <"O colo do útero parece firme ou duro.">
 				>
 				["at0000.1.1"] = <
 					text = <"*Examination findings (en)">
@@ -1437,15 +1429,18 @@ ontology
 					description = <"*Identification of the examined body system or anatomical structure. (en)">
 					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
 				>
+				["at0000.1"] = <
+					text = <"*Examination findings (en)">
+					description = <"*Findings observed during the physical examination of a body system or anatomical structure. (en)">
+				>
 				["at0002"] = <
 					text = <"No abnormality detected">
 					description = <"Statement that no abnormality was detected (NAD) on physical examination.">
 					comment = <"Record as True if no abnormality was detected on examination. Specific statements about the examination can be included in the 'Clinical Interpretation' data element. If 'No abnormality detected' is selected, then recording of other examination data elements becomes redundant, with the exception of only the 'Clinical interpretation' data element, which may be useful if a normal statement is desired for recording, for example 'Normal examination'.">
 				>
-				["at0006"] = <
-					text = <"*Clinical interpretation (en)">
-					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings. (en)">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				["at0000"] = <
+					text = <"*Examination findings (en)">
+					description = <"*Findings observed during the physical examination of a body system or anatomical structure. (en)">
 				>
 				["at0001"] = <
 					text = <"*System or structure examined (en)">
@@ -1463,6 +1458,11 @@ ontology
 				["at0005"] = <
 					text = <"*Multimedia representation (en)">
 					description = <"*Digital image, video or diagram representing the physical examination findings. (en)">
+				>
+				["at0006"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
 				>
 				["at0007"] = <
 					text = <"*Comment (en)">
@@ -1489,8 +1489,8 @@ ontology
 		["SNOMED-CT"] = <
 			items = <
 				["at0.0.1"] = <[SNOMED-CT::71252005]>
-				["at0000"] = <[SNOMED-CT::5880005]>
 				["at0000.1"] = <[SNOMED-CT::118242002]>
+				["at0000"] = <[SNOMED-CT::5880005]>
 			>
 		>
 	>
