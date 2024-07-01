@@ -45,7 +45,7 @@ This archetype has been designed to be nested:
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fff64b0b113fc1f24c4ee63df24058b7">
+		["MD5-CAM-1.0.1"] = <"dff80193e59ebfb78cdf171868661217">
 		["build_uid"] = <"2ebb9b84-bbf3-4eb3-add2-b927f029496d">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -238,7 +238,7 @@ ontology
 					description = <"*Normal, non-instrumental vaginal delivery. (en)">
 				>
 				["at0007"] = <
-					text = <"*Assisted breech delivery (en)">
+					text = <"Parto pélvico assistido">
 					description = <"*Vaginal delivery assisted by maneuvers in the delivery of the remainder of the body, arms, and head. (en)">
 				>
 				["at0008"] = <
@@ -250,7 +250,7 @@ ontology
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"*Vacuum extraction with rotation (en)">
+					text = <"Ventosa com rotação">
 					description = <"*Vaginal delivery assisted by the use of vacuum extraction. (en)">
 				>
 				["at0011"] = <
@@ -278,12 +278,12 @@ ontology
 					description = <"*Surgical delivery by an approach in the upper uterine segment. (en)">
 				>
 				["at0018"] = <
-					text = <"*Gestational age (en)">
+					text = <"Idade gestacional">
 					description = <"*The estimated gestational maturity of the newborn at, or very near, birth. (en)">
 					comment = <"*Usually estimated by physical examination and/or neuromuscular assessment of the newborn. (en)">
 				>
 				["at0019"] = <
-					text = <"*Delivery timing (en)">
+					text = <"Prioridade do parto">
 					description = <"*The level of urgency identified at or around the time of delivery. (en)">
 				>
 				["at0020"] = <
