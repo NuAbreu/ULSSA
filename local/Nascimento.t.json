@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "70.0.0",
+      "sem_ver" : "71.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "431800d7190acc55f52d5f8aa0ffabc1",
+      "MD5-CAM-1.0.1" : "745957e0791fa491406f3c4958b5e43b",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -1236,7 +1236,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "112bb390752d96fa684045a2a044af28"
+        "PARENT:MD5-CAM-1.0.1" : "7ee20ded0e65960222dc03b4a6186bdb"
       },
       "details" : {
         "de" : {
@@ -2998,7 +2998,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9fce9bbaf486e3addb953cc0f454b3b0"
+        "PARENT:MD5-CAM-1.0.1" : "d1ad15407e745e681f4c810004befa90"
       },
       "details" : {
         "de" : {
@@ -16293,7 +16293,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "b64076953ec88fe54be7d052d4c8bc51"
+        "PARENT:MD5-CAM-1.0.1" : "dff80193e59ebfb78cdf171868661217"
       },
       "details" : {
         "pt-pt" : {
@@ -27027,7 +27027,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "112bb390752d96fa684045a2a044af28"
+        "PARENT:MD5-CAM-1.0.1" : "7ee20ded0e65960222dc03b4a6186bdb"
       },
       "details" : {
         "de" : {
@@ -30493,16 +30493,16 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED",
                     "code" : "289279004",
                     "value" : "Normal"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED",
                     "code" : "289280001",
                     "value" : "Anormal"
                   } ]
@@ -32149,7 +32149,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "112bb390752d96fa684045a2a044af28"
+        "PARENT:MD5-CAM-1.0.1" : "7ee20ded0e65960222dc03b4a6186bdb"
       },
       "details" : {
         "de" : {
@@ -36583,7 +36583,19 @@
           "attributeTuples" : [ ]
         } ]
       } ],
-      "attributeTuples" : [ ]
+      "attributeTuples" : [ ],
+      "attributeCustomizations" : {
+        "provider" : {
+          "aliases" : {
+            "pt-pt" : "provider"
+          }
+        },
+        "other_participations" : {
+          "aliases" : {
+            "pt-pt" : "other_participations"
+          }
+        }
+      }
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
