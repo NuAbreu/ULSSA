@@ -40,7 +40,9 @@ description
 		>
 		["pt-pt"] = <
 			language = <[ISO_639-1::pt-pt]>
+			purpose = <"Um cabeçalho de grupo genérico que normalmente é renomeado localmente ao nível do modelo">
 			copyright = <"© openEHR Foundation">
+			use = <"Para construir e nomear um grupo dentro de um modelo local">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
