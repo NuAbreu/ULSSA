@@ -163,7 +163,7 @@ Not to be used for recording the clinical history - use specific OBSERVATION and
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1f7f1f3381c37742d26dcd1f718d86d0">
+		["MD5-CAM-1.0.1"] = <"724ff73133e4338bbfbd1aefd5470570">
 		["build_uid"] = <"dd808879-bde0-41dc-996c-6ca3139f5cd7">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -1345,7 +1345,7 @@ ontology
 					description = <"The cervix is very thin.">
 				>
 				["at0.0.2"] = <
-					text = <"Relative position">
+					text = <"Posição relativa">
 					description = <"Actual cervical position in relation to the expected, central anatomical position.">
 				>
 				["at0.0.20"] = <
@@ -1413,7 +1413,7 @@ ontology
 					description = <"The cervix is pointing towards the right side of the pelvis.">
 				>
 				["at0.0.8"] = <
-					text = <"Consistency">
+					text = <"Consistência">
 					description = <"The firmness of the cervix.">
 				>
 				["at0.0.9"] = <
