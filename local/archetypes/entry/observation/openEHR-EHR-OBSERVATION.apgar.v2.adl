@@ -73,6 +73,11 @@ language
 				["email"] = <"ccalleja@catsalut.cat">
 			>
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
@@ -107,11 +112,6 @@ language
 				["email"] = <"ccalleja@catsalut.cat">
 			>
 		>
-		["pt-pt"] = <
-			language = <[ISO_639-1::pt-pt]>
-			author = <
-			>
-		>
 	>
 
 description
@@ -137,30 +137,6 @@ Dieser Archetyp wurde entwickelt, um die explizite Erfassung von Apgar-Scores zu
 
 In der klinischen Praxis ist es üblich, alle 5 Parameter plus den Gesamtwert aufzuzeichnen. Dieser Archetyp erlaubt jedoch die Aufzeichnung von Teilinformationen, wenn dies alles ist, was z. B. aus historischen Daten verfügbar ist.">
 		>
-		["sv"] = <
-			language = <[ISO_639-1::sv]>
-			purpose = <"Att registrera resultaten för varje komponentparameter och deras totala summa för Apgarskalan.">
-			keywords = <"nyfödd","index","poäng","födelse","spädbarn","nyfödd","bedömning","apgar","skala","apgarskala","apgarpoäng">
-			use = <"Används för att registrera resultaten för varje komponentparameter och deras totala summa för Apgarskalan.
-
-Den här arketypen har utformats för att stödja den explicita registreringen av Apgarpoäng vid 1, 2, 3, 5 och/eller 10 minuters ålder på nyfödda barn, inklusive ytterligare händelser efter behov.
-
-Vanlig praxis är att dokumentera Apgarpoängen efter 1 och 5 minuter; ytterligare poäng kan dock registreras. Med denna arketyp är det även möjligt att registrera Apgarpoängen när som helst efter födseln.
-
-Vanlig klinisk praxis är att registrera samtliga 5 parametrar inklusive totala summan. Denna arketyp möjliggör dock registrering av partiell information, om det endast är det som finns tillgängligt från exempelvis historiska data.">
-		>
-		["fi"] = <
-			language = <[ISO_639-1::fi]>
-			purpose = <"*To record the results for each component parameter and their total sum for the Apgar score. (en)">
-			keywords = <"vastasyntynyt, indeksi, pistemäärä, syntymä, arviointi", ...>
-			use = <"*Use to record the results for each component parameter and their total sum for the Apgar score.
-
-This archetype has been designed to support the explicit recording of Apgar scores at 1, 2, 3, 5 and/or 10 minute points in time offset from the time of birth, plus additional events as required.
-
-Usual practice is to document the Apgar score at 1 and 5 minutes; further scores can be recorded as clinically indicated.  It is possible to record the Apgar score at any time after birth using this archetype.
-
-Common clinical practice is to record all 5 parameters plus the total, however this archetype allows any partial information to be recorded, if that is all that is available for example from historical data. (en)">
-		>
 		["ru"] = <
 			language = <[ISO_639-1::ru]>
 			purpose = <"*To record the results for each component parameter and their total sum for the Apgar score. (en)">
@@ -174,11 +150,10 @@ Usual practice is to document the Apgar score at 1 and 5 minutes; further scores
 
 Common clinical practice is to record all 5 parameters plus the total, however this archetype allows any partial information to be recorded, if that is all that is available for example from historical data. (en)">
 		>
-		["pt-br"] = <
-			language = <[ISO_639-1::pt-br]>
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
 			purpose = <"*To record the results for each component parameter and their total sum for the Apgar score. (en)">
-			keywords = <"*recém-nascido(s), recém-nato(s)","*índice","*escore, escala","*nascimento(s),","*bebê(s)","*neonato(s)","*avaliação(ões)">
-			copyright = <"© openEHR Foundation">
+			keywords = <"vastasyntynyt, indeksi, pistemäärä, syntymä, arviointi", ...>
 			use = <"*Use to record the results for each component parameter and their total sum for the Apgar score.
 
 This archetype has been designed to support the explicit recording of Apgar scores at 1, 2, 3, 5 and/or 10 minute points in time offset from the time of birth, plus additional events as required.
@@ -187,10 +162,22 @@ Usual practice is to document the Apgar score at 1 and 5 minutes; further scores
 
 Common clinical practice is to record all 5 parameters plus the total, however this archetype allows any partial information to be recorded, if that is all that is available for example from historical data. (en)">
 		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Att registrera resultaten för varje komponentparameter och deras totala summa för Apgarskalan.">
+			keywords = <"nyfödd","index","poäng","födelse","spädbarn","nyfödd","bedömning","apgar","skala","apgarskala","apgarpoäng">
+			use = <"Används för att registrera resultaten för varje komponentparameter och deras totala summa för Apgarskalan.
+
+Den här arketypen har utformats för att stödja den explicita registreringen av Apgarpoäng vid 1, 2, 3, 5 och/eller 10 minuters ålder på nyfödda barn, inklusive ytterligare händelser efter behov.
+
+Vanlig praxis är att dokumentera Apgarpoängen efter 1 och 5 minuter; ytterligare poäng kan dock registreras. Med denna arketyp är det även möjligt att registrera Apgarpoängen när som helst efter födseln.
+
+Vanlig klinisk praxis är att registrera samtliga 5 parametrar inklusive totala summan. Denna arketyp möjliggör dock registrering av partiell information, om det endast är det som finns tillgängligt från exempelvis historiska data.">
+		>
+		["pt-br"] = <
+			language = <[ISO_639-1::pt-br]>
 			purpose = <"*To record the results for each component parameter and their total sum for the Apgar score. (en)">
-			keywords = <"حديث الولادة","معامل","الحرز","الولادة/الوضع","الرضيع","حديث الولادة","تقييم">
+			keywords = <"*recém-nascido(s), recém-nato(s)","*índice","*escore, escala","*nascimento(s),","*bebê(s)","*neonato(s)","*avaliação(ões)">
 			copyright = <"© openEHR Foundation">
 			use = <"*Use to record the results for each component parameter and their total sum for the Apgar score.
 
@@ -212,6 +199,19 @@ This archetype has been designed to support the explicit recording of Apgar scor
 Usual practice is to document the Apgar score at 1 and 5 minutes; further scores can be recorded as clinically indicated.  It is possible to record the Apgar score at any time after birth using this archetype.
 
 Common clinical practice is to record all 5 parameters plus the total, however this archetype allows any partial information to be recorded, if that is all that is available for example from historical data.">
+		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"*To record the results for each component parameter and their total sum for the Apgar score. (en)">
+			keywords = <"حديث الولادة","معامل","الحرز","الولادة/الوضع","الرضيع","حديث الولادة","تقييم">
+			copyright = <"© openEHR Foundation">
+			use = <"*Use to record the results for each component parameter and their total sum for the Apgar score.
+
+This archetype has been designed to support the explicit recording of Apgar scores at 1, 2, 3, 5 and/or 10 minute points in time offset from the time of birth, plus additional events as required.
+
+Usual practice is to document the Apgar score at 1 and 5 minutes; further scores can be recorded as clinically indicated.  It is possible to record the Apgar score at any time after birth using this archetype.
+
+Common clinical practice is to record all 5 parameters plus the total, however this archetype allows any partial information to be recorded, if that is all that is available for example from historical data. (en)">
 		>
 		["es-cl"] = <
 			language = <[ISO_639-1::es-cl]>
@@ -253,7 +253,14 @@ La práctica clínica común es registrar los 5 parámetros más el total; sin e
 		>
 		["pt-pt"] = <
 			language = <[ISO_639-1::pt-pt]>
+			purpose = <"Registar os resultados de cada parâmetro e a sua soma total para a pontuação de Apgar.">
+			keywords = <"recém-nascido, índice, pontuação, nascimento, bebé, neonato, avaliação", ...>
 			copyright = <"© openEHR Foundation">
+			use = <"Este arquétipo foi projetado para suportar o registo explícito das pontuações de Apgar aos 1, 2, 3, 5 e/ou 10 minutos após o nascimento, além de eventos adicionais conforme necessário.
+
+A prática habitual é documentar a pontuação de Apgar aos 1 e 5 minutos; pontuações adicionais podem ser registradas conforme clinicamente indicado. É possível registrar a pontuação de Apgar em qualquer momento após o nascimento usando este arquétipo.
+
+A prática clínica comum é registrar todos os 5 parâmetros mais o total, no entanto, este arquétipo permite o registro de informações parciais, se isso for tudo o que está disponível, por exemplo, a partir de dados históricos.">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -281,18 +288,6 @@ Usual practice is to document the Apgar score at 1 and 5 minutes; further scores
 
 Common clinical practice is to record all 5 parameters plus the total, however this archetype allows any partial information to be recorded, if that is all that is available for example from historical data. (en)">
 		>
-		["ca"] = <
-			language = <[ISO_639-1::ca]>
-			purpose = <"Per registrar els resultats de cada paràmetre de component i la seva suma total per a la puntuació d'Apgar.">
-			keywords = <"nounat","índex","puntuació","naixement","infant","lactant","valoració">
-			use = <"Utilitzeu-lo per registrar els resultats de cada paràmetre de component i la seva suma total per a la puntuació d'Apgar.
-
-Aquest arquetip ha estat dissenyat per donar suport a l'enregistrament explícit de puntuacions d'Apgar a 1, 2, 3, 5 i/o 10 minuts des del moment del naixement, a més d'esdeveniments addicionals segons sigui necessari.
-
-La pràctica habitual és documentar la puntuació d'Apgar a 1 i 5 minuts; es poden registrar puntuacions addicionals segons s'indiqui clínicament. És possible registrar la puntuació d'Apgar en qualsevol moment després del naixement mitjançant aquest arquetip.
-
-La pràctica clínica habitual és registrar els 5 paràmetres més el total, però aquest arquetip permet registrar qualsevol informació parcial, si això és tot el que es disposa, per exemple, de dades històriques.">
-		>
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
 			purpose = <"*To record the results for each component parameter and their total sum for the Apgar score. (en)">
@@ -305,6 +300,18 @@ This archetype has been designed to support the explicit recording of Apgar scor
 Usual practice is to document the Apgar score at 1 and 5 minutes; further scores can be recorded as clinically indicated.  It is possible to record the Apgar score at any time after birth using this archetype.
 
 Common clinical practice is to record all 5 parameters plus the total, however this archetype allows any partial information to be recorded, if that is all that is available for example from historical data. (en)">
+		>
+		["ca"] = <
+			language = <[ISO_639-1::ca]>
+			purpose = <"Per registrar els resultats de cada paràmetre de component i la seva suma total per a la puntuació d'Apgar.">
+			keywords = <"nounat","índex","puntuació","naixement","infant","lactant","valoració">
+			use = <"Utilitzeu-lo per registrar els resultats de cada paràmetre de component i la seva suma total per a la puntuació d'Apgar.
+
+Aquest arquetip ha estat dissenyat per donar suport a l'enregistrament explícit de puntuacions d'Apgar a 1, 2, 3, 5 i/o 10 minuts des del moment del naixement, a més d'esdeveniments addicionals segons sigui necessari.
+
+La pràctica habitual és documentar la puntuació d'Apgar a 1 i 5 minuts; es poden registrar puntuacions addicionals segons s'indiqui clínicament. És possible registrar la puntuació d'Apgar en qualsevol moment després del naixement mitjançant aquest arquetip.
+
+La pràctica clínica habitual és registrar els 5 paràmetres més el total, però aquest arquetip permet registrar qualsevol informació parcial, si això és tot el que es disposa, per exemple, de dades històriques.">
 		>
 	>
 	other_details = <
@@ -320,7 +327,7 @@ Whaley LF, Wong DL (1979).  Nursing Care of Infants and Children.  St. Louis, To
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9fce9bbaf486e3addb953cc0f454b3b0">
+		["MD5-CAM-1.0.1"] = <"d1ad15407e745e681f4c810004befa90">
 		["build_uid"] = <"2ae52be3-d140-4257-bd91-86eac973bc4d">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"2.0.4">
@@ -329,7 +336,7 @@ Whaley LF, Wong DL (1979).  Nursing Care of Infants and Children.  St. Louis, To
 definition
 	OBSERVATION[at0000] matches {    -- Apgar score
 		data matches {
-			HISTORY[at0002] matches {    -- History
+			HISTORY[at0002] matches {    -- history
 				events cardinality matches {1..*; unordered} matches {
 					POINT_EVENT[at0003] occurrences matches {0..1} matches {    -- 1 minute
 						offset matches {
@@ -338,7 +345,7 @@ definition
 							}
 						}
 						data matches {
-							ITEM_TREE[at0001] matches {    -- Tree
+							ITEM_TREE[at0001] matches {    -- structure
 								items cardinality matches {1..6; ordered} matches {
 									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Respiratory effort
 										value matches {
@@ -347,7 +354,7 @@ definition
 											2|[local::at0012]
 										}
 									}
-									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Heart rate
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Heart Rate
 										value matches {
 											0|[local::at0006],
 											1|[local::at0007],
@@ -453,14 +460,14 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Apgar score">
-					description = <"A tool to assess the clinical status of the newborn infant immediately after birth and their response to resuscitation.">
+					description = <"Clinical score derived from assessment of respiratory effort, heart rate, reflex irritability, muscle tone and skin colour.">
 				>
 				["at0001"] = <
-					text = <"Tree">
+					text = <"structure">
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"History">
+					text = <"history">
 					description = <"@ internal @">
 				>
 				["at0003"] = <
@@ -468,7 +475,7 @@ ontology
 					description = <"Apgar score 1 minute after birth.">
 				>
 				["at0005"] = <
-					text = <"Heart rate">
+					text = <"Heart Rate">
 					description = <"Recording of the infant's heart rate.">
 				>
 				["at0006"] = <
@@ -549,7 +556,7 @@ ontology
 				>
 				["at0025"] = <
 					text = <"Total">
-					description = <"The total sum of each component parameter for the Apgar score.">
+					description = <"The sum of the 5 ordinal scores for each component parameter.">
 					comment = <"If the total is to be calculated, it is necessary for all 5 component values to be recorded.">
 				>
 				["at0026"] = <
@@ -578,8 +585,8 @@ ontology
 				>
 				["at0040"] = <
 					text = <"Extension">
-					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
-					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
 			>
 		>
@@ -2328,134 +2335,144 @@ ontology
 		["pt-pt"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Apgar score (en)">
-					description = <"*A tool to assess the clinical status of the newborn infant immediately after birth and their response to resuscitation. (en)">
+					text = <"Índice de Apgar">
+					description = <"Valor resultante da avaliação da respiração, frequência cardíaca, reflexos, tónus ​​muscular e cor da pele do recém-nascido.">
 				>
 				["at0001"] = <
-					text = <"Tree">
+					text = <"structure">
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"History">
+					text = <"history">
 					description = <"@ internal @">
 				>
 				["at0003"] = <
-					text = <"*1 minute (en)">
-					description = <"*Apgar score 1 minute after birth. (en)">
+					text = <"1ºminuto">
+					description = <"Índice de Apgar 1 minuto após o nascimento">
 				>
 				["at0005"] = <
-					text = <"*Heart rate (en)">
-					description = <"*Recording of the infant's heart rate. (en)">
+					text = <"Frequência cardíaca">
+					description = <"Registo da frequência cardíaca do recém-nascido">
 				>
 				["at0006"] = <
-					text = <"*Absent (en)">
-					description = <"*No heart beat is seen, felt or heard. (en)">
+					text = <"Sem batimento cardíaco">
+					description = <"Nenhum batimento cardíaco é visto, sentido ou ouvido.
+
+">
 				>
 				["at0007"] = <
-					text = <"*<100 beats per minute (en)">
-					description = <"*Heart rate less than 100 beats per minute. (en)">
+					text = <"<100 batimento por minuto">
+					description = <"Frequência cardíaca inferior a 100 batimentos por minuto.
+
+">
 				>
 				["at0008"] = <
-					text = <"*≥100 beats per minute (en)">
-					description = <"*Heart rate greater than or equal to 100 beats per minute. (en)">
+					text = <"> ou igual a 100 batimentos por minutos">
+					description = <"Frequência cardíaca maior ou igual a 100 batimentos por minuto.
+
+">
 				>
 				["at0009"] = <
-					text = <"*Respiratory effort (en)">
-					description = <"*Observation of the infant's respiratory effort. (en)">
+					text = <"Esforço respiratório">
+					description = <"Observação do esforço respiratório do recém-nascido">
 				>
 				["at0010"] = <
-					text = <"*Absent (en)">
-					description = <"*No effort to breath. (en)">
+					text = <"Sem esforço respiratório">
+					description = <"Nenhum esforço para respirar.">
 				>
 				["at0011"] = <
-					text = <"*Weak or irregular (en)">
-					description = <"*Some effort to breath, moving chest. (en)">
+					text = <"Respiração fraca ou irregular">
+					description = <"Algum esforço respiratório, movimentos torácicos">
 				>
 				["at0012"] = <
-					text = <"*Normal (en)">
-					description = <"*Breathing normally or crying. (en)">
+					text = <"Normal">
+					description = <"Com respiração normal ou a chorar">
 				>
 				["at0013"] = <
-					text = <"*Muscle tone (en)">
-					description = <"*Observation of the infant's muscle tone. (en)">
+					text = <"Tónus muscular">
+					description = <"Observação do tónus ​​muscular do bebé.">
 				>
 				["at0014"] = <
-					text = <"*Limp or flaccid (en)">
-					description = <"*No spontaneous movement. (en)">
+					text = <"Flácido">
+					description = <"Sem movimentos espontâneos">
 				>
 				["at0015"] = <
-					text = <"*Reduced tone (en)">
-					description = <"*Some flexion of extremities. (en)">
+					text = <"Tónus diminuido">
+					description = <"Alguns movimentos das extremidades">
 				>
 				["at0016"] = <
-					text = <"*Normal tone (en)">
-					description = <"*Normal, vigorous movements. (en)">
+					text = <"Tónus normal">
+					description = <"Normal, movimentos vigorosos">
 				>
 				["at0017"] = <
-					text = <"*Reflex irritability (en)">
-					description = <"*Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter. (en)">
+					text = <"Reflexos">
+					description = <"Observação da resposta do recém-nascido a estimulos (por exemplo, aspiração da orofaringe e das narinas)
+
+">
 				>
 				["at0018"] = <
-					text = <"*No response (en)">
-					description = <"*No response to stimulation. (en)">
+					text = <"Sem resposta">
+					description = <"Sem reacção a estímulos">
 				>
 				["at0019"] = <
-					text = <"*Reduced response (en)">
-					description = <"*Grimace or feeble cry when stimulated. (en)">
+					text = <"Resposta reduzida">
+					description = <"Careta ou choro fraco quando estimulado.
+
+">
 				>
 				["at0020"] = <
-					text = <"*Normal response (en)">
-					description = <"*Grimace, sneeze, cough or pulls away when stimulated. (en)">
+					text = <"Resposta normal">
+					description = <"Faz caretas, espirra, tosse ou reage quando é estimulado.">
 				>
 				["at0021"] = <
-					text = <"*Skin colour (en)">
-					description = <"*Observation of the skin colour of the infant. (en)">
+					text = <"Coloração">
+					description = <"Observação da coloração do recém-nascido">
 				>
 				["at0022"] = <
-					text = <"*Completely blue (en)">
-					description = <"*Body and extremities are blue. (en)">
+					text = <"Cianose">
+					description = <"Corpo e extremidades cianóticas">
 				>
 				["at0023"] = <
-					text = <"*Body pink; extremities blue (en)">
-					description = <"*Body is pink; extremities are blue. (en)">
+					text = <"Corpo rosado; extremidades cianosadas">
+					description = <"Corpo com coloração rosada; extremidades cianosadas">
 				>
 				["at0024"] = <
-					text = <"*Completely pink (en)">
-					description = <"*Body and extremities are pink; no cyanosis. (en)">
+					text = <"Rosado">
+					description = <"Corpo e extremidades rosadas; sem cianose">
 				>
 				["at0025"] = <
-					text = <"*Total (en)">
-					description = <"*The total sum of each component parameter for the Apgar score. (en)">
-					comment = <"*If the total is to be calculated, it is necessary for all 5 component values to be recorded. (en)">
+					text = <"Total">
+					description = <"A soma dos valores obtidos nos 5 parâmetros avaliados">
+					comment = <"Se o total for calculado, é necessário que todos os 5 valores dos componentes sejam registados">
 				>
 				["at0026"] = <
-					text = <"*2 minute (en)">
-					description = <"*Apgar score 2 minutes after birth. (en)">
+					text = <"2ºminuto">
+					description = <"Índice de Apgar 2 minutos após o nascimento">
 				>
 				["at0027"] = <
-					text = <"*3 minute (en)">
-					description = <"*Apgar score 3 minutes after birth. (en)">
+					text = <"3ºminuto">
+					description = <"Índice de Apgar 3 minutos após o nascimento">
 				>
 				["at0028"] = <
-					text = <"*5 minute (en)">
-					description = <"*Apgar score 5 minutes after birth. (en)">
+					text = <"5ºminuto">
+					description = <"Índice de Apgar 5 minutos após o nascimento">
 				>
 				["at0029"] = <
 					text = <"Tree">
 					description = <"@ internal @">
 				>
 				["at0031"] = <
-					text = <"*10 minute (en)">
-					description = <"*Apgar score 10 minutes after birth. (en)">
+					text = <"10ºminuto">
+					description = <"Índice de Apgar 3 minutos após o nascimento">
 				>
 				["at0037"] = <
-					text = <"*Any event (en)">
-					description = <"*Apgar score at any additional time, as required. (en)">
+					text = <"Qualquer evento">
+					description = <"Avaliação do Índice de Apgar em qualquer outro momento, conforme necessário">
 				>
 				["at0040"] = <
-					text = <"*Extension (en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					text = <"Extensão">
+					description = <"Informações adicionais necessárias para obter conteúdo local ou para alinhar com outros modelos / formalismos de referência.">
+					comment = <"*e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)">
 				>
 			>
 		>
