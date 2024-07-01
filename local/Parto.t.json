@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "61.1.0",
+      "sem_ver" : "62.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e1ff7c34e5546f94852644acb6370a40",
+      "MD5-CAM-1.0.1" : "6f59ef652d9fdecf583f35a9f22012af",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -5081,6 +5081,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "77012006",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Amniotic fluid",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -5089,12 +5101,12 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED",
                     "code" : "77012006",
                     "value" : "Amniotic fluid"
                   } ]
@@ -5121,25 +5133,26 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED",
                     "code" : "17621005",
                     "value" : "Normal"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED",
                     "code" : "168092006",
                     "value" : "Meconial"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED",
                     "code" : "249134008",
                     "value" : "Hemático"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED",
                     "code" : "408782002",
                     "value" : "Fétido"
                   } ]
