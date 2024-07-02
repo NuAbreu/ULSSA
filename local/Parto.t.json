@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "62.0.0",
+      "sem_ver" : "63.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6f59ef652d9fdecf583f35a9f22012af",
+      "MD5-CAM-1.0.1" : "506195bb32af8670bafb492157a04646",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -256,7 +256,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
+        "occurrences" : "0..*",
         "nodeId" : "at0.4",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -12160,12 +12160,6 @@
             "text" : "Dilatação",
             "description" : "The amount of dilation of the internal opening of the cervix to the uterus."
           },
-          "at0.0.8.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.0.8.1",
-            "text" : "Consistência",
-            "description" : "The firmness of the cervix."
-          },
           "at0.0.2.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.0.2.1",
@@ -13015,8 +13009,8 @@
                                 "value" : "Normal"
                               }, {
                                 "terminologyId" : "local_terms",
-                                "code" : "A",
-                                "value" : "Anormal"
+                                "code" : "O",
+                                "value" : "Outro"
                               } ]
                             } ]
                           } ],
