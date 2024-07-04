@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "64.0.0",
+      "sem_ver" : "64.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e868ca139fb4589ad082a03a7391ac82",
+      "MD5-CAM-1.0.1" : "51a1ed0e29f2929b1ad4a52cef581e4d",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -3320,7 +3320,14 @@
             "description" : "对于特定主体对象进行体格检查过程中所获得的发现。"
           }
         },
-        "pt-pt" : { },
+        "pt-pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Apresentação fetal",
+            "description" : "*Findings observed during the physical examination of a subject of care. (en)"
+          }
+        },
         "de" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
