@@ -40,6 +40,11 @@ language
 				["email"] = <"bjorn.grova@ehelse.no, john.tore.valand@helse-vest-ikt.no">
 			>
 		>
+		["pt"] = <
+			language = <[ISO_639-1::pt]>
+			author = <
+			>
+		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			author = <
@@ -57,8 +62,8 @@ language
 			>
 			accreditation = <"MD">
 		>
-		["pt"] = <
-			language = <[ISO_639-1::pt]>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
 			author = <
 			>
 		>
@@ -84,6 +89,10 @@ Der vorgesehene Anwendungsfall ist, um einen Kliniker bei der Aufzeichnung einer
 Zum Beispiel als Bestandteil der Schlussfolgerungen, die im Rahmen einer klinischen Beratung getroffen werden.">
 			misuse = <"Der Archetyp darf nicht verwendet werden, um strukturierte Datenelemente einzuschließen, die zusätzliche Anweisungen wie Timing, Häufigkeit, Dauer oder Dosierung enthalten. Verwenden Sie zu diesem Zweck geeignete INSTRUCTION-Archetypen.">
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
+		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"Att föreslå eller ge råd om behandlingsåtgärd vid ett specifikt tillfälle.">
@@ -93,9 +102,14 @@ Zum Beispiel als Bestandteil der Schlussfolgerungen, die im Rahmen einer klinisc
 Är tänkt att ge stöd för att dokumentera en behandlingsrekommendation vid en specifik tidpunkt. Exempelvis som en del av slutsatsen vid en klinisk konsultation.">
 			misuse = <"*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)">
 		>
-		["pt"] = <
-			language = <[ISO_639-1::pt]>
-			copyright = <"© openEHR Foundation">
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			purpose = <"Para el registro de una sugerencia, consejo o propuesta para el manejo clínico en un momento determinado.">
+			keywords = <"consejo","propuesta","sugerencia">
+			use = <"Utilícese para registrar una sugerencia, consejo o propuesta para el manejo clínico en un momento específico.
+
+El caso de uso previsto se vincula a permitir el registro por parte del clínico de una o mas recomendaciones, en un mento específico en el tiempo. Por ejemplo, como un componente de las conclusiones a las que se ha arribado como parte de una consutla clínica.">
+			misuse = <"*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -107,14 +121,9 @@ Arketypen er ment å understøtte klinikere som dokumenterer en eller flere anbe
 Anbefalingen kan for eksempel benyttes som en del av dokumentasjonen av konklusjonene som trekkes i forbindelse med en klinisk konsultasjon.">
 			misuse = <"Brukes ikke for å registrere strukturerte dataelementer for å beskrive ytterligere instruksjoner som for eksempel 'timing', frekvens, varighet eller dose. Bruk relevante INSTRUCTION-arketyper for dette formålet.">
 		>
-		["es-ar"] = <
-			language = <[ISO_639-1::es-ar]>
-			purpose = <"Para el registro de una sugerencia, consejo o propuesta para el manejo clínico en un momento determinado.">
-			keywords = <"consejo","propuesta","sugerencia">
-			use = <"Utilícese para registrar una sugerencia, consejo o propuesta para el manejo clínico en un momento específico.
-
-El caso de uso previsto se vincula a permitir el registro por parte del clínico de una o mas recomendaciones, en un mento específico en el tiempo. Por ejemplo, como un componente de las conclusiones a las que se ha arribado como parte de una consutla clínica.">
-			misuse = <"*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)">
+		["pt"] = <
+			language = <[ISO_639-1::pt]>
+			copyright = <"© openEHR Foundation">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
@@ -155,7 +164,7 @@ Bijvoorbeeld als onderdeel van de conclusies uit een gezondheidsconsult.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8edca6d1f430fa42dbf362e3d24dc463">
+		["MD5-CAM-1.0.1"] = <"0d7e9554f16e852ba55afe611c27d7cc">
 		["build_uid"] = <"fbbdd0e1-380d-4fc9-b59e-a7c443629bff">
 		["revision"] = <"2.0.3">
 	>
@@ -492,6 +501,45 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Justificação">
+					description = <"*Justifications for the recommendation. (en)">
+				>
+				["at0004"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0006"] = <
+					text = <"*Topic (en)">
+					description = <"*The topic or subject of the recommendation. (en)">
+					comment = <"*Useful if multiple types of recommendations are made at the same time, and within the same data set. (en)">
+				>
+				["at0007"] = <
+					text = <"*Last updated (en)">
+					description = <"*The date this recommendation was last updated. (en)">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Recommendation (en)">
+					description = <"*A suggestion, advice or proposal for clinical management. (en)">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Recommendation (en)">
+					description = <"*Narrative description of the recommendation. (en)">
+					comment = <"*May be coded, using a terminology, if required. (en)">
+				>
+				["at0003"] = <
+					text = <"*Rationale (en)">
 					description = <"*Justifications for the recommendation. (en)">
 				>
 				["at0004"] = <
