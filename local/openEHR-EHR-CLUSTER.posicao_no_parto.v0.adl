@@ -36,7 +36,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d153fc893ed96405920eb43eb8604ea4">
+		["MD5-CAM-1.0.1"] = <"de144d7f7661cd534b1849f1e24c8a13">
 		["build_uid"] = <"77213d7e-4755-3b4c-adee-416a6a32ae57">
 	>
 
@@ -81,7 +81,7 @@ ontology
 					description = <"*Posicao no parto (en)">
 				>
 				["at0001"] = <
-					text = <"Fase do parto">
+					text = <"Estadio do parto">
 					description = <"">
 				>
 				["at0002"] = <
