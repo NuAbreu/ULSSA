@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "64.0.1",
+      "sem_ver" : "65.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "51a1ed0e29f2929b1ad4a52cef581e4d",
+      "MD5-CAM-1.0.1" : "87661c8d03e7f82bbca220bc420295be",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -6858,8 +6858,8 @@
                                 "value" : "Normal"
                               }, {
                                 "terminologyId" : "local_terms",
-                                "code" : "A",
-                                "value" : "Anormal"
+                                "code" : "O",
+                                "value" : "Outro"
                               } ]
                             } ]
                           } ],
