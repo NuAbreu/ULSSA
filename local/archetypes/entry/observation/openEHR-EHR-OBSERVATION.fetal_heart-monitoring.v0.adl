@@ -50,7 +50,7 @@ Not to be used for recording the heart rate of infants, children or adults.">
 
 Intrapartum care: management and delivery of care to women in labour: http://www.nice.org.uk/nicemedia/live/11837/36275/36275.pdf">
 		["current_contact"] = <"Heather Leslie, Atomica Informatics, Australia">
-		["MD5-CAM-1.0.1"] = <"62cdfbdd5f6c5af36d65fe25bdc78ac2">
+		["MD5-CAM-1.0.1"] = <"d1514fea95b9a5cef08cfc96ed2a62ef">
 		["build_uid"] = <"3120cd50-4b70-4f4e-8ab8-c91910d26bfa">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -420,6 +420,10 @@ ontology
 					text = <"Repetitive">
 					description = <"Decelerations detected in association with over 50% of uterine contractions.">
 				>
+				["at0005.1"] = <
+					text = <"Rate">
+					description = <"The observed fetal heart rate.">
+				>
 				["at0000"] = <
 					text = <"Fetal heart rate">
 					description = <"Observations about the fetal heart rate.">
@@ -521,10 +525,6 @@ ontology
 					text = <"Not in labour">
 					description = <"The mother is not in labour as the observation is made.">
 				>
-				["at0005.1"] = <
-					text = <"Rate">
-					description = <"The observed fetal heart rate.">
-				>
 			>
 		>
 		["pt-pt"] = <
@@ -581,15 +581,15 @@ ontology
 					description = <"A variabilidade de frequência cardíaca não é detetada">
 				>
 				["at0.12"] = <
-					text = <"Mínima">
+					text = <"Diminuída">
 					description = <"A variabilidade da frequência cardíaca é inferior ou igual a 5 batimentos por minuto">
 				>
 				["at0.13"] = <
-					text = <"Moderada">
+					text = <"Normal">
 					description = <"A variabilidade da frequência cardíaca situa-se entre 6-25 batimentos por minuto">
 				>
 				["at0.14"] = <
-					text = <"Marcada">
+					text = <"Aumentada">
 					description = <"A variabilidade da frequência cardíaca é superior a 25 batimentos por minuto">
 				>
 				["at0.15"] = <
@@ -609,15 +609,15 @@ ontology
 					description = <"*Fetal heart rate accelerations are not detected with fetal scalp stimulation. (en)">
 				>
 				["at0.19"] = <
-					text = <"Nenhuma">
+					text = <"Ausente">
 					description = <"Desacelerações não detetáveis">
 				>
 				["at0.20"] = <
-					text = <"Ocasional">
+					text = <"Esporádicas">
 					description = <"Desacelerações ocasionais detectadas mas ocorrem  em associação em menos de 50% das contrações uterinas">
 				>
 				["at0.21"] = <
-					text = <"Repetitiva">
+					text = <"Repetitivas">
 					description = <"Desacelerações detectadas  e ocorrem  em associação em mais de 50% das contrações uterinas">
 				>
 				["at0.22"] = <
@@ -645,16 +645,20 @@ ontology
 					description = <"*Decelerations detected in association with over 50% of uterine contractions. (en)">
 				>
 				["at0.28"] = <
-					text = <"Nenhuma">
+					text = <"Ausente">
 					description = <"Desacelerações não detetáveis">
 				>
 				["at0.29"] = <
-					text = <"Ocasional">
+					text = <"Esporádicas">
 					description = <"Desacelerações ocasionais detectadas mas ocorrem  em associação em menos de 50% das contrações uterinas">
 				>
 				["at0.30"] = <
-					text = <"Repetitiva">
+					text = <"Repetitivas">
 					description = <"Desacelerações detectadas  e ocorrem  em associação em mais de 50% das contrações uterinas">
+				>
+				["at0005.1"] = <
+					text = <"Frequência">
+					description = <"*The observed fetal heart rate. (en)">
 				>
 				["at0000"] = <
 					text = <"*Fetal heart rate (en)">
@@ -756,10 +760,6 @@ ontology
 				["at0025"] = <
 					text = <"*Not in labour (en)">
 					description = <"*The mother is not in labour as the observation is made. (en)">
-				>
-				["at0005.1"] = <
-					text = <"Frequência">
-					description = <"*The observed fetal heart rate. (en)">
 				>
 			>
 		>
