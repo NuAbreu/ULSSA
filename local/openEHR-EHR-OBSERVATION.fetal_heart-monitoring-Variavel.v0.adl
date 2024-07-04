@@ -50,7 +50,7 @@ Not to be used for recording the heart rate of infants, children or adults.">
 
 Intrapartum care: management and delivery of care to women in labour: http://www.nice.org.uk/nicemedia/live/11837/36275/36275.pdf">
 		["current_contact"] = <"Heather Leslie, Atomica Informatics, Australia">
-		["MD5-CAM-1.0.1"] = <"a8dc24261503d5813c10bf2eac36fd5a">
+		["MD5-CAM-1.0.1"] = <"d3de38e5df68e6cd8cd5f66a20a6f4e8">
 		["build_uid"] = <"3120cd50-4b70-4f4e-8ab8-c91910d26bfa">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -86,7 +86,7 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Rate
+									ELEMENT[at0005.1] occurrences matches {0..1} matches {    -- Rate
 										value matches {
 											C_DV_QUANTITY <
 												
@@ -226,6 +226,10 @@ definition
 											}
 										}
 									}
+									allow_archetype CLUSTER[at0.10] occurrences matches {0..*} matches {    -- Multimedia representation
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia\.v0|openEHR-EHR-CLUSTER\.multimedia\.v1/}
+									}
 									ELEMENT[at0.0.1] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
 										value matches {
 											DV_CODED_TEXT matches {
@@ -237,10 +241,6 @@ definition
 												}
 											}
 										}
-									}
-									allow_archetype CLUSTER[at0.10] occurrences matches {0..*} matches {    -- Multimedia representation
-										include
-											archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia\.v0|openEHR-EHR-CLUSTER\.multimedia\.v1/}
 									}
 								}
 							}
@@ -305,6 +305,30 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
+				["at0000.1.1"] = <
+					text = <"Fetal heart monitoring">
+					description = <"Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time.">
+				>
+				["at0.0.1"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
+				["at0.0.2"] = <
+					text = <"*Nenhuma (pt-pt)">
+					description = <"*Desacelerações variáveis não detetáveis (pt-pt)">
+				>
+				["at0.0.3"] = <
+					text = <"*Ocasional (pt-pt)">
+					description = <"*Desacelerações variáveis ocasionais detectadas (pt-pt)">
+				>
+				["at0.0.4"] = <
+					text = <"*Repetitiva (pt-pt)">
+					description = <"*Desacelerações variáveis detectadas (pt-pt)">
+				>
+				["at0000.1"] = <
+					text = <"Fetal heart monitoring">
+					description = <"Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time.">
+				>
 				["at0.1"] = <
 					text = <"Variability">
 					description = <"Variability in the fetal heart rate observed during the monitoring interval.">
@@ -428,6 +452,10 @@ ontology
 					text = <"Repetitive">
 					description = <"Decelerations detected in association with over 50% of uterine contractions.">
 				>
+				["at0005.1"] = <
+					text = <"Rate">
+					description = <"The observed fetal heart rate.">
+				>
 				["at0000"] = <
 					text = <"Fetal heart rate">
 					description = <"Observations about the fetal heart rate.">
@@ -529,30 +557,34 @@ ontology
 					text = <"Not in labour">
 					description = <"The mother is not in labour as the observation is made.">
 				>
-				["at0000.1.1"] = <
-					text = <"Fetal heart monitoring">
-					description = <"Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time.">
-				>
-				["at0.0.1"] = <
-					text = <"DV_CODED_TEXT">
-					description = <"">
-				>
-				["at0.0.2"] = <
-					text = <"*Nenhuma (pt-pt)">
-					description = <"*Desacelerações variáveis não detetáveis (pt-pt)">
-				>
-				["at0.0.3"] = <
-					text = <"*Ocasional (pt-pt)">
-					description = <"*Desacelerações variáveis ocasionais detectadas (pt-pt)">
-				>
-				["at0.0.4"] = <
-					text = <"*Repetitiva (pt-pt)">
-					description = <"*Desacelerações variáveis detectadas (pt-pt)">
-				>
 			>
 		>
 		["pt-pt"] = <
 			items = <
+				["at0000.1.1"] = <
+					text = <"*Fetal heart monitoring (en)">
+					description = <"*Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time. (en)">
+				>
+				["at0.0.1"] = <
+					text = <"Desacelerações variáveis">
+					description = <"">
+				>
+				["at0.0.2"] = <
+					text = <"Ausente">
+					description = <"Desacelerações variáveis não detetáveis">
+				>
+				["at0.0.3"] = <
+					text = <"Esporádicas">
+					description = <"Desacelerações variáveis ocasionais detectadas">
+				>
+				["at0.0.4"] = <
+					text = <"Repetitivas">
+					description = <"Desacelerações variáveis detectadas">
+				>
+				["at0000.1"] = <
+					text = <"*Fetal heart monitoring (en)">
+					description = <"*Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time. (en)">
+				>
 				["at0.1"] = <
 					text = <"*Variability (en)">
 					description = <"*Variability in the fetal heart rate observed during the monitoring interval. (en)">
@@ -676,6 +708,10 @@ ontology
 					text = <"Repetitiva">
 					description = <"Desacelerações detectadas  e ocorrem  em associação em mais de 50% das contrações uterinas">
 				>
+				["at0005.1"] = <
+					text = <"Frequência">
+					description = <"*The observed fetal heart rate. (en)">
+				>
 				["at0000"] = <
 					text = <"*Fetal heart rate (en)">
 					description = <"*Observations about the fetal heart rate. (en)">
@@ -776,26 +812,6 @@ ontology
 				["at0025"] = <
 					text = <"*Not in labour (en)">
 					description = <"*The mother is not in labour as the observation is made. (en)">
-				>
-				["at0000.1.1"] = <
-					text = <"*Fetal heart monitoring (en)">
-					description = <"*Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time. (en)">
-				>
-				["at0.0.1"] = <
-					text = <"Desacelerações variáveis">
-					description = <"">
-				>
-				["at0.0.2"] = <
-					text = <"Nenhuma">
-					description = <"Desacelerações variáveis não detetáveis">
-				>
-				["at0.0.3"] = <
-					text = <"Ocasional">
-					description = <"Desacelerações variáveis ocasionais detectadas">
-				>
-				["at0.0.4"] = <
-					text = <"Repetitiva">
-					description = <"Desacelerações variáveis detectadas">
 				>
 			>
 		>
