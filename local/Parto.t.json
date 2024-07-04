@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "65.0.1",
+      "sem_ver" : "66.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "1e840533cc1e612a3d6e84875d74eb5f",
+      "MD5-CAM-1.0.1" : "c6aa51ed1dabf495e8df2fb4bce3d9a8",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -1475,15 +1475,6 @@
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-uterine_contractions-001.v0",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "OBSERVATION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.9",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-exam-002.v1",
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
@@ -6358,11 +6349,20 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "OBSERVATION",
-          "occurrences" : "0..1",
+          "occurrences" : "0..*",
           "nodeId" : "at0.6",
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-fetal_heart-monitoring-Variavel-001.v0",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.8",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-exam-002.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -12860,7 +12860,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "a8dc24261503d5813c10bf2eac36fd5a"
+        "PARENT:MD5-CAM-1.0.1" : "d3de38e5df68e6cd8cd5f66a20a6f4e8"
       },
       "details" : {
         "pt-pt" : {
@@ -13447,18 +13447,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.0.0.7",
             "description" : ""
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Fetal heart monitoring",
-            "description" : "Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time."
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Rate",
-            "description" : "The observed fetal heart rate."
           }
         },
         "pt-pt" : {
@@ -13517,17 +13505,59 @@
             "code" : "ac0.0.0.7",
             "description" : ""
           },
-          "at0000.1" : {
+          "at0.12" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "*Fetal heart monitoring (en)",
-            "description" : "*Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time. (en)"
+            "code" : "at0.12",
+            "text" : "Diminuída",
+            "description" : "A variabilidade da frequência cardíaca é inferior ou igual a 5 batimentos por minuto"
           },
-          "at0005.1" : {
+          "at0.13" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Frequência",
-            "description" : "*The observed fetal heart rate. (en)"
+            "code" : "at0.13",
+            "text" : "Normal",
+            "description" : "A variabilidade da frequência cardíaca situa-se entre 6-25 batimentos por minuto"
+          },
+          "at0.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14",
+            "text" : "Aumentada",
+            "description" : "A variabilidade da frequência cardíaca é superior a 25 batimentos por minuto"
+          },
+          "at0.19" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.19",
+            "text" : "Ausente",
+            "description" : "Desacelerações não detetáveis"
+          },
+          "at0.20" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.20",
+            "text" : "Esporádicas",
+            "description" : "Desacelerações ocasionais detectadas mas ocorrem  em associação em menos de 50% das contrações uterinas"
+          },
+          "at0.21" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.21",
+            "text" : "Repetitivas",
+            "description" : "Desacelerações detectadas  e ocorrem  em associação em mais de 50% das contrações uterinas"
+          },
+          "at0.28" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.28",
+            "text" : "Ausente",
+            "description" : "Desacelerações não detetáveis"
+          },
+          "at0.29" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.29",
+            "text" : "Esporádicas",
+            "description" : "Desacelerações ocasionais detectadas mas ocorrem  em associação em menos de 50% das contrações uterinas"
+          },
+          "at0.30" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.30",
+            "text" : "Repetitivas",
+            "description" : "Desacelerações detectadas  e ocorrem  em associação em mais de 50% das contrações uterinas"
           }
         }
       },
