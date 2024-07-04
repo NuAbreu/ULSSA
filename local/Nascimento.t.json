@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "76.3.0",
+      "sem_ver" : "77.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "28c221fad4813e1779e606f7109a19e8",
+      "MD5-CAM-1.0.1" : "4172153c9bb3edc6ca5e83f7e779273f",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -16622,6 +16622,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
           "nodeId" : "at0003.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -16640,6 +16641,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
           "nodeId" : "at0004.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -16969,6 +16971,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
           "nodeId" : "at0003.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -16987,6 +16990,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
           "nodeId" : "at0004.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -17498,6 +17502,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
           "nodeId" : "at0003.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -17516,6 +17521,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
           "nodeId" : "at0004.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -36934,12 +36940,12 @@
                   "selectedTerminologies" : [ "SNOMED" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED",
-                    "code" : "6893006",
-                    "value" : "Primeiro estadio"
-                  }, {
-                    "terminologyId" : "SNOMED",
                     "code" : "42857002",
                     "value" : "Segundo estadio"
+                  }, {
+                    "terminologyId" : "SNOMED",
+                    "code" : "E",
+                    "value" : "Expulsão"
                   } ]
                 } ]
               } ],
