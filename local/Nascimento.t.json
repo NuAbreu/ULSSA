@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "78.0.0",
+      "sem_ver" : "79.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e57f09f1e59d0cd20d5e152da61c082b",
+      "MD5-CAM-1.0.1" : "ecbadb7b8e77bc92813cc165dc548de3",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -36960,7 +36960,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "d153fc893ed96405920eb43eb8604ea4"
+        "PARENT:MD5-CAM-1.0.1" : "de144d7f7661cd534b1849f1e24c8a13"
       },
       "details" : {
         "pt-pt" : {
@@ -37031,8 +37031,8 @@
                     "value" : "Segundo estadio"
                   }, {
                     "terminologyId" : "SNOMED",
-                    "code" : "E",
-                    "value" : "Expulsão"
+                    "code" : "PE",
+                    "value" : "Período expulsivo"
                   } ]
                 } ]
               } ],
