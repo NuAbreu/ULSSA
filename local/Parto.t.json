@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "67.0.1",
+      "sem_ver" : "68.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c92f1958a69925e777efff4a3915db1f",
+      "MD5-CAM-1.0.1" : "9618db089418da1437330d7835950527",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -12455,7 +12455,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.0.19" ],
+                  "constraint" : [ "ac0.0.21" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -12655,12 +12655,6 @@
             "code" : "ac0.0.2",
             "description" : ""
           },
-          "ac0.0.19" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.0.19",
-            "description" : ""
-          },
           "ac0.0.20" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -12672,6 +12666,12 @@
             "code" : "at0000",
             "text" : "Palpation of a fetus (per vagina)",
             "description" : "Specific findings observed during the vaginal palpation of a single fetus in utero."
+          },
+          "ac0.0.21" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.0.21",
+            "description" : ""
           }
         },
         "pt-pt" : {
@@ -12691,12 +12691,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
-            "description" : ""
-          },
-          "ac0.0.19" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.0.19",
             "description" : ""
           },
           "ac0.0.20" : {
@@ -12722,6 +12716,12 @@
             "code" : "at0000",
             "text" : "*Palpation of a fetus (per vagina) (en)",
             "description" : "*Specific findings observed during the vaginal palpation of a single fetus in utero. (en)"
+          },
+          "ac0.0.21" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.0.21",
+            "description" : ""
           }
         }
       },
@@ -12827,6 +12827,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.0.20",
           "members" : [ "at0039", "at0040", "at0041" ]
+        },
+        "ac0.0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.0.21",
+          "members" : [ "at0013", "at0014", "at0015", "at0016", "at0017", "at0018", "at0019", "at0020" ]
         }
       }
     },
