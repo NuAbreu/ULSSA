@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "83.0.0",
+      "sem_ver" : "84.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5342f1e073f6716db591cd4396936c4a",
+      "MD5-CAM-1.0.1" : "7fffbecbba715af8a4168c16d6ce6853",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -29224,6 +29224,10 @@
                         "terminologyId" : "local_terms",
                         "code" : "Outra",
                         "value" : "Outra"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "BIU",
+                        "value" : "Balão Intra-uterino"
                       } ]
                     } ]
                   } ],
