@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "84.0.0",
+      "sem_ver" : "85.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "7fffbecbba715af8a4168c16d6ce6853",
+      "MD5-CAM-1.0.1" : "920ac993b3b531b83a39355ee2f43bdb",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -37066,6 +37066,18 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "PE",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Período expulsivo",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -37079,10 +37091,6 @@
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "SNOMED" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED",
-                    "code" : "42857002",
-                    "value" : "Segundo estadio"
-                  }, {
                     "terminologyId" : "SNOMED",
                     "code" : "PE",
                     "value" : "Período expulsivo"
@@ -37134,7 +37142,11 @@
                   }, {
                     "terminologyId" : "SNOMED",
                     "code" : "32185000",
-                    "value" : "Lateralizada"
+                    "value" : "Decúbito lateral"
+                  }, {
+                    "terminologyId" : "SNOMED",
+                    "code" : "ST",
+                    "value" : "Sentada"
                   } ]
                 } ]
               } ],
