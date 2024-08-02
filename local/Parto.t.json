@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "68.0.0",
+      "sem_ver" : "69.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "9618db089418da1437330d7835950527",
+      "MD5-CAM-1.0.1" : "41c2ae0f75ddb5c12840cdc561bf9eb5",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -12993,6 +12993,66 @@
                             } ]
                           } ],
                           "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0005.1.0.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "1/min" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 300.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ]
+                          } ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
