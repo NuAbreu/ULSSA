@@ -15,6 +15,11 @@ language
 				["email"] = <"sebastian.garde@oceaninformatics.com, Strauch.Natalia@mh-hannover.de">
 			>
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			author = <
@@ -38,11 +43,6 @@ language
 				["organisation"] = <"CaboLabs">
 			>
 			accreditation = <"Computer Engineer">
-		>
-		["pt-pt"] = <
-			language = <[ISO_639-1::pt-pt]>
-			author = <
-			>
 		>
 	>
 
@@ -89,7 +89,7 @@ This archetype is intended to be used within a template in which the content is 
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To provide a framework for consistent modelling of Vital signs within a template.">
-			keywords = <"blood pressure","temperature","pulse","oxygen saturation","respirations","observations","vital","signs">
+			keywords = <"blood","pressure","temperature","pulse","oxygen","saturation","respirations","observations","vital","signs">
 			copyright = <"© openEHR Foundation">
 			use = <"Use to provide a framework and suggested design guidance for consistent modelling of Vital signs within a template.
 
@@ -111,7 +111,7 @@ This archetype is intended to be used within a template in which the content is 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8e2d2d7b85332d1438fda53d358c6733">
+		["MD5-CAM-1.0.1"] = <"b5b4d3cebfe600e39d854df94a62c7a0">
 		["build_uid"] = <"b282c3ad-df60-4d19-9602-505ab079b7b9">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -191,11 +191,11 @@ ontology
 		["pt-pt"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Vital signs (en)">
-					description = <"*Framework for consistent modelling of observations and measurements about essential physiological functions. (en)">
+					text = <"Sinais Vitais">
+					description = <"Estrutura para modelação consistente de observações e medições sobre funções fisiológicas essenciais">
 				>
 				["at0001"] = <
-					text = <"*Vital signs (en)">
+					text = <"Sinais Vitais">
 					description = <"">
 				>
 			>
