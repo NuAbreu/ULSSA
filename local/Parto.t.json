@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "76.0.0",
+      "sem_ver" : "76.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "dd9347df53b75dc18ce2d5f25847bf88",
+      "MD5-CAM-1.0.1" : "ce039b9de4753359a1abea542c3469a5",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -7139,7 +7139,20 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Decisão de Cesariana",
-            "description" : "*Request for a health-related service or activity to be delivered by a clinician, organisation or agency. (en)"
+            "description" : ""
+          },
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "*Service name (en)",
+            "description" : "",
+            "comment" : "*Coding of the 'Service name' with an external terminology is strongly recommended, if available. This data element allows multiple occurrences to enable the user to record a multiple services as part of a single request, if required. (en)"
+          },
+          "at0064.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064",
+            "text" : "*Reason description (en)",
+            "description" : ""
           }
         }
       },
@@ -7533,7 +7546,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
             "text" : "Observações",
-            "description" : "*Narrative description of the story or clinical history for the subject of care. (en)"
+            "description" : ""
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -8426,7 +8439,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
             "text" : "Ingestão de alimentos",
-            "description" : "*The name of the item of food being recorded. (en)"
+            "description" : ""
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -8753,7 +8766,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "Rotura da bolsa de águas",
-            "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings. (en)",
+            "description" : "",
             "comment" : "*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)"
           }
         }
@@ -9711,7 +9724,14 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "pt-pt" : { }
+        "pt-pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Dados adicionais para o Trabalho de parto",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10012,7 +10032,15 @@
         "pt-br" : { },
         "de" : { },
         "sv" : { },
-        "pt-pt" : { }
+        "pt-pt" : {
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Clinical interpretation (en)",
+            "description" : "",
+            "comment" : "*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)"
+          }
+        }
       },
       "termBindings" : {
         "SNOMED-CT" : {
@@ -13624,7 +13652,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
             "text" : "Notas",
-            "description" : "*Narrative description of the story or clinical history for the subject of care. (en)"
+            "description" : ""
           }
         }
       },
