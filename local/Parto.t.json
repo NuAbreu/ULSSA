@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "70.0.0",
+      "sem_ver" : "71.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "697cf639379250df33df887fedc02e1a",
+      "MD5-CAM-1.0.1" : "f7c2fea48a90f36436b11105452145ae",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -5482,43 +5482,7 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0006.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "occurrences" : "1..1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "TERMINOLOGY_CODE",
-                              "occurrences" : "0..1",
-                              "terminologyId" : {
-                                "value" : "local_terms"
-                              },
-                              "constraint" : [ ],
-                              "selectedTerminologies" : [ "local_terms" ],
-                              "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "local_terms",
-                                "code" : "Petidine",
-                                "value" : "Petidine"
-                              }, {
-                                "terminologyId" : "local_terms",
-                                "code" : "Epidural",
-                                "value" : "Epidural"
-                              }, {
-                                "terminologyId" : "local_terms",
-                                "code" : "Outro",
-                                "value" : "Outro"
-                              } ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
