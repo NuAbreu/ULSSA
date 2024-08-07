@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "85.0.0",
+      "sem_ver" : "85.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "920ac993b3b531b83a39355ee2f43bdb",
+      "MD5-CAM-1.0.1" : "c71e5d3673853b3a7b45d977070c7387",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -1118,7 +1118,7 @@
           "at0178.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0178.1",
-            "text" : "Monocorionicidade",
+            "text" : "Corionicidade",
             "description" : "*Assertion about whether the pregnancy is cateogrised as 'multiple pregnancy'. (en)",
             "comment" : "*This categorial data element is commonly required within registries or used in risk assessment, rather than recording the actual 'Number of foetuses'. (en)"
           },
