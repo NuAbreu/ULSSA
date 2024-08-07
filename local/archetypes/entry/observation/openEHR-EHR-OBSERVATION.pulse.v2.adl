@@ -14,6 +14,11 @@ language
 				["organisation"] = <"University of Heidelberg, Central Queensland University, Hannover Medical School">
 			>
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 		["ru"] = <
 			language = <[ISO_639-1::ru]>
 			author = <
@@ -92,11 +97,6 @@ language
 			>
 			accreditation = <"MD MS PhD">
 		>
-		["pt-pt"] = <
-			language = <[ISO_639-1::pt-pt]>
-			author = <
-			>
-		>
 	>
 
 description
@@ -141,32 +141,17 @@ Konzepte, wie die Zielherzfrequenz, sollen im Zusammenhang mit dessen Zielen und
 			language = <[ISO_639-1::pt-pt]>
 			copyright = <"© openEHR Foundation">
 		>
-		["fi"] = <
-			language = <[ISO_639-1::fi]>
-			purpose = <"*To record details about the rate and associated attributes for a pulse or heart beat.(en)">
-			keywords = <"*rate(en)","*rhythm(en)","*beat(en)","*pulse(en)","*heart(en)","*vital(en)","*sign(en)">
-			use = <"*Use to record the presence or absence of a pulse or heart beat.
-
-In practice, the terms 'heart rate' and 'pulse rate' are often used interchangeably, although they may be measured at different body sites. This archetype allows either term to be used when the measurement site is not specified, to suit clinician preferences.
-
-Use to record the measurement of the pulse rate, or heart rate, observations about the associated pattern and character, and clinical interpretation of the findings.
-
-Measurements such as the maximum pulse or heart rate over an interval of time can be recorded using 'Maximum' event. Others point-in-time or interval events may be specified within a template or at run-time.
-
-In development of this archetype, there has been some tension around representation of the regularity of the pulse or heart beat. This archetype represents the relevant data points separately: firstly establishing 'Regular' vs 'Irregular' and then, if 'Irregular', further options of 'Regularly irregular' and 'Irregularly irregular'. In practice, clinical systems could offer users a combination of the values from the 'Regular?' and 'Irregular type' - for example, 'Regular', 'Regularly irregular' and 'Irregularly irregular' drawn from these two data elements. Data could be recorded against both data elements with the assumption that if one of the irregular types are selected, then the 'Irregular' value in the 'Regular?' data element is also automatically selected.
-
-In certain situations it is important to be very specific so that a rate observed at a peripheral body site, such as the radial artery, can be differentiated from the rate of the heart. To record a pulse deficit, record the measurements of the mechanical heart rate and a peripheral pulse rate in two instances of this archetype - the difference between these measurments is the pulse deficit. The actual pulse deficit will be recorded in a separate OBSERVATION archetype.(en)">
-			misuse = <"*Not to be used to record the R-R rate in the context of an Electrocardiograph report - use the OBSERVATION.ecg archetypefor this purpose.
-
-Not to be used to record other details of the full cardiovascular examination or assessment. Other specific CLUSTER archetypes will be used to record characteristics such as apex beat, murmurs and bruits, or auscultatory findings.
-
-In particular, this archetype is not intended to record the assessment of peripheral vascular disease, which requires documentation of the presence and strength of each peripheral pulse.  A specific CLUSTER archetype will be used to record the general findings on examination of peripheral pulses.  
-
-Not to be used to record fetal heart rate - use the OBSERVATION.fetal_heart archetype for this purpose.
-
-Not to be used to record the pulse deficit - use a specific OBSERVATION archetype for this purpose.
-
-Concepts such as Target Heart Rate should be recorded in separate EVALUATION archetypes related to goals and exercise assessment.(en)">
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			purpose = <"Для записи информации о частоте  и ритме  сердцечных сокращений.">
+			keywords = <"ЧСС","ритм","сердечный ритм","частотат сердечных сокращений">
+			copyright = <"© openEHR Foundation">
+			use = <"Используется для записи измеренных характеристик, связанных с темпом и ритма сердца, в том числе простая констатация наличия сердечного ритма. Эти характеристики не регистрируются путем прямого наблюдения самого сердца, а подразумевают альтернативные источники, включая прямую аускультацию сердца или электрокардиограф, отражающий электрическую активность сердца.
+Частота и ритм сердечных сокращений  (или специализация этого архетипа - Пульс), как правило, регистрируются в качестве одного из компонентов жизненно важных признаков - включая кровяное давление, дыхание, температуру и оксиметрию. Для каждого из этих понятий существуют специальные архетипы. ">
+			misuse = <"Не следует использовать для записи выводов о измеряемых частоте и ритме сердечных сокращений. Такого рода заявления, как, например, пациент находится в состоянии фибрилляция предсердий или тахикардии, должны быть записаны в других специальных архетипах, относящихся к категории ОЦЕНКА.
+Не следует использовать для записи механической частоты сердечных сокращений, ритма и связанные с ними характеристик - это записывается используя специализацию этого архетипа - OBSERVATION.heart_rate-pulse.
+Не используется для записи другой информации обширной системы обследования или оценки сердечно-сосудистой системы. Другие специфические архетипы используются для записи таких характеристик, как верхушечный толчок, шумы, результаты аускультаци и т.д.
+Такие понятия, как максимальная или целевая частота сердечных сокращений, должны записываться в отдельных архетипах, предназначенных специально для осуществления оценки.">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
@@ -198,17 +183,32 @@ Ska inte användas för att registrera pulsdeficit. Till detta ska en särskild 
 Ska inte användas när hjärtfrekvens är ett behandlingsmål. Till det ändamålet ska EVALUATION-arketyper som är till för mål och värdering av träning användas.
 ">
 		>
-		["ru"] = <
-			language = <[ISO_639-1::ru]>
-			purpose = <"Для записи информации о частоте  и ритме  сердцечных сокращений.">
-			keywords = <"ЧСС","ритм","сердечный ритм","частотат сердечных сокращений">
-			copyright = <"© openEHR Foundation">
-			use = <"Используется для записи измеренных характеристик, связанных с темпом и ритма сердца, в том числе простая констатация наличия сердечного ритма. Эти характеристики не регистрируются путем прямого наблюдения самого сердца, а подразумевают альтернативные источники, включая прямую аускультацию сердца или электрокардиограф, отражающий электрическую активность сердца.
-Частота и ритм сердечных сокращений  (или специализация этого архетипа - Пульс), как правило, регистрируются в качестве одного из компонентов жизненно важных признаков - включая кровяное давление, дыхание, температуру и оксиметрию. Для каждого из этих понятий существуют специальные архетипы. ">
-			misuse = <"Не следует использовать для записи выводов о измеряемых частоте и ритме сердечных сокращений. Такого рода заявления, как, например, пациент находится в состоянии фибрилляция предсердий или тахикардии, должны быть записаны в других специальных архетипах, относящихся к категории ОЦЕНКА.
-Не следует использовать для записи механической частоты сердечных сокращений, ритма и связанные с ними характеристик - это записывается используя специализацию этого архетипа - OBSERVATION.heart_rate-pulse.
-Не используется для записи другой информации обширной системы обследования или оценки сердечно-сосудистой системы. Другие специфические архетипы используются для записи таких характеристик, как верхушечный толчок, шумы, результаты аускультаци и т.д.
-Такие понятия, как максимальная или целевая частота сердечных сокращений, должны записываться в отдельных архетипах, предназначенных специально для осуществления оценки.">
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
+			purpose = <"*To record details about the rate and associated attributes for a pulse or heart beat.(en)">
+			keywords = <"*rate(en)","*rhythm(en)","*beat(en)","*pulse(en)","*heart(en)","*vital(en)","*sign(en)">
+			use = <"*Use to record the presence or absence of a pulse or heart beat.
+
+In practice, the terms 'heart rate' and 'pulse rate' are often used interchangeably, although they may be measured at different body sites. This archetype allows either term to be used when the measurement site is not specified, to suit clinician preferences.
+
+Use to record the measurement of the pulse rate, or heart rate, observations about the associated pattern and character, and clinical interpretation of the findings.
+
+Measurements such as the maximum pulse or heart rate over an interval of time can be recorded using 'Maximum' event. Others point-in-time or interval events may be specified within a template or at run-time.
+
+In development of this archetype, there has been some tension around representation of the regularity of the pulse or heart beat. This archetype represents the relevant data points separately: firstly establishing 'Regular' vs 'Irregular' and then, if 'Irregular', further options of 'Regularly irregular' and 'Irregularly irregular'. In practice, clinical systems could offer users a combination of the values from the 'Regular?' and 'Irregular type' - for example, 'Regular', 'Regularly irregular' and 'Irregularly irregular' drawn from these two data elements. Data could be recorded against both data elements with the assumption that if one of the irregular types are selected, then the 'Irregular' value in the 'Regular?' data element is also automatically selected.
+
+In certain situations it is important to be very specific so that a rate observed at a peripheral body site, such as the radial artery, can be differentiated from the rate of the heart. To record a pulse deficit, record the measurements of the mechanical heart rate and a peripheral pulse rate in two instances of this archetype - the difference between these measurments is the pulse deficit. The actual pulse deficit will be recorded in a separate OBSERVATION archetype.(en)">
+			misuse = <"*Not to be used to record the R-R rate in the context of an Electrocardiograph report - use the OBSERVATION.ecg archetypefor this purpose.
+
+Not to be used to record other details of the full cardiovascular examination or assessment. Other specific CLUSTER archetypes will be used to record characteristics such as apex beat, murmurs and bruits, or auscultatory findings.
+
+In particular, this archetype is not intended to record the assessment of peripheral vascular disease, which requires documentation of the presence and strength of each peripheral pulse.  A specific CLUSTER archetype will be used to record the general findings on examination of peripheral pulses.  
+
+Not to be used to record fetal heart rate - use the OBSERVATION.fetal_heart archetype for this purpose.
+
+Not to be used to record the pulse deficit - use a specific OBSERVATION archetype for this purpose.
+
+Concepts such as Target Heart Rate should be recorded in separate EVALUATION archetypes related to goals and exercise assessment.(en)">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -305,18 +305,6 @@ Not to be used to record the pulse deficit - use a specific OBSERVATION archetyp
 
 Concepts such as Target Heart Rate should be recorded in separate EVALUATION archetypes related to goals and exercise assessment.(en)">
 		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"لتسجيل تفاصيل حول معدل و نظم القلب.">
-			keywords = <"المعدل","معدل القلب","النظم">
-			copyright = <"© openEHR Foundation">
-			use = <"يستخدم لتسجيل الخصائص التي تم قياسها فيما يتعلق بمعدل و نظم القلب, بما في ذلك بيان بسيط حول وجود نبض و معدل ضربات القلب. و لا يتم استخدام هذه القراءات بالملاحظة المباشرة للقلب ذاته, و إنما يتنم استنباطها من مصادر بديلة تتضمن التسمع المباشر للقلب أو تخطيط كهربية القلب بما يعكس النشاط الكهربي للقلب.
-معدل و نظم القلب ( أو تخصيصهما إلى النبض) عادة ما يتم تسجيلهم على أنهم يمثلون واحدا من العلامات الحياتية – و التي تتكون من ضغط الدم, التنفس, درجة الحرارة, و قياس التأكسج. و يوجد نماذج إضافية مخصصة لكل نوع من هذه المفاهيم.">
-			misuse = <"لا يستخدم لتسجيل استنتاجات حول معدل و نظم القلب الذي تم قياسهما. و ينبغي تسجيل بيانات مثل (المريض يعاني من الرجفان الأذيني) أو (يعاني من تسرع ضربات القلب) في نماذج أخرى مخصصة و متعلقة بتقييم حالة المريض.
-لا تستخدم لتسجيل معدل القلب الميكانيكي, أو النظم أو الخصائص الأخرى – و يتم تسجيل ذلك باستخدام تخصيص لهذا النموذج يسمى ملاحظة. معدل القلب – النبض.
-لا يستخدم لتسجيل تفاصيل فحص أو تقييم أكثر شمولا للجهاز القلبي الوريدي. و يمكن أن تستخدم نماذج معينة أخرى لتسجيل خصائص مثل نبض قمة القلب, النفخات, و الموجودات عند التسمع, إلى آخره.
-المفاهيم الأخرى مثل أقصى معدل للقلب, أو معدل القلب المستهدف ينبغي أن يتم تسجيلها في نماذج أخرى متعلقة بتقييم المجهود.">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record details about the rate and associated attributes for a pulse or heart beat.">
@@ -344,6 +332,18 @@ Not to be used to record fetal heart rate - use the OBSERVATION.fetal_heart arch
 Not to be used to record the pulse deficit - use a specific OBSERVATION archetype for this purpose.
 
 Concepts such as Target Heart Rate should be recorded in separate EVALUATION archetypes related to goals and exercise assessment.">
+		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"لتسجيل تفاصيل حول معدل و نظم القلب.">
+			keywords = <"المعدل","معدل","القلب","النظم">
+			copyright = <"© openEHR Foundation">
+			use = <"يستخدم لتسجيل الخصائص التي تم قياسها فيما يتعلق بمعدل و نظم القلب, بما في ذلك بيان بسيط حول وجود نبض و معدل ضربات القلب. و لا يتم استخدام هذه القراءات بالملاحظة المباشرة للقلب ذاته, و إنما يتنم استنباطها من مصادر بديلة تتضمن التسمع المباشر للقلب أو تخطيط كهربية القلب بما يعكس النشاط الكهربي للقلب.
+معدل و نظم القلب ( أو تخصيصهما إلى النبض) عادة ما يتم تسجيلهم على أنهم يمثلون واحدا من العلامات الحياتية – و التي تتكون من ضغط الدم, التنفس, درجة الحرارة, و قياس التأكسج. و يوجد نماذج إضافية مخصصة لكل نوع من هذه المفاهيم.">
+			misuse = <"لا يستخدم لتسجيل استنتاجات حول معدل و نظم القلب الذي تم قياسهما. و ينبغي تسجيل بيانات مثل (المريض يعاني من الرجفان الأذيني) أو (يعاني من تسرع ضربات القلب) في نماذج أخرى مخصصة و متعلقة بتقييم حالة المريض.
+لا تستخدم لتسجيل معدل القلب الميكانيكي, أو النظم أو الخصائص الأخرى – و يتم تسجيل ذلك باستخدام تخصيص لهذا النموذج يسمى ملاحظة. معدل القلب – النبض.
+لا يستخدم لتسجيل تفاصيل فحص أو تقييم أكثر شمولا للجهاز القلبي الوريدي. و يمكن أن تستخدم نماذج معينة أخرى لتسجيل خصائص مثل نبض قمة القلب, النفخات, و الموجودات عند التسمع, إلى آخره.
+المفاهيم الأخرى مثل أقصى معدل للقلب, أو معدل القلب المستهدف ينبغي أن يتم تسجيلها في نماذج أخرى متعلقة بتقييم المجهود.">
 		>
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
@@ -433,7 +433,7 @@ Concepts such as Target Heart Rate should be recorded in separate EVALUATION arc
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2a0df6c402c473c37b3f7c5d05f082e1">
+		["MD5-CAM-1.0.1"] = <"dbc08012f3906ff8e74feac42908e09b">
 		["build_uid"] = <"64b97a61-b8f8-489d-9bd6-8ca03147e9be">
 		["revision"] = <"2.0.5">
 	>
@@ -632,7 +632,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"*Pulse/Heart beat(en)">
-					description = <"*The rate and associated attributes for a pulse or heart beat. (en)">
+					description = <"*Record details about the rate and associated attributes for a pulse or heart beat.(en)">
 				>
 				["at0001"] = <
 					text = <"*structure(en)">
@@ -648,7 +648,8 @@ ontology
 				>
 				["at0004"] = <
 					text = <"*Rate(en)">
-					description = <"*The rate of the pulse or heart beat, measured in beats per minute. (en)">
+					description = <"*The rate, measured in beats per minute.(en)">
+					comment = <"*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)">
 				>
 				["at0005"] = <
 					text = <"*Regular?(en)">
@@ -697,7 +698,7 @@ ontology
 				["at1005"] = <
 					text = <"*Presence(en)">
 					description = <"*Presence of a pulse or heart beat.(en)">
-					comment = <"*It can be implied that the pulse or heart beat is present if Rate >0 /min. (en)">
+					comment = <"*It can be implied that the pulse is present if Rate >0 beats/min.(en)">
 				>
 				["at1013"] = <
 					text = <"*Device(en)">
@@ -3163,40 +3164,41 @@ traag stijgend of instortend. Er kunnen meerdere termen worden vastgelegd.">
 		["pt-pt"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Pulse/Heart beat (en)">
-					description = <"*The rate and associated attributes for a pulse or heart beat. (en)">
+					text = <"Pulso/ Batimento cardíaco">
+					description = <"Registo detalhado sobre a frequência e  atributos associados ao pulso ou batimentos cardíacos.">
 				>
 				["at0001"] = <
-					text = <"structure">
+					text = <"Estrutura">
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"history">
+					text = <"História">
 					description = <"@ internal @">
 				>
 				["at0003"] = <
-					text = <"*Any event (en)">
-					description = <"*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)">
+					text = <"Qualquer evento">
+					description = <"Padrão, ponto inespecífico de tempo ou evento intervalado que pode ser definido explicitamente num modelo ou no tempo de execução">
 				>
 				["at0004"] = <
-					text = <"*Rate (en)">
-					description = <"*The rate of the pulse or heart beat, measured in beats per minute. (en)">
+					text = <"Frequência">
+					description = <"Frequência, medida em batimentos por minuto">
+					comment = <"*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required. (en)">
 				>
 				["at0005"] = <
-					text = <"*Regularity (en)">
-					description = <"*Regularity of the pulse or heart beat. (en)">
+					text = <"Regular?">
+					description = <"O pulso/ batimento cardíaco é regular?">
 				>
 				["at0006"] = <
-					text = <"*Regular (en)">
-					description = <"*The pattern is regular. (en)">
+					text = <"Regular">
+					description = <"O padrão é regular">
 				>
 				["at0007"] = <
-					text = <"*Regularly Irregular (en)">
-					description = <"*The pattern is irregular in a regular pattern,. For example, a dropped beat once every 'n' beats. (en)">
+					text = <"Regularmente irregular">
+					description = <"O padrão é irregular de uma forma regular. Por exemplo: a cada \"n\" batimentos existe uma irregularidade.">
 				>
 				["at0008"] = <
-					text = <"*Irregularly Irregular (en)">
-					description = <"*The pattern is irregular in a chaotic and unpredictable manner. For example, atrial fibrillation. (en)">
+					text = <"Irregularmente Irregular">
+					description = <"O padrão é irregular de forma caótica e imprevisível. Por exemplo, fibrilação atrial. ">
 				>
 				["at0010"] = <
 					text = <"List">
@@ -3207,167 +3209,167 @@ traag stijgend of instortend. Er kunnen meerdere termen worden vastgelegd.">
 					description = <"@ internal @">
 				>
 				["at0013"] = <
-					text = <"*Position (en)">
-					description = <"*The body position of the subject during the observation. (en)">
+					text = <"Posição">
+					description = <"A posição do corpo do utente durante a observação.">
 				>
 				["at1000"] = <
-					text = <"*Lying (en)">
-					description = <"*The subject was lying flat. (en)">
+					text = <"Deitado">
+					description = <"O utente estava deitado">
 				>
 				["at1001"] = <
-					text = <"*Sitting (en)">
-					description = <"*The subject was sitting (for example on bed or chair). (en)">
+					text = <"Sentado">
+					description = <"O utente estava sentado (por exemplo numa cama ou cadeira)">
 				>
 				["at1002"] = <
-					text = <"*Reclining (en)">
-					description = <"*The subject was reclining at an approximate angle of 45 degrees, with the legs elevated to the level of the pelvis. (en)">
+					text = <"Reclinado">
+					description = <"O utente estava reclinado num ângulo aproximado de 45º, com as pernas elevadas ao nível da pelve.">
 				>
 				["at1003"] = <
-					text = <"*Standing/upright (en)">
-					description = <"*The subject was standing, walking or running. (en)">
+					text = <"De pé">
+					description = <"O utente estava de pé, a andar ou a correr">
 				>
 				["at1005"] = <
-					text = <"*Presence (en)">
-					description = <"*Presence of a pulse or heart beat. (en)">
-					comment = <"*It can be implied that the pulse or heart beat is present if Rate >0 /min. (en)">
+					text = <"Presença">
+					description = <"Presença de pulso ou batimento cardíaco">
+					comment = <"*It can be implied that the pulse is present if Rate >0 beats/min. (en)">
 				>
 				["at1013"] = <
-					text = <"*Device (en)">
-					description = <"*Details about the device used to measure the pulse rate or heart rate. (en)">
+					text = <"Dispositivo">
+					description = <"Detalhes sobre o dispositivo usado para medir a frequência do pulso ou a frequência cardíaca.">
 				>
 				["at1017"] = <
-					text = <"*Exertion (en)">
-					description = <"*Details about physical exertion being undertaken during the examination. (en)">
+					text = <"Esforço">
+					description = <"Detalhes sobre o esforço físico realizado durante o exame.">
 				>
 				["at1018"] = <
-					text = <"*Confounding factors (en)">
-					description = <"*Narrative description about any incidental factors that may affect interpretation of the physical findings. (en)">
+					text = <"Factores confundidores">
+					description = <"Descrição narrativa sobre quaisquer factores acidentais que possam afectar a interpretação dos achados físicos">
 					comment = <"*For example, presence of a pacemaker, level of anxiety; pain or fever etc. (en)">
 				>
 				["at1019"] = <
-					text = <"*Method (en)">
-					description = <"*Method used to observe the pulse or heart beat. (en)">
-					comment = <"*For example, auscultation or electronic monitoring. (en)">
+					text = <"Método">
+					description = <"Método utilizado para a observação do pulso ou batimento cardíaco">
+					comment = <"*For example, auscultation or electronic monitoring.  (en)">
 				>
 				["at1022"] = <
-					text = <"*Clinical description (en)">
-					description = <"*Narrative description about the pulse or heart beat. (en)">
+					text = <"Descrição clínica">
+					description = <"Descrição narrativa sobre o pulso ou batimento cardíaco">
 				>
 				["at1023"] = <
-					text = <"*Clinical interpretation (en)">
-					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm. (en)">
-					comment = <"*Coding with a terminology is preferred, where possible. For example: Bradycardia, Extrasystoles or Sinus rhythm. Multiple statements are allowed. (en)">
+					text = <"Interpretação clínica">
+					description = <"Palavra única, frase ou breve descrição que defina o significado clínico e significância do pulso ou batimento cardíaco, incluindo o ritmo.">
+					comment = <"*Coding with a terminology is preferred, where possible. For example: Bradycardia, Extrasystoles or Sinus rhythm. Multiple statements are allowed.  (en)">
 				>
 				["at1024"] = <
-					text = <"*Present (en)">
-					description = <"*A pulse or heart beat can be detected. (en)">
+					text = <"Presente">
+					description = <"O pulso ou batimento cardíaco, podem ser detectados">
 				>
 				["at1025"] = <
-					text = <"*Not detected (en)">
-					description = <"*A pulse or heart beat cannot be detected. (en)">
+					text = <"Não detectado">
+					description = <"O pulso ou batimento cardíaco, não podem ser detectados">
 				>
 				["at1028"] = <
-					text = <"*Irregular (en)">
-					description = <"*The pattern is irregular. (en)">
+					text = <"Irregular">
+					description = <"O padrão é irregular">
 				>
 				["at1030"] = <
-					text = <"*Character (en)">
-					description = <"*Description of the character of the pulse or heart beat. (en)">
+					text = <"Características">
+					description = <"Descrição das características do pulso ou batimento cardíaco.">
 					comment = <"*Coding with a terminology is desired, where possible. For example: full, thready, bounding, slow rising, or collapsing. Multiple terms may be recorded. (en)">
 				>
 				["at1032"] = <
-					text = <"*Palpation (en)">
-					description = <"*The findings are observed by physical touch of the observer on the subject. (en)">
+					text = <"Palpação">
+					description = <"Os resultados são obtidos através do toque ao utente">
 				>
 				["at1033"] = <
-					text = <"*Auscultation (en)">
-					description = <"*The findings are observed with the assistance of a device, such as a stethoscope. (en)">
+					text = <"Auscultação">
+					description = <"Os achados são observados com a ajuda de um dispositivo, como um estetoscópio.">
 				>
 				["at1034"] = <
-					text = <"*Automatic, non-invasive (en)">
-					description = <"*The findings are observed non-invasively using a device such as a pulse oximeter or a stethoscope. (en)">
+					text = <"Automático, não invasivo">
+					description = <"Os achados são obtidos de forma não invasiva usando um dispositivo como um oxímetro de pulso ou um estetoscópio.">
 				>
 				["at1036"] = <
-					text = <"*Maximum (en)">
-					description = <"*Maximum pulse rate or heart rate observed during a period of exertion. (en)">
+					text = <"Máximo">
+					description = <"Frequência de pulso ou frequência cardíaca máxima,  observada durante um período de esforço.">
 				>
 				["at1037"] = <
-					text = <"*Body site (en)">
-					description = <"*Body site where the pulse or heart beat were observed. (en)">
+					text = <"Local do corpo">
+					description = <"Local do corpo onde o pulso ou batimentos cardíacos foram observados.">
 				>
 				["at1038"] = <
-					text = <"*Radial Artery - Left (en)">
-					description = <"*The left radial artery. (en)">
+					text = <"Artéria radial - esquerda">
+					description = <"A artéria radial esquerda">
 				>
 				["at1039"] = <
-					text = <"*Radial Artery - Right (en)">
-					description = <"*The right radial artery. (en)">
+					text = <"Artéria radial - direita">
+					description = <"A artéria radial direita ">
 				>
 				["at1040"] = <
-					text = <"*Heart (en)">
-					description = <"*The region of the heart. (en)">
+					text = <"Coração">
+					description = <"A região do coração">
 				>
 				["at1041"] = <
-					text = <"*Carotid Artery - Left (en)">
-					description = <"*The left carotid artery. (en)">
+					text = <"Artéria carótida - esquerda">
+					description = <"A artéria carótida esquerda">
 				>
 				["at1042"] = <
-					text = <"*Carotid Artery - Right (en)">
-					description = <"*The right carotid artery. (en)">
+					text = <"Artéria carótida - direita">
+					description = <"A artéria carótida direita ">
 				>
 				["at1043"] = <
-					text = <"*Femoral Artery - Left (en)">
-					description = <"*The left femoral artery. (en)">
+					text = <"Artéria femoral - esquerda">
+					description = <"A artéria femoral esquerda">
 				>
 				["at1044"] = <
-					text = <"*Femoral Artery - Right (en)">
-					description = <"*The right femoral artery. (en)">
+					text = <"Artéria femoral - direita">
+					description = <"A artéria femoral direita">
 				>
 				["at1047"] = <
-					text = <"*Finger (en)">
-					description = <"*An unspecified finger. (en)">
+					text = <"Dedo da mão">
+					description = <"Um dedo não especificado">
 				>
 				["at1048"] = <
-					text = <"*Brachial artery - Left (en)">
-					description = <"*The left brachial artery. (en)">
+					text = <"Artéria braquial - esquerda">
+					description = <"A artéria braquial esquerda">
 				>
 				["at1049"] = <
-					text = <"*Brachial artery - Right (en)">
-					description = <"*The right brachial artery. (en)">
+					text = <"Artéria braquial - direita">
+					description = <"A artéria braquial direita">
 				>
 				["at1050"] = <
-					text = <"*Automatic, invasive (en)">
-					description = <"*The findings are observed invasively using a device such as an arterial catheter. (en)">
+					text = <"Automático, invasivo">
+					description = <"Os achados são obtidos de forma  invasiva, usando um dispositivo como um catéter arterial.">
 				>
 				["at1051"] = <
-					text = <"*Ear lobe (en)">
-					description = <"*The lobe of an unspecified ear. (en)">
+					text = <"Lóbulo da orelha">
+					description = <"O lóbulo de uma orelha inespecífica">
 				>
 				["at1054"] = <
-					text = <"*Toe (en)">
-					description = <"*An unspecified toe. (en)">
+					text = <"Dedo do pé">
+					description = <"Um dedo do pé inespecífico">
 				>
 				["at1055"] = <
-					text = <"*Irregular type (en)">
-					description = <"*More specific pattern of an irregular pulse or heart beat. (en)">
+					text = <"Tipo irregular">
+					description = <"Padrão mais específico de um pulso ou batimento cardíaco irregular">
 					comment = <"*Selection of a value from this value set is only valid if 'Irregular' is selected from the 'Regularity' data element. (en)">
 				>
 				["at1056"] = <
-					text = <"*Extension (en)">
-					description = <"*Additional information required to capture local content or to align with other reference models/formalisms. (en)">
+					text = <"Extensão">
+					description = <"Informações adicionais necessárias para obter conteúdo local ou para alinhar com outros modelos / formalismos de referência.">
 					comment = <"*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)">
 				>
 				["at1057"] = <
-					text = <"*Clinical interpretation (en)">
-					description = <"*Generic label to allow for any or all statements about the pulse or heart beat. (en)">
+					text = <"Interpretação clínica">
+					description = <"Denominação genérica que englobe  qualquer ou todas as descrições de pulso ou batimento cardíaco">
 				>
 				["at1058"] = <
-					text = <"*Rhythm (en)">
-					description = <"*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination. (en)">
+					text = <"Ritmo">
+					description = <"Conclusão específica sobre o ritmo do pulso ou batimento cardíaco, extraído de uma combinação da frequência cardíaca, padrão e outras características observadas no exame.">
 				>
 				["at1059"] = <
-					text = <"*Comment (en)">
-					description = <"*Additional narrative about the pulse or heart beat findings not captured in other fields. (en)">
+					text = <"Comentário">
+					description = <"Narrativa adicional sobre os achados do pulso ou batimento cardíaco, não registados noutros campos.">
 				>
 			>
 		>
