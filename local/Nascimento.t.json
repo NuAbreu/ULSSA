@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "85.0.1",
+      "sem_ver" : "86.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c71e5d3673853b3a7b45d977070c7387",
+      "MD5-CAM-1.0.1" : "e0cb55e10deff132791afb135b812f13",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -819,6 +819,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0118.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -857,6 +858,22 @@
                       } ]
                     } ]
                   } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0157.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_BOOLEAN",
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -933,6 +950,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
               "nodeId" : "at0065.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -1125,8 +1143,15 @@
           "at0118.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0118.1",
-            "text" : "Períneo/Vagina/Colo",
+            "text" : "Períneo/Vagina/Colos",
             "description" : "Descrição narrativa sobre o estado do períneo após o nascimento, incluindo lesões e tratamentos efectuados."
+          },
+          "at0066.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0066.1",
+            "text" : "Complicaçãoss",
+            "description" : "Identificação da complicação",
+            "comment" : "*Coding of the 'Complication' with a terminology is desirable, where possible. For example, post partum haemorrhage or pre-eclampsia. (en)"
           }
         }
       },
@@ -2048,17 +2073,11 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0118.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "attributes" : [ {
@@ -2069,10 +2088,27 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "local"
+                        "value" : "local_terms"
                       },
-                      "constraint" : [ "ac0.3" ],
-                      "selectedTerminologies" : [ ]
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "L1",
+                        "value" : "Laceração 1º grau"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "L2",
+                        "value" : "Laceração 2º grau"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "L3",
+                        "value" : "Laceração 3º/4º grau"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "L4",
+                        "value" : "Laceração do Colo"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -2082,9 +2118,17 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0157.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_BOOLEAN",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2158,9 +2202,73 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..0",
               "nodeId" : "at0065.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0066.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "local_terms"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "local_terms" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "local_terms",
+                            "code" : "89700002",
+                            "value" : "Distocia de ombros"
+                          }, {
+                            "terminologyId" : "local_terms",
+                            "code" : "15504009",
+                            "value" : "Rotura uterina"
+                          }, {
+                            "terminologyId" : "local_terms",
+                            "code" : "270500004",
+                            "value" : "Prolapso do cordão"
+                          }, {
+                            "terminologyId" : "local_terms",
+                            "code" : "74964007",
+                            "value" : "Outras"
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0067.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2502,7 +2610,16 @@
                       "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0063.1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_DATE_TIME",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -2555,12 +2672,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -2605,12 +2716,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -2649,12 +2754,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -2691,12 +2790,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
-            "description" : ""
-          },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
             "description" : ""
           },
           "ac0.5" : {
@@ -2743,16 +2836,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "at0029.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0029.1",
-            "text" : "Data/hora de expulsão do recém-nascido",
+            "text" : "Hora de nascimento",
             "description" : "Data e hora de nascimento",
             "comment" : "*This data element may be used to populate the newborn's health record using the 'Date of birth' data element within the EVALUATION.birth_details archetype. (en)"
           },
@@ -2786,6 +2873,52 @@
             "text" : "Anomalias observáveis",
             "description" : "Identificação da complicação após o nascimento.",
             "comment" : "*Coding of the 'Complication' with a terminology is desirable, where possible. For example, neonatal hypoglycaemia or hypothermia. (en)"
+          },
+          "at0067" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067",
+            "text" : "Data / Hora do Início",
+            "description" : "Data de início da complicação",
+            "comment" : "*If only a partial date is available, this is acceptable. (en)"
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157",
+            "text" : "Episiotomia",
+            "description" : ""
+          },
+          "at0118.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0118.1",
+            "text" : "Períneo/Vagina/Colo",
+            "description" : "Descrição  sobre o estado do períneo após o nascimento"
+          },
+          "at0163.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0163",
+            "text" : "Resultado do recém-nascido",
+            "description" : "",
+            "comment" : "*This data element is only used to record the outcome of a pregnancy for a single infant or foetus. For example: 'Live birth'; or 'Stillbirth'. Coding of the 'Infant outcome' with an external terminology is recommended.  If it is necessary to record outcome information for the pregnancy as a whole use the 'Early pregnancy outcome' data element instead. This data element is redundant if 'Early pregnancy outcome' has been recorded. (en)"
+          },
+          "at0063.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063.1",
+            "text" : "Data/hora da complicação",
+            "description" : "Data / Hora do início da complicação"
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Complicações do parto",
+            "description" : "Detalhes sobre complicações da gravidez ou complicações no nascimento que afectam a mãe.",
+            "comment" : "*Maternal complications recorded within this maternal 'Pregnancy summary' archetype may be used to populate EVALUATION.problem_diagnosis or ACTION.procedure archetypes as part of a maternal Problem list, or similar. Alternatively these complications may be derived from relevant entries previously documented in the maternal health record using EVALUATION.problem_diagnosis or ACTION.procedure archetypes. (en)"
+          },
+          "at0067.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067.1",
+            "text" : "Data/hora da complicação",
+            "description" : "Data de início da complicação, identificada por um profissional de saúde.",
+            "comment" : "*If only a partial date is available, this is acceptable. (en)"
           }
         }
       },
@@ -2831,6 +2964,41 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.8",
           "members" : [ "at0168", "at0169" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0153", "at0154", "at0155", "at0156" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0153", "at0154", "at0155", "at0156" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0153", "at0154", "at0155", "at0156" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "ac0.11" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "ac0.11" ]
         }
       }
     },
@@ -39899,6 +40067,15 @@
         },
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.41",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-008.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "EVALUATION",
           "occurrences" : "1..1",
           "nodeId" : "at0.1",
@@ -40040,15 +40217,6 @@
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-009.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.17",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-008.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
