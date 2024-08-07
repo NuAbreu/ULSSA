@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "87.0.0",
+      "sem_ver" : "88.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "96d071fafbda72e37d2d0efae2841c23",
+      "MD5-CAM-1.0.1" : "974dc4c3836174065b5235c0917786b7",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -1088,20 +1088,20 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Resumo do Parto",
-            "description" : "Visão geral ou registo sumário de uma gravidez, incluindo o período pré-natal, trabalho de parto, nascimento e o período pós-natal imediato.\n\n"
+            "description" : "\n\n"
           },
           "at0083.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0083.1",
             "text" : "Relato cirúrgico",
-            "description" : "Descrição narrativa sobre toda a gravidez",
+            "description" : "D",
             "comment" : "*This data element may be used to populate the 'Pregnancy/birth synopsis' data element within the EVALUATION.birth_details archetype in an infant health record. (en)"
           },
           "at0159.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0159.1",
             "text" : "Semana de Gestação",
-            "description" : "*The gestation when the pregnancy has ended. (en)",
+            "description" : "",
             "comment" : "*Also known as 'Gestation at birth' for pregnancies resulting in viable outcomes. (en)"
           },
           "ac0.2" : {
@@ -1128,7 +1128,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0178.1",
             "text" : "Corionicidade",
-            "description" : "*Assertion about whether the pregnancy is cateogrised as 'multiple pregnancy'. (en)",
+            "description" : "",
             "comment" : "*This categorial data element is commonly required within registries or used in risk assessment, rather than recording the actual 'Number of foetuses'. (en)"
           },
           "at0118.1" : {
@@ -1523,7 +1523,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Dados do parto",
-            "description" : "*A generic section header which should be renamed in a template to suit a specific clinical context. (en)"
+            "description" : ""
           }
         }
       },
@@ -2238,7 +2238,16 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
                   "nodeId" : "at0067.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -2321,7 +2330,7 @@
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "ac0.5" ],
+                          "constraint" : [ "ac0.17" ],
                           "selectedTerminologies" : [ ]
                         } ]
                       } ],
@@ -2636,12 +2645,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -2665,6 +2668,12 @@
             "code" : "at0000.1",
             "text" : "Dados do parto",
             "description" : "Overview or summary record of a pregnancy including the antenatal period, labour, birth and the immediate postnatal period."
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.17",
+            "description" : ""
           }
         },
         "pt-br" : {
@@ -2678,12 +2687,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
-            "description" : ""
-          },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
             "description" : ""
           },
           "ac0.6" : {
@@ -2702,6 +2705,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
             "description" : ""
           }
         },
@@ -2718,12 +2727,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -2740,6 +2743,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
             "description" : ""
           }
         },
@@ -2756,12 +2765,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -2779,6 +2782,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
+            "description" : ""
           }
         },
         "pt-pt" : {
@@ -2786,7 +2795,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Dados do parto",
-            "description" : "Visão geral ou registo sumário de uma gravidez, incluindo o período pré-natal, trabalho de parto, nascimento e o período pós-natal imediato.\n\n"
+            "description" : "\n\n"
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2806,12 +2815,6 @@
             "text" : "Hora de nascimento",
             "description" : "Data e hora de nascimento",
             "comment" : "*This data element may be used to populate the newborn's health record using the 'Date of birth' data element within the EVALUATION.birth_details archetype. (en)"
-          },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
           },
           "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2874,8 +2877,21 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0067.1",
             "text" : "Data/hora da complicação",
-            "description" : "Data de início da complicação, identificada por um profissional de saúde.",
+            "description" : "Data de início da complicação",
             "comment" : "*If only a partial date is available, this is acceptable. (en)"
+          },
+          "at0037.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0037",
+            "text" : "Sexo",
+            "description" : "",
+            "comment" : "*Coding with a terminology is preferred, where possible. Indeterminate is to be used in the situation where is it not possible to tell if the sex is male or female. (en)"
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
+            "description" : ""
           }
         }
       },
@@ -2956,6 +2972,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.16",
           "members" : [ "ac0.11" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0113", "at0114", "at0115" ]
         }
       }
     },
@@ -3287,31 +3308,6 @@
               "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "offset",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DURATION",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_DURATION",
-                      "rmTypeName" : "DURATION",
-                      "occurrences" : "1..1",
-                      "constraint" : [ {
-                        "lower" : "PT1M",
-                        "upper" : "PT1M",
-                        "lowerIncluded" : true,
-                        "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -3370,7 +3366,7 @@
                             "rmAttributeName" : "magnitude",
                             "children" : [ {
                               "@type" : "C_INTEGER",
-                              "rmTypeName" : "Integer",
+                              "rmTypeName" : "INTEGER",
                               "occurrences" : "1..1",
                               "constraint" : [ {
                                 "lower" : 0,
@@ -3386,6 +3382,31 @@
                         } ]
                       } ],
                       "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "offset",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : "PT1M",
+                        "upper" : "PT1M",
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -3638,7 +3659,7 @@
                             "rmAttributeName" : "magnitude",
                             "children" : [ {
                               "@type" : "C_INTEGER",
-                              "rmTypeName" : "Integer",
+                              "rmTypeName" : "INTEGER",
                               "occurrences" : "1..1",
                               "constraint" : [ {
                                 "lower" : 0,
@@ -3750,7 +3771,7 @@
                             "rmAttributeName" : "magnitude",
                             "children" : [ {
                               "@type" : "C_INTEGER",
-                              "rmTypeName" : "Integer",
+                              "rmTypeName" : "INTEGER",
                               "occurrences" : "1..1",
                               "constraint" : [ {
                                 "lower" : 0,
@@ -3820,19 +3841,19 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Apgar",
-            "description" : "*A tool to assess the clinical status of the newborn infant immediately after birth and their response to resuscitation. (en)"
+            "description" : ""
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
             "text" : "1º minuto",
-            "description" : "*Apgar score 1 minute after birth. (en)"
+            "description" : ""
           },
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025.1",
             "text" : "Apgar 1º min",
-            "description" : "*The total sum of each component parameter for the Apgar score. (en)",
+            "description" : "",
             "comment" : "*If the total is to be calculated, it is necessary for all 5 component values to be recorded. (en)"
           },
           "at0026.1" : {
@@ -3852,7 +3873,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025.3",
             "text" : "Apgar 5º min",
-            "description" : "*The total sum of each component parameter for the Apgar score. (en)",
+            "description" : "",
             "comment" : "*If the total is to be calculated, it is necessary for all 5 component values to be recorded. (en)"
           },
           "at0028.1" : {
@@ -3865,7 +3886,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025.4",
             "text" : "Apgar 10º min",
-            "description" : "*The total sum of each component parameter for the Apgar score. (en)",
+            "description" : "",
             "comment" : "*If the total is to be calculated, it is necessary for all 5 component values to be recorded. (en)"
           },
           "at0031.1" : {
@@ -4652,14 +4673,14 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Comprimento",
-            "description" : "*Height, or body length, is measured from crown of head to sole of foot. (en)",
+            "description" : "",
             "comment" : "*Height is measured with the individual in a standing position and body length in a recumbent position. (en)"
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
             "text" : "Comprimento",
-            "description" : "*The length of the body from crown of head to sole of foot. (en)"
+            "description" : ""
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -5250,7 +5271,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Perímetro cefálico",
-            "description" : "*The measurement of the longest distance around the head. (en)"
+            "description" : ""
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -5262,13 +5283,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.2",
             "text" : "Perímetro cefálico",
-            "description" : "*The measurement of the longest distance around the head. (en)"
+            "description" : ""
           },
           "at0011.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0011.1",
             "text" : "Nascimento",
-            "description" : "*The first measurement of head circumference that is recorded soon after birth. This event should only be used once per record. (en)"
+            "description" : ""
           }
         }
       },
@@ -6405,19 +6426,26 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Reanimação",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Nome do procedimento",
+            "description" : "",
+            "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
           }
         },
         "sv" : { },
@@ -7685,19 +7713,26 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Oxigénio",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Nome do procedimento",
+            "description" : "",
+            "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
           }
         },
         "sv" : {
@@ -8979,19 +9014,19 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Ventilação Pressão Positiva (VPP)",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
           }
         },
         "sv" : {
@@ -10273,19 +10308,19 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Entubação endotraqueal",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
           }
         },
         "sv" : {
@@ -11567,19 +11602,19 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Compressão torácica",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : "."
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
           }
         },
         "sv" : {
@@ -12867,13 +12902,20 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Nome do procedimento",
+            "description" : "",
+            "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
           }
         },
         "sv" : {
@@ -14155,19 +14197,19 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Amamentação na 1ª hora",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
           }
         },
         "sv" : {
@@ -14909,14 +14951,14 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0152.1",
             "text" : "Internamento neo",
-            "description" : "*The symptom, sign or diagnosis that necessitates the requested service. (en)",
+            "description" : "",
             "comment" : "*Coding of the 'Clinical indication' with an external terminology is recommended, if available.  This data element allows multiple occurrences to enable the user to record a multiple responses, if required. (en)"
           },
           "at0121.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0121.1",
             "text" : "Internamento",
-            "description" : "*The name of the service/s requested. (en)",
+            "description" : "",
             "comment" : "*Coding of the 'Service name' with an external terminology is strongly recommended, if available. This data element allows multiple occurrences to enable the user to record a multiple services as part of a single request, if required. (en)"
           },
           "at0000.1" : {
@@ -16581,13 +16623,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Descrição da Intervenção",
-            "description" : "*Narrative description of the newborn, including observed congenital abnormalities. (en)"
+            "description" : ""
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Tipo de parto",
-            "description" : "*Method by which the newborn was delivered. (en)",
+            "description" : "",
             "comment" : "*For example: vaginal; forceps rotation; or Caesarean Section. (en)"
           },
           "ac0.1" : {
@@ -18127,19 +18169,26 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Cordão umbilical",
-            "description" : "*Findings observed during the physical examination of a body system or anatomical structure. (en)"
+            "description" : ""
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
             "text" : "Aspeto",
-            "description" : "*Narrative description of the overall findings observed during the physical examination. (en)"
+            "description" : ""
           },
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007.1",
             "text" : "Observações",
-            "description" : "*Additional narrative about the physical examination findings, not captured in other fields. (en)"
+            "description" : ""
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*System or structure examined (en)",
+            "description" : "",
+            "comment" : "*Coding of the system or structure examined with a terminology is preferred, where possible. (en)"
           }
         }
       },
@@ -19048,20 +19097,20 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
             "text" : "Nome da análise",
-            "description" : "*The name of the analyte result. (en)",
+            "description" : "",
             "comment" : "*The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies. (en)"
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "pH artéria",
-            "description" : "*The result of a laboratory test for a single analyte value. (en)"
+            "description" : ""
           },
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "pH artéria",
-            "description" : "*The value of the analyte result. (en)",
+            "description" : "",
             "comment" : "*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details. (en)"
           },
           "[pH]" : {
@@ -19352,7 +19401,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Gasimetria de sangue do cordão umbilical",
-            "description" : "*Laboratory test result as a panel/battery/profile structure common to clinical pathology testing. (en)"
+            "description" : ""
           }
         }
       },
@@ -20276,20 +20325,20 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "pH veia",
-            "description" : "*The result of a laboratory test for a single analyte value. (en)"
+            "description" : ""
           },
           "at0024.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
             "text" : "Nome da análise",
-            "description" : "*The name of the analyte result. (en)",
+            "description" : "",
             "comment" : "*The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies. (en)"
           },
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "pH veia",
-            "description" : "*The value of the analyte result. (en)",
+            "description" : "",
             "comment" : "*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details. (en)"
           },
           "[pH]" : {
@@ -21211,21 +21260,19 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Def bases artéria",
-            "description" : "*The result of a laboratory test for a single analyte value. (en)"
+            "description" : ""
           },
           "at0024.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
             "text" : "Nome da análise",
-            "description" : "*The name of the analyte result. (en)",
-            "comment" : "*The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies. (en)"
+            "description" : ""
           },
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Def bases artéria",
-            "description" : "*The value of the analyte result. (en)",
-            "comment" : "*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details. (en)"
+            "description" : ""
           }
         }
       },
@@ -22146,15 +22193,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
             "text" : "Nome da análise",
-            "description" : "*The name of the analyte result. (en)",
-            "comment" : "*The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies. (en)"
+            "description" : ""
           },
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Def bases veia",
-            "description" : "*The value of the analyte result. (en)",
-            "comment" : "*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details. (en)"
+            "description" : ""
           }
         }
       },
@@ -22673,6 +22718,13 @@
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0101.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
                       "occurrences" : "0..*",
@@ -23025,7 +23077,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Gasimetria de sangue do cordão umbilical",
-            "description" : "*The result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual. (en)"
+            "description" : ""
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -23037,7 +23089,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Nome da análise",
-            "description" : "*Name of the laboratory investigation performed on the specimen(s). (en)",
+            "description" : "",
             "comment" : "*A test result may be for a single analyte, or a group of items, including panel tests. It is strongly recommended that 'Test name' be coded with a terminology, for example LOINC or SNOMED CT. For example: 'Glucose', 'Urea and Electrolytes', 'Swab', 'Cortisol (am)', 'Potassium in perspiration' or 'Melanoma histopathology'. The name may sometimes include specimen type and patient state, for example 'Fasting blood glucose' or include other information, as 'Potassium (PNA blood gas)'. (en)"
           }
         }
@@ -23544,7 +23596,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Cordão umbilical",
-            "description" : "*Findings observed during the physical examination of a subject of care. (en)"
+            "description" : ""
           }
         }
       },
@@ -24831,19 +24883,26 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Colheita de sangue no cordão umbilical",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Nome do procedimento",
+            "description" : "",
+            "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
           }
         },
         "sv" : {
@@ -25683,7 +25742,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Banco",
-            "description" : "*A unique identifier of the specimen, normally assigned by the laboratory. (en)",
+            "description" : "",
             "comment" : "*Sometimes called the Accession Identifier. Specimen containers, for example vacuum vials or tissue cassettes, have their own identitiers which may be recorded in the 'Container identifier' element in the 'Specimen container' archetype. (en)"
           },
           "at0088.1" : {
@@ -25697,7 +25756,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0070.1",
             "text" : "Nº Kit",
-            "description" : "*Identifier of the person or organisation responsible for collecting the specimen. (en)",
+            "description" : "",
             "comment" : "*This element is intended to be used where the specimen has already been collected and the actual collector is known. (en)"
           },
           "ac0.1" : {
@@ -25716,14 +25775,21 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0045.1",
             "text" : "Observações",
-            "description" : "*Additional narrative about the specimen not captured in other fields. (en)"
+            "description" : ""
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Especimen",
-            "description" : "*A physical sample collected from, or related to, an individual for the purpose of investigation, examination or analysis. (en)",
+            "description" : "",
             "comment" : "*For example: Tissue or body fluid. (en)"
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029",
+            "text" : "*Specimen type (en)",
+            "description" : "",
+            "comment" : "*For example: Venous blood, bacterial culture, cytology, or tissue sample. Coding of the specimen type with a terminology is preferred, where possible. (en)"
           }
         }
       },
@@ -26428,6 +26494,54 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "nodeId" : "at0047.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0047" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
           "occurrences" : "0..0",
           "nodeId" : "at0040.1",
           "attributes" : [ {
@@ -26971,19 +27085,19 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Técnica analgésica/anestésica",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Observações",
-            "description" : "Narrativa adicional sobre a atividade ou etapa do caminho do cuidado não capturada noutros campos."
+            "description" : ""
           },
           "at0048.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0048.1",
             "text" : "Conversão para anestesia geral",
-            "description" : "Resultado do procedimento realizado.",
+            "description" : "",
             "comment" : "A codificação com uma terminologia é preferida, sempre que possível."
           },
           "at0006.1" : {
@@ -26992,6 +27106,32 @@
             "text" : "Conversão para anestesia geral",
             "description" : "Detalhes sobre qualquer complicação decorrente do procedimento.",
             "comment" : "Use esse elemento de dados para registar termos simples ou complicações pré-ordenadas. Se os requisitos para a complicação de gravação forem mais complexos, o uso de um arquétipo CLUSTER específico dentro do SLOT 'Detalhe do procedimento' neste arquétipo é recomendado e esse elemento de dados torna-se redundante. Exemplos: Hematúria após biópsia renal, irritação tecidular após inserção de cateter intravenoso."
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "Procedimento realizado",
+            "description" : ""
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Nome do procedimento",
+            "description" : "",
+            "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "Descrição",
+            "description" : "",
+            "comment" : "Por exemplo: descrição do desempenho e resultados do procedimento, da tentativa abortada ou do cancelamento do procedimento."
+          },
+          "at0047.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047.1",
+            "text" : "Procedimento realizado",
+            "description" : "."
           }
         },
         "sv" : {
@@ -27475,7 +27615,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Técnica analgésica/anestésica",
-            "description" : "*A generic section header which should be renamed in a template to suit a specific clinical context. (en)"
+            "description" : ""
           }
         }
       },
@@ -28042,13 +28182,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Risco anestésico",
-            "description" : "*Assessment of the potential and likelihood of future adverse health effects as determined by identified risk factors. (en)"
+            "description" : ""
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
             "text" : "Risco anestésico",
-            "description" : "*Evaluation of the health risk. (en)",
+            "description" : "",
             "comment" : "*There may be multiple variations on the assessment of risk. The Choice data type allows for recording of the assessment as either free text or value sets (such as low, medium or hig). The proportion data type allows recording of a percentage, a ratio or a fraction. The quantity data type allows recording of a decimal number. (en)"
           },
           "ac0.1" : {
@@ -28061,7 +28201,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Risco de saúde",
-            "description" : "*Identification of the potential future disease, condition or health issue for which the risk is being assessed, by name. (en)",
+            "description" : "",
             "comment" : "*Coding of 'Health risk' with a terminology is preferred, where possible. Free text should be used only if there is no appropriate terminology available. For example: risk of cardiovascular disease, with risk factors of hypertension and hypercholesterolaemia. (en)"
           }
         }
@@ -29597,7 +29737,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Intervenções",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -29616,7 +29756,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Intervenção",
-            "description" : "Identificação do procedimento pelo nome.",
+            "description" : "",
             "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
           }
         },
@@ -30182,7 +30322,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Exame das Estruturas",
-            "description" : "*Findings observed during the physical examination of a subject of care. (en)"
+            "description" : ""
           }
         }
       },
@@ -30694,7 +30834,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007.0.0.1",
             "text" : "Observações",
-            "description" : "*Additional narrative about the physical examination findings, not captured in other fields. (en)"
+            "description" : ""
           },
           "at0000.1.1.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -31075,20 +31215,20 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "Integridade",
-            "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings. (en)",
+            "description" : "",
             "comment" : "*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)"
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Membranas",
-            "description" : "*Findings observed during the physical examination of a body system or anatomical structure. (en)"
+            "description" : ""
           },
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007.1",
             "text" : "Observações",
-            "description" : "*Additional narrative about the physical examination findings, not captured in other fields. (en)"
+            "description" : ""
           }
         }
       },
@@ -32064,21 +32204,21 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Quarto estadio",
-            "description" : "*Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual. (en)",
+            "description" : "",
             "comment" : "*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'. (en)"
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Ocorrência",
-            "description" : "*Identification of the problem or diagnosis, by name. (en)",
+            "description" : "",
             "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible. (en)"
           },
           "at0009.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009.1",
             "text" : "Descrição Clínica",
-            "description" : "*Narrative description about the problem or diagnosis. (en)",
+            "description" : "",
             "comment" : "*Use to provide background and context, including evolution, episodes or exacerbations, progress and any other relevant details, about the problem or diagnosis. (en)"
           },
           "ac0.1" : {
@@ -32636,7 +32776,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Intervenções cirúrgicas pós-parto",
-            "description" : "*A generic section header which should be renamed in a template to suit a specific clinical context. (en)"
+            "description" : ""
           }
         }
       },
@@ -34274,13 +34414,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Medicação",
-            "description" : "*An assertion about the current use of a single medication by an individual. (en)"
+            "description" : ""
           },
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "Terapêutica efetuada",
-            "description" : "*Name of the medication. (en)",
+            "description" : "",
             "comment" : "*It is strongly recommended that the 'Medication name' be coded with a terminology capable of triggering decision support, where possible. Free text entry should only be used if there is no appropriate terminology available or for customised extemporaneous preparations. The extent of coding may vary from the simple generic or product name of the medication item through to structured details about the actual medication pack to be used. Free text entry should only be used if there is no appropriate terminology available. For example: 'Plaquenil'; 'Ibrutinib 420 mg tablet'; 'Rectinol ointment, 50 g, tube'; or 'Hydrofibre dressing with silver'.\r\n (en)"
           }
         }
@@ -35495,26 +35635,33 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Indicação para parto vaginal instrumental",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Sim",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Não",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
           },
           "at0070.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0070.1",
             "text" : "Indicação para parto vaginal instrumental",
-            "description" : "A razão clínica ou relacionada ao processo para o procedimento.",
+            "description" : "",
             "comment" : "É preferível codificar a indicação com uma terminologia, sempre que possível. Este elemento de dados permite múltiplas ocorrências. Por exemplo: 'Falha na preparação intestinal' ou 'Rastreio do cancro de intestino'."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Nome do procedimento",
+            "description" : "",
+            "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
           }
         },
         "sv" : {
@@ -35824,6 +35971,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
+            "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Critérios de Classificação de Cesariana",
             "description" : ""
           }
         }
@@ -36602,6 +36755,54 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "nodeId" : "at0043.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "532" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0043" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       }, {
         "@type" : "C_ATTRIBUTE",
@@ -36950,7 +37151,26 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Procedimento não realizado",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Procedimento concluído",
+            "description" : ""
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Nome do procedimento",
+            "description" : "",
+            "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
+          },
+          "at0043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043.1",
+            "text" : "Procedimento concluído",
+            "description" : ""
           }
         },
         "sv" : {
@@ -38438,26 +38658,26 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Manobra de McRoberts",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Manobras na distocia de ombros",
-            "description" : "Identificação do procedimento pelo nome.",
+            "description" : "",
             "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
           }
         },
         "sv" : {
@@ -39370,6 +39590,54 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "nodeId" : "at0043.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "532" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0043" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       }, {
         "@type" : "C_ATTRIBUTE",
@@ -39699,13 +39967,32 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Int.per-cesariana",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Procedimento não realizado",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : "O pr"
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Procedimento concluído",
+            "description" : ""
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Nome do procedimento",
+            "description" : "",
+            "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
+          },
+          "at0043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043.1",
+            "text" : "Procedimento concluído",
+            "description" : ""
           }
         },
         "sv" : {
@@ -40264,7 +40551,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Dados de parto",
-            "description" : "Um cabeçalho de seção genérico que deve ser renomeado num modelo para se adequar a um contexto clínico específico"
+            "description" : ""
           }
         }
       },
@@ -40943,7 +41230,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Exames pedidos",
-            "description" : "*Request for a health-related service or activity to be delivered by a clinician, organisation or agency. (en)"
+            "description" : ""
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -40955,14 +41242,14 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0135.1",
             "text" : "Quais",
-            "description" : "*Narrative description about the service requested. (en)",
+            "description" : "",
             "comment" : "*This data point should be used to describe the named service in more detail, including how it should be delivered, patient concerns and issues that might be encountered in delivering the service. (en)"
           },
           "at0121.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0121.1",
             "text" : "Exames pedidos",
-            "description" : "*The name of the service/s requested. (en)",
+            "description" : "",
             "comment" : "*Coding of the 'Service name' with an external terminology is strongly recommended, if available. This data element allows multiple occurrences to enable the user to record a multiple services as part of a single request, if required. (en)"
           }
         }
@@ -41347,14 +41634,14 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Recomendação para o puerpério",
-            "description" : "*Narrative description of the recommendation. (en)",
+            "description" : "",
             "comment" : "*May be coded, using a terminology, if required. (en)"
           },
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "Tópico",
-            "description" : "*The topic or subject of the recommendation. (en)",
+            "description" : "",
             "comment" : "*Useful if multiple types of recommendations are made at the same time, and within the same data set. (en)"
           }
         }
@@ -41585,7 +41872,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Manobras na distocia de ombros",
-            "description" : "Um cabeçalho de seção genérico que deve ser renomeado num modelo para se adequar a um contexto clínico específico"
+            "description" : ""
           }
         }
       },
@@ -42804,26 +43091,26 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Pressão suprapúbica sobre o ombro anterior",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Manobras na distocia de ombros",
-            "description" : "Identificação do procedimento pelo nome.",
+            "description" : "",
             "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
           }
         },
         "sv" : { },
@@ -44107,26 +44394,26 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Manobra de rotação de Woods",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Manobras na distocia de ombros",
-            "description" : "Identificação do procedimento pelo nome.",
+            "description" : "",
             "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
           }
         },
         "sv" : {
@@ -45430,20 +45717,20 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Manobras na distocia de ombros",
-            "description" : "Identificação do procedimento pelo nome.",
+            "description" : "",
             "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
           }
         },
         "sv" : {
@@ -46740,32 +47027,32 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Outras manobras",
-            "description" : "Atividade clínica realizada para fins de rastreio, investigação, diagnóstico, cura, tratamento, avaliação ou cuidados paliativos."
+            "description" : ""
           },
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Não",
-            "description" : "O procedimento previsto foi cancelado antes do início."
+            "description" : ""
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Manobras na distocia de ombros",
-            "description" : "Identificação do procedimento pelo nome.",
+            "description" : "",
             "comment" : "A codificação do procedimento específico com uma terminologia é preferida, sempre que possível."
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Observações",
-            "description" : "Narrativa adicional sobre a atividade ou etapa do caminho do cuidado não capturada noutros campos."
+            "description" : ""
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Sim",
-            "description" : "O procedimento foi realizado e todas as atividades clínicas associadas foram concluídas."
+            "description" : ""
           }
         },
         "sv" : {
