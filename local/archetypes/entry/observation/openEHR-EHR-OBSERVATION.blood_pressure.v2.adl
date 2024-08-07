@@ -77,6 +77,11 @@ language
 			>
 			accreditation = <"Computer Engineer">
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 		["es-ar"] = <
 			language = <[ISO_639-1::es-ar]>
 			author = <
@@ -119,11 +124,6 @@ language
 				["email"] = <"m.buur-krom@mca.nl, sebastian@code24.nl">
 			>
 		>
-		["pt-pt"] = <
-			language = <[ISO_639-1::pt-pt]>
-			author = <
-			>
-		>
 	>
 
 description
@@ -148,6 +148,32 @@ Benannte Ereignisse wurden auf den 24-stündigen Durchschnitt beschränkt, jedoc
 Nicht benutzen zur Dokumentation des arteriellen Blutdrucks, welcher KEIN Surrogat für den arteriellen Druck in der systemischen Zirkluation ist, z.B. die spezifische Messung des rechten pulmonaren Arteriendrucks.
 In diesem Fall sollte der OBSERVATION.intravascular_pressure Archetyp bzw. dessen Spezialisierungen verwendet werden.">
 		>
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			purpose = <"Для записи системного артериального давления крови человека.">
+			keywords = <"обследование","измерение","артериальное давление","диастолическое","систолическое">
+			copyright = <"© openEHR Foundation">
+			use = <"Используется для записи всех представлений измерения системного артериального  кровяного давления, независимо от используемого метода или расположения тела пациента. Архетип предназначен для записи измерений давления во всех клинических сценариях - например, самостоятельное измерение давления крови домашним автоматическим манометром, в чрезвычайной  ситуации использование  пальпации пульсовой волны и сфигмоманометр; измерений в ходе клинических консультаций или в ходе осуществления стресс-тестирования, а также серии измерений, выполненных аппаратом в реанимации.
+Поддерживает интерпретацию измерений путем определения позиции пациента, физические упражнения, осложняющих факторов и угла наклона стола в научных исследованиях.
+Предполаагется интервал между измерениями 24 часа, однако может быть дополнено событиями (по умолчанию \"любое событие\") для удовлетворения специфических требований для измерения кровяного давления, такие как записи в отношении кровяного давления конкретные моменты времени, или в диапазоне интервалов.">
+			misuse = <"Не следует использовать для внутривенного давления.
+Не следует использовать для измерения артериального давления, которое не является суррогатом артериального давления в системном кровотоке, например, конкретные измерения давления в легочной артерии.
+Использовать OBSERVATION.intravascular_pressure и смежных специальностей в обоих этих ситуациях.
+">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Att mäta en individs systemiska arteriella blodtryck.">
+			keywords = <"observationer","mätning","blodtryck","vitaltecken","medelartärtryck","pulstryck","systoliskt","diastoliskt","RR","NIBP">
+			use = <"Används för att mäta alla systemiskt arteriella blodtryck, oavsett vilka metoder som använts och var på kroppen mätningen gjordes. Arketypen är avsedd för blodtrycksmätningar i alla vårdscenarion exemelvis för egna mätningar i hemmet med blodtrycksmätare, för akutbedömningar av det systoliska blodtrycket med hjälp av palpation och en blodtrycksmätare, för mätningar gjorda vid vårdkonsultationer eller stresstest, för seriemätningar med blodtrycksmaskiner på Intensivvårdsavdelningar.
+Det finns en omfattande tillståndsmodell som stödjer tolkningen av mätningar genom identifiering av patientens ställning, ansträngning, påverkande faktorer och vinkel på tippbräda vid undersökning. Namngivna händelser har begränsats till ett genomsnitt under en 24-timmarsperiod, men mallar kan ytterligare avgränsa standardinställningen i \"Ospecificerad händelse\" för att möta specifika krav på blodtrycksmätningar, exempelvis mätningar av blodtryck vid specifika tidpunkter eller i ett tidsintervall med matematiska funktioner.
+">
+			misuse = <"Ska inte användas för intravenöst tryck.
+
+Ska inte användas för mätning av arteriellt blodtryck som INTE är ett surrogat för artärtryck i systemcirkulationen eller för specifika mätningar som exempelvis höger lungartärtryck.
+
+Använd i dessa fall istället OBSERVATION.intravascular_pressure och relaterade specialiseringsarketyper.">
+		>
 		["fi"] = <
 			language = <[ISO_639-1::fi]>
 			purpose = <"Yksilön verenpaineen kirjaamista varten.">
@@ -165,32 +191,6 @@ Tietomallissa on rikas tilamalli, joka tukee mittausten tulkintaa tunnistamalla 
 Nimettyjen tapahtumien määrä on rajoitettu 24 tunnin aikaiseen keskiarvoon, mutta templaateilla voidaan edelleen rajoittaa oletusarvoista \"mitä tahansa tapahtumaa\", joka vastaa erityisiä vaatimuksia verenpainemittauksille, kuten verenpaineen tallentaminen tiettyihin ajankohtiin tai tietyin väliajoin (+/- matemaattiset funktiot).">
 			misuse = <"Ei saa käyttää valtimoverenpaineen mittauksen kirjaamiseen, joka ei ole systeemisen verenkierron verenpaineen korvike, esim. Oikean keuhkovaltimon paineen erityinen mittaus. Käytä tässä tilanteessa OBSERVATION.intrcularcular_pressure arkkityyppiä.
 Ei saa käyttää laskimonsisäisen paineen mittaamiseen. Käytä tässä tilanteessa OBSERVATION.intravascular_pressure -arkkityyppiin sopivia spesiliaatioita.">
-		>
-		["sv"] = <
-			language = <[ISO_639-1::sv]>
-			purpose = <"Att mäta en individs systemiska arteriella blodtryck.">
-			keywords = <"observationer","mätning","blodtryck","vitaltecken","medelartärtryck","pulstryck","systoliskt","diastoliskt","RR","NIBP">
-			use = <"Används för att mäta alla systemiskt arteriella blodtryck, oavsett vilka metoder som använts och var på kroppen mätningen gjordes. Arketypen är avsedd för blodtrycksmätningar i alla vårdscenarion exemelvis för egna mätningar i hemmet med blodtrycksmätare, för akutbedömningar av det systoliska blodtrycket med hjälp av palpation och en blodtrycksmätare, för mätningar gjorda vid vårdkonsultationer eller stresstest, för seriemätningar med blodtrycksmaskiner på Intensivvårdsavdelningar.
-Det finns en omfattande tillståndsmodell som stödjer tolkningen av mätningar genom identifiering av patientens ställning, ansträngning, påverkande faktorer och vinkel på tippbräda vid undersökning. Namngivna händelser har begränsats till ett genomsnitt under en 24-timmarsperiod, men mallar kan ytterligare avgränsa standardinställningen i \"Ospecificerad händelse\" för att möta specifika krav på blodtrycksmätningar, exempelvis mätningar av blodtryck vid specifika tidpunkter eller i ett tidsintervall med matematiska funktioner.
-">
-			misuse = <"Ska inte användas för intravenöst tryck.
-
-Ska inte användas för mätning av arteriellt blodtryck som INTE är ett surrogat för artärtryck i systemcirkulationen eller för specifika mätningar som exempelvis höger lungartärtryck.
-
-Använd i dessa fall istället OBSERVATION.intravascular_pressure och relaterade specialiseringsarketyper.">
-		>
-		["ru"] = <
-			language = <[ISO_639-1::ru]>
-			purpose = <"Для записи системного артериального давления крови человека.">
-			keywords = <"обследование","измерение","артериальное давление","диастолическое","систолическое">
-			copyright = <"© openEHR Foundation">
-			use = <"Используется для записи всех представлений измерения системного артериального  кровяного давления, независимо от используемого метода или расположения тела пациента. Архетип предназначен для записи измерений давления во всех клинических сценариях - например, самостоятельное измерение давления крови домашним автоматическим манометром, в чрезвычайной  ситуации использование  пальпации пульсовой волны и сфигмоманометр; измерений в ходе клинических консультаций или в ходе осуществления стресс-тестирования, а также серии измерений, выполненных аппаратом в реанимации.
-Поддерживает интерпретацию измерений путем определения позиции пациента, физические упражнения, осложняющих факторов и угла наклона стола в научных исследованиях.
-Предполаагется интервал между измерениями 24 часа, однако может быть дополнено событиями (по умолчанию \"любое событие\") для удовлетворения специфических требований для измерения кровяного давления, такие как записи в отношении кровяного давления конкретные моменты времени, или в диапазоне интервалов.">
-			misuse = <"Не следует использовать для внутривенного давления.
-Не следует использовать для измерения артериального давления, которое не является суррогатом артериального давления в системном кровотоке, например, конкретные измерения давления в легочной артерии.
-Использовать OBSERVATION.intravascular_pressure и смежных специальностей в обоих этих ситуациях.
-">
 		>
 		["ko"] = <
 			language = <[ISO_639-1::ko]>
@@ -220,26 +220,6 @@ Eventos nomeados têm sido limitados em médica a um período de 24 horas, entre
 Não deve ser usada para medida da pressão arterial que NÃO é um substituto da pressão arterial na circulação sistêmica, por exemplo, medida específica da pressão da artéria Pulmonar direita.
 Em ambas situações use OBSERVATION.intravascular_pressure e especializações relacionadas.">
 		>
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"To record the systemic arterial blood pressure of an individual.">
-			keywords = <"observations","measurement","bp","vital signs","mean arterial pressure","pulse pressure","systolic","diastolic","RR","NIBP">
-			copyright = <"© openEHR Foundation">
-			use = <"Use to record all representations of systemic arterial blood pressure measurement, no matter which method or body location is used to record it. 
-
-The archetype is intended to capture blood pressure measurements in all clinical scenarios - for example:
-- self-measurement with a home blood pressure machine; 
-- an emergency assessment of systolic using palpation and a sphygmomanometer; 
-- measurements taken in clinical consultations or during exercise stress testing; and 
-- a series of measurements made by a machine in Intensive Care.   
-
-There is a rich state model that supports interpretation of measurements through identifying patient position, exercise, confounding factors and angle of a tilt table in research. 
-
-Named events have been limited to average over a 24 hour period, however templates can further constrain the default 'any event' to cater for specific requirements for blood pressure measurements such as recording Blood Pressure against specific points in time, or over a range of intervals (+/- mathematical functions).">
-			misuse = <"Not to be used to record the measurement of arterial blood pressure which is NOT a surrogate for arterial pressure in the systemic circulation eg specific measurement of right pulmonary artery pressure. Use OBSERVATION.intravascular_pressure in this situation.  
-
-Not to be used to record measurements of intravenous pressure. Use the appropriate specialisations of OBSERVATION.intravascular_pressure in this situation.">
-		>
 		["ar-sy"] = <
 			language = <[ISO_639-1::ar-sy]>
 			purpose = <"لتسجيل ضغط الدم الشرياني النظامي للشخص">
@@ -255,6 +235,26 @@ Not to be used to record measurements of intravenous pressure. Use the appropria
 			misuse = <"لا يستخدم لتسجيل الضغط داخل الوريد.
 لا يستخدم لقياس ضغط الدم الشرياني الذي لا يحل بديلا عن ضغط الدم الشرياني في الدورة الجهازية مثل قياسات معينة لضغط الشريان الرئوي الأيمن.
 استخدم نموذج ملاحظة. الضغط داخل الأوعية الدموية , و التخصيصات المتعلقة في كل من هذين الموقفين.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the systemic arterial blood pressure of an individual.">
+			keywords = <"observations","measurement","bp","vital","signs","mean","arterial","pressure","pulse","pressure","systolic","diastolic","RR","NIBP">
+			copyright = <"© openEHR Foundation">
+			use = <"Use to record all representations of systemic arterial blood pressure measurement, no matter which method or body location is used to record it. 
+
+The archetype is intended to capture blood pressure measurements in all clinical scenarios - for example:
+- self-measurement with a home blood pressure machine; 
+- an emergency assessment of systolic using palpation and a sphygmomanometer; 
+- measurements taken in clinical consultations or during exercise stress testing; and 
+- a series of measurements made by a machine in Intensive Care.   
+
+There is a rich state model that supports interpretation of measurements through identifying patient position, exercise, confounding factors and angle of a tilt table in research. 
+
+Named events have been limited to average over a 24 hour period, however templates can further constrain the default 'any event' to cater for specific requirements for blood pressure measurements such as recording Blood Pressure against specific points in time, or over a range of intervals (+/- mathematical functions).">
+			misuse = <"Not to be used to record the measurement of arterial blood pressure which is NOT a surrogate for arterial pressure in the systemic circulation eg specific measurement of right pulmonary artery pressure. Use OBSERVATION.intravascular_pressure in this situation.  
+
+Not to be used to record measurements of intravenous pressure. Use the appropriate specialisations of OBSERVATION.intravascular_pressure in this situation.">
 		>
 		["zh-cn"] = <
 			language = <[ISO_639-1::zh-cn]>
@@ -284,21 +284,6 @@ En estos casos utilizar el arquetipo OBSERVATION.intravascular_pressure.">
 			language = <[ISO_639-1::pt-pt]>
 			copyright = <"© openEHR Foundation">
 		>
-		["nb"] = <
-			language = <[ISO_639-1::nb]>
-			purpose = <"For registrering av et individs systemiske arterielle blodtrykk.">
-			keywords = <"BT","NIBP","pulstrykk","pulsamplitude","MAP","IBP","IBPM","ABP","ambulatorisk","24t","BP","ikke-invasivt","invasivt","NIBPS","NIBPD","NIBPM","middelarterietrykk","SAP","DAP","PP","systolisk","diastolisk","blodtrykk">
-			use = <"Brukes til å registrere alle typer av systemisk arteriell blodtrykksmåling, uansett hvilken metode eller kroppsplassering som anvendes. Arketypen er ment for registrering av blodtrykksmåling i alle kliniske scenarier - for eksempel selvmåling med blodtrykksapparat hjemme, akutt måling av det systoliske blodtrykket ved radialispalpasjon og et sfygmomanometer, målinger tatt i kliniske konsultasjoner eller under trening/stresstesting, eller en serie med invasive eller noninvasive målinger i en intensivavdeling.
-
-Arketypen understøtter registrering av målinger tatt under de fleste forhold med hensyn til individets stilling (liggende/sittende/stående osv.), under trening inklusiv kompliserende faktorer som for eksempel vinkelen på leiet i forbindelse med forskning.
-
-Spesifiserte hendelser er begrenset til gjennomsnittstrykket gjennom en periode på 24 timer, men i templates kan man ved hjelp av \"uspesifisert hendelse\" oppfylle spesifikke krav til blodtrykksmåling, som registrering av blodtrykk på bestemte tidspunkter, serier av målinger, eller over en periode (med eller uten matematiske funksjoner som minimum eller maksimum).">
-			misuse = <"Anvendes ikke til sentralvenøst trykk. 
-
-Anvendes ikke til måling av arterielle blodtrykk som ikke representerer et systemisk arterielt trykk f.eks spesifikk måling av pulmonalt arterietrykk.
-
-Bruk OBSERVATION.intravascular_pressure og relaterte spesialiseringer i disse situasjonene.">
-		>
 		["es-ar"] = <
 			language = <[ISO_639-1::es-ar]>
 			purpose = <"Registrar la presión arterial sistémica de un individuo">
@@ -313,6 +298,21 @@ Los eventos se han limitado a promediarse sobre un intervalo de 24 horas, sin em
 No debe usarse para la medida de la presión arterial que NO deriva de la presión arterial de la circulación sistémica ej: la medida específica de la presión de la arteria Pulmonar (presión capilar)
 Usen Observación.presión_intravascular y especializaciones relacionadas para estas dos situaciones en particular.
 ">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For registrering av et individs systemiske arterielle blodtrykk.">
+			keywords = <"BT","NIBP","pulstrykk","pulsamplitude","MAP","IBP","IBPM","ABP","ambulatorisk","24t","BP","ikke-invasivt","invasivt","NIBPS","NIBPD","NIBPM","middelarterietrykk","SAP","DAP","PP","systolisk","diastolisk","blodtrykk">
+			use = <"Brukes til å registrere alle typer av systemisk arteriell blodtrykksmåling, uansett hvilken metode eller kroppsplassering som anvendes. Arketypen er ment for registrering av blodtrykksmåling i alle kliniske scenarier - for eksempel selvmåling med blodtrykksapparat hjemme, akutt måling av det systoliske blodtrykket ved radialispalpasjon og et sfygmomanometer, målinger tatt i kliniske konsultasjoner eller under trening/stresstesting, eller en serie med invasive eller noninvasive målinger i en intensivavdeling.
+
+Arketypen understøtter registrering av målinger tatt under de fleste forhold med hensyn til individets stilling (liggende/sittende/stående osv.), under trening inklusiv kompliserende faktorer som for eksempel vinkelen på leiet i forbindelse med forskning.
+
+Spesifiserte hendelser er begrenset til gjennomsnittstrykket gjennom en periode på 24 timer, men i templates kan man ved hjelp av \"uspesifisert hendelse\" oppfylle spesifikke krav til blodtrykksmåling, som registrering av blodtrykk på bestemte tidspunkter, serier av målinger, eller over en periode (med eller uten matematiske funksjoner som minimum eller maksimum).">
+			misuse = <"Anvendes ikke til sentralvenøst trykk. 
+
+Anvendes ikke til måling av arterielle blodtrykk som ikke representerer et systemisk arterielt trykk f.eks spesifikk måling av pulmonalt arterietrykk.
+
+Bruk OBSERVATION.intravascular_pressure og relaterte spesialiseringer i disse situasjonene.">
 		>
 		["ja"] = <
 			language = <[ISO_639-1::ja]>
@@ -375,7 +375,7 @@ Perloff D, Grim C, Flack J, Frohlich ED, Hill M, McDonald M, Morgenstern BZ. Hum
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"505670428681e29be603221ff359b87f">
+		["MD5-CAM-1.0.1"] = <"bbe277f2148a0777d386f37fd1031e17">
 		["build_uid"] = <"54dfbb26-2c00-4001-b720-e0014a3dfb0f">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"2.0.8">
@@ -4354,247 +4354,247 @@ ontology
 		["pt-pt"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Blood pressure (en)">
-					description = <"*The local measurement of arterial blood pressure which is a surrogate for arterial pressure in the systemic circulation. (en)">
+					text = <"Pressão arterial">
+					description = <"A medição local da pressão arterial sanguínea, a qual é uma substituta da pressão arterial na circulação arterial sistémica. ">
 					comment = <"*Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm. (en)">
 				>
 				["at0001"] = <
-					text = <"*History (en)">
+					text = <"História">
 					description = <"*History Structural node. (en)">
 				>
 				["at0003"] = <
-					text = <"blood pressure">
+					text = <"Tensão arterial">
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*Systolic (en)">
-					description = <"*Peak systemic arterial blood pressure  - measured in systolic or contraction phase of the heart cycle. (en)">
+					text = <"Sistólica">
+					description = <"Pico da pressão arterial sistémica - medida na fase sistólica ou na fase de contração do ciclo cardíaco.">
 				>
 				["at0005"] = <
-					text = <"*Diastolic (en)">
-					description = <"*Minimum systemic arterial blood pressure - measured in the diastolic or relaxation phase of the heart cycle. (en)">
+					text = <"Diastólica">
+					description = <"Pressão arterial sistémica mínima - medida na fase diastólica ou na fase de relaxamento do ciclo cardíaco.">
 				>
 				["at0006"] = <
-					text = <"*Any event (en)">
-					description = <"*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)">
+					text = <"Qualquer evento">
+					description = <"Padrão, ponto inespecífico de tempo ou evento intervalado que pode ser definido explicitamente num modelo ou no tempo de execução">
 				>
 				["at0007"] = <
 					text = <"state structure">
 					description = <"@ internal @">
 				>
 				["at0008"] = <
-					text = <"*Position (en)">
-					description = <"*The position of the individual at the time of measurement. (en)">
+					text = <"Posição">
+					description = <"A posição do utente no momento da avaliação ">
 				>
 				["at0011"] = <
-					text = <"*Tree (en)">
-					description = <"*List structure. (en)">
+					text = <"Árvore">
+					description = <"Estrutura da lista">
 				>
 				["at0013"] = <
-					text = <"*Cuff size (en)">
-					description = <"*The size of the cuff used for blood pressure measurement. (en)">
+					text = <"Tamanho da braçadeira">
+					description = <"O tamanho da braçadeira utilizada para avaliação da pressão arterial">
 					comment = <"*Perloff D, Grim C, Flack J, Frohlich ED, Hill M, McDonald M, Morgenstern BZ. Human blood pressure determination by sphygmomanometry. Circulation 1993;88;2460-2470.  (en)">
 				>
 				["at0014"] = <
-					text = <"*Location of measurement (en)">
-					description = <"*Simple body site where blood pressure was measured. (en)">
+					text = <"Local de medida">
+					description = <"Local do corpo em que a pressão arterial foi avaliada">
 				>
 				["at0015"] = <
-					text = <"*Adult Thigh (en)">
-					description = <"*A cuff used for an adult thigh. (en)">
+					text = <"Adulto - Coxa">
+					description = <"Braçadeira para coxa de um adulto">
 				>
 				["at0016"] = <
-					text = <"*Large Adult (en)">
-					description = <"*A cuff for adults with larger arms. (en)">
+					text = <"Adulto - Grande">
+					description = <"Braçadeira para adulto com braço grande">
 				>
 				["at0017"] = <
-					text = <"*Adult (en)">
-					description = <"*A cuff that is standard for an adult. (en)">
+					text = <"Adulto">
+					description = <"Braçadeira padrão para um adulto ">
 				>
 				["at0025"] = <
-					text = <"*Right arm (en)">
-					description = <"*The right arm of the person. (en)">
+					text = <"Braço direito">
+					description = <"O braço direito de uma pessoa">
 				>
 				["at0026"] = <
-					text = <"*Left arm (en)">
-					description = <"*The left arm of the person. (en)">
+					text = <"Braço esquerdo">
+					description = <"O braço esquerdo de uma pessoa">
 				>
 				["at0027"] = <
-					text = <"*Right thigh (en)">
-					description = <"*The right thigh of the person. (en)">
+					text = <"Coxa direita">
+					description = <"A coxa direita de uma pessoa">
 				>
 				["at0028"] = <
-					text = <"*Left thigh (en)">
-					description = <"*The left thigh of the person. (en)">
+					text = <"Coxa esquerda">
+					description = <"Coxa esquerda de uma pessoa">
 				>
 				["at0033"] = <
-					text = <"*Comment (en)">
-					description = <"*Additional narrative about the measurement, not captured in other fields. (en)">
+					text = <"Comentário">
+					description = <"Narrativa adicional sobre a avaliação, não registada noutros campos.">
 				>
 				["at1000"] = <
-					text = <"*Standing (en)">
-					description = <"*Standing at the time of blood pressure measurement. (en)">
+					text = <"De pé">
+					description = <"De pé, no momento da avaliação da pressão arterial">
 				>
 				["at1001"] = <
-					text = <"*Sitting (en)">
-					description = <"*Sitting (for example on bed or chair) at the time of blood pressure measurement. (en)">
+					text = <"Sentado">
+					description = <"Sentado (por exemplo na cama ou cadeira) no momento da avaliação da pressão arterial">
 				>
 				["at1002"] = <
-					text = <"*Reclining (en)">
-					description = <"*Reclining at the time of blood pressure measurement. (en)">
+					text = <"Reclinado">
+					description = <"Reclinado, no momento da avaliação da pressão arterial.">
 				>
 				["at1003"] = <
-					text = <"*Lying (en)">
-					description = <"*Lying flat at the time of blood pressure measurement. (en)">
+					text = <"Deitado">
+					description = <"Deitado, no momento da avaliação da pressão arterial">
 				>
 				["at1005"] = <
-					text = <"*Tilt (en)">
-					description = <"*The craniocaudal tilt of the surface on which the person is lying at the time of measurement. (en)">
+					text = <"Inclinado">
+					description = <"A inclinação crânio-caudal da superfície na qual a pessoa está deitada no momento da avaliação">
 				>
 				["at1006"] = <
-					text = <"*Mean arterial pressure (en)">
-					description = <"*The average arterial pressure that occurs over the entire course of the heart contraction and relaxation cycle. (en)">
+					text = <"Pressão arterial média">
+					description = <"A pressão arterial média que ocorre durante todo o ciclo de contração e relaxamento do coração.">
 				>
 				["at1007"] = <
-					text = <"*Pulse pressure (en)">
-					description = <"*The difference between the systolic and diastolic pressure. (en)">
+					text = <"Pressão de pulso">
+					description = <"A diferença entre a pressão sistólica e diastólica">
 				>
 				["at1008"] = <
-					text = <"*Small Adult (en)">
-					description = <"*A cuff used for a small adult. (en)">
+					text = <"Adulto pequeno">
+					description = <"A braçadeira utilizada num adulto pequeno">
 				>
 				["at1009"] = <
-					text = <"*Paediatric/Child (en)">
-					description = <"*A cuff that is appropriate for a child or adult with a thin arm. (en)">
+					text = <"Pediátrica/ Criança">
+					description = <"Uma braçadeira adequada para uma criança ou adulto com um braço fino">
 				>
 				["at1010"] = <
-					text = <"*Diastolic endpoint (en)">
-					description = <"*Record which Korotkoff sound is used for determining diastolic pressure using auscultative method. (en)">
+					text = <"Valor mínimo da pressão diastólica">
+					description = <"Registo em que o som de Korotkoff é utilizado para determinar a pressão diastólica, usando método auscultativo ">
 				>
 				["at1011"] = <
-					text = <"*Phase IV (en)">
-					description = <"*The fourth Korotkoff sound is identified as an abrupt muffling of sounds. (en)">
+					text = <"Fase IV">
+					description = <"O quarto som de Korotkoff é identificado como um abrupto abafamento de sons.">
 				>
 				["at1012"] = <
-					text = <"*Phase V (en)">
-					description = <"*The fifth Korotkoff sound is identified by absence of sounds as the cuff pressure drops below the diastolic blood pressure. (en)">
+					text = <"Fase V">
+					description = <"O quinto som de Korotkoff é identificado pela ausência de sons, quando a pressão da braçadeira é inferior à pressão arterial diastólica.">
 				>
 				["at1014"] = <
-					text = <"*Lying with tilt to left (en)">
-					description = <"*Lying flat with some lateral tilt, usually angled towards the left side.   Commonly required in the last trimester of pregnancy to relieve aortocaval compression. (en)">
+					text = <"Deitado com inclinação para a esquerda">
+					description = <"Deitado num plano com alguma inclinação lateral, geralmente para o lado esquerdo. Comummente requerido no último trimestre da gravidez, para aliviar a compressão aorto-cava">
 				>
 				["at1018"] = <
-					text = <"*Infant (en)">
-					description = <"*A cuff used for infants. (en)">
+					text = <"Pediátrico">
+					description = <"A braçadeira utilizada em crianças">
 				>
 				["at1019"] = <
-					text = <"*Neonatal (en)">
-					description = <"*A cuff used for a neonate, assuming cuff is the appropriate size for maturity and birthweight of the neonate. (en)">
+					text = <"Neonatal">
+					description = <"Uma braçadeira utilizada em recém-nascidos, assumindo que a braçadeira tem o tamanho apropriado para a maturidade e peso de nascimento do recém-nascido">
 				>
 				["at1020"] = <
-					text = <"*Right wrist (en)">
-					description = <"*The right wrist of the individual. (en)">
+					text = <"Pulso direito">
+					description = <"O pulso direito de uma pessoa ">
 				>
 				["at1021"] = <
-					text = <"*Left wrist (en)">
-					description = <"*The left wrist of the individual. (en)">
+					text = <"Pulso esquerdo">
+					description = <"O pulso esquerdo de uma pessoa">
 				>
 				["at1025"] = <
-					text = <"*Device (en)">
-					description = <"*Details about sphygmomanometer or other device used to measure the blood pressure. (en)">
+					text = <"Dispositivo">
+					description = <"Detalhes sobre o esfignomanômetro ou outro dispositivo usado para medir a pressão arterial.">
 				>
 				["at1026"] = <
-					text = <"*Right ankle (en)">
-					description = <"*The right ankle of the individual. (en)">
+					text = <"Tornozelo direito">
+					description = <"O tornozelo direito de uma pessoa">
 				>
 				["at1030"] = <
-					text = <"*Exertion (en)">
-					description = <"*Details about physical activity undertaken at the time of blood pressure measurement. (en)">
+					text = <"Esforço">
+					description = <"Detalhes sobre a atividade física realizada no momento da avaliação da pressão arterial. ">
 				>
 				["at1031"] = <
-					text = <"*Left ankle (en)">
-					description = <"*The left ankle of the individual. (en)">
+					text = <"Tornozelo esquerdo">
+					description = <"O tornozelo esquerdo de uma pessoa">
 				>
 				["at1032"] = <
-					text = <"*Finger (en)">
-					description = <"*A finger of the individual. (en)">
+					text = <"Dedo da mão">
+					description = <"O dedo da mão de uma pessoa">
 				>
 				["at1035"] = <
-					text = <"*Method (en)">
-					description = <"*Method of measurement of blood pressure. (en)">
+					text = <"Método">
+					description = <"Método de avaliação da pressão arterial.">
 				>
 				["at1036"] = <
-					text = <"*Auscultation (en)">
-					description = <"*Method of measuring blood pressure externally, using a stethoscope and Korotkoff sounds. (en)">
+					text = <"Auscultação">
+					description = <"Método para medir a pressão arterial externamente, usando um estetoscópio e os sons de Korotkoff.">
 				>
 				["at1037"] = <
-					text = <"*Palpation (en)">
-					description = <"*Method of measuring blood pressure externally, using palpation (usually of the brachial or radial arteries). (en)">
+					text = <"Palpação">
+					description = <"Método para medir a pressão arterial externamente, usando a palpação (geralmente das artérias braquial ou radial).">
 				>
 				["at1038"] = <
-					text = <"*Mean arterial pressure formula (en)">
-					description = <"*Formula used to calculate the Mean Arterial Pressure (if recorded in data). (en)">
+					text = <"Fórmula da pressão arterial média">
+					description = <"Fórmula usada para calcular a pressão arterial média (se registados os dados).">
 				>
 				["at1039"] = <
-					text = <"*Machine (en)">
-					description = <"*Method of measuring blood pressure externally, using a blood pressure machine. (en)">
+					text = <"Aparelho de medição de pressão arterial">
+					description = <"Método para medir a pressão arterial externamente, usando um aparelho de medição de pressão arterial.">
 				>
 				["at1040"] = <
-					text = <"*Invasive (en)">
-					description = <"*Method of measuring blood pressure internally ie involving penetration of the skin and measuring inside blood vessels. (en)">
+					text = <"Invasiva">
+					description = <"Método de avaliação da pressão arterial internamente, ou seja, envolvendo a penetração na pele e a medição dentro dos vasos sanguíneos.">
 				>
 				["at1042"] = <
-					text = <"*24 hour average (en)">
-					description = <"*Estimate of the average blood pressure over a 24 hour period. (en)">
+					text = <"Média de 24h">
+					description = <"Estimativa da pressão arterial média durante um período de 24 horas.">
 				>
 				["at1043"] = <
-					text = <"*Sleep status (en)">
-					description = <"*Sleep status - supports interpretation of 24 hour ambulatory blood pressure records. (en)">
+					text = <"Status de sono">
+					description = <"Status do sono - suporta a interpretação de registos de pressão arterial em ambulatório de 24 horas">
 				>
 				["at1044"] = <
-					text = <"*Awake (en)">
-					description = <"*The individual is fully conscious. (en)">
+					text = <"Acordado">
+					description = <"A pessoa está totalmente consciente">
 				>
 				["at1045"] = <
-					text = <"*Sleeping (en)">
-					description = <"*The individual is in the natural state of bodily rest. (en)">
+					text = <"A dormir">
+					description = <"A pessoa está no estado natural de descanso corporal">
 				>
 				["at1051"] = <
-					text = <"*Toe (en)">
-					description = <"*A toe of the individual. (en)">
+					text = <"Dedo do pé">
+					description = <"O dedo do pé de uma pessoa">
 				>
 				["at1052"] = <
-					text = <"*Confounding factors (en)">
-					description = <"*Comment on and record other incidental factors that may be contributing to the blood pressure measurement.  For example, level of anxiety or 'white coat syndrome'; pain or fever; changes in atmospheric pressure etc. (en)">
+					text = <"Factores de confusão">
+					description = <"Comentário e registo de outros factores acidentais que possam alterar a avaliação da pressão arterial. Por exemplo, nível de ansiedade ou \"síndrome das batas brancas\"; dor ou febre; mudanças na pressão atmosférica, etc. ">
 				>
 				["at1053"] = <
-					text = <"*Intra-arterial (en)">
-					description = <"*Invasive measurement via transducer access line within an artery. (en)">
+					text = <"Intra-arterial">
+					description = <"Avaliação invasiva com transdutor, através da introdução de uma linha de acesso arterial.">
 				>
 				["at1054"] = <
-					text = <"*Systolic pressure formula (en)">
-					description = <"*Formula used to calculate the systolic pressure from from mean arterial pressure (if recorded in data). (en)">
+					text = <"Fórmula da pressão sistólica">
+					description = <"Fórmula usada para calcular a pressão sistólica a partir da pressão arterial média (se registada).">
 				>
 				["at1055"] = <
-					text = <"*Diastolic pressure formula (en)">
-					description = <"*Formula used to calculate the diastolic pressure from mean arterial pressure (if recorded in data). (en)">
+					text = <"Fórmula da pressão diastólica">
+					description = <"Fórmula usada para calcular a pressão diastólica a partir da pressão arterial média (se registada).">
 				>
 				["at1057"] = <
-					text = <"*Structured measurement location (en)">
-					description = <"*Structured anatomical location of where the measurement was taken. (en)">
+					text = <"Localização de medição estruturada">
+					description = <"Localização anatómica estruturada do local onde foi feita a avaliação.">
 				>
 				["at1058"] = <
-					text = <"*Extension (en)">
-					description = <"*Additional information required to capture local context or to align with other reference models/formalisms. (en)">
+					text = <"Extensão">
+					description = <"Informações adicionais necessárias para obter conteúdo local ou para alinhar com outros modelos / formalismos de referência.">
 					comment = <"*For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents. (en)">
 				>
 				["at1059"] = <
-					text = <"*Clinical interpretation (en)">
-					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the blood pressure measurement. (en)">
+					text = <"Interpretação clínica">
+					description = <"Palavra única, frase ou breve descrição que defina o significado clínico e significância dos valores de pressão arterial obtidos.">
 				>
 				["at1056"] = <
-					text = <"*Dorsum of foot (en)">
-					description = <"*The individual's dorsum of the foot. (en)">
+					text = <"Dorso do pé">
+					description = <"O dorso do pé de uma pessoa">
 				>
 			>
 		>
