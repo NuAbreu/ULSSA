@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "72.0.0",
+      "sem_ver" : "72.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "1dbc64f63c5d20c4a551fd7e3c9081a4",
+      "MD5-CAM-1.0.1" : "46c5d53676e2156c590440d6a15c079d",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -1506,7 +1506,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "OBSERVATION",
-          "occurrences" : "0..1",
+          "occurrences" : "0..*",
           "nodeId" : "at0.17",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -13166,7 +13166,7 @@
           "at0000.1.1.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1.1.1",
-            "text" : "Monitorização da frequência cardíaca fetal",
+            "text" : "Monitorização do bem estar fetal",
             "description" : "*Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time. (en)"
           },
           "ac0.0.0.1" : {
