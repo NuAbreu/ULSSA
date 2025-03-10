@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 	>
 	lifecycle_state = <"in_development">
 	details = <
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To contain demographic-related EHR CLUSTER archetypes when they are to be used standalone within a template, such as when they are used as a proxy for the review of demographic data in the header of a form or document template.">
@@ -29,7 +40,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"B2439FE7CDCBBB0532C37A0F15FE82CD">
+		["MD5-CAM-1.0.1"] = <"96e5773b2591d4d21205b6cda00a9323">
 		["build_uid"] = <"10ba36b2-aa8c-4b1a-ae11-aa5176aeb97b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -62,6 +73,22 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Person/Organisation">
+					description = <"">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Demographics container (en)">
+					description = <"*A container archetype used to hold demographic-related EHR CLUSTER archetypes. (en)">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"*Person/Organisation (en)">
 					description = <"">
 				>
 			>
