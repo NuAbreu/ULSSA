@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=087fc410-7928-4e22-9138-16e72ff32f6d)
+archetype (adl_version=1.4; uid=087fc410-7928-4e22-9138-16e72ff32f6d)
 	openEHR-EHR-OBSERVATION.management_screening.v2
 
 concept
-	[at0000]	-- Management screening questionnaire
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -27,18 +28,27 @@ language
 			author = <
 			>
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2020-03-13">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Atomica Informatics">
 		["email"] = <"heather.leslie@atomicainformatics.com">
-		["date"] = <"2020-03-13">
 	>
+	lifecycle_state = <"published">
+	other_contributors = <"Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","Astrid Askeland, Dips AS, Norway","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","SB Bhattacharyya, Bhattacharyyas Clinical Records Research & Informatics LLP, India","Yexuan Cheng, 浙江大学, China","Are Edvardsen, SKDE, Helse Nord RHF, Norway","Alexander Eikrem-Lüthi, Lovisenberg Diakonale Sykehus, Norway","Kåre Flø, DIPS ASA, Norway","Grant Forrest, Lunaria Ltd, United Kingdom","Heather Grain, Llewelyn Grain Informatics, Australia","Anca Heyd, DIPS ASA, Norway","Joost Holslag, Nedap, Netherlands","Evelyn Hovenga, EJSH Consulting, Australia","Mikkel Johan Gaup Grønmo, Regional forvaltning EPJ, Helse Nord, Norway","Gunnar Jårvik, Helse Vest IKT AS, Norway","Anjali Kulkarni, Karkinos, India","Kanika Kuwelker, Helse Vest IKT, Norway","Jörgen Kuylenstierna, eWeave AB, Sweden","Liv Laugen, ​Oslo University Hospital, Norway, Norway","Øygunn Leite Kallevik, Helse Bergen, Norway","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Hanne Marte Bårholm, Helse Vest IKT, Norway","Per Meinich, Helse Sør-Øst RHF, Norway","Mikael Nyström, Cambio Healthcare Systems AB, Sweden","Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil","Andre Smitt-Ingebretsen, Sørlandet sykehus HF, Norway","Natalia Strauch, Medizinische Hochschule Hannover, Germany","Norwegian Review Summary, Norwegian Public Hospitals, Norway","John Tore Valand, Helse Bergen, Norway (openEHR Editor)","Marit Alice Venheim, Helse Vest IKT, Norway (openEHR Editor)","Ina Wille, Helse-Vest RHF, Norway">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Zur Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen über den breiten Bereich des klinischen Managements, das in der Vergangenheit durchgeführt wurde, mit Ausnahme von Medikation oder chirurgischen/operativen Prozeduren.">
+			keywords = <"Behandlung, Screening, Intervention, Behandlung, Fragebogen, Pflege, Unterstützung, Therapie", ...>
 			use = <"Zur Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen über den breiten Bereich des klinischen Managements, das in der Vergangenheit durchgeführt wurde, mit Ausnahme von Medikation oder chirurgischen/operativen Prozeduren.
 
 Häufige Anwendungsfälle umfassen, sind aber nicht beschränkt auf:
@@ -60,14 +70,18 @@ Die Semantik dieses Archetyps ist absichtlich locker, und die Abfrage dieses Arc
 Die Quelle der Informationen in einer Fragebogenantwort kann in verschiedenen Kontexten variieren, kann jedoch mithilfe des Elements „Information provider“ im Referenzmodell spezifisch identifiziert werden.
 
 Dieser Archetyp wurde entwickelt, um als Screening-Tool oder zur Darstellung einfacher Daten im Fragebogenformat zur Verwendung in Situationen wie einem Krankheitsregister verwendet zu werden. Wenn der Screening-Fragebogen das Vorhandensein von Management oder Behandlung identifiziert, wird empfohlen, dass das klinische System die spezifischen Details über das Management oder die Behandlung unter Verwendung von für den klinischen Zweck spezifischen Archetypen aufzeichnet und aufbewahrt.">
-			keywords = <"Behandlung, Screening, Intervention, Behandlung, Fragebogen, Pflege, Unterstützung, Therapie", ...>
 			misuse = <"Nicht zur Darstellung von Antworten auf vordefinierte Screening-Fragen zu chirurgischen/operativen Prozeduren, die in der Vergangenheit durchgeführt wurden. Verwenden Sie zu diesem Zweck den Archetyp OBSERVATION.procedure_screening.
 
 Nicht zur Darstellung von Antworten auf vordefinierte Screening-Fragen zu Medikamenten, die in der Vergangenheit angewendet wurden. Verwenden Sie zu diesem Zweck den Archetyp OBSERVATION.medication_screening.">
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om utført håndtering av medisinske tilstander, med unntak av legemidler eller kirurgiske/operative prosedyrer.">
+			keywords = <"behandling, kartlegging, intervensjon, spørreskjema, omsorg, støtte, terapi", ...>
 			use = <"Brukes for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om utført håndtering av medisinske tilstander, med unntak av legemidler eller kirurgiske/operative prosedyrer.
 
 Vanlige bruksområder inkluderer, men er ikke begrenset til:
@@ -90,7 +104,6 @@ Bruk egne instanser av denne arketypen for å skille mellom spørsmål om sykdom
 Kilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodellen.
 
 Denne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i kartleggingen identifiseres at en aktivitet knyttet til sykdomshåndtering eller behandling er tilstede, anbefales det at spesifikke detaljer om sykdomshåndteringen eller behandlingen registreres og lagres i pasientjournalen i arketyper som er spesifikke for dette formålet.">
-			keywords = <"behandling, kartlegging, intervensjon, spørreskjema, omsorg, støtte, terapi", ...>
 			misuse = <"Brukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om kirurgiske/operative prosedyrer som er utført tidligere, bruk arketypen OBSERVATION.procedure_screening for dette formålet.
 
 Brukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruken av et hvilken som helst legemiddel eller gruppe av legemidler, bruk arketypen OBSERVATION.medication_screening for dette formålet.
@@ -100,6 +113,8 @@ Brukes ikke for å registrere detaljer om en enkel utvalgsliste der et spørsmå
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To create a framework for recording answers to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures.">
+			keywords = <"treatment, screening, intervention, questionnaire, care, support, therapy", ...>
+			copyright = <"© openEHR Foundation">
 			use = <"Use to create a framework for recording answers to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures.
 
 Common use cases include, but are not limited to:
@@ -121,18 +136,17 @@ The EVENT structure from the reference model can be used to specify whether the 
 The source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.
 
 This archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of management or treatment, it is recommended that clinical system record and persist the specific details about the management or treatment using archetypes specific for the clinical purpose.">
-			keywords = <"treatment, screening, intervention, questionnaire, care, support, therapy", ...>
 			misuse = <"Not to be used to record answers to pre-defined screening questions about surgical/operative procedures that have been carried out in the past.
 Use the OBSERVATION.procedure_screening for this purpose.
 
 Not to be used to record answers to pre-defined screening questions about medications that have been used in the past. Use the OBSERVATION.medication_screening for this purpose.
 
 Not to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose.">
-			copyright = <"© openEHR Foundation">
 		>
 		["it"] = <
 			language = <[ISO_639-1::it]>
 			purpose = <"*To create a framework for recording answer to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures. (en)">
+			keywords = <"*treatment, screening, intervention, questionnaire, care, support, therapy (en)", ...>
 			use = <"*Use to create a framework for recording answer to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures.
 
 Common use cases include, but are not limited to:
@@ -154,21 +168,18 @@ The EVENT structure from the reference model can be used to specify whether the 
 The source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.
 
 This archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of management or treatment, it is recommended that clinical system record and persist the specific details about the management or treatment using archetypes specific for the clinical purpose. (en)">
-			keywords = <"*treatment, screening, intervention, questionnaire, care, support, therapy (en)", ...>
 			misuse = <"*Not to be used to to create a framework for recording answers to pre-defined screening questions about procedures carried out in the past. Use the OBSERVATION.procedure_screening for this purpose.
 
 Not to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)">
 		>
 	>
-	lifecycle_state = <"published">
-	other_contributors = <"Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)", "Astrid Askeland, Dips AS, Norway", "Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)", "SB Bhattacharyya, Bhattacharyyas Clinical Records Research & Informatics LLP, India", "Yexuan Cheng, 浙江大学, China", "Are Edvardsen, SKDE, Helse Nord RHF, Norway", "Alexander Eikrem-Lüthi, Lovisenberg Diakonale Sykehus, Norway", "Kåre Flø, DIPS ASA, Norway", "Grant Forrest, Lunaria Ltd, United Kingdom", "Heather Grain, Llewelyn Grain Informatics, Australia", "Anca Heyd, DIPS ASA, Norway", "Joost Holslag, Nedap, Netherlands", "Evelyn Hovenga, EJSH Consulting, Australia", "Mikkel Johan Gaup Grønmo, Regional forvaltning EPJ, Helse Nord, Norway", "Gunnar Jårvik, Helse Vest IKT AS, Norway", "Anjali Kulkarni, Karkinos, India", "Kanika Kuwelker, Helse Vest IKT, Norway", "Jörgen Kuylenstierna, eWeave AB, Sweden", "Liv Laugen, ​Oslo University Hospital, Norway, Norway", "Øygunn Leite Kallevik, Helse Bergen, Norway", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Hanne Marte Bårholm, Helse Vest IKT, Norway", "Per Meinich, Helse Sør-Øst RHF, Norway", "Mikael Nyström, Cambio Healthcare Systems AB, Sweden", "Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil", "Andre Smitt-Ingebretsen, Sørlandet sykehus HF, Norway", "Natalia Strauch, Medizinische Hochschule Hannover, Germany", "Norwegian Review Summary, Norwegian Public Hospitals, Norway", "John Tore Valand, Helse Bergen, Norway (openEHR Editor)", "Marit Alice Venheim, Helse Vest IKT, Norway (openEHR Editor)", "Ina Wille, Helse-Vest RHF, Norway">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"C41002E3F462C66B72A17715E221CC03">
+		["MD5-CAM-1.0.1"] = <"479578354153a6995736b0762ccc50d2">
 		["build_uid"] = <"70f8ee52-349f-4637-805f-393553f8cd6c">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"2.0.1">
@@ -272,7 +283,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	terminologies_available = <"SNOMED-CT", ...>
@@ -737,8 +747,121 @@ In a template, the data element would usually be renamed to the specific questio
 				>
 			>
 		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Management screening questionnaire (en)">
+					description = <"*Series of questions and associated answers used to screen for clinical management including, but not limited to treatments, therapies and hospitalisation. (en)">
+					comment = <"*The answers may be self-reported. (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Any event (en)">
+					description = <"*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"*Management name (en)">
+					description = <"*Name of a specific management or treatment activity or grouping of management or treatment activities. (en)">
+					comment = <"*For example: 
+Admitted to hospital; Admitted to ICU; Use of compression stockings; Daily dressings; ECMO.
+Coding of the 'Management name' with a terminology is preferred, where possible. (en)">
+				>
+				["at0005"] = <
+					text = <"*Specific management? (en)">
+					description = <"*Is there a history of the specific management or treatment activity? (en)">
+					comment = <"*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)">
+				>
+				["at0007"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0021"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0022"] = <
+					text = <"*Management activity (en)">
+					description = <"*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)">
+				>
+				["at0023"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"*Unknown (en)">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"*Screening purpose (en)">
+					description = <"*The context or reason for screening. (en)">
+					comment = <"*This data element is intended to provide collection context for the question/answer groups when queried at a later date. It is not expected that this data element will be exposed to the individual, but only stored in data.
+For example: pre-admission screening or the name of the actual questionnaire. (en)">
+				>
+				["at0035"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about a specific management or treatment question, not captured in other fields. (en)">
+				>
+				["at0036"] = <
+					text = <"*Additional details (en)">
+					description = <"*Structured details or questions about the specific management or treatment activity. (en)">
+					comment = <"*For example: hospital where treated. (en)">
+				>
+				["at0037"] = <
+					text = <"*Timing (en)">
+					description = <"*Indication of timing related to the management activity. (en)">
+					comment = <"*The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when the management activity may have occurred. The specific and intended semantics can be further clarified in a template. For example: the actual point in time when, or interval during which, an activity took place; the start and stop time of an activity; the duration of the activity; the age of the individual at the time of the activity; or the duration of time since the activity occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)">
+				>
+				["at0039"] = <
+					text = <"*Any management? (en)">
+					description = <"*Is there a history of management or treatment activities relevant for the screening purpose? (en)">
+					comment = <"*The management or treatment may have been completed or could be ongoing.
+
+In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)">
+				>
+				["at0040"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"*Unknown (en)">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"*Additional details (en)">
+					description = <"*Structured details or questions about screening for management or treatment. (en)">
+				>
+				["at0044"] = <
+					text = <"*Description (en)">
+					description = <"*Narrative description about the history of any management or treatment activities relevant for the screening purpose. (en)">
+				>
+				["at0045"] = <
+					text = <"*Unsure (en)">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"*Unsure (en)">
+					description = <"">
+				>
+			>
+		>
 	>
-	term_bindings = <
+	term_binding = <
 		["SNOMED-CT"] = <
 			items = <
 				["at0027"] = <[SNOMED-CT::261665006]>
