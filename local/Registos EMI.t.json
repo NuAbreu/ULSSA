@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ebd33860d17c30d25a7df7b8b66fc35b",
+      "MD5-CAM-1.0.1" : "913e846cb96467b297db9f09162ca5b7",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -2921,10 +2921,23 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "local"
+                                "value" : "local_terms"
                               },
-                              "constraint" : [ "ac0.7" ],
-                              "selectedTerminologies" : [ ]
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "local_terms" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "local_terms",
+                                "code" : "M",
+                                "value" : "Médico"
+                              }, {
+                                "terminologyId" : "local_terms",
+                                "code" : "C",
+                                "value" : "Cirúrgico"
+                              }, {
+                                "terminologyId" : "local_terms",
+                                "code" : "O",
+                                "value" : "Outro"
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -2949,10 +2962,27 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "local"
+                                "value" : "local_terms_2"
                               },
-                              "constraint" : [ "ac0.5" ],
-                              "selectedTerminologies" : [ ]
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "local_terms_2" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "local_terms_2",
+                                "code" : "E",
+                                "value" : "Enfermaria"
+                              }, {
+                                "terminologyId" : "local_terms_2",
+                                "code" : "CE",
+                                "value" : "Consulta Externa"
+                              }, {
+                                "terminologyId" : "local_terms_2",
+                                "code" : "AC",
+                                "value" : "Área comum"
+                              }, {
+                                "terminologyId" : "local_terms_2",
+                                "code" : "O",
+                                "value" : "Outros"
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -2996,18 +3026,6 @@
             "text" : "Any management? (2)",
             "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
             "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
-          },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.7",
-            "description" : ""
           }
         },
         "nb" : {
@@ -3017,18 +3035,6 @@
             "text" : "Sykdomshåndtering? (2)",
             "description" : "Er det historikk av noen tidligere sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet?",
             "comment" : "Sykdomshåndtering eller behandling kan være fullført, eller pågående. Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
           }
         },
         "de" : {
@@ -3038,18 +3044,6 @@
             "text" : "Irgendwelche Managementaktivitäten? (2)",
             "description" : "Gibt es eine Vorgeschichte von Management- oder Behandlungsaktivitäten, die für das Screening relevant sind?",
             "comment" : "Die Managementaktivität oder Behandlung kann abgeschlossen sein oder andauern.\r\n\r\nIn einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
-          },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
           }
         },
         "it" : {
@@ -3059,18 +3053,6 @@
             "text" : "*Any management or treatment? (en) (2)",
             "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
             "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
           }
         },
         "pt-pt" : {
@@ -3100,18 +3082,6 @@
             "text" : "Localização do doente",
             "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
             "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
           }
         }
       },
@@ -3152,6 +3122,36 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.7",
           "members" : [ "at0040", "at0041", "at0042", "at0045" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0040", "at0041", "at0042", "at0045" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0040", "at0041", "at0042", "at0045" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ ]
         }
       }
     },
