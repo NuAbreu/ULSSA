@@ -112,7 +112,7 @@ ZIB Centrum. [Internet]. Netherlands: Nictiz. BehandelAanwijzing-v3.2(2019NL); 2
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0bee2eddc1338d6511963c55e3eb82a1">
+		["MD5-CAM-1.0.1"] = <"0602a5adba782d873255dc0dabbb368c">
 		["build_uid"] = <"3d99df16-8886-4c9a-b00d-7e1cbc9bd825">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"1.0.0">
@@ -1167,11 +1167,11 @@ Sempre que possível, é preferível codificar a intenção do cuidado com uma t
 					description = <"Fornecimento de nutrientes por outros meios que não comer ou beber.">
 				>
 				["at0025"] = <
-					text = <"Medicamentos de parada">
+					text = <"Medicamentos de paragem cardiorrespiratória">
 					description = <"Medicamentos utilizados durante uma reanimação de emergência para prolongar a vida. Por exemplo: adrenalina, atropina, bicarbonato de sódio, cálcio, outros medicamentos vasoativos.">
 				>
 				["at0026"] = <
-					text = <"Medicamentos de regulação circulatória">
+					text = <"Medicamentos de suporte circulatório">
 					description = <"Medicação que suporta a função cardíaca, incluindo, mas não limitado a: vasopressores, inotrópicos e cronotrópicos.">
 				>
 				["at0027"] = <
@@ -1187,7 +1187,7 @@ Sempre que possível, é preferível codificar a intenção do cuidado com uma t
 					description = <"Inserção de um tubo no espaço pleural.">
 				>
 				["at0030"] = <
-					text = <"Marcapasso cardíaco">
+					text = <"Pacemaker cardíaco">
 					description = <"Inserção de um pacemaker artificial para controlar os batimentos cardíacos.">
 				>
 				["at0031"] = <
