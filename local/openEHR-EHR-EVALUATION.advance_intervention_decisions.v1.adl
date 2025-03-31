@@ -15,17 +15,17 @@ language
 				["email"] = <"rehberg.alina@mh-hannover.de">
 			>
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
 				["name"] = <"Vebjørn Arntzen, John Tore Valand">
 				["organisation"] = <"Oslo University Hospital, Helse Bergen">
 				["email"] = <"varntzen@ous-hf.no, john.tore.valand@helse-bergen.no">
-			>
-		>
-		["pt-pt"] = <
-			language = <[ISO_639-1::pt-pt]>
-			author = <
 			>
 		>
 	>
@@ -59,7 +59,17 @@ Nicht zu verwenden für die Aufzeichnung von Anordnungen, die als Folge der getr
 		>
 		["pt-pt"] = <
 			language = <[ISO_639-1::pt-pt]>
+			purpose = <"Registar decisões antecipatórias sobre a intenção geral dos cuidados e possíveis intervenções, geralmente afirmadas por um clínico.">
+			keywords = <"DNR","DNAR","DNACPR","NFR","reanimação","ressuscitação","EoL","fim","de","vida","diretiva","preferência","objetivo","cuidado","intervenção","teto","limite","limitação","tratamento","escopo","escalada","intenção","EOLC","prolongamento","da","vida","salvamento","de","vidas","paliativo","decisão","direção">
 			copyright = <"© openEHR Foundation">
+			use = <"Use para registrar decisões antecipatórias sobre a intenção geral de cuidados e possíveis intervenções para um indivíduo. As decisões apoiarão os médicos, fornecendo orientações sobre possíveis tratamentos, atividades e procedimentos diagnósticos ou terapêuticos que podem salvar vidas, prolongar a vida ou causar efeitos colaterais indesejáveis. 
+
+Este arquétipo destina-se a ser utilizado como parte de cuidados integrados ou planeamento de fim de vida, e não como uma reação a uma situação aguda ou de emergência. Cada decisão deve ser tomada em resposta à saúde geral do indivíduo e às circunstâncias gerais, e geralmente afirmada por um clínico após a consideração das diretivas de cuidados avançados do indivíduo ou preferências declaradas.
+
+Pode ser necessário registar substituições temporárias às habituais decisões de intervenção antecipada em circunstâncias específicas, por exemplo, durante a gravidez ou no pré-operatório. Nesta situação, será necessário registrar uma instância separada deste arquétipo, usando uma combinação de validade relevante e datas de revisão.">
+			misuse = <"Não deve ser usado para registrar uma \"diretiva de cuidados avançados\" ou as preferências do indivíduo para cuidados - use EVALUATION.advance_care_directive para este fim.
+
+Não deve ser usado para registrar as ordens exigidas como consequência das decisões tomadas e registradas usando este arquétipo. Use arquétipos específicos de INSTRUÇÃO ou AÇÃO para este fim.">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -77,7 +87,7 @@ Skal ikke brukes for å forordne eller gjøre endringer i igangsatte tiltak, bas
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record anticipatory decisions about the overall intent of care and possible interventions, usually asserted by a clinician.">
-			keywords = <"DNR","DNAR","DNACPR","NFR","resuscitation","resuscitate","EoL","end of life","directive","preference","goal","care","intervention","ceiling","limit","limitation","treatment","scope","escalation","intent","EOLC","life-prolonging","life-saving","palliative","decision","direction">
+			keywords = <"DNR","DNAR","DNACPR","NFR","resuscitation","resuscitate","EoL","end","of","life","directive","preference","goal","care","intervention","ceiling","limit","limitation","treatment","scope","escalation","intent","EOLC","life-prolonging","life-saving","palliative","decision","direction">
 			copyright = <"© openEHR Foundation">
 			use = <"Use to record anticipatory decisions about the overall intent of care and possible interventions for an individual. The decisions will support clinicians by providing guidance regarding possible treatments, activities, and diagnostic or therapeutic procedures that may be life-saving, life-prolonging or cause undesirable side effects. 
 
@@ -102,7 +112,7 @@ ZIB Centrum. [Internet]. Netherlands: Nictiz. BehandelAanwijzing-v3.2(2019NL); 2
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bebcf200102b6c9b5634221128b30c88">
+		["MD5-CAM-1.0.1"] = <"0bee2eddc1338d6511963c55e3eb82a1">
 		["build_uid"] = <"3d99df16-8886-4c9a-b00d-7e1cbc9bd825">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"1.0.0">
@@ -1053,245 +1063,245 @@ Die Kodierung des Versorgungszwecks mit einer externen Terminologie wird bevorzu
 		["pt-pt"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Advance intervention decisions (en)">
-					description = <"*Anticipatory decisions about the overall intent of care and possible interventions (including treatments, activities, and diagnostic or therapeutic procedures), asserted by a clinician. (en)">
+					text = <"Decisões antecipadas de intervenção">
+					description = <"Decisões antecipatórias sobre a intenção geral dos cuidados e possíveis intervenções (incluindo tratamentos, atividades e procedimentos diagnósticos ou terapêuticos), afirmadas por um clínico.">
 				>
 				["at0001"] = <
 					text = <"Tree">
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"*Intent of care (en)">
-					description = <"*The overall intent for future care and treatment for the individual. (en)">
-					comment = <"*The proposed value set is based on the MJA reference. 
-Coding the intent of care with an external terminology is preferred, where possible. (en)">
+					text = <"Intenção de cuidados">
+					description = <"A intenção geral para cuidados futuros e tratamento para o indivíduo.">
+					comment = <"O conjunto de valores proposto baseia-se na referência MJA. 
+Sempre que possível, é preferível codificar a intenção do cuidado com uma terminologia externa.">
 				>
 				["at0003"] = <
-					text = <"*Curative (en)">
-					description = <"*The condition is curable; all appropriate life-prolonging treatment will be offered. (en)">
+					text = <"Curativo">
+					description = <"A condição é curável; Todos os tratamentos adequados para prolongar a vida serão oferecidos.">
 				>
 				["at0004"] = <
-					text = <"*Restorative (en)">
-					description = <"*The condition is treatable with potential for restoration to the previous state of health or a prolonged remission; all appropriate life-prolonging treatment will be offered. (en)">
+					text = <"Reabilitação">
+					description = <"A condição é tratável com potencial para restauração do estado de saúde anterior ou uma remissão prolongada; Todos os tratamentos adequados para prolongar a vida serão disponibilizados.">
 				>
 				["at0005"] = <
-					text = <"*Supportive (en)">
-					description = <"*The condition is incurable and progressive; active treatment of the underlying disease may be appropriate for specific symptom relief and/or short term life expectancy gains; focused on comfort, quality of life and dignity. Also referred to as 'Palliative'. (en)">
+					text = <"Suporte">
+					description = <"A doença é incurável e progressiva; o tratamento ativo da doença subjacente pode ser apropriado para alívio específico dos sintomas e/ou ganhos de esperança de vida a curto prazo; focado no conforto, qualidade de vida e dignidade. Também referido como \"Paliativo\".">
 				>
 				["at0006"] = <
-					text = <"*Terminal (en)">
-					description = <"*Life expectancy is short (hours or days); no active treatment of the underlying disease or treatment-related harm; focus on comfort, quality of life and dignity. (en)">
+					text = <"Terminal">
+					description = <"A esperança de vida é curta (horas ou dias); ausência de tratamento ativo da doença subjacente ou dos danos relacionados com o tratamento; Foco no conforto, qualidade de vida e dignidade.">
 				>
 				["at0007"] = <
-					text = <"*Unknown (en)">
-					description = <"*The intent of care decision is not known. (en)">
+					text = <"Desconhecido">
+					description = <"A intenção da decisão de cuidado não é conhecida.">
 				>
 				["at0008"] = <
-					text = <"*Decisions description (en)">
-					description = <"*Narrative description about all advance intervention decisions, including the CPR decision. (en)">
-					comment = <"*May be used to record a narrative overview of the advance intervention decision that reflect the specific circumstances for the individual. This includes any limitations, or conditional circumstances applicable, to interventions. This description may or may not be supported by structured data, recorded using the ‘Per intervention’ cluster. If both this narrative description and ‘Per intervention’ structured data is recorded, caution is required as there is a potential risk of divergence. This data element may be used to capture legacy data that is not available in a structured format. (en)">
+					text = <"Descrição das decisões">
+					description = <"Descrição narrativa de todas as decisões de intervenção antecipada, incluindo a decisão do RDC.">
+					comment = <"Pode ser usado para registrar uma visão geral narrativa da decisão de intervenção antecipada que reflita as circunstâncias específicas para o indivíduo. Isto inclui quaisquer limitações, ou circunstâncias condicionais aplicáveis, às intervenções. Esta descrição pode ou não ser apoiada por dados estruturados, registados utilizando o agregado «Por intervenção». Se tanto esta descrição narrativa como os dados estruturados «Por intervenção» forem registados, é necessária precaução, uma vez que existe um risco potencial de divergência. Esse elemento de dados pode ser usado para capturar dados herdados que não estão disponíveis em um formato estruturado.">
 				>
 				["at0009"] = <
-					text = <"*CPR decision (en)">
-					description = <"*Decision about the extent of cardiopulmonary resuscitation (CPR) intervention appropriate for this individual. (en)">
+					text = <"Decisão do RDC">
+					description = <"Decisão sobre a extensão da intervenção de ressuscitação cardiopulmonar (RCP) apropriada para este indivíduo.">
 				>
 				["at0010"] = <
-					text = <"*Full CPR (en)">
-					description = <"*All appropriate cardiopulmonary resuscitation treatments should be attempted to save or prolong life. (en)">
+					text = <"RCP completa">
+					description = <"Todos os tratamentos de ressuscitação cardiopulmonar apropriados devem ser tentados para salvar ou prolongar a vida.">
 				>
 				["at0011"] = <
-					text = <"*Limited CPR (en)">
-					description = <"*Cardiopulmonary resuscitation treatments should be attempted, as specified in the 'Decisions description' narrative or as structured data in the 'Per intervention' cluster. (en)">
+					text = <"RCP limitada">
+					description = <"Devem ser tentados tratamentos de ressuscitação cardiopulmonar, conforme especificado na narrativa \"Descrição das decisões\" ou como dados estruturados no cluster \"Por intervenção\".">
 				>
 				["at0012"] = <
-					text = <"*No CPR (en)">
-					description = <"*No cardiopulmonary resuscitation treatments should be attempted to save or prolong life. Also known as 'Do not resuscitate (DNR)'; 'Do not attempt resuscitation (DNAR)'; 'Not for resuscitation (NFR)' or similar. (en)">
+					text = <"Sem RCP">
+					description = <"Não devem ser tentados tratamentos de reanimação cardiopulmonar para salvar ou prolongar a vida. Também conhecida como \"Não reanimar (DNR)\"; «Não tentar reanimação (DNAR)»; «Não se destina a reanimação (NFR)» ou similar.">
 				>
 				["at0013"] = <
-					text = <"*Unknown (en)">
-					description = <"*The CPR decision is not known. (en)">
+					text = <"Desconhecido">
+					description = <"A decisão do RDC não é conhecida.">
 				>
 				["at0014"] = <
-					text = <"*Per intervention (en)">
-					description = <"*Details of the decision about possible treatments or activities that may be life-saving, life-prolonging or cause undesirable side effects. (en)">
+					text = <"Por intervenção">
+					description = <"Detalhes da decisão sobre possíveis tratamentos ou atividades que podem salvar vidas, prolongar a vida ou causar efeitos colaterais indesejáveis.">
 				>
 				["at0015"] = <
-					text = <"*Intervention (en)">
-					description = <"*Name of the possible treatment, procedure or activity. (en)">
-					comment = <"*While this archetype is intended for all clinical decisions about possible future interventions, the proposed DV_CODED_TEXT value set for the 'Intervention' data element is deliberately not intended to be exhaustive. Instead it has been designed to be inclusive of most of the common life-saving treatments within an emergency context. The alternate choice of the DV_TEXT option can be used to add a local value set or bind to an alternative external value set within a template. (en)">
+					text = <"Intervenção">
+					description = <"Nome do possível tratamento, procedimento ou atividade.">
+					comment = <"Embora este arquétipo se destine a todas as decisões clínicas sobre possíveis intervenções futuras, o valor DV_CODED_TEXT proposto para o elemento de dados «Intervenção» não pretende deliberadamente ser exaustivo. Em vez disso, foi concebido para incluir a maioria dos tratamentos comuns que salvam vidas num contexto de emergência. A escolha alternativa da opção DV_TEXT pode ser usada para adicionar um conjunto de valores locais ou vincular a um conjunto de valores externos alternativos dentro de um modelo.">
 				>
 				["at0016"] = <
-					text = <"*Chest compressions (en)">
-					description = <"*Technique used to manually pump blood around the body during a cardiac arrest. (en)">
+					text = <"Compressões torácicas">
+					description = <"Técnica usada para bombear manualmente o sangue pelo corpo durante uma parada cardíaca.">
 				>
 				["at0017"] = <
-					text = <"*Defibrillation (en)">
-					description = <"*Use of electric shock to reset the electrical state of the heart. (en)">
+					text = <"Desfibrilhação">
+					description = <"Uso de choque elétrico para redefinir o estado elétrico do coração.">
 				>
 				["at0018"] = <
-					text = <"*Intubation (en)">
-					description = <"*Placement of a tube into the trachea to maintain an open airway, including a tracheostomy. (en)">
+					text = <"Intubação">
+					description = <"Colocação de um tubo na traqueia para manter uma via aérea aberta, incluindo uma traqueostomia.">
 				>
 				["at0019"] = <
-					text = <"*Invasive ventilation (en)">
-					description = <"*Artificial ventilation where invasive means are used to assist or replace spontaneous breathing. (en)">
+					text = <"Ventilação invasiva">
+					description = <"Ventilação artificial onde são utilizados meios invasivos para auxiliar ou substituir a respiração espontânea.">
 				>
 				["at0020"] = <
-					text = <"*Non-invasive ventilation (en)">
-					description = <"*Artificial ventilation where non-invasive means are used to assist or replace spontaneous breathing. (en)">
+					text = <"Ventilação não invasiva">
+					description = <"Ventilação artificial onde são utilizados meios não invasivos para auxiliar ou substituir a respiração espontânea.">
 				>
 				["at0021"] = <
-					text = <"*Peripheral intravenous line (en)">
-					description = <"*Insertion of a peripheral intravenous line. (en)">
+					text = <"Linha intravenosa periférica">
+					description = <"Inserção de uma linha intravenosa periférica.">
 				>
 				["at0022"] = <
-					text = <"*Central venous line or any arterial line (en)">
-					description = <"*Insertion of a central venous line or any arterial line. (en)">
+					text = <"Linha venosa central ou qualquer linha arterial">
+					description = <"Inserção de uma linha venosa central ou de qualquer linha arterial.">
 				>
 				["at0023"] = <
-					text = <"*Parenteral fluids (en)">
-					description = <"*Maintenance of hydration by means other than eating or drinking. (en)">
+					text = <"Fluidos parentéricos">
+					description = <"Manutenção da hidratação por outros meios que não comer ou beber.">
 				>
 				["at0024"] = <
-					text = <"*Parenteral or artificial nutrition (en)">
-					description = <"*Provision of nutrients by means other than eating or drinking. (en)">
+					text = <"Nutrição parentérica ou artificial">
+					description = <"Fornecimento de nutrientes por outros meios que não comer ou beber.">
 				>
 				["at0025"] = <
-					text = <"*Arrest medications (en)">
-					description = <"*Medications used during an emergency resuscitation to prolong life. For example: adrenaline, atropine, sodium bicarbonate, calcium, other vasoactive medications. (en)">
+					text = <"Medicamentos de parada">
+					description = <"Medicamentos utilizados durante uma reanimação de emergência para prolongar a vida. Por exemplo: adrenalina, atropina, bicarbonato de sódio, cálcio, outros medicamentos vasoativos.">
 				>
 				["at0026"] = <
-					text = <"*Circulatory regulation medications (en)">
-					description = <"*Medication that supports heart function, including but not limited to: vasopressors, inotropes and chronotropes. (en)">
+					text = <"Medicamentos de regulação circulatória">
+					description = <"Medicação que suporta a função cardíaca, incluindo, mas não limitado a: vasopressores, inotrópicos e cronotrópicos.">
 				>
 				["at0027"] = <
-					text = <"*Antibiotics, antiviral or antifungal agents (en)">
-					description = <"*Medications to treat infections. (en)">
+					text = <"Antibióticos, agentes antivirais ou antifúngicos">
+					description = <"Medicamentos para tratar infeções.">
 				>
 				["at0028"] = <
-					text = <"*Blood products (en)">
-					description = <"*Therapeutic substance prepared from human blood including, but not limited to: whole blood; blood components; and plasma derivatives. (en)">
+					text = <"Produtos derivados do sangue">
+					description = <"Substância terapêutica preparada a partir de sangue humano, incluindo, entre outros: sangue total; componentes sanguíneos; e derivados do plasma.">
 				>
 				["at0029"] = <
-					text = <"*Chest tube insertion (en)">
-					description = <"*Insertion of a tube into the pleural space. (en)">
+					text = <"Inserção do dreno torácico">
+					description = <"Inserção de um tubo no espaço pleural.">
 				>
 				["at0030"] = <
-					text = <"*Cardiac pacemaker (en)">
-					description = <"*Insertion of an artificial pacemaker to control the heart beat. (en)">
+					text = <"Marcapasso cardíaco">
+					description = <"Inserção de um pacemaker artificial para controlar os batimentos cardíacos.">
 				>
 				["at0031"] = <
-					text = <"*Dialysis (en)">
-					description = <"*Process of removing excess water, solutes, and toxins from the blood. (en)">
+					text = <"Diálise">
+					description = <"Processo de remoção do excesso de água, solutos e toxinas do sangue.">
 				>
 				["at0032"] = <
-					text = <"*Transfer to hospital (en)">
-					description = <"*Transfer to hospital for assessment or admission. (en)">
+					text = <"Transferência para o hospital">
+					description = <"Transferência para hospital para avaliação ou internamento.">
 				>
 				["at0033"] = <
-					text = <"*Transfer to Intensive Care (en)">
-					description = <"*Transfer and admission to an intensive care or high dependency unit. (en)">
+					text = <"Transferência para Cuidados Intensivos">
+					description = <"Transferência e internamento numa unidade de cuidados intensivos ou de alta dependência.">
 				>
 				["at0034"] = <
-					text = <"*Decision (en)">
-					description = <"*Decision about the identified intervention. (en)">
+					text = <"Decisão">
+					description = <"Decisão sobre a intervenção identificada.">
 				>
 				["at0035"] = <
-					text = <"*Recommended (en)">
-					description = <"*The intervention is recommended. (en)">
+					text = <"Recomendado">
+					description = <"A intervenção é recomendada.">
 				>
 				["at0036"] = <
-					text = <"*Conditional recommendation (en)">
-					description = <"*The intervention is recommended only in specific circumstances, captured using the 'Preconditions' data element. (en)">
+					text = <"Recomendação condicional">
+					description = <"A intervenção é recomendada apenas em circunstâncias específicas, captadas utilizando o elemento de dados «Pré-condições».">
 				>
 				["at0037"] = <
-					text = <"*Not recommended (en)">
-					description = <"*The intervention is not recommended. (en)">
+					text = <"Não recomendado">
+					description = <"A intervenção não é recomendada.">
 				>
 				["at0038"] = <
-					text = <"*Unknown (en)">
-					description = <"*The intervention decision is not known. (en)">
+					text = <"Desconhecido">
+					description = <"A decisão de intervenção não é conhecida.">
 				>
 				["at0039"] = <
-					text = <"*Precondition (en)">
-					description = <"*Description of the circumstance/s in which a 'Conditional recommendation' is applicable. (en)">
-					comment = <"*This data element is only relevant if the 'Conditional recommendation' option is selected in the 'Decision' data element. For example:' \"Transfer to hospital is only applicable in the circumstances where the individual suffers a fracture and requires immobilization for pain relief.# (en)">
+					text = <"Pré-condição">
+					description = <"Descrição da(s) circunstância(ões) em que uma «recomendação condicional» é aplicável.">
+					comment = <"Este elemento de dados só é relevante se a opção «Recomendação condicional» estiver selecionada no elemento de dados «Decisão». Por exemplo: \"A transferência para o hospital só é aplicável nas circunstâncias em que o indivíduo sofre uma fratura e necessita de imobilização para alívio da dor. #">
 				>
 				["at0040"] = <
-					text = <"*Comment (en)">
-					description = <"*Additional narrative about the intervention decision, not captured in other fields. (en)">
-					comment = <"*For example: the justification or rationale for the intervention decision. (en)">
+					text = <"Comentar">
+					description = <"Narrativa adicional sobre a decisão de intervenção, não captada noutros campos.">
+					comment = <"Por exemplo: a justificação ou fundamentação da decisão de intervenção.">
 				>
 				["at0041"] = <
-					text = <"*Additional details (en)">
-					description = <"*Additional structured details about advance intervention decisions. (en)">
-					comment = <"*For example: people involved in the decision-making process, if it is not possible to use the reference model participations; or additional locally relevant considerations. (en)">
+					text = <"Detalhes adicionais">
+					description = <"Detalhes estruturados adicionais sobre decisões de intervenção antecipada.">
+					comment = <"Por exemplo: pessoas envolvidas no processo de tomada de decisão, se não for possível utilizar o modelo de referência de participação; ou considerações adicionais relevantes a nível local.">
 				>
 				["at0042"] = <
-					text = <"*Patient awareness (en)">
-					description = <"*Narrative description about awareness of the Advance intervention decisions by the individual. (en)">
-					comment = <"*For example: the capacity of the patient to understand the decisions. (en)">
+					text = <"Sensibilização dos doentes">
+					description = <"Descrição narrativa sobre a consciência das decisões de intervenção antecipada por parte do indivíduo.">
+					comment = <"Por exemplo: a capacidade do paciente de compreender as decisões.">
 				>
 				["at0043"] = <
-					text = <"*Carer awareness (en)">
-					description = <"*Narrative description about awareness of the Advance intervention decisions by family, carers or legal proxy. (en)">
-					comment = <"*For example: the individual has no family. (en)">
+					text = <"Sensibilização dos prestadores de cuidados">
+					description = <"Descrição narrativa sobre o conhecimento das decisões de intervenção antecipada por parte da família, cuidadores ou representante legal.">
+					comment = <"Por exemplo: o indivíduo não tem família.">
 				>
 				["at0044"] = <
-					text = <"*Overall comment (en)">
-					description = <"*Additional narrative about all advance intervention decisions, not captured in other fields. (en)">
+					text = <"Comentário geral">
+					description = <"Narrativa adicional sobre todas as decisões de intervenção antecipada, não capturadas em outros campos.">
 				>
 				["at0045"] = <
-					text = <"Tree">
-					description = <"@ internal @">
+					text = <"Árvore">
+					description = <"@ interno @">
 				>
 				["at0046"] = <
-					text = <"*Last updated (en)">
-					description = <"*The date and/or time when the Advance intervention decisions were last updated. (en)">
+					text = <"Última atualização">
+					description = <"Data e/ou hora em que as decisões de intervenção antecipada foram atualizadas pela última vez.">
 				>
 				["at0047"] = <
-					text = <"*Valid period start (en)">
-					description = <"*The date/time that marks the beginning of the valid period of time for the Advance intervention decisions. (en)">
+					text = <"Início do período de validade">
+					description = <"Data/hora que marca o início do período de tempo válido para as decisões de intervenção antecipada.">
 				>
 				["at0048"] = <
-					text = <"*Valid period end (en)">
-					description = <"*The date/time that marks the conclusion of the valid period of time for the Advance intervention decisions. (en)">
-					comment = <"*'Valid period end' may often overlap with 'Review due date'. However, they may need to be recorded separately in circumstances where a document has an extended period of validity but requires an interim review. That may be due to changed personal circumstances/events or local policy. (en)">
+					text = <"Fim do período de validade">
+					description = <"Data/hora que marca a conclusão do período de tempo válido para as decisões de intervenção antecipada.">
+					comment = <"«Termo do período válido» pode muitas vezes sobrepor-se a «Data de vencimento da revisão». No entanto, podem ter de ser registadas separadamente em circunstâncias em que um documento tenha um prazo de validade alargado, mas exija um reexame intercalar. Isso pode ser devido a circunstâncias pessoais alteradas / eventos ou política local.">
 				>
 				["at0049"] = <
-					text = <"*Review due (en)">
-					description = <"*The date when review of the Advance intervention decisions are due. (en)">
+					text = <"Revisão devida">
+					description = <"A data em que as decisões de intervenção antecipada devem ser revistas.">
 				>
 				["at0050"] = <
-					text = <"*Mandate (en)">
-					description = <"*Description of any legislation or other authoritative guidance that apply. (en)">
-					comment = <"*For example: an advance care directive. (en)">
+					text = <"Mandato">
+					description = <"Descrição de qualquer legislação ou outra orientação oficial aplicável.">
+					comment = <"Por exemplo: uma diretiva de cuidados avançados.">
 				>
 				["at0051"] = <
-					text = <"*Digital representation (en)">
-					description = <"*Digital document, image or video representing these Advance intervention decisions. (en)">
+					text = <"Representação digital">
+					description = <"Documento, imagem ou vídeo digital que represente estas decisões de intervenção antecipada.">
 				>
 				["at0052"] = <
-					text = <"*Document location (en)">
-					description = <"*Information about the physical or digital location of the advance intervention decisions record. (en)">
+					text = <"Localização do documento">
+					description = <"Informação sobre a localização física ou digital do registo das decisões de intervenção antecipada.">
 				>
 				["at0053"] = <
-					text = <"*Location (en)">
-					description = <"*Physical or digital location of the Advance intervention decisions record. (en)">
+					text = <"Localização">
+					description = <"Localização física ou digital do registo de decisões de intervenção antecipada.">
 				>
 				["at0054"] = <
-					text = <"*Copy holder (en)">
-					description = <"*Details of a person who has a copy of the Advance intervention decisions record. (en)">
-					comment = <"*Comment: For example, 'John Smith, Lawyer'. (en)">
+					text = <"Porta-cópias">
+					description = <"Dados de uma pessoa que possui uma cópia do registo de decisões de intervenção antecipada.">
+					comment = <"Comentário: Por exemplo, «John Smith, advogado».">
 				>
 				["at0055"] = <
-					text = <"*Extension (en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					text = <"Extensão">
+					description = <"Informações adicionais necessárias para estender o modelo com conteúdo local ou para alinhar com outros modelos de referência ou formalismos.">
+					comment = <"Por exemplo: requisitos de informação local; ou metadados adicionais para alinhar com FHIR.">
 				>
 				["at0056"] = <
-					text = <"*Rationale (en)">
-					description = <"*Narrative description about the logic and justification for the 'Intent of care' decision. (en)">
+					text = <"Fundamentação">
+					description = <"Descrição narrativa sobre a lógica e justificação da decisão de 'Intenção de cuidar'.">
 				>
 			>
 		>
