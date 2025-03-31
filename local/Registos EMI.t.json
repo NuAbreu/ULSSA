@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "13.0.0",
+      "sem_ver" : "14.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5a94c69ed7ff3217183238cef5920284",
+      "MD5-CAM-1.0.1" : "4909dba9ac4897fb3c67b46d871e89b0",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -10860,7 +10860,14 @@
         "en" : { },
         "nb" : { },
         "sv" : { },
-        "pt-pt" : { }
+        "pt-pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Fornecimento de O2",
+            "description" : "A quantidade de oxigénio administrado, ou a ser administrado, ao utente, como uma fracção, percentagem ou indiretamente como uma taxa de fluxo"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
