@@ -23,6 +23,11 @@ language
 				["email"] = <"varntzen@ous-hf.no, john.tore.valand@helse-bergen.no">
 			>
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 	>
 
 description
@@ -51,6 +56,10 @@ Es kann unter bestimmten Umständen notwendig sein vorübergehende Überschreitu
 Nicht zu verwenden für die Aufzeichnung von Anordnungen, die als Folge der getroffenen und mit diesem Archetyp aufgezeichneten Entscheidungen erforderlich sind. Verwenden Sie für diesen Zweck spezifische Archetypen INSTRUCTION oder ACTION.
 
 ">
+		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			copyright = <"© openEHR Foundation">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -93,7 +102,7 @@ ZIB Centrum. [Internet]. Netherlands: Nictiz. BehandelAanwijzing-v3.2(2019NL); 2
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"FEF12ACA9033560751C7E28A75C5EF54">
+		["MD5-CAM-1.0.1"] = <"bebcf200102b6c9b5634221128b30c88">
 		["build_uid"] = <"3d99df16-8886-4c9a-b00d-7e1cbc9bd825">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"1.0.0">
@@ -1038,6 +1047,251 @@ Die Kodierung des Versorgungszwecks mit einer externen Terminologie wird bevorzu
 				["at0056"] = <
 					text = <"Begründung">
 					description = <"Narrative Beschreibung über die Logik und Begründung für die Entscheidung 'Intention der Behandlung'.">
+				>
+			>
+		>
+		["pt-pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Advance intervention decisions (en)">
+					description = <"*Anticipatory decisions about the overall intent of care and possible interventions (including treatments, activities, and diagnostic or therapeutic procedures), asserted by a clinician. (en)">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Intent of care (en)">
+					description = <"*The overall intent for future care and treatment for the individual. (en)">
+					comment = <"*The proposed value set is based on the MJA reference. 
+Coding the intent of care with an external terminology is preferred, where possible. (en)">
+				>
+				["at0003"] = <
+					text = <"*Curative (en)">
+					description = <"*The condition is curable; all appropriate life-prolonging treatment will be offered. (en)">
+				>
+				["at0004"] = <
+					text = <"*Restorative (en)">
+					description = <"*The condition is treatable with potential for restoration to the previous state of health or a prolonged remission; all appropriate life-prolonging treatment will be offered. (en)">
+				>
+				["at0005"] = <
+					text = <"*Supportive (en)">
+					description = <"*The condition is incurable and progressive; active treatment of the underlying disease may be appropriate for specific symptom relief and/or short term life expectancy gains; focused on comfort, quality of life and dignity. Also referred to as 'Palliative'. (en)">
+				>
+				["at0006"] = <
+					text = <"*Terminal (en)">
+					description = <"*Life expectancy is short (hours or days); no active treatment of the underlying disease or treatment-related harm; focus on comfort, quality of life and dignity. (en)">
+				>
+				["at0007"] = <
+					text = <"*Unknown (en)">
+					description = <"*The intent of care decision is not known. (en)">
+				>
+				["at0008"] = <
+					text = <"*Decisions description (en)">
+					description = <"*Narrative description about all advance intervention decisions, including the CPR decision. (en)">
+					comment = <"*May be used to record a narrative overview of the advance intervention decision that reflect the specific circumstances for the individual. This includes any limitations, or conditional circumstances applicable, to interventions. This description may or may not be supported by structured data, recorded using the ‘Per intervention’ cluster. If both this narrative description and ‘Per intervention’ structured data is recorded, caution is required as there is a potential risk of divergence. This data element may be used to capture legacy data that is not available in a structured format. (en)">
+				>
+				["at0009"] = <
+					text = <"*CPR decision (en)">
+					description = <"*Decision about the extent of cardiopulmonary resuscitation (CPR) intervention appropriate for this individual. (en)">
+				>
+				["at0010"] = <
+					text = <"*Full CPR (en)">
+					description = <"*All appropriate cardiopulmonary resuscitation treatments should be attempted to save or prolong life. (en)">
+				>
+				["at0011"] = <
+					text = <"*Limited CPR (en)">
+					description = <"*Cardiopulmonary resuscitation treatments should be attempted, as specified in the 'Decisions description' narrative or as structured data in the 'Per intervention' cluster. (en)">
+				>
+				["at0012"] = <
+					text = <"*No CPR (en)">
+					description = <"*No cardiopulmonary resuscitation treatments should be attempted to save or prolong life. Also known as 'Do not resuscitate (DNR)'; 'Do not attempt resuscitation (DNAR)'; 'Not for resuscitation (NFR)' or similar. (en)">
+				>
+				["at0013"] = <
+					text = <"*Unknown (en)">
+					description = <"*The CPR decision is not known. (en)">
+				>
+				["at0014"] = <
+					text = <"*Per intervention (en)">
+					description = <"*Details of the decision about possible treatments or activities that may be life-saving, life-prolonging or cause undesirable side effects. (en)">
+				>
+				["at0015"] = <
+					text = <"*Intervention (en)">
+					description = <"*Name of the possible treatment, procedure or activity. (en)">
+					comment = <"*While this archetype is intended for all clinical decisions about possible future interventions, the proposed DV_CODED_TEXT value set for the 'Intervention' data element is deliberately not intended to be exhaustive. Instead it has been designed to be inclusive of most of the common life-saving treatments within an emergency context. The alternate choice of the DV_TEXT option can be used to add a local value set or bind to an alternative external value set within a template. (en)">
+				>
+				["at0016"] = <
+					text = <"*Chest compressions (en)">
+					description = <"*Technique used to manually pump blood around the body during a cardiac arrest. (en)">
+				>
+				["at0017"] = <
+					text = <"*Defibrillation (en)">
+					description = <"*Use of electric shock to reset the electrical state of the heart. (en)">
+				>
+				["at0018"] = <
+					text = <"*Intubation (en)">
+					description = <"*Placement of a tube into the trachea to maintain an open airway, including a tracheostomy. (en)">
+				>
+				["at0019"] = <
+					text = <"*Invasive ventilation (en)">
+					description = <"*Artificial ventilation where invasive means are used to assist or replace spontaneous breathing. (en)">
+				>
+				["at0020"] = <
+					text = <"*Non-invasive ventilation (en)">
+					description = <"*Artificial ventilation where non-invasive means are used to assist or replace spontaneous breathing. (en)">
+				>
+				["at0021"] = <
+					text = <"*Peripheral intravenous line (en)">
+					description = <"*Insertion of a peripheral intravenous line. (en)">
+				>
+				["at0022"] = <
+					text = <"*Central venous line or any arterial line (en)">
+					description = <"*Insertion of a central venous line or any arterial line. (en)">
+				>
+				["at0023"] = <
+					text = <"*Parenteral fluids (en)">
+					description = <"*Maintenance of hydration by means other than eating or drinking. (en)">
+				>
+				["at0024"] = <
+					text = <"*Parenteral or artificial nutrition (en)">
+					description = <"*Provision of nutrients by means other than eating or drinking. (en)">
+				>
+				["at0025"] = <
+					text = <"*Arrest medications (en)">
+					description = <"*Medications used during an emergency resuscitation to prolong life. For example: adrenaline, atropine, sodium bicarbonate, calcium, other vasoactive medications. (en)">
+				>
+				["at0026"] = <
+					text = <"*Circulatory regulation medications (en)">
+					description = <"*Medication that supports heart function, including but not limited to: vasopressors, inotropes and chronotropes. (en)">
+				>
+				["at0027"] = <
+					text = <"*Antibiotics, antiviral or antifungal agents (en)">
+					description = <"*Medications to treat infections. (en)">
+				>
+				["at0028"] = <
+					text = <"*Blood products (en)">
+					description = <"*Therapeutic substance prepared from human blood including, but not limited to: whole blood; blood components; and plasma derivatives. (en)">
+				>
+				["at0029"] = <
+					text = <"*Chest tube insertion (en)">
+					description = <"*Insertion of a tube into the pleural space. (en)">
+				>
+				["at0030"] = <
+					text = <"*Cardiac pacemaker (en)">
+					description = <"*Insertion of an artificial pacemaker to control the heart beat. (en)">
+				>
+				["at0031"] = <
+					text = <"*Dialysis (en)">
+					description = <"*Process of removing excess water, solutes, and toxins from the blood. (en)">
+				>
+				["at0032"] = <
+					text = <"*Transfer to hospital (en)">
+					description = <"*Transfer to hospital for assessment or admission. (en)">
+				>
+				["at0033"] = <
+					text = <"*Transfer to Intensive Care (en)">
+					description = <"*Transfer and admission to an intensive care or high dependency unit. (en)">
+				>
+				["at0034"] = <
+					text = <"*Decision (en)">
+					description = <"*Decision about the identified intervention. (en)">
+				>
+				["at0035"] = <
+					text = <"*Recommended (en)">
+					description = <"*The intervention is recommended. (en)">
+				>
+				["at0036"] = <
+					text = <"*Conditional recommendation (en)">
+					description = <"*The intervention is recommended only in specific circumstances, captured using the 'Preconditions' data element. (en)">
+				>
+				["at0037"] = <
+					text = <"*Not recommended (en)">
+					description = <"*The intervention is not recommended. (en)">
+				>
+				["at0038"] = <
+					text = <"*Unknown (en)">
+					description = <"*The intervention decision is not known. (en)">
+				>
+				["at0039"] = <
+					text = <"*Precondition (en)">
+					description = <"*Description of the circumstance/s in which a 'Conditional recommendation' is applicable. (en)">
+					comment = <"*This data element is only relevant if the 'Conditional recommendation' option is selected in the 'Decision' data element. For example:' \"Transfer to hospital is only applicable in the circumstances where the individual suffers a fracture and requires immobilization for pain relief.# (en)">
+				>
+				["at0040"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the intervention decision, not captured in other fields. (en)">
+					comment = <"*For example: the justification or rationale for the intervention decision. (en)">
+				>
+				["at0041"] = <
+					text = <"*Additional details (en)">
+					description = <"*Additional structured details about advance intervention decisions. (en)">
+					comment = <"*For example: people involved in the decision-making process, if it is not possible to use the reference model participations; or additional locally relevant considerations. (en)">
+				>
+				["at0042"] = <
+					text = <"*Patient awareness (en)">
+					description = <"*Narrative description about awareness of the Advance intervention decisions by the individual. (en)">
+					comment = <"*For example: the capacity of the patient to understand the decisions. (en)">
+				>
+				["at0043"] = <
+					text = <"*Carer awareness (en)">
+					description = <"*Narrative description about awareness of the Advance intervention decisions by family, carers or legal proxy. (en)">
+					comment = <"*For example: the individual has no family. (en)">
+				>
+				["at0044"] = <
+					text = <"*Overall comment (en)">
+					description = <"*Additional narrative about all advance intervention decisions, not captured in other fields. (en)">
+				>
+				["at0045"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0046"] = <
+					text = <"*Last updated (en)">
+					description = <"*The date and/or time when the Advance intervention decisions were last updated. (en)">
+				>
+				["at0047"] = <
+					text = <"*Valid period start (en)">
+					description = <"*The date/time that marks the beginning of the valid period of time for the Advance intervention decisions. (en)">
+				>
+				["at0048"] = <
+					text = <"*Valid period end (en)">
+					description = <"*The date/time that marks the conclusion of the valid period of time for the Advance intervention decisions. (en)">
+					comment = <"*'Valid period end' may often overlap with 'Review due date'. However, they may need to be recorded separately in circumstances where a document has an extended period of validity but requires an interim review. That may be due to changed personal circumstances/events or local policy. (en)">
+				>
+				["at0049"] = <
+					text = <"*Review due (en)">
+					description = <"*The date when review of the Advance intervention decisions are due. (en)">
+				>
+				["at0050"] = <
+					text = <"*Mandate (en)">
+					description = <"*Description of any legislation or other authoritative guidance that apply. (en)">
+					comment = <"*For example: an advance care directive. (en)">
+				>
+				["at0051"] = <
+					text = <"*Digital representation (en)">
+					description = <"*Digital document, image or video representing these Advance intervention decisions. (en)">
+				>
+				["at0052"] = <
+					text = <"*Document location (en)">
+					description = <"*Information about the physical or digital location of the advance intervention decisions record. (en)">
+				>
+				["at0053"] = <
+					text = <"*Location (en)">
+					description = <"*Physical or digital location of the Advance intervention decisions record. (en)">
+				>
+				["at0054"] = <
+					text = <"*Copy holder (en)">
+					description = <"*Details of a person who has a copy of the Advance intervention decisions record. (en)">
+					comment = <"*Comment: For example, 'John Smith, Lawyer'. (en)">
+				>
+				["at0055"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0056"] = <
+					text = <"*Rationale (en)">
+					description = <"*Narrative description about the logic and justification for the 'Intent of care' decision. (en)">
 				>
 			>
 		>
