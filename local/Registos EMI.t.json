@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "34.0.0",
+      "sem_ver" : "35.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "091792e040902408deef388b0baaf775",
+      "MD5-CAM-1.0.1" : "ac7ee9030861d678b352aea6e5d42aa4",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -3026,6 +3026,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
                       "nodeId" : "at0039.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -3067,6 +3068,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
                       "nodeId" : "at0039.2",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -4686,6 +4688,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -4990,6 +4993,12 @@
             "text" : "Procedimentos Invasivos",
             "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
             "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Nas 24h antes da ativação:",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)"
           }
         }
       },
@@ -5809,6 +5818,12 @@
             "text" : "Resposta inadequada ao tratamento prévio urgente",
             "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
             "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Antes da ativação",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)"
           }
         }
       },
@@ -6550,8 +6565,9 @@
             "rmAttributeName" : "events",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
-              "nodeId" : "at0003",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -7540,6 +7556,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Antes da ativação",
+            "description" : "Padrão, ponto inespecífico de tempo ou evento intervalado que pode ser definido explicitamente num modelo ou no tempo de execução"
           }
         }
       },
@@ -8050,8 +8072,9 @@
             "rmAttributeName" : "events",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
-              "nodeId" : "at0006",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0006.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -9225,6 +9248,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.6",
             "description" : ""
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Antes da ativação",
+            "description" : "Padrão, ponto inespecífico de tempo ou evento intervalado que pode ser definido explicitamente num modelo ou no tempo de execução"
           }
         }
       },
@@ -9664,8 +9693,9 @@
             "rmAttributeName" : "events",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -9732,6 +9762,77 @@
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "items",
                     "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "382" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "/min" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 200.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
@@ -9831,6 +9932,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "ar-sy" : {
@@ -9851,6 +9958,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "es-ar" : {
@@ -9871,6 +9984,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "de" : {
@@ -9891,6 +10010,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "en" : {
@@ -9911,6 +10036,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "fa" : {
@@ -9931,6 +10062,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "nl" : {
@@ -9951,6 +10088,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "sv" : {
@@ -9971,6 +10114,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "pt-pt" : {
@@ -9991,6 +10140,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Antes da ativação",
+            "description" : "Evento genérico"
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "/min",
+            "description" : "per minute",
+            "code" : "/min"
           }
         }
       },
@@ -10400,8 +10561,9 @@
             "rmAttributeName" : "events",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
-              "nodeId" : "at0003",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -10791,6 +10953,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Antes da ativação",
+            "description" : "Padrão, ponto de tempo não especificado ou evento intervalado,  que pode ser explicitamente definido  num modelo ou no tempo de execução."
           }
         }
       },
@@ -11235,8 +11403,9 @@
             "rmAttributeName" : "events",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -11603,6 +11772,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Antes da ativação",
+            "description" : "Padrão, ponto inespecífico de tempo ou evento intervalado que pode ser definido explicitamente num modelo ou no tempo de execução"
           }
         }
       },
@@ -12247,8 +12422,8 @@
             "rmAttributeName" : "events",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "rmTypeName" : "POINT_EVENT",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -12317,7 +12492,14 @@
         "es-ar" : { },
         "nb" : { },
         "sv" : { },
-        "pt-pt" : { }
+        "pt-pt" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Antes da ativação",
+            "description" : "Padrão, ponto inespecífico de tempo ou evento intervalado que pode ser definido explicitamente num modelo ou no tempo de execução"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
