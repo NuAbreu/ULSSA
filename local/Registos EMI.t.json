@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "32.0.0",
+      "sem_ver" : "33.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "7a1d1b40e3f4dcb1dd5d03e36fdd676d",
+      "MD5-CAM-1.0.1" : "9c6eb506187032bdb679df9c97045560",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -25021,19 +25021,19 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "OBSERVATION",
           "occurrences" : "0..1",
-          "nodeId" : "at0.9",
+          "nodeId" : "at0.12",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-management_screening-011.v2",
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-pulse-003.v2",
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "OBSERVATION",
           "occurrences" : "0..1",
-          "nodeId" : "at0.11",
+          "nodeId" : "at0.9",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-pulse-003.v2",
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-management_screening-011.v2",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -27549,6 +27549,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
                       "nodeId" : "at1023.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -27606,13 +27607,20 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.27" ],
+                              "constraint" : [ "ac0.69" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1059.1",
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -27625,7 +27633,47 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ITEM_TREE",
                   "nodeId" : "at0012.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0013.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.70" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1018.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -27633,7 +27681,8 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "INTERVAL_EVENT",
-              "nodeId" : "at1036",
+              "occurrences" : "0..0",
+              "nodeId" : "at1036.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -27656,6 +27705,103 @@
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "math_function",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "144" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0010",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at1019.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.71" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at1037.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.72" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
               } ],
               "attributeTuples" : [ ]
             } ]
@@ -27670,6 +27816,12 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "*Rhythm(en)",
+            "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -27688,14 +27840,38 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "es-co" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "*Rhythm(en)",
+            "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -27714,14 +27890,38 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "en" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Rhythm",
+            "description" : "Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination."
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -27740,14 +27940,38 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "de" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Rhythmus",
+            "description" : "Spezifische Schlussfolgerung über den Rhythmus der Puls- oder der Herzfrequenz, die sich aus einer Kombination von Herzfrequenz, dem Verlaufsmuster und anderen bei der Untersuchung beobachteten Merkmalen ergibt."
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -27766,14 +27990,38 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "ru" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "*Rhythm(en)",
+            "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -27792,14 +28040,38 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "pt-br" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Ritmo",
+            "description" : "Conclusão específica sobre o ritmo do pulso ou batimento cardíaco, extraído de uma combinação da freqüência cardíaca, padrão e outras características observadas no exame."
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -27818,14 +28090,38 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "sv" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Rytm",
+            "description" : "Specifik slutsats om pulsens eller hjärtslagens rytm, härledd från en kombination av hjärtfrekvens, mönster och andra egenskaper som observerats vid undersökningen."
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -27844,14 +28140,38 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "es" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Ritmo",
+            "description" : "Conclusión específica sobre el ritmo del pulso o latidos, derivado de la combinación de la frecuencia, el patrón, y otras características observadas durante la examinación."
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -27870,14 +28190,38 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "fi" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Rytmi",
+            "description" : "Nimenomainen johtopäätös pulssin tai sykkeen rytmistä, perustuu sykkeeseen, sykkeen ominaisuuksiin ja muihin tutkimuksessa havaittuihin ominaispiirteisiin."
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -27896,14 +28240,38 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "nb" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Rytme",
+            "description" : "Spesifik konklusjon om pulsrytme eller hjerteslag, hentet fra en kombinasjon av hjertefrekvens, mønster og andre karakteristika som observeres."
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -27922,14 +28290,38 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "nl" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Ritme",
+            "description" : "Specifieke conclusies over het ritme van de pols- of hartslag, getrokken uit een combinatie van hartfrequentie, patroon en andere eigenschappen waargenomen bij onderzoek."
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -27948,14 +28340,38 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "el" : {
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Ρυθμός",
+            "description" : "Ειδικό συμπέρασμα σχετικά με το ρυθμό του παλμού ή του καρδιακού παλμού, που αντλείται από ένα συνδυασμό του καρδιακού ρυθμού, του προτύπου και άλλων χαρακτηριστικών που παρατηρήθηκαν κατά την εξέταση."
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -27974,14 +28390,44 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "pt-pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ritmo Identificado pela EMI",
+            "description" : "Registo detalhado sobre a frequência e  atributos associados ao pulso ou batimentos cardíacos."
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Ritmo",
+            "description" : "Conclusão específica sobre o ritmo do pulso ou batimento cardíaco, extraído de uma combinação da frequência cardíaca, padrão e outras características observadas no exame."
+          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -28000,10 +28446,28 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.27" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.27",
+            "code" : "ac0.69",
+            "description" : ""
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "ac0.71" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.71",
+            "description" : ""
+          },
+          "ac0.72" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.72",
             "description" : ""
           }
         }
@@ -28145,6 +28609,231 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.27",
           "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.29" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.29",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.35" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.35",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.38" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.38",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.39" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.39",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.40" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.40",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.51" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.51",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.52" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.52",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.53" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.53",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.54" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.54",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.55" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.55",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.56" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.56",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.57" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.57",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.58" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.58",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.59" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.59",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.62" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.62",
+          "members" : [ "at1058" ]
+        },
+        "ac0.63" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.63",
+          "members" : [ "at1058" ]
+        },
+        "ac0.64" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.64",
+          "members" : [ "at1058" ]
+        },
+        "ac0.65" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.65",
+          "members" : [ "at1058" ]
+        },
+        "ac0.66" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.66",
+          "members" : [ "at1058" ]
+        },
+        "ac0.67" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.67",
+          "members" : [ "at1058" ]
+        },
+        "ac0.68" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.68",
+          "members" : [ "at1058" ]
+        },
+        "ac0.69" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.69",
+          "members" : [ "at1058" ]
+        },
+        "ac0.70" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.70",
+          "members" : [ "at1003", "at1001", "at1002", "at1000" ]
+        },
+        "ac0.71" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.71",
+          "members" : [ "at1032", "at1033", "at1034", "at1050" ]
+        },
+        "ac0.72" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.72",
+          "members" : [ "at1038", "at1039", "at1040", "at1041", "at1042", "at1043", "at1044", "at1049", "at1048", "at1047", "at1054", "at1051" ]
         }
       }
     },
