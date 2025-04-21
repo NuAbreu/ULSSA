@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "37.0.0",
-      "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5c0956211a660915d1e82c3f1963ee54",
+      "sem_ver" : "38.0.0",
+      "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
+      "MD5-CAM-1.0.1" : "d13377cfe25d9bcc8b71a2ad27d0c51b",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -24546,34 +24546,33 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Óbito",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+            "description" : ""
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
             "text" : "Transferência",
-            "description" : "*Name of a specific management or treatment activity or grouping of management or treatment activities. (en)",
+            "description" : "",
             "comment" : "*For example: \r\nAdmitted to hospital; Admitted to ICU; Use of compression stockings; Daily dressings; ECMO.\r\nCoding of the 'Management name' with a terminology is preferred, where possible. (en)"
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Transferência para:",
-            "description" : "*Is there a history of the specific management or treatment activity? (en)",
+            "description" : "",
             "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
           },
           "at0035.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0035.1",
             "text" : "Outro Local",
-            "description" : "*Additional narrative about a specific management or treatment question, not captured in other fields. (en)"
+            "description" : ""
           },
           "at0022.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.1",
             "text" : "Localização do doente",
-            "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
+            "description" : ""
           }
         }
       },
@@ -24916,8 +24915,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
             "text" : "Estado do doente",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+            "description" : ""
           }
         }
       },
