@@ -23,7 +23,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "39.0.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "fef8332259363905f399b5e167bcab4d",
+      "MD5-CAM-1.0.1" : "0115a4b3f28fe1ba02b213d65edac55a",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -28146,6 +28146,28 @@
                       "nodeId" : "at1023.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "name",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.80" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
@@ -28180,28 +28202,6 @@
                                 "code" : "397829000",
                                 "value" : "Assistolia"
                               } ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "name",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "TERMINOLOGY_CODE",
-                              "occurrences" : "1..1",
-                              "terminologyId" : {
-                                "value" : "local"
-                              },
-                              "constraint" : [ "ac0.80" ],
-                              "selectedTerminologies" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
