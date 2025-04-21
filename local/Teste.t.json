@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e3b28c7c7a069ae27a7e6975b7a88979",
+      "MD5-CAM-1.0.1" : "4521a313fa52612082f6ae44a33f7789",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -508,10 +508,17 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0039.2" : {
+          "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
-            "text" : "Any management? (2)",
+            "text" : "Manage 1",
+            "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
+            "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0039.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0039.2",
+            "text" : "Manage 2",
             "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
             "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
           }
