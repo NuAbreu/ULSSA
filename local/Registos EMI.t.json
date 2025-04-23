@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "42.0.0",
+      "sem_ver" : "43.0.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "f767c7664281f42bb7892d8143f54476",
+      "MD5-CAM-1.0.1" : "5e9d3918151098852cc21baa2bdfacf8",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -6775,7 +6775,7 @@
                                 "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
-                                  "upper" : 1000.0,
+                                  "upper" : 100.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
                                   "lowerUnbounded" : false,
@@ -7142,6 +7142,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "es-co" : {
@@ -7186,6 +7192,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "en" : {
@@ -7230,6 +7242,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "de" : {
@@ -7274,6 +7292,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "ru" : {
@@ -7318,6 +7342,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "pt-br" : {
@@ -7362,6 +7392,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "sv" : {
@@ -7406,6 +7442,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "es" : {
@@ -7450,6 +7492,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "fi" : {
@@ -7494,6 +7542,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "nb" : {
@@ -7538,6 +7592,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "nl" : {
@@ -7582,6 +7642,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "el" : {
@@ -7626,6 +7692,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*/min (pt-pt)",
+            "description" : "*per minute (pt-pt)",
+            "code" : "/min"
           }
         },
         "pt-pt" : {
@@ -7682,6 +7754,12 @@
             "code" : "at0003.1",
             "text" : "Antes da ativação",
             "description" : "Padrão, ponto inespecífico de tempo ou evento intervalado que pode ser definido explicitamente num modelo ou no tempo de execução"
+          },
+          "/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "/min",
+            "description" : "per minute",
+            "code" : "/min"
           }
         }
       },
