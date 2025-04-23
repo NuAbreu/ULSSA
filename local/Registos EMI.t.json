@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "40.0.0",
+      "sem_ver" : "40.1.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "8b3d6b778dcf0a12bbbeee717e3e3b89",
+      "MD5-CAM-1.0.1" : "6cb284feeff397c2838691d73c153855",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -3649,13 +3649,34 @@
               "occurrences" : "1..1",
               "defaultValue" : {
                 "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "local_terms",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
                   "code_string" : "309343006",
                   "@type" : "CODE_PHRASE"
                 },
                 "value" : "Médico",
                 "@type" : "DV_CODED_TEXT"
               },
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "309343006",
+                    "value" : "Médico"
+                  } ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
