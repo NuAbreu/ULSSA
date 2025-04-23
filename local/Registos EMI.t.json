@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "45.0.0",
+      "sem_ver" : "45.0.1",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "021e58a10d64c3242de9345623a7f9ab",
+      "MD5-CAM-1.0.1" : "ce585d3772fb0ea705430d40040aa06c",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -27314,7 +27314,7 @@
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
-            "text" : "Ventilação",
+            "text" : "Ventila",
             "description" : "*Name of a specific management or treatment activity or grouping of management or treatment activities. (en)",
             "comment" : "*For example: \r\nAdmitted to hospital; Admitted to ICU; Use of compression stockings; Daily dressings; ECMO.\r\nCoding of the 'Management name' with a terminology is preferred, where possible. (en)"
           },
@@ -27341,7 +27341,7 @@
           "at0004.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.2",
-            "text" : "Compressões torácicas",
+            "text" : "Compressões",
             "description" : "*Name of a specific management or treatment activity or grouping of management or treatment activities. (en)",
             "comment" : "*For example: \r\nAdmitted to hospital; Admitted to ICU; Use of compression stockings; Daily dressings; ECMO.\r\nCoding of the 'Management name' with a terminology is preferred, where possible. (en)"
           },
