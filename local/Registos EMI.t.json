@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "45.0.1",
+      "sem_ver" : "46.0.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "ce585d3772fb0ea705430d40040aa06c",
+      "MD5-CAM-1.0.1" : "c622b907b536a82f4278b551cc18de19",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -1621,8 +1621,8 @@
                         "lower" : 1,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -2626,8 +2626,8 @@
                         "lower" : 1,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -4923,9 +4923,251 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
                       "nodeId" : "at0022.1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0005.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "CODE_PHRASE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "at0023", "at0024", "at0027", "at0046" ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_BOOLEAN",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0037.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0022.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0005.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "CODE_PHRASE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "at0023", "at0024", "at0027", "at0046" ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_BOOLEAN",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0037.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0022.3",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0005.3",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "CODE_PHRASE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "at0023", "at0024", "at0027", "at0046" ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_BOOLEAN",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0037.3",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -4979,6 +5221,18 @@
             "text" : "Esteve na SE",
             "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
             "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Management activity (2)",
+            "description" : "Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose."
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Management activity (3)",
+            "description" : "Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose."
           }
         },
         "nb" : {
@@ -5009,6 +5263,18 @@
             "text" : "Sykdomshåndtering? (5)",
             "description" : "Er det historikk av noen tidligere sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet?",
             "comment" : "Sykdomshåndtering eller behandling kan være fullført, eller pågående. Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Sykdomshåndteringsaktivitet (2)",
+            "description" : "Detaljer om en spesifikk sykdomshåndterings- eller behandlingsaktivitet eller gruppering av sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet."
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Sykdomshåndteringsaktivitet (3)",
+            "description" : "Detaljer om en spesifikk sykdomshåndterings- eller behandlingsaktivitet eller gruppering av sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet."
           }
         },
         "de" : {
@@ -5039,6 +5305,18 @@
             "text" : "Irgendwelche Managementaktivitäten? (5)",
             "description" : "Gibt es eine Vorgeschichte von Management- oder Behandlungsaktivitäten, die für das Screening relevant sind?",
             "comment" : "Die Managementaktivität oder Behandlung kann abgeschlossen sein oder andauern.\r\n\r\nIn einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Managementaktivität (2)",
+            "description" : "Details zu einer bestimmten Management- oder Behandlungsaktivität oder einer Reihe von Management- oder Behandlungstätigkeiten, die für das Screening relevant sind."
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Managementaktivität (3)",
+            "description" : "Details zu einer bestimmten Management- oder Behandlungsaktivität oder einer Reihe von Management- oder Behandlungstätigkeiten, die für das Screening relevant sind."
           }
         },
         "it" : {
@@ -5069,6 +5347,18 @@
             "text" : "*Any management or treatment? (en) (5)",
             "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
             "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "*Management activity (en) (2)",
+            "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "*Management activity (en) (3)",
+            "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
           }
         },
         "pt-pt" : {
@@ -5119,6 +5409,39 @@
             "code" : "at0002.1",
             "text" : "Nas 24h antes da ativação:",
             "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Esteve na SE",
+            "description" : "*Is there a history of the specific management or treatment activity? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.2",
+            "text" : "*Management activity (en) (2)",
+            "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
+          },
+          "at0005.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.2",
+            "text" : "Esteve em Intensivos",
+            "description" : "*Is there a history of the specific management or treatment activity? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.3",
+            "text" : "*Management activity (en) (3)",
+            "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
+          },
+          "at0005.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.3",
+            "text" : "Esteve em Intermédios",
+            "description" : "*Is there a history of the specific management or treatment activity? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
           }
         }
       },
@@ -6778,8 +7101,8 @@
                                   "upper" : 100.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -6789,8 +7112,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -8334,8 +8657,8 @@
                                   "upper" : 300.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -8345,8 +8668,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -8405,8 +8728,8 @@
                                   "upper" : 200.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -8416,8 +8739,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -8477,8 +8800,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -8488,8 +8811,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -8549,8 +8872,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -8560,8 +8883,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -8714,8 +9037,8 @@
                                   "upper" : 90.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -8725,8 +9048,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -8784,8 +9107,8 @@
                         "upper" : "PT24H",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
+                        "upperUnbounded" : false,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -10154,8 +10477,8 @@
                                   "upper" : 40.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -10165,8 +10488,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -10968,8 +11291,8 @@
                                   "upper" : 44.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -10979,8 +11302,8 @@
                                   "upper" : 1,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             }, {
@@ -10997,8 +11320,8 @@
                                   "upper" : 200.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -11008,8 +11331,8 @@
                                   "upper" : 1,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -11107,8 +11430,8 @@
                                 "lower" : 1,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : true
+                                "upperUnbounded" : true,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -11912,8 +12235,8 @@
                                   "lower" : 0.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : true
+                                  "upperUnbounded" : true,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -11944,8 +12267,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -11960,8 +12283,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -11992,8 +12315,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -12008,8 +12331,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -12581,8 +12904,8 @@
                       "upper" : 50000.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -12592,8 +12915,8 @@
                       "upper" : 2,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -12610,8 +12933,8 @@
                       "upper" : 50.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -12621,8 +12944,8 @@
                       "upper" : 2,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   } ]
                 } ]
@@ -12653,8 +12976,8 @@
                     "upper" : 100.0,
                     "lowerIncluded" : true,
                     "upperIncluded" : true,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : false
+                    "upperUnbounded" : false,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               }, {
@@ -12669,8 +12992,8 @@
                     "upper" : 2,
                     "lowerIncluded" : true,
                     "upperIncluded" : true,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : false
+                    "upperUnbounded" : false,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -13986,8 +14309,8 @@
                                   "upper" : 300.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -13997,8 +14320,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -15536,8 +15859,8 @@
                                   "upper" : 300.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -15547,8 +15870,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -15607,8 +15930,8 @@
                                   "upper" : 200.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -15618,8 +15941,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -15679,8 +16002,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -15690,8 +16013,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -15751,8 +16074,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -15762,8 +16085,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -15916,8 +16239,8 @@
                                   "upper" : 90.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -15927,8 +16250,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -15986,8 +16309,8 @@
                         "upper" : "PT24H",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
+                        "upperUnbounded" : false,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -17446,8 +17769,8 @@
                                   "upper" : 200.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -17457,8 +17780,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -18254,8 +18577,8 @@
                                   "upper" : 44.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -18265,8 +18588,8 @@
                                   "upper" : 1,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             }, {
@@ -18283,8 +18606,8 @@
                                   "upper" : 200.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -18294,8 +18617,8 @@
                                   "upper" : 1,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -18393,8 +18716,8 @@
                                 "lower" : 1,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : true
+                                "upperUnbounded" : true,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -19169,8 +19492,8 @@
                       "upper" : 50000.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -19180,8 +19503,8 @@
                       "upper" : 2,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -19198,8 +19521,8 @@
                       "upper" : 50.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -19209,8 +19532,8 @@
                       "upper" : 2,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
                     } ]
                   } ]
                 } ]
@@ -19241,8 +19564,8 @@
                     "upper" : 100.0,
                     "lowerIncluded" : true,
                     "upperIncluded" : true,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : false
+                    "upperUnbounded" : false,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               }, {
@@ -19257,8 +19580,8 @@
                     "upper" : 2,
                     "lowerIncluded" : true,
                     "upperIncluded" : true,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : false
+                    "upperUnbounded" : false,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -19740,8 +20063,8 @@
                                   "lower" : 0.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : true
+                                  "upperUnbounded" : true,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -19772,8 +20095,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -19788,8 +20111,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -19820,8 +20143,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -19836,8 +20159,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -29348,8 +29671,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -29359,8 +29682,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               } ]
                             } ]
