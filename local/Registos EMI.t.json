@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "47.0.0",
+      "sem_ver" : "48.0.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "f71b4bee13477829f6f5d4238c841e2c",
+      "MD5-CAM-1.0.1" : "be825b357e4a2ca93dd760bfee34b913",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -5344,6 +5344,12 @@
             "text" : "Nas 24h antes da ativação:",
             "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)"
           },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Emergência",
+            "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
+          },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
@@ -5354,7 +5360,7 @@
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.2",
-            "text" : "*Management activity (en) (2)",
+            "text" : "Intensivos",
             "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
           },
           "at0005.2" : {
@@ -5367,7 +5373,7 @@
           "at0022.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.3",
-            "text" : "*Management activity (en) (3)",
+            "text" : "Intermédios",
             "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
           },
           "at0005.3" : {
