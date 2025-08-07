@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "49.0.0",
+      "sem_ver" : "49.1.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "00f84941049f41b0ba48d61b597d4b59",
+      "MD5-CAM-1.0.1" : "da2fbcef1f19a7aa8d200e28d6612468",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -5129,8 +5129,8 @@
         "en" : {
           "at0039.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Any management? (2)",
+            "code" : "at0039.2",
+            "text" : "Intensive care presence",
             "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
             "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
           },
@@ -5158,7 +5158,7 @@
           "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0039.1",
-            "text" : "Esteve na SE",
+            "text" : "Emergency room presence",
             "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
             "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
           },
