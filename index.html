@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Turnos - Enfermagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="branding">Direção de Enfermagem ULSSA</div>
+            <h1>Calculadora de Turnos - Enfermagem</h1>
+            <button class="btn btn--primary" id="addShift">Adicionar Turno</button>
+        </header>
+
+        <!-- Resumo dos Turnos -->
+        <div class="summary-section" id="summarySection">
+            <h2>Resumo dos Turnos</h2>
+            <div class="summary-grid" id="summaryGrid">
+                <!-- Preenchido dinamicamente pelo JavaScript -->
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="shift-table" id="shiftTable">
+                <thead>
+                    <tr class="table-header">
+                        <th class="col-start" rowspan="2">Início</th>
+                        <th class="col-end" rowspan="2">Fim</th>
+                        <th class="col-number" rowspan="2">Nº</th>
+                        <th class="col-hour" colspan="2">0</th>
+                        <th class="col-hour" colspan="2">1</th>
+                        <th class="col-hour" colspan="2">2</th>
+                        <th class="col-hour" colspan="2">3</th>
+                        <th class="col-hour" colspan="2">4</th>
+                        <th class="col-hour" colspan="2">5</th>
+                        <th class="col-hour" colspan="2">6</th>
+                        <th class="col-hour" colspan="2">7</th>
+                        <th class="col-hour" colspan="2">8</th>
+                        <th class="col-hour" colspan="2">9</th>
+                        <th class="col-hour" colspan="2">10</th>
+                        <th class="col-hour" colspan="2">11</th>
+                        <th class="col-hour" colspan="2">12</th>
+                        <th class="col-hour" colspan="2">13</th>
+                        <th class="col-hour" colspan="2">14</th>
+                        <th class="col-hour" colspan="2">15</th>
+                        <th class="col-hour" colspan="2">16</th>
+                        <th class="col-hour" colspan="2">17</th>
+                        <th class="col-hour" colspan="2">18</th>
+                        <th class="col-hour" colspan="2">19</th>
+                        <th class="col-hour" colspan="2">20</th>
+                        <th class="col-hour" colspan="2">21</th>
+                        <th class="col-hour" colspan="2">22</th>
+                        <th class="col-hour" colspan="2">23</th>
+                        <th class="col-total" rowspan="2">Total Horas</th>
+                        <th class="col-actions" rowspan="2">Ações</th>
+                    </tr>
+                    <tr class="table-subheader">
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                        <th class="col-half">00</th><th class="col-half">30</th>
+                    </tr>
+                </thead>
+                <tbody id="shiftsTableBody">
+                </tbody>
+                <tfoot>
+                    <tr class="table-totals" id="totalsRow">
+                        <td colspan="3" class="totals-label">Totais</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
