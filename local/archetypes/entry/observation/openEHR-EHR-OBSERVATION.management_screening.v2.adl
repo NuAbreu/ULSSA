@@ -15,6 +15,11 @@ language
 				["email"] = <"Strauch.Natalia@mh-hannover.de, nina.schewe@plri.de, leonhardt.darin@mh-hannover.de">
 			>
 		>
+		["pt-pt"] = <
+			language = <[ISO_639-1::pt-pt]>
+			author = <
+			>
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
@@ -25,11 +30,6 @@ language
 		>
 		["it"] = <
 			language = <[ISO_639-1::it]>
-			author = <
-			>
-		>
-		["pt-pt"] = <
-			language = <[ISO_639-1::pt-pt]>
 			author = <
 			>
 		>
@@ -113,7 +113,7 @@ Brukes ikke for å registrere detaljer om en enkel utvalgsliste der et spørsmå
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To create a framework for recording answers to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures.">
-			keywords = <"treatment, screening, intervention, questionnaire, care, support, therapy", ...>
+			keywords = <"treatment","screening","intervention","questionnaire","care","support","therapy">
 			copyright = <"© openEHR Foundation">
 			use = <"Use to create a framework for recording answers to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures.
 
@@ -179,7 +179,7 @@ Not to be used to record details about a simple selection list where a question 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"479578354153a6995736b0762ccc50d2">
+		["MD5-CAM-1.0.1"] = <"aa2c946e3a318469952170a8b7c1af9e">
 		["build_uid"] = <"70f8ee52-349f-4637-805f-393553f8cd6c">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"2.0.1">
@@ -750,112 +750,112 @@ In a template, the data element would usually be renamed to the specific questio
 		["pt-pt"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Management screening questionnaire (en)">
-					description = <"*Series of questions and associated answers used to screen for clinical management including, but not limited to treatments, therapies and hospitalisation. (en)">
+					text = <"Questionário de triagem de gestão">
+					description = <"Série de perguntas e respostas associadas usadas para rastrear a gestão clínica, incluindo, mas não se limitando a, tratamentos, terapias e hospitalizações.">
 					comment = <"*The answers may be self-reported. (en)">
 				>
 				["at0001"] = <
-					text = <"History">
-					description = <"@ internal @">
+					text = <"História">
+					description = <"@ interno @">
 				>
 				["at0002"] = <
-					text = <"*Any event (en)">
-					description = <"*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)">
+					text = <"Qualquer evento">
+					description = <"Evento predefinido, não especificado no tempo ou intervalo, que pode ser explicitamente definido num modelo ou em tempo de execução.">
 				>
 				["at0003"] = <
-					text = <"Tree">
-					description = <"@ internal @">
+					text = <"Árvore">
+					description = <"@ interno @">
 				>
 				["at0004"] = <
-					text = <"*Management name (en)">
-					description = <"*Name of a specific management or treatment activity or grouping of management or treatment activities. (en)">
+					text = <"Nome da gestão">
+					description = <"Nome de uma atividade específica de gestão ou tratamento ou agrupamento de atividades de gestão ou tratamento.">
 					comment = <"*For example: 
 Admitted to hospital; Admitted to ICU; Use of compression stockings; Daily dressings; ECMO.
 Coding of the 'Management name' with a terminology is preferred, where possible. (en)">
 				>
 				["at0005"] = <
-					text = <"*Specific management? (en)">
-					description = <"*Is there a history of the specific management or treatment activity? (en)">
+					text = <"Gestão específica?">
+					description = <"Existe um histórico específico da gestão ou da atividade de tratamento?">
 					comment = <"*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)">
 				>
 				["at0007"] = <
-					text = <"Item tree">
-					description = <"@ internal @">
+					text = <"Árvore de itens">
+					description = <"@ interno @">
 				>
 				["at0021"] = <
-					text = <"*Extension (en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					text = <"Extensão">
+					description = <"Informação adicional necessária para estender o modelo com conteúdo local ou para alinhar com outros modelos de referência ou formalismos.">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 				["at0022"] = <
-					text = <"*Management activity (en)">
-					description = <"*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)">
+					text = <"Atividade de gestão">
+					description = <"Detalhes sobre uma atividade específica de gestão ou tratamento ou agrupamento de atividades de gestão ou tratamento relevantes para o objetivo do rastreio.">
 				>
 				["at0023"] = <
-					text = <"*Yes (en)">
+					text = <"Sim">
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*No (en)">
+					text = <"Não">
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"*Unknown (en)">
+					text = <"Desconhecido">
 					description = <"">
 				>
 				["at0034"] = <
-					text = <"*Screening purpose (en)">
-					description = <"*The context or reason for screening. (en)">
+					text = <"Propósito da triagem">
+					description = <"O contexto ou motivo da triagem.">
 					comment = <"*This data element is intended to provide collection context for the question/answer groups when queried at a later date. It is not expected that this data element will be exposed to the individual, but only stored in data.
 For example: pre-admission screening or the name of the actual questionnaire. (en)">
 				>
 				["at0035"] = <
-					text = <"*Comment (en)">
-					description = <"*Additional narrative about a specific management or treatment question, not captured in other fields. (en)">
+					text = <"Comentário">
+					description = <"Narrativa adicional sobre uma questão específica de gestão ou tratamento, não capturada noutras áreas.">
 				>
 				["at0036"] = <
-					text = <"*Additional details (en)">
-					description = <"*Structured details or questions about the specific management or treatment activity. (en)">
+					text = <"Detalhes adicionais">
+					description = <"Detalhes estruturados ou perguntas sobre a gestão específica ou atividade de tratamento.">
 					comment = <"*For example: hospital where treated. (en)">
 				>
 				["at0037"] = <
-					text = <"*Timing (en)">
-					description = <"*Indication of timing related to the management activity. (en)">
+					text = <"Tempo">
+					description = <"Indicação do momento relacionado com a atividade de gestão.">
 					comment = <"*The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when the management activity may have occurred. The specific and intended semantics can be further clarified in a template. For example: the actual point in time when, or interval during which, an activity took place; the start and stop time of an activity; the duration of the activity; the age of the individual at the time of the activity; or the duration of time since the activity occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)">
 				>
 				["at0039"] = <
-					text = <"*Any management? (en)">
-					description = <"*Is there a history of management or treatment activities relevant for the screening purpose? (en)">
+					text = <"Alguma gestão?">
+					description = <"Existe um histórico de gestão ou atividades de tratamento relevantes para o rastreio?">
 					comment = <"*The management or treatment may have been completed or could be ongoing.
 
 In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)">
 				>
 				["at0040"] = <
-					text = <"*Yes (en)">
+					text = <"Sim">
 					description = <"">
 				>
 				["at0041"] = <
-					text = <"*No (en)">
+					text = <"Não">
 					description = <"">
 				>
 				["at0042"] = <
-					text = <"*Unknown (en)">
+					text = <"Desconhecido">
 					description = <"">
 				>
 				["at0043"] = <
-					text = <"*Additional details (en)">
-					description = <"*Structured details or questions about screening for management or treatment. (en)">
+					text = <"Detalhes adicionais">
+					description = <"Detalhes estruturados ou perguntas sobre rastreio para gestão ou tratamento.">
 				>
 				["at0044"] = <
-					text = <"*Description (en)">
-					description = <"*Narrative description about the history of any management or treatment activities relevant for the screening purpose. (en)">
+					text = <"Descrição">
+					description = <"Descrição narrativa sobre o histórico de quaisquer atividades de gestão ou tratamento relevantes para o rastreio.">
 				>
 				["at0045"] = <
-					text = <"*Unsure (en)">
+					text = <"Não tenho a certeza">
 					description = <"">
 				>
 				["at0046"] = <
-					text = <"*Unsure (en)">
+					text = <"Não tenho a certeza">
 					description = <"">
 				>
 			>
