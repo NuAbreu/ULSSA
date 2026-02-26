@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "52.0.0",
+      "sem_ver" : "53.0.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "6ff37bd597de7eef70e270d9a1ecaa93",
+      "MD5-CAM-1.0.1" : "eeb8c68ad3c684095ed2e0c7a7f46ec1",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -25675,6 +25675,15 @@
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-management_screening-008.v2",
           "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ADMIN_ENTRY",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.6",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-episode_institution-002.v0",
+          "referenceType" : "archetypeOverlay"
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -26138,27 +26147,37 @@
                                     "terminologyId" : "local_terms",
                                     "code" : "1",
                                     "value" : "Permaneceu no mesmo local",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "pt-pt" : "Permaneceu no mesmo local"
+                                    }
                                   }, {
                                     "terminologyId" : "local_terms",
                                     "code" : "2",
                                     "value" : "Transferido para Cuidados Intensivos",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "pt-pt" : "Transferido para Cuidados Intensivos"
+                                    }
                                   }, {
                                     "terminologyId" : "local_terms",
                                     "code" : "3",
                                     "value" : "Transferido para Sala de Emergência",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "pt-pt" : "Transferido para Sala de Emergência"
+                                    }
                                   }, {
                                     "terminologyId" : "local_terms",
                                     "code" : "4",
                                     "value" : "Transferido para Cuidados Intermédios",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "pt-pt" : "Transferido para Cuidados Intermédios"
+                                    }
                                   }, {
                                     "terminologyId" : "local_terms",
                                     "code" : "5",
                                     "value" : "Transferido para o Bloco Operatório",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "pt-pt" : "Transferido para o Bloco Operatório"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -31270,6 +31289,71 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0003.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "local_terms_2"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms_2" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms_2",
+                        "code" : "1",
+                        "value" : "Permaneceu no mesmo local",
+                        "translations" : {
+                          "pt-pt" : "Permaneceu no mesmo local"
+                        }
+                      }, {
+                        "terminologyId" : "local_terms_2",
+                        "code" : "2",
+                        "value" : "Cuidados Intensivos",
+                        "translations" : {
+                          "pt-pt" : "Cuidados Intensivos"
+                        }
+                      }, {
+                        "terminologyId" : "local_terms_2",
+                        "code" : "3",
+                        "value" : "Sala de Emergência",
+                        "translations" : {
+                          "pt-pt" : "Sala de Emergência"
+                        }
+                      }, {
+                        "terminologyId" : "local_terms_2",
+                        "code" : "4",
+                        "value" : "Cuidados Intermédios",
+                        "translations" : {
+                          "pt-pt" : "Cuidados Intermédios"
+                        }
+                      }, {
+                        "terminologyId" : "local_terms_2",
+                        "code" : "5",
+                        "value" : "Bloco Operatório",
+                        "translations" : {
+                          "pt-pt" : "Bloco Operatório"
+                        }
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0010.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -31324,6 +31408,550 @@
             "text" : "Destino",
             "description" : "Identificação do destino após a alta.",
             "comment" : "*For example: home; hospital; nursing home; or rehabilitation hospital. (en)"
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Observações",
+            "description" : "Narrativa adicional sobre o episódio, não capturada em outros campos."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "1f5ba765-f829-4382-b5e7-26722cc6c36d",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-pt"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "73b1cc94-f454-407e-8477-2b5578681378",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "031a6dcc26a3eabf1f6dc49a8b06f2aa"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.episode_institution.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-episode_institution-002.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ADMIN_ENTRY",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0014.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "defaultValue" : {
+                    "@type" : "DV_IDENTIFIER"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "patternedConstraint" : "yyyy-mm-ddThh:mm:XX",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0008.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0009.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0007.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0026.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0021.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
+              "nodeId" : "at0018.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0019.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0025.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SNOMED",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "225746001",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Enfermaria",
+                        "@type" : "DV_CODED_TEXT"
+                      },
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "SNOMED"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SNOMED" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SNOMED",
+                            "code" : "225746001",
+                            "value" : "Enfermaria",
+                            "translations" : {
+                              "pt-pt" : "Enfermaria"
+                            }
+                          }, {
+                            "terminologyId" : "SNOMED",
+                            "code" : "224885007",
+                            "value" : "Consulta Externa",
+                            "translations" : {
+                              "pt-pt" : "Consulta Externa"
+                            }
+                          }, {
+                            "terminologyId" : "SNOMED",
+                            "code" : "224717003",
+                            "value" : "Áreas comuns",
+                            "translations" : {
+                              "pt-pt" : "Áreas comuns"
+                            }
+                          }, {
+                            "terminologyId" : "SNOMED",
+                            "code" : "224887004",
+                            "value" : "Sala de espera",
+                            "translations" : {
+                              "pt-pt" : "Sala de espera"
+                            }
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0022.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0023.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0024.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0020.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "patternedConstraint" : "yyyy-mm-ddThh:mm:XX",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0006.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "16983000",
+                        "value" : "Falecido",
+                        "translations" : {
+                          "pt-pt" : "Falecido"
+                        }
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "438949009",
+                        "value" : "Não falecido",
+                        "translations" : {
+                          "pt-pt" : "Não falecido"
+                        }
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0003.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "local_terms_2"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms_2" ],
+                      "limitToList" : false,
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms_2",
+                        "code" : "1",
+                        "value" : "Permaneceu no mesmo local",
+                        "translations" : {
+                          "pt-pt" : "Permaneceu no mesmo local"
+                        }
+                      }, {
+                        "terminologyId" : "local_terms_2",
+                        "code" : "2",
+                        "value" : "Cuidados Intensivos",
+                        "translations" : {
+                          "pt-pt" : "Cuidados Intensivos"
+                        }
+                      }, {
+                        "terminologyId" : "local_terms_2",
+                        "code" : "3",
+                        "value" : "Sala de Emergência",
+                        "translations" : {
+                          "pt-pt" : "Sala de Emergência"
+                        }
+                      }, {
+                        "terminologyId" : "local_terms_2",
+                        "code" : "4",
+                        "value" : "Cuidados Intermédios",
+                        "translations" : {
+                          "pt-pt" : "Cuidados Intermédios"
+                        }
+                      }, {
+                        "terminologyId" : "local_terms_2",
+                        "code" : "5",
+                        "value" : "Bloco Operatório",
+                        "translations" : {
+                          "pt-pt" : "Bloco Operatório"
+                        }
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0010.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Episode of care - institution (2)",
+            "description" : "Administrative details about a period of admitted patient care between a formal or statistical admission and a formal or statistical separation, characterised by only one care type of care from a healthcare institution."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Omsorgsepisode - institusjon (2)",
+            "description" : "*Administrative details about a period of admitted patient care between a formal or statistical admission and a formal or statistical separation, characterised by only one care type of care from a healthcare institution.(en)"
+          }
+        },
+        "it" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Episodio di cura - istituzione (2)",
+            "description" : "Dettagli amministrativi su un periodo di cura del paziente ricoverato tra un ricovero formale o statistico e una separazione formale o statistica, caratterizzata da un solo tipo di cura da un'istituzione sanitaria. "
+          }
+        },
+        "pt-pt" : {
+          "at0022" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Freguesia",
+            "description" : "O nome da ala dentro da instituição onde o indivíduo estava localizado."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Final",
+            "description" : "Detalhes administrativos sobre um período de atendimento ao utente internado entre uma admissão formal ou estatística e uma separação formal ou estatística, caracterizado por apenas um tipo de atendimento de uma instituição de saúde."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Ativação da equipa",
+            "description" : "A data de admissão formal ou estatística na instituição.\n\n"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Fim do evento",
+            "description" : "A data de transferência dos cuidados para a casa ou outra instituição, ou a data do falecimento.",
+            "comment" : "*For example: transfer of care to home or another institution; or date of death.\r\nFormal recording of the date of death should use CLUSTER.death_details. (en)"
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Freguesia",
+            "description" : "O nome da ala dentro da instituição onde o indivíduo estava localizado."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Destino",
+            "description" : "Identificação do destino após a alta.",
+            "comment" : "*For example: home; hospital; nursing home; or rehabilitation hospital. (en)"
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Observações",
+            "description" : "Narrativa adicional sobre o episódio, não capturada em outros campos."
           }
         }
       },
