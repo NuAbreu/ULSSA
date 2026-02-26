@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "55.0.0",
+      "sem_ver" : "56.0.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "0f4ff65e2d720df909c1f7d695063905",
+      "MD5-CAM-1.0.1" : "120ff049deb9c8b3b30deb664117ce1d",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -2901,8 +2901,8 @@
           },
           "at0005.3" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.2",
-            "text" : "Esteve em Intermédios",
+            "code" : "at0005.3",
+            "text" : "Cirurgia",
             "description" : "*Is there a history of the specific management or treatment activity? (en)",
             "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
           }
