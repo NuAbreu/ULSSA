@@ -63,7 +63,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"365e74dbfb7ff10c00577a5ad4296316">
+		["MD5-CAM-1.0.1"] = <"031a6dcc26a3eabf1f6dc49a8b06f2aa">
 		["build_uid"] = <"1f5ba765-f829-4382-b5e7-26722cc6c36d">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -677,7 +677,7 @@ Diagnosies should be recorded using the EVAL.problem_diagnosis archetype plus th
 					comment = <"*For example: Orthopaedic A unit. (en)">
 				>
 				["at0022"] = <
-					text = <"Freguesia">
+					text = <"Enfermaria">
 					description = <"O nome da ala dentro da instituição onde o indivíduo estava localizado.">
 				>
 				["at0023"] = <
