@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "49.1.1",
+      "sem_ver" : "50.0.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "da2fbcef1f19a7aa8d200e28d6612468",
+      "MD5-CAM-1.0.1" : "623c2585978853be151f6c884076c08e",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -610,6 +610,15 @@
           "unique" : false
         },
         "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ADMIN_ENTRY",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.13",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-episode_institution-001.v0",
+          "referenceType" : "archetypeOverlay"
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
           "occurrences" : "0..1",
@@ -1534,7 +1543,10 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
                         "code" : "385868005",
-                        "value" : "Emergency treatment management (procedure)"
+                        "value" : "Emergency treatment management (procedure)",
+                        "translations" : {
+                          "pt-pt" : "Emergency treatment management (procedure)"
+                        }
                       } ]
                     } ]
                   } ],
@@ -1621,8 +1633,8 @@
                         "lower" : 1,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -2539,7 +2551,8 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
                         "code" : "385868005",
-                        "value" : "Emergency treatment management (procedure)"
+                        "value" : "Emergency treatment management (procedure)",
+                        "translations" : { }
                       } ]
                     } ]
                   } ],
@@ -2626,8 +2639,8 @@
                         "lower" : 1,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -3049,15 +3062,18 @@
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "local_terms",
                                 "code" : "M",
-                                "value" : "Médico"
+                                "value" : "Médico",
+                                "translations" : { }
                               }, {
                                 "terminologyId" : "local_terms",
                                 "code" : "C",
-                                "value" : "Cirúrgico"
+                                "value" : "Cirúrgico",
+                                "translations" : { }
                               }, {
                                 "terminologyId" : "local_terms",
                                 "code" : "O",
-                                "value" : "Outro"
+                                "value" : "Outro",
+                                "translations" : { }
                               } ]
                             } ]
                           } ],
@@ -3091,19 +3107,23 @@
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "local_terms_2",
                                 "code" : "E",
-                                "value" : "Enfermaria"
+                                "value" : "Enfermaria",
+                                "translations" : { }
                               }, {
                                 "terminologyId" : "local_terms_2",
                                 "code" : "CE",
-                                "value" : "Consulta Externa"
+                                "value" : "Consulta Externa",
+                                "translations" : { }
                               }, {
                                 "terminologyId" : "local_terms_2",
                                 "code" : "AC",
-                                "value" : "Área comum"
+                                "value" : "Área comum",
+                                "translations" : { }
                               }, {
                                 "terminologyId" : "local_terms_2",
                                 "code" : "O",
-                                "value" : "Outros"
+                                "value" : "Outros",
+                                "translations" : { }
                               } ]
                             } ]
                           } ],
@@ -3674,7 +3694,8 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED",
                     "code" : "309343006",
-                    "value" : "Médico"
+                    "value" : "Médico",
+                    "translations" : { }
                   } ]
                 } ]
               } ],
@@ -4023,7 +4044,8 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED",
                     "code" : "106292003",
-                    "value" : "Enfermeiro"
+                    "value" : "Enfermeiro",
+                    "translations" : { }
                   } ]
                 } ]
               } ],
@@ -7081,8 +7103,8 @@
                                   "upper" : 100.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -7092,8 +7114,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -8637,8 +8659,8 @@
                                   "upper" : 300.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -8648,8 +8670,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -8708,8 +8730,8 @@
                                   "upper" : 200.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -8719,8 +8741,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -8780,8 +8802,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -8791,8 +8813,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -8852,8 +8874,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -8863,8 +8885,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -9017,8 +9039,8 @@
                                   "upper" : 90.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -9028,8 +9050,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -9087,8 +9109,8 @@
                         "upper" : "PT24H",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -10457,8 +10479,8 @@
                                   "upper" : 40.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -10468,8 +10490,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -11271,8 +11293,8 @@
                                   "upper" : 44.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -11282,8 +11304,8 @@
                                   "upper" : 1,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             }, {
@@ -11300,8 +11322,8 @@
                                   "upper" : 200.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -11311,8 +11333,8 @@
                                   "upper" : 1,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -11410,8 +11432,8 @@
                                 "lower" : 1,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "upperUnbounded" : true,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : true
                               } ]
                             } ]
                           } ],
@@ -12215,8 +12237,8 @@
                                   "lower" : 0.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : true,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : true
                                 } ]
                               } ]
                             } ]
@@ -12247,8 +12269,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -12263,8 +12285,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -12295,8 +12317,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -12311,8 +12333,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -12884,8 +12906,8 @@
                       "upper" : 50000.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -12895,8 +12917,8 @@
                       "upper" : 2,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -12913,8 +12935,8 @@
                       "upper" : 50.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -12924,8 +12946,8 @@
                       "upper" : 2,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 } ]
@@ -12956,8 +12978,8 @@
                     "upper" : 100.0,
                     "lowerIncluded" : true,
                     "upperIncluded" : true,
-                    "upperUnbounded" : false,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
                   } ]
                 } ]
               }, {
@@ -12972,8 +12994,8 @@
                     "upper" : 2,
                     "lowerIncluded" : true,
                     "upperIncluded" : true,
-                    "upperUnbounded" : false,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -13015,11 +13037,13 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED",
                     "code" : "336602003",
-                    "value" : "Máscara de oxigênio"
+                    "value" : "Máscara de oxigênio",
+                    "translations" : { }
                   }, {
                     "terminologyId" : "SNOMED",
                     "code" : "336623009",
-                    "value" : "Cânula nasal"
+                    "value" : "Cânula nasal",
+                    "translations" : { }
                   } ]
                 } ]
               } ],
@@ -14289,8 +14313,8 @@
                                   "upper" : 300.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -14300,8 +14324,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -15839,8 +15863,8 @@
                                   "upper" : 300.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -15850,8 +15874,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -15910,8 +15934,8 @@
                                   "upper" : 200.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -15921,8 +15945,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -15982,8 +16006,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -15993,8 +16017,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -16054,8 +16078,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -16065,8 +16089,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -16219,8 +16243,8 @@
                                   "upper" : 90.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -16230,8 +16254,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -16289,8 +16313,8 @@
                         "upper" : "PT24H",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -17749,8 +17773,8 @@
                                   "upper" : 200.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -17760,8 +17784,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -18557,8 +18581,8 @@
                                   "upper" : 44.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -18568,8 +18592,8 @@
                                   "upper" : 1,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             }, {
@@ -18586,8 +18610,8 @@
                                   "upper" : 200.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -18597,8 +18621,8 @@
                                   "upper" : 1,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -18696,8 +18720,8 @@
                                 "lower" : 1,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "upperUnbounded" : true,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : true
                               } ]
                             } ]
                           } ],
@@ -19472,8 +19496,8 @@
                       "upper" : 50000.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -19483,8 +19507,8 @@
                       "upper" : 2,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -19501,8 +19525,8 @@
                       "upper" : 50.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -19512,8 +19536,8 @@
                       "upper" : 2,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 } ]
@@ -19544,8 +19568,8 @@
                     "upper" : 100.0,
                     "lowerIncluded" : true,
                     "upperIncluded" : true,
-                    "upperUnbounded" : false,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
                   } ]
                 } ]
               }, {
@@ -19560,8 +19584,8 @@
                     "upper" : 2,
                     "lowerIncluded" : true,
                     "upperIncluded" : true,
-                    "upperUnbounded" : false,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -19603,11 +19627,13 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED",
                     "code" : "336602003",
-                    "value" : "Máscara de oxigênio"
+                    "value" : "Máscara de oxigênio",
+                    "translations" : { }
                   }, {
                     "terminologyId" : "SNOMED",
                     "code" : "336623009",
-                    "value" : "Cânula nasal"
+                    "value" : "Cânula nasal",
+                    "translations" : { }
                   } ]
                 } ]
               } ],
@@ -20043,8 +20069,8 @@
                                   "lower" : 0.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : true,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : true
                                 } ]
                               } ]
                             } ]
@@ -20075,8 +20101,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -20091,8 +20117,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -20123,8 +20149,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -20139,8 +20165,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -21970,7 +21996,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED",
                                     "code" : "304253006",
-                                    "value" : "DNR"
+                                    "value" : "DNR",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -22003,11 +22030,13 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED",
                                     "code" : "385652002",
-                                    "value" : "Iniciou"
+                                    "value" : "Iniciou",
+                                    "translations" : { }
                                   }, {
                                     "terminologyId" : "SNOMED",
                                     "code" : "410515003",
-                                    "value" : "Já existente"
+                                    "value" : "Já existente",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -22107,7 +22136,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "Local_terms",
                                     "code" : "1",
-                                    "value" : "Limitação ao tratamento"
+                                    "value" : "Limitação ao tratamento",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -22140,11 +22170,13 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED",
                                     "code" : "385652002",
-                                    "value" : "Iniciou"
+                                    "value" : "Iniciou",
+                                    "translations" : { }
                                   }, {
                                     "terminologyId" : "SNOMED",
                                     "code" : "410515003",
-                                    "value" : "Já existente"
+                                    "value" : "Já existente",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -26100,23 +26132,28 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms",
                                     "code" : "1",
-                                    "value" : "Permaneceu no mesmo local"
+                                    "value" : "Permaneceu no mesmo local",
+                                    "translations" : { }
                                   }, {
                                     "terminologyId" : "local_terms",
                                     "code" : "2",
-                                    "value" : "Transferido para Cuidados Intensivos"
+                                    "value" : "Transferido para Cuidados Intensivos",
+                                    "translations" : { }
                                   }, {
                                     "terminologyId" : "local_terms",
                                     "code" : "3",
-                                    "value" : "Transferido para Sala de Emergência"
+                                    "value" : "Transferido para Sala de Emergência",
+                                    "translations" : { }
                                   }, {
                                     "terminologyId" : "local_terms",
                                     "code" : "4",
-                                    "value" : "Transferido para Cuidados Intermédios"
+                                    "value" : "Transferido para Cuidados Intermédios",
+                                    "translations" : { }
                                   }, {
                                     "terminologyId" : "local_terms",
                                     "code" : "5",
-                                    "value" : "Transferido para o Bloco Operatório"
+                                    "value" : "Transferido para o Bloco Operatório",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -26480,11 +26517,13 @@
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "local_terms",
                                 "code" : "1",
-                                "value" : "Alta"
+                                "value" : "Alta",
+                                "translations" : { }
                               }, {
                                 "terminologyId" : "local_terms",
                                 "code" : "2",
-                                "value" : "Óbito"
+                                "value" : "Óbito",
+                                "translations" : { }
                               } ]
                             } ]
                           } ],
@@ -27297,7 +27336,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms",
                                     "code" : "33050008",
-                                    "value" : "Ressuscitação Pulmonar"
+                                    "value" : "Ressuscitação Pulmonar",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -27412,7 +27452,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms_2",
                                     "code" : "83099006",
-                                    "value" : "Compressões torácicas"
+                                    "value" : "Compressões torácicas",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -27952,7 +27993,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms",
                                     "code" : "271787007",
-                                    "value" : "Colapso"
+                                    "value" : "Colapso",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -28079,7 +28121,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms_2",
                                     "code" : "271787007",
-                                    "value" : "Colapso"
+                                    "value" : "Colapso",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -28206,7 +28249,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms_3",
                                     "code" : "1",
-                                    "value" : "Hora de chegada da EMI"
+                                    "value" : "Hora de chegada da EMI",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -28333,7 +28377,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms_4",
                                     "code" : "426220008",
-                                    "value" : "Desfibrilação Ventricular"
+                                    "value" : "Desfibrilação Ventricular",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -28460,7 +28505,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms_5",
                                     "code" : "439569004",
-                                    "value" : "Reanimação"
+                                    "value" : "Reanimação",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -28587,7 +28633,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms_6",
                                     "code" : "439569004",
-                                    "value" : "Reanimação"
+                                    "value" : "Reanimação",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -28702,7 +28749,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms_7",
                                     "code" : "439569004",
-                                    "value" : "Reanimação"
+                                    "value" : "Reanimação",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -29651,8 +29699,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_INTEGER",
@@ -29662,8 +29710,8 @@
                                   "upper" : 0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ]
@@ -29792,19 +29840,23 @@
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "local_terms",
                                 "code" : "71908006",
-                                "value" : "Fibrilação Ventricular"
+                                "value" : "Fibrilação Ventricular",
+                                "translations" : { }
                               }, {
                                 "terminologyId" : "local_terms",
                                 "code" : "25569003",
-                                "value" : "Taquicardia Ventricular"
+                                "value" : "Taquicardia Ventricular",
+                                "translations" : { }
                               }, {
                                 "terminologyId" : "local_terms",
                                 "code" : "234172002",
-                                "value" : "Atividade elétrica sem pulso"
+                                "value" : "Atividade elétrica sem pulso",
+                                "translations" : { }
                               }, {
                                 "terminologyId" : "local_terms",
                                 "code" : "397829000",
-                                "value" : "Assistolia"
+                                "value" : "Assistolia",
+                                "translations" : { }
                               } ]
                             } ]
                           } ],
@@ -31247,6 +31299,219 @@
         "name" : "Jose Florez-Arango"
       },
       "accreditation" : "MD MS PhD",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "73b1cc94-f454-407e-8477-2b5578681378",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "031a6dcc26a3eabf1f6dc49a8b06f2aa"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.episode_institution.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-episode_institution-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ADMIN_ENTRY",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "patternedConstraint" : "yyyy-mm-ddThh:mm:XX",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0026.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0021.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0018",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0019.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "it" : { },
+        "pt-pt" : {
+          "at0022" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Freguesia",
+            "description" : "O nome da ala dentro da instituição onde o indivíduo estava localizado."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ativação da equipa",
+            "description" : "Detalhes administrativos sobre um período de atendimento ao utente internado entre uma admissão formal ou estatística e uma separação formal ou estatística, caracterizado por apenas um tipo de atendimento de uma instituição de saúde."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Ativação da equipa",
+            "description" : "A data de admissão formal ou estatística na instituição.\n\n"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Fim do evento",
+            "description" : "A data de transferência dos cuidados para a casa ou outra instituição, ou a data do falecimento.",
+            "comment" : "*For example: transfer of care to home or another institution; or date of death.\r\nFormal recording of the date of death should use CLUSTER.death_details. (en)"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "1f5ba765-f829-4382-b5e7-26722cc6c36d",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-pt"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : { },
       "otherDetails" : { }
     } ]
   } ],
