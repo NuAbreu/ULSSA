@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "64.0.0",
+      "sem_ver" : "65.0.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "ddff6ae566a66d5b932543e7253b2846",
+      "MD5-CAM-1.0.1" : "d39dac34c2fff50ca1c0e37af191e1d7",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -22200,12 +22200,35 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at0039.4",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0039.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "value",
                         "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.3" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_BOOLEAN",
                           "attributes" : [ ],
@@ -22216,86 +22239,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at0039.5",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_BOOLEAN",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at0039.6",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_BOOLEAN",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at0039.7",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_BOOLEAN",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at0039.8",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_BOOLEAN",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at0039.9",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_BOOLEAN",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0044.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
@@ -23497,48 +23441,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0039.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Any management? (4)",
-            "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
-            "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
-          },
-          "at0039.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Any management? (5)",
-            "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
-            "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
-          },
-          "at0039.6" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Any management? (6)",
-            "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
-            "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
-          },
-          "at0039.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Any management? (7)",
-            "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
-            "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
-          },
-          "at0039.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Any management? (8)",
-            "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
-            "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
-          },
-          "at0039.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Any management? (9)",
-            "description" : "Is there a history of management or treatment activities relevant for the screening purpose?",
-            "comment" : "The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
-          },
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022",
@@ -23592,51 +23494,15 @@
             "code" : "at0022",
             "text" : "Management activity (10)",
             "description" : "Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose."
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
           }
         },
         "nb" : {
-          "at0039.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Sykdomshåndtering? (4)",
-            "description" : "Er det historikk av noen tidligere sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet?",
-            "comment" : "Sykdomshåndtering eller behandling kan være fullført, eller pågående. Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "at0039.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Sykdomshåndtering? (5)",
-            "description" : "Er det historikk av noen tidligere sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet?",
-            "comment" : "Sykdomshåndtering eller behandling kan være fullført, eller pågående. Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "at0039.6" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Sykdomshåndtering? (6)",
-            "description" : "Er det historikk av noen tidligere sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet?",
-            "comment" : "Sykdomshåndtering eller behandling kan være fullført, eller pågående. Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "at0039.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Sykdomshåndtering? (7)",
-            "description" : "Er det historikk av noen tidligere sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet?",
-            "comment" : "Sykdomshåndtering eller behandling kan være fullført, eller pågående. Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "at0039.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Sykdomshåndtering? (8)",
-            "description" : "Er det historikk av noen tidligere sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet?",
-            "comment" : "Sykdomshåndtering eller behandling kan være fullført, eller pågående. Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "at0039.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Sykdomshåndtering? (9)",
-            "description" : "Er det historikk av noen tidligere sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet?",
-            "comment" : "Sykdomshåndtering eller behandling kan være fullført, eller pågående. Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022",
@@ -23690,51 +23556,15 @@
             "code" : "at0022",
             "text" : "Sykdomshåndteringsaktivitet (10)",
             "description" : "Detaljer om en spesifikk sykdomshåndterings- eller behandlingsaktivitet eller gruppering av sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet."
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
           }
         },
         "de" : {
-          "at0039.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Irgendwelche Managementaktivitäten? (4)",
-            "description" : "Gibt es eine Vorgeschichte von Management- oder Behandlungsaktivitäten, die für das Screening relevant sind?",
-            "comment" : "Die Managementaktivität oder Behandlung kann abgeschlossen sein oder andauern.\r\n\r\nIn einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
-          },
-          "at0039.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Irgendwelche Managementaktivitäten? (5)",
-            "description" : "Gibt es eine Vorgeschichte von Management- oder Behandlungsaktivitäten, die für das Screening relevant sind?",
-            "comment" : "Die Managementaktivität oder Behandlung kann abgeschlossen sein oder andauern.\r\n\r\nIn einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
-          },
-          "at0039.6" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Irgendwelche Managementaktivitäten? (6)",
-            "description" : "Gibt es eine Vorgeschichte von Management- oder Behandlungsaktivitäten, die für das Screening relevant sind?",
-            "comment" : "Die Managementaktivität oder Behandlung kann abgeschlossen sein oder andauern.\r\n\r\nIn einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
-          },
-          "at0039.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Irgendwelche Managementaktivitäten? (7)",
-            "description" : "Gibt es eine Vorgeschichte von Management- oder Behandlungsaktivitäten, die für das Screening relevant sind?",
-            "comment" : "Die Managementaktivität oder Behandlung kann abgeschlossen sein oder andauern.\r\n\r\nIn einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
-          },
-          "at0039.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Irgendwelche Managementaktivitäten? (8)",
-            "description" : "Gibt es eine Vorgeschichte von Management- oder Behandlungsaktivitäten, die für das Screening relevant sind?",
-            "comment" : "Die Managementaktivität oder Behandlung kann abgeschlossen sein oder andauern.\r\n\r\nIn einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
-          },
-          "at0039.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Irgendwelche Managementaktivitäten? (9)",
-            "description" : "Gibt es eine Vorgeschichte von Management- oder Behandlungsaktivitäten, die für das Screening relevant sind?",
-            "comment" : "Die Managementaktivität oder Behandlung kann abgeschlossen sein oder andauern.\r\n\r\nIn einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
-          },
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022",
@@ -23788,51 +23618,15 @@
             "code" : "at0022",
             "text" : "Managementaktivität (10)",
             "description" : "Details zu einer bestimmten Management- oder Behandlungsaktivität oder einer Reihe von Management- oder Behandlungstätigkeiten, die für das Screening relevant sind."
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
           }
         },
         "it" : {
-          "at0039.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "*Any management or treatment? (en) (4)",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0039.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "*Any management or treatment? (en) (5)",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0039.6" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "*Any management or treatment? (en) (6)",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0039.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "*Any management or treatment? (en) (7)",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0039.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "*Any management or treatment? (en) (8)",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0039.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "*Any management or treatment? (en) (9)",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022",
@@ -23886,6 +23680,12 @@
             "code" : "at0022",
             "text" : "*Management activity (en) (10)",
             "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
           }
         },
         "pt-pt" : {
@@ -23901,48 +23701,6 @@
             "code" : "at0044.1",
             "text" : "Outros",
             "description" : "*Narrative description about the history of any management or treatment activities relevant for the screening purpose. (en)"
-          },
-          "at0039.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.4",
-            "text" : "Máscara Hudson",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0039.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.5",
-            "text" : "Máscara O2",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0039.6" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.6",
-            "text" : "Ventilação C/ insuflador",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0039.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.7",
-            "text" : "Nebulização",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0039.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.8",
-            "text" : "VNI",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0039.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.9",
-            "text" : "Nenhuma intervenção",
-            "description" : "*Is there a history of management or treatment activities relevant for the screening purpose? (en)",
-            "comment" : "*The management or treatment may have been completed or could be ongoing.\r\n\r\nIn a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
           },
           "at0022.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -24149,6 +23907,12 @@
             "code" : "at0035.10",
             "text" : "Outros",
             "description" : "Narrativa adicional sobre uma questão específica de gestão ou tratamento, não capturada noutras áreas."
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
           }
         }
       },
@@ -24163,6 +23927,11 @@
         "ac0.2" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
+          "members" : [ "at0040", "at0041", "at0042", "at0045" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
           "members" : [ "at0040", "at0041", "at0042", "at0045" ]
         }
       }
@@ -28582,7 +28351,9 @@
                                     "terminologyId" : "local_terms",
                                     "code" : "33050008",
                                     "value" : "Ressuscitação Pulmonar",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "pt-pt" : "Ressuscitação Pulmonar"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -28903,7 +28674,7 @@
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
-            "text" : "Ventila",
+            "text" : "Ventilação",
             "description" : "*Name of a specific management or treatment activity or grouping of management or treatment activities. (en)",
             "comment" : "*For example: \r\nAdmitted to hospital; Admitted to ICU; Use of compression stockings; Daily dressings; ECMO.\r\nCoding of the 'Management name' with a terminology is preferred, where possible. (en)"
           },
