@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "50.0.0",
+      "sem_ver" : "51.0.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "623c2585978853be151f6c884076c08e",
+      "MD5-CAM-1.0.1" : "09d69c00e9c7ac08ed3530227e207b67",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -3063,17 +3063,23 @@
                                 "terminologyId" : "local_terms",
                                 "code" : "M",
                                 "value" : "Médico",
-                                "translations" : { }
+                                "translations" : {
+                                  "pt-pt" : "Médico"
+                                }
                               }, {
                                 "terminologyId" : "local_terms",
                                 "code" : "C",
                                 "value" : "Cirúrgico",
-                                "translations" : { }
+                                "translations" : {
+                                  "pt-pt" : "Cirúrgico"
+                                }
                               }, {
                                 "terminologyId" : "local_terms",
                                 "code" : "O",
                                 "value" : "Outro",
-                                "translations" : { }
+                                "translations" : {
+                                  "pt-pt" : "Outro"
+                                }
                               } ]
                             } ]
                           } ],
@@ -3108,22 +3114,30 @@
                                 "terminologyId" : "local_terms_2",
                                 "code" : "E",
                                 "value" : "Enfermaria",
-                                "translations" : { }
+                                "translations" : {
+                                  "pt-pt" : "Enfermaria"
+                                }
                               }, {
                                 "terminologyId" : "local_terms_2",
                                 "code" : "CE",
                                 "value" : "Consulta Externa",
-                                "translations" : { }
+                                "translations" : {
+                                  "pt-pt" : "Consulta Externa"
+                                }
                               }, {
                                 "terminologyId" : "local_terms_2",
                                 "code" : "AC",
                                 "value" : "Área comum",
-                                "translations" : { }
+                                "translations" : {
+                                  "pt-pt" : "Área comum"
+                                }
                               }, {
                                 "terminologyId" : "local_terms_2",
                                 "code" : "O",
                                 "value" : "Outros",
-                                "translations" : { }
+                                "translations" : {
+                                  "pt-pt" : "Outros"
+                                }
                               } ]
                             } ]
                           } ],
@@ -31379,6 +31393,20 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
+              "nodeId" : "at0008.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0007.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0026.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -31408,6 +31436,76 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_DATE_TIME",
                       "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0025.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SNOMED",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "225746001",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Enfermaria",
+                        "@type" : "DV_CODED_TEXT"
+                      },
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "SNOMED"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SNOMED" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SNOMED",
+                            "code" : "225746001",
+                            "value" : "Enfermaria",
+                            "translations" : {
+                              "pt-pt" : "Enfermaria"
+                            }
+                          }, {
+                            "terminologyId" : "SNOMED",
+                            "code" : "224885007",
+                            "value" : "Consulta Externa",
+                            "translations" : {
+                              "pt-pt" : "Consulta Externa"
+                            }
+                          }, {
+                            "terminologyId" : "SNOMED",
+                            "code" : "224717003",
+                            "value" : "Áreas comuns",
+                            "translations" : {
+                              "pt-pt" : "Áreas comuns"
+                            }
+                          }, {
+                            "terminologyId" : "SNOMED",
+                            "code" : "224887004",
+                            "value" : "Sala de espera",
+                            "translations" : {
+                              "pt-pt" : "Sala de espera"
+                            }
+                          } ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
