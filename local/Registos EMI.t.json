@@ -23,7 +23,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "59.0.0",
       "build_uid" : "f8782275-d5f3-42c0-85b5-b6e2df7d0725",
-      "MD5-CAM-1.0.1" : "f198ead08083eb041e4cd019bec494a6",
+      "MD5-CAM-1.0.1" : "7b63662707475e98655f97d56af0814e",
       "PARENT:MD5-CAM-1.0.1" : "327A8885F97587660404644C3C6053B6"
     },
     "details" : {
@@ -3638,6 +3638,18 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
                               "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "SNOMED",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "713442009",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Ativação da equipa de emergência interna",
+                                "@type" : "DV_CODED_TEXT"
+                              },
                               "attributes" : [ {
                                 "@type" : "C_ATTRIBUTE",
                                 "rmAttributeName" : "defining_code",
@@ -28902,7 +28914,64 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "031a6dcc26a3eabf1f6dc49a8b06f2aa"
       },
-      "details" : { }
+      "details" : {
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "*To record administrative details about a period of admitted patient care between a formal or statistical admission and a formal or statistical separation, characterised by only one care type of care from a healthcare institution.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record administrative details about a period of admitted patient care between a formal or statistical admission and a formal or statistical separation, characterised by only one care type of care from a healthcare institution.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record administrative details about a period of admitted patient care between a formal or statistical admission and a formal or statistical separation, characterised by only one care type of care from a healthcare institution.",
+          "keywords" : [ ],
+          "use" : "Use to record administrative details about a period of admitted patient care between a formal or statistical admission and a formal or statistical separation, characterised by only one care type of care from a healthcare institution.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Registrare i dettagli amministrativi di un periodo di cura del paziente ricoverato tra un ricovero formale o statistico e una separazione formale o statistica, caratterizzata da un solo tipo di cura da un'istituzione sanitaria.",
+          "keywords" : [ ],
+          "use" : "Utilizzare per registrare i dettagli amministrativi relativi a un periodo di cura del paziente ricoverato tra un ricovero formale o statistico e una separazione formale o statistica, caratterizzata da un solo tipo di cura di un'istituzione sanitaria.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.episode_institution.v0",
     "differential" : true,
@@ -28925,21 +28994,6 @@
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0016.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0004.1",
@@ -29024,6 +29078,21 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0026.1",
               "attributes" : [ ],
@@ -29048,16 +29117,7 @@
                   "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0019.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_DATE_TIME",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -29155,16 +29215,7 @@
                   "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0020.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_DATE_TIME",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -29325,12 +29376,6 @@
         "nb" : { },
         "it" : { },
         "pt-pt" : {
-          "at0022" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022",
-            "text" : "Freguesia",
-            "description" : "O nome da ala dentro da instituição onde o indivíduo estava localizado."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
@@ -29442,7 +29487,64 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "031a6dcc26a3eabf1f6dc49a8b06f2aa"
       },
-      "details" : { }
+      "details" : {
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "*To record administrative details about a period of admitted patient care between a formal or statistical admission and a formal or statistical separation, characterised by only one care type of care from a healthcare institution.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record administrative details about a period of admitted patient care between a formal or statistical admission and a formal or statistical separation, characterised by only one care type of care from a healthcare institution.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record administrative details about a period of admitted patient care between a formal or statistical admission and a formal or statistical separation, characterised by only one care type of care from a healthcare institution.",
+          "keywords" : [ ],
+          "use" : "Use to record administrative details about a period of admitted patient care between a formal or statistical admission and a formal or statistical separation, characterised by only one care type of care from a healthcare institution.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Registrare i dettagli amministrativi di un periodo di cura del paziente ricoverato tra un ricovero formale o statistico e una separazione formale o statistica, caratterizzata da un solo tipo di cura da un'istituzione sanitaria.",
+          "keywords" : [ ],
+          "use" : "Utilizzare per registrare i dettagli amministrativi relativi a un periodo di cura del paziente ricoverato tra un ricovero formale o statistico e una separazione formale o statistica, caratterizzata da un solo tipo di cura di un'istituzione sanitaria.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.episode_institution.v0",
     "differential" : true,
@@ -29478,22 +29580,6 @@
                   "defaultValue" : {
                     "@type" : "DV_IDENTIFIER"
                   },
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0016.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
@@ -29549,6 +29635,22 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0026.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -29572,16 +29674,7 @@
                   "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0019.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_DATE_TIME",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -29679,16 +29772,7 @@
                   "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0020.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_DATE_TIME",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -29870,12 +29954,6 @@
           }
         },
         "pt-pt" : {
-          "at0022" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022",
-            "text" : "Freguesia",
-            "description" : "O nome da ala dentro da instituição onde o indivíduo estava localizado."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
